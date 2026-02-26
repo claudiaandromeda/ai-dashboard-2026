@@ -1,0 +1,307 @@
+{
+  "updated": "2026-02-23",
+  "description": "YouTube channels to monitor for OpenClaw/AI agent content. Used by nightly pipeline.",
+  "channels": [
+    {
+      "name": "Matthew Berman",
+      "handle": "@MatthewBerman",
+      "url": "https://www.youtube.com/@MatthewBerman",
+      "subs": "572K",
+      "priority": "tier1",
+      "notes": "Advanced setups, security, business automation. 900+ videos, 76M views."
+    },
+    {
+      "name": "VelvetShark",
+      "handle": "@velvetshark-com",
+      "url": "https://www.youtube.com/@velvetshark-com",
+      "subs": "9K",
+      "priority": "tier1",
+      "notes": "OpenClaw use cases, cost configs, real-world automation. Highly relevant."
+    },
+    {
+      "name": "David Ondrej",
+      "handle": "@DavidOndrej",
+      "url": "https://www.youtube.com/@DavidOndrej",
+      "subs": "300K+",
+      "priority": "tier1",
+      "notes": "VPS setup, WhatsApp integration, model selection, debugging."
+    },
+    {
+      "name": "Sonny Sangha",
+      "handle": "@SonnySangha",
+      "url": "https://www.youtube.com/@SonnySangha",
+      "subs": "363K",
+      "priority": "tier1",
+      "notes": "Secure deployment, Tailscale, VPS hardening."
+    },
+    {
+      "name": "Fahd Mirza",
+      "handle": "@fahdmirza",
+      "url": "https://www.youtube.com/@fahdmirza",
+      "subs": "60K",
+      "priority": "tier1",
+      "notes": "Security hardening, private models. Very relevant."
+    },
+    {
+      "name": "Cyberflow Academy",
+      "handle": "@Cyberflow",
+      "url": "https://www.youtube.com/@Cyberflow",
+      "subs": "45K",
+      "priority": "tier1",
+      "notes": "Security vulnerabilities, attack vectors. Important for hardening."
+    },
+    {
+      "name": "Metics Media",
+      "handle": "@MeticsMedia",
+      "url": "https://www.youtube.com/@MeticsMedia",
+      "subs": "519K",
+      "priority": "tier1",
+      "notes": "Prolific OpenClaw tutorials. VPS setup, Telegram, skills. Beginner-friendly."
+    },
+    {
+      "name": "Matt Ganzak",
+      "handle": "@MattGanzak",
+      "url": "https://www.youtube.com/@MattGanzak",
+      "subs": "unknown",
+      "priority": "tier1",
+      "notes": "Cost optimisation (97% cuts), security hardening."
+    },
+    {
+      "name": "Manolo Remiddi",
+      "handle": "@manolo.remiddi",
+      "url": "https://www.youtube.com/@manolo.remiddi",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "Multi-agent setups, Docker sandboxing, token optimisation."
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "@peteryangyt",
+      "url": "https://www.youtube.com/@peteryangyt",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "Comprehensive setup guides, interview with OpenClaw creator."
+    },
+    {
+      "name": "Brock Mesarich",
+      "handle": "@BrockMesarich",
+      "url": "https://www.youtube.com/@BrockMesarich",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "AI automation agencies."
+    },
+    {
+      "name": "Ray Fernando",
+      "handle": "@RayFernando1337",
+      "url": "https://www.youtube.com/@RayFernando1337",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "AI agent content."
+    },
+    {
+      "name": "Duncan Rogoff",
+      "handle": "@duncanrogoff",
+      "url": "https://www.youtube.com/@duncanrogoff",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "OpenClaw tutorials."
+    },
+    {
+      "name": "Alex Finn",
+      "handle": "@AlexFinnOfficial",
+      "url": "https://www.youtube.com/@AlexFinnOfficial",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "OpenClaw setups and use cases."
+    },
+    {
+      "name": "Tech With Tim",
+      "handle": "@TechWithTim",
+      "url": "https://www.youtube.com/@TechWithTim",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "Developer-focused tutorials, Python/ML."
+    },
+    {
+      "name": "Lead Gen Jay",
+      "handle": "@leadgenjay",
+      "url": "https://www.youtube.com/@leadgenjay",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "Non-coder Mac Mini setup, B2B lead gen, business use cases."
+    },
+    {
+      "name": "Nate B Jones",
+      "handle": "@NateBJones",
+      "url": "https://www.youtube.com/@NateBJones",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "Multi-LLM configs, Twitter monitoring, daily AI strategy."
+    },
+    {
+      "name": "freeCodeCamp",
+      "handle": "@freeCodeCamp",
+      "url": "https://www.youtube.com/@freeCodeCamp",
+      "subs": "unknown",
+      "priority": "tier2",
+      "notes": "Full beginner\u2192advanced OpenClaw course."
+    },
+    {
+      "name": "Keith AI (LearnAIAutomation)",
+      "handle": "@learnaiautomation",
+      "url": "https://www.youtube.com/@learnaiautomation",
+      "subs": "5.3K",
+      "priority": "tier2",
+      "notes": "AI coding, passive income, agent building."
+    },
+    {
+      "name": "MindlyNova",
+      "handle": "@MindlyNova",
+      "url": "https://www.youtube.com/@MindlyNova",
+      "subs": "unknown",
+      "priority": "tier3",
+      "notes": "Step-by-step setup tutorials."
+    },
+    {
+      "name": "ArtemXTech",
+      "handle": "@ArtemXTech",
+      "url": "https://www.youtube.com/@ArtemXTech",
+      "subs": "2.96K",
+      "priority": "tier3",
+      "notes": "Small channel, AI agent delegation, personal productivity."
+    },
+    {
+      "name": "Samin Yasar",
+      "handle": "@SaminYasar",
+      "url": "https://www.youtube.com/@SaminYasar",
+      "subs": "unknown",
+      "priority": "tier3",
+      "notes": "YouTube automation workflows with OpenClaw."
+    },
+    {
+      "name": "Jim Love / Cybersecurity Today",
+      "handle": "@CybersecurityToday",
+      "url": "https://www.youtube.com/@CybersecurityToday",
+      "subs": "331K",
+      "priority": "tier1",
+      "notes": "Malicious marketplace agents coverage. Security-critical."
+    },
+    {
+      "name": "Augmented AI (Ritesh Kanjee)",
+      "handle": "@Augmented_AI",
+      "url": "https://www.youtube.com/@Augmented_AI",
+      "subs": "unknown",
+      "priority": "tier1",
+      "notes": "Property automation: 100 property videos with n8n + OpenClaw. $6/video. Real ROI numbers. \ud83d\udd25"
+    },
+    {
+      "name": "BharatAIConnect",
+      "handle": "@BharatAIConnect",
+      "url": "https://www.youtube.com/@BharatAIConnect",
+      "subs": "unknown",
+      "priority": "tier3",
+      "notes": "AI projects with Python, hands-on AI content."
+    },
+    {
+      "name": "Rajeevdaz",
+      "handle": "@Rajeevdaz",
+      "url": "https://www.youtube.com/@Rajeevdaz",
+      "subs": "unknown",
+      "priority": "tier3",
+      "notes": "AI automation, no-code workflows."
+    },
+    {
+      "name": "Tutorials by Manizha & Ryan",
+      "handle": "@tutorialsbymanizharyan2121",
+      "url": "https://www.youtube.com/@tutorialsbymanizharyan2121",
+      "subs": "unknown",
+      "priority": "tier3",
+      "notes": "Beginner tutorials, project management + AI tools."
+    },
+    {
+      "name": "Germ\u00e1n Huertas",
+      "handle": "@germanhuertaspiquero",
+      "url": "https://www.youtube.com/@germanhuertaspiquero",
+      "subs": "unknown",
+      "priority": "tier3",
+      "notes": "Spanish-language OpenClaw tutorials, no-code AI automation."
+    },
+    {
+      "name": "Julian Goldie SEO",
+      "url": "https://www.youtube.com/@JulianGoldieSEO",
+      "handle": "@JulianGoldieSEO",
+      "priority": "tier2",
+      "notes": "SEO + AI automation content"
+    },
+    {
+      "name": "Sharbel XYZ",
+      "url": "https://www.youtube.com/@sharbelxyz",
+      "handle": "@sharbelxyz",
+      "priority": "tier2",
+      "notes": "AI tools and automation"
+    },
+    {
+      "name": "DIY Smart Code",
+      "url": "https://www.youtube.com/@DIYSmartCode",
+      "handle": "@DIYSmartCode",
+      "priority": "tier2",
+      "notes": "DIY coding and smart automation"
+    },
+    {
+      "name": "Boxmining AI",
+      "url": "https://www.youtube.com/@BoxminingAI",
+      "handle": "@BoxminingAI",
+      "priority": "tier2",
+      "notes": "AI and crypto/tech analysis"
+    },
+    {
+      "name": "The Brett Way",
+      "url": "https://www.youtube.com/@TheBrettWay",
+      "handle": "@TheBrettWay",
+      "priority": "tier2",
+      "notes": "Business and AI workflows"
+    },
+    {
+      "name": "Dubibubii",
+      "url": "https://www.youtube.com/@Dubibubii",
+      "handle": "@Dubibubii",
+      "priority": "tier2",
+      "notes": "AI tools content"
+    },
+    {
+      "name": "Itssssss Jack",
+      "url": "https://www.youtube.com/@Itssssss_Jack",
+      "handle": "@Itssssss_Jack",
+      "priority": "tier2",
+      "notes": "AI/tech content"
+    },
+    {
+      "name": "Brian Casel",
+      "url": "https://www.youtube.com/@briancasel",
+      "handle": "@briancasel",
+      "priority": "tier2",
+      "notes": "SaaS and productised services, bootstrapping"
+    },
+    {
+      "name": "Craig Hewitt",
+      "url": "https://www.youtube.com/@thecraighewitt",
+      "handle": "@thecraighewitt",
+      "priority": "tier2",
+      "notes": "Podcast and SaaS business growth"
+    },
+    {
+      "name": "Larue AI",
+      "url": "https://www.youtube.com/@LarueAI",
+      "handle": "@LarueAI",
+      "priority": "tier2",
+      "notes": "AI tools and automation"
+    }
+  ],
+  "to_confirm": [
+    "Agents Lab \u2014 no YouTube channel found, likely GitHub-only",
+    "AI Master \u2014 no confirmed handle found",
+    "OpenClaw Silicon Valley \u2014 not a distinct channel, appears to be a topic tag",
+    "Caleb \u2014 too generic, need more info",
+    "ZeroPointRepo \u2014 may be a GitHub repo not a YouTube channel"
+  ]
+}
