@@ -295,6 +295,34 @@
       "handle": "@LarueAI",
       "priority": "tier2",
       "notes": "AI tools and automation"
+    },
+    {
+      "name": "JavaScript Mastery",
+      "url": "https://www.youtube.com/@javascriptmastery",
+      "handle": "@javascriptmastery",
+      "priority": "tier1",
+      "notes": "OpenClaw Full Course published Feb 2026 \u2014 VPS deploy, Telegram, 5 dev use cases. High signal."
+    },
+    {
+      "name": "Snapper AI",
+      "url": "https://www.youtube.com/@SnapperAI",
+      "handle": "@SnapperAI",
+      "priority": "tier1",
+      "notes": "Covers Kimi Claw browser-hosted OpenClaw, ClawHub skills, cron jobs. Very relevant."
+    },
+    {
+      "name": "Mayank Aggarwal",
+      "url": "https://www.youtube.com/@tech.mayankagg",
+      "handle": "@tech.mayankagg",
+      "priority": "tier1",
+      "notes": "95-min OpenClaw crash course: skills, multi-agent, security, cron. Very practical."
+    },
+    {
+      "name": "Charlie Chang",
+      "url": "https://www.youtube.com/@CharlieChang",
+      "handle": "@CharlieChang",
+      "priority": "tier2",
+      "notes": "15-min OpenClaw beginner guide. Also covers broader AI tools \u2014 filter for OpenClaw content."
     }
   ],
   "to_confirm": [
