@@ -222,9 +222,12 @@ def summarise_with_ollama(transcript: str, model: str) -> str:
     """Single-pass Ollama summarisation for short transcripts"""
     prompt = SUMMARY_PROMPT.format(transcript=transcript)
     try:
+        env = os.environ.copy()
+        env["OLLAMA_KEEP_ALIVE"] = "-1"  # Keep model in VRAM for duration of pipeline
         result = subprocess.run(
             ["ollama", "run", model],
-            input=prompt, capture_output=True, text=True, timeout=300
+            input=prompt, capture_output=True, text=True, timeout=300,
+            env=env
         )
         return result.stdout.strip() if result.stdout.strip() else f"[Empty output]\n\nStdErr: {result.stderr[:500]}"
     except subprocess.TimeoutExpired:
@@ -381,11 +384,11 @@ def save_spam_log(log: dict):
 
 # --- Main pipeline ---
 
-def process_video(video_id: str, title: str, channel_name: str, model: str) -> dict:
+def process_video(video_id: str, title: str, channel_name: str, model: str, force: bool = False) -> dict:
     url = f"https://www.youtube.com/watch?v={video_id}"
     out_file = SUMMARIES_DIR / f"{video_id}.md"
     
-    if out_file.exists():
+    if out_file.exists() and not force:
         return {"status": "skipped", "id": video_id, "title": title}
     
     print(f"\n  📹 {title[:70]}")
@@ -486,6 +489,7 @@ def main():
     parser.add_argument("--channel", help="Process a single channel URL")
     parser.add_argument("--no-filter", action="store_true", help="Skip keyword relevance filter")
     parser.add_argument("--digest-only", action="store_true")
+    parser.add_argument("--force", action="store_true", help="Re-process videos even if summary already exists")
     args = parser.parse_args()
     
     if args.digest_only:
@@ -577,7 +581,7 @@ def main():
         
         channel_stats = {"attempted": 0, "done": 0, "failed": 0, "filtered": len(fresh) - len(relevant) if not args.no_filter else 0}
         for video in to_process:
-            result = process_video(video["id"], video["title"], channel["name"], args.model)
+            result = process_video(video["id"], video["title"], channel["name"], args.model, force=args.force)
             result["channel"] = channel["name"]
             all_processed.append(result)
             channel_stats["attempted"] += 1
