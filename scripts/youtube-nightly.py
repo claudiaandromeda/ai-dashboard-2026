@@ -180,22 +180,141 @@ def get_transcript(video_id: str, url: str) -> str | None:
     return None
 
 
-# --- Ollama summarisation ---
+# --- Smart summarisation with routing ---
 
-def summarise(transcript: str, model: str) -> str:
-    # No character cap — YouTubers often save key insights for the final minute
-    # mistral:7b context window handles full transcripts fine
+# Thresholds (in chars, ~4 chars per token)
+OLLAMA_CHUNK_SIZE = 60_000      # ~15k tokens — safe for mistral:7b
+GEMINI_DIRECT_THRESHOLD = 500_000  # Under this → Gemini can handle in one shot
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+
+CHUNK_SUMMARY_PROMPT = """You are extracting key points from one section (chunk {n} of {total}) of a YouTube video transcript.
+
+Extract ONLY the most actionable or insightful content from THIS section:
+- Specific tools, commands, or techniques mentioned
+- Actionable tips or strategies
+- Any surprising or novel ideas
+
+Be brief. Skip filler. This is chunk {n}/{total} — do not try to summarise the whole video.
+
+TRANSCRIPT SECTION:
+{transcript}
+"""
+
+MERGE_PROMPT = """You are synthesising intelligence from a YouTube video that was processed in {total} chunks.
+
+Below are summaries from each chunk. Create ONE unified, structured summary covering the full video:
+
+1. **Key Actionable Items** — specific things we can implement (numbered list)
+2. **Tools/Commands Mentioned** — any CLI commands, tools, APIs, models
+3. **Cost Saving Tips** — any advice on reducing AI API costs
+4. **Security Recommendations** — any hardening or best practice advice
+5. **Interesting Ideas** — anything worth exploring further
+
+Remove duplicates. Prioritise the most impactful insights. Note if important gems appeared at the end.
+
+CHUNK SUMMARIES:
+{summaries}
+"""
+
+
+def summarise_with_ollama(transcript: str, model: str) -> str:
+    """Single-pass Ollama summarisation for short transcripts"""
     prompt = SUMMARY_PROMPT.format(transcript=transcript)
     try:
         result = subprocess.run(
             ["ollama", "run", model],
-            input=prompt, capture_output=True, text=True, timeout=180
+            input=prompt, capture_output=True, text=True, timeout=300
         )
-        return result.stdout.strip() if result.stdout.strip() else f"[Model returned empty]\n\nStdErr: {result.stderr[:500]}"
+        return result.stdout.strip() if result.stdout.strip() else f"[Empty output]\n\nStdErr: {result.stderr[:500]}"
     except subprocess.TimeoutExpired:
-        return "[Summarisation timed out after 3 minutes]"
+        return "[Ollama timed out after 5 minutes]"
     except Exception as e:
-        return f"[Summarisation failed: {e}]"
+        return f"[Ollama failed: {e}]"
+
+
+def summarise_with_gemini(transcript: str) -> str:
+    """Single-pass Gemini summarisation — handles up to ~4M chars"""
+    prompt = SUMMARY_PROMPT.format(transcript=transcript)
+    try:
+        result = subprocess.run(
+            ["openclaw", "ask", "--model", GEMINI_MODEL, "--no-stream", prompt],
+            capture_output=True, text=True, timeout=300
+        )
+        if result.stdout.strip():
+            return result.stdout.strip()
+        # Fallback: try via python google SDK if installed
+        return f"[Gemini CLI failed: {result.stderr[:300]}]"
+    except Exception as e:
+        return f"[Gemini failed: {e}]"
+
+
+def summarise_chunked(transcript: str, model: str) -> str:
+    """Chunk transcript → summarise each with Ollama → merge with Gemini"""
+    chunks = [transcript[i:i+OLLAMA_CHUNK_SIZE] for i in range(0, len(transcript), OLLAMA_CHUNK_SIZE)]
+    total = len(chunks)
+    print(f"   📦 Chunking: {total} chunks × ~{OLLAMA_CHUNK_SIZE//1000}K chars")
+
+    chunk_summaries = []
+    for n, chunk in enumerate(chunks, 1):
+        print(f"   🔄 Chunk {n}/{total}...")
+        prompt = CHUNK_SUMMARY_PROMPT.format(n=n, total=total, transcript=chunk)
+        try:
+            result = subprocess.run(
+                ["ollama", "run", model],
+                input=prompt, capture_output=True, text=True, timeout=300
+            )
+            chunk_summaries.append(result.stdout.strip() or "[empty]")
+        except Exception as e:
+            chunk_summaries.append(f"[chunk {n} failed: {e}]")
+
+    # Merge with Gemini
+    print(f"   🧠 Merging {total} chunk summaries with Gemini...")
+    merged_input = "\n\n---\n\n".join(
+        f"**Chunk {i+1}/{total}:**\n{s}" for i, s in enumerate(chunk_summaries)
+    )
+    merge_prompt = MERGE_PROMPT.format(total=total, summaries=merged_input)
+    try:
+        result = subprocess.run(
+            ["openclaw", "ask", "--model", GEMINI_MODEL, "--no-stream", merge_prompt],
+            capture_output=True, text=True, timeout=300
+        )
+        if result.stdout.strip():
+            return result.stdout.strip()
+    except Exception as e:
+        pass
+
+    # If Gemini merge fails, just concatenate chunk summaries
+    print(f"   ⚠️  Gemini merge failed, concatenating chunk summaries")
+    return "\n\n---\n\n".join(chunk_summaries)
+
+
+def summarise(transcript: str, model: str) -> tuple[str, str]:
+    """
+    Smart routing based on transcript length:
+    - Short (≤60K chars, ~15 min video): Ollama single pass
+    - Medium (60K–500K chars): Ollama chunked → Gemini merge
+    - Long (>500K chars, e.g. 2hr+ livestreams): Gemini direct
+    
+    Returns (summary, method_used)
+    """
+    length = len(transcript)
+
+    if length <= OLLAMA_CHUNK_SIZE:
+        print(f"   📊 {length:,} chars → Ollama single pass")
+        return summarise_with_ollama(transcript, model), "ollama-single"
+
+    elif length <= GEMINI_DIRECT_THRESHOLD:
+        print(f"   📊 {length:,} chars → Ollama chunked + Gemini merge")
+        return summarise_chunked(transcript, model), "ollama-chunked+gemini"
+
+    else:
+        print(f"   📊 {length:,} chars → Gemini direct (large context)")
+        summary = summarise_with_gemini(transcript)
+        if summary.startswith("[Gemini"):
+            # Gemini failed — fall back to chunked
+            print(f"   ⚠️  Gemini direct failed, falling back to chunked")
+            return summarise_chunked(transcript, model), "ollama-chunked+gemini-fallback"
+        return summary, "gemini-direct"
 
 
 # --- Channel video fetching ---
@@ -282,8 +401,8 @@ def process_video(video_id: str, title: str, channel_name: str, model: str) -> d
         print(f"     ❌ No transcript available")
         return {"status": "failed", "id": video_id, "title": title, "reason": "no transcript"}
     
-    print(f"     🤖 Summarising with {model}...")
-    summary = summarise(transcript, model)
+    print(f"     🤖 Summarising ({len(transcript):,} chars)...")
+    summary, method = summarise(transcript, model)
     
     SUMMARIES_DIR.mkdir(parents=True, exist_ok=True)
     with open(out_file, "w") as f:
@@ -291,7 +410,7 @@ def process_video(video_id: str, title: str, channel_name: str, model: str) -> d
         f.write(f"**Channel:** {channel_name}\n")
         f.write(f"**URL:** {url}\n")
         f.write(f"**Processed:** {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
-        f.write(f"**Model:** {model}\n\n")
+        f.write(f"**Model:** {model} ({method})\n\n")
         f.write("---\n\n")
         f.write(summary)
         f.write("\n")
