@@ -132,3 +132,49 @@ Check if running: `kill -0 $(cat /tmp/yt-pipeline.pid) && echo running || echo d
 
 **Fix:** Removed cap entirely. `mistral:7b` context window handles full transcripts without issues. Commit: (see git log).
 
+
+---
+
+## GPU & Ollama Diagnostics (for Bot-in-a-Box template)
+
+### Checking if Ollama is using the GPU
+
+**Step 1 — Check VRAM is loaded:**
+```bash
+# While Ollama has a model loaded, check VRAM usage
+watch -n 1 nvidia-smi
+# or more visual:
+nvtop   # install: sudo apt install nvtop
+```
+If `mistral:7b` is GPU-accelerated, you should see ~5.4GB VRAM used when the model is loaded. 
+If VRAM shows 0 or <500MB, the model is running on CPU.
+
+**Step 2 — Confirm GPU spikes during inference:**
+When `ollama run mistral:7b` is actively summarising, expect:
+- GPU utilisation: 40–80%
+- VRAM: steady ~5.4GB (model stays loaded between calls)
+- Between videos: GPU 0%, VRAM still 5.4GB — **this is correct/expected**
+
+**Step 3 — Force CUDA if GPU not being used:**
+```bash
+CUDA_VISIBLE_DEVICES=0 ollama run mistral:7b "say hello"
+```
+If model still runs on CPU after this, reinstall Ollama (picks up CUDA drivers):
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+### Expected VRAM usage by model
+| Model | VRAM |
+|-------|------|
+| mistral:7b | ~5.4GB |
+| qwen2.5:7b | ~5–6GB |
+| qwen2.5:32b | ~20GB (needs 24GB+ GPU) |
+| deepseek-r1:32b | ~20GB |
+
+**Titan X (12GB):** Can run mistral:7b and similar 7B models GPU-accelerated comfortably. 32B models require offloading to CPU/RAM.
+
+### Ubuntu System Monitor — GPU not shown
+Default Gnome System Monitor does NOT show GPU/VRAM. Use `nvidia-smi` or `nvtop` instead.
+Netdata (if installed) can show GPU metrics at `http://<machine-ip>:19999` — but is NOT installed by default.
+
