@@ -183,7 +183,9 @@ def get_transcript(video_id: str, url: str) -> str | None:
 # --- Ollama summarisation ---
 
 def summarise(transcript: str, model: str) -> str:
-    prompt = SUMMARY_PROMPT.format(transcript=transcript[:12000])
+    # No character cap — YouTubers often save key insights for the final minute
+    # mistral:7b context window handles full transcripts fine
+    prompt = SUMMARY_PROMPT.format(transcript=transcript)
     try:
         result = subprocess.run(
             ["ollama", "run", model],
