@@ -29,7 +29,7 @@ TEMP_DIR = Path("/tmp/yt-transcripts")
 
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "mistral:7b")
 VIDEOS_PER_CHANNEL = int(os.environ.get("VIDEOS_PER_CHANNEL", "5"))
-MAX_TOTAL_VIDEOS = int(os.environ.get("MAX_TOTAL_VIDEOS", "30"))
+MAX_TOTAL_VIDEOS = int(os.environ.get("MAX_TOTAL_VIDEOS", "10000"))  # Effectively unlimited by default
 MAX_AGE_DAYS = int(os.environ.get("MAX_AGE_DAYS", "14"))
 REQUEST_DELAY = float(os.environ.get("REQUEST_DELAY", "3.0"))
 TIER_FILTER = os.environ.get("TIER_FILTER", "tier1,tier2")
