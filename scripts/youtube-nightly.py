@@ -182,9 +182,10 @@ def get_transcript(video_id: str, url: str) -> str | None:
 
 # --- Smart summarisation with routing ---
 
-# Thresholds (in chars, ~4 chars per token)
-OLLAMA_CHUNK_SIZE = 60_000      # ~15k tokens — safe for mistral:7b
-GEMINI_DIRECT_THRESHOLD = 500_000  # Under this → Gemini can handle in one shot
+# Thresholds (in chars, ~1000 chars per minute of video)
+OLLAMA_CHUNK_SIZE = 15_000      # ~15 minutes per chunk — safe for mistral:7b
+GEMINI_DIRECT_THRESHOLD = 120_000  # Under 2hrs → Gemini handles in one shot
+MAX_AUTO_LENGTH = 120_000       # Over 2hrs → flag to Tess, skip auto processing
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 
 CHUNK_SUMMARY_PROMPT = """You are extracting key points from one section (chunk {n} of {total}) of a YouTube video transcript.
@@ -299,22 +300,16 @@ def summarise(transcript: str, model: str) -> tuple[str, str]:
     """
     length = len(transcript)
 
+    # Note: MAX_AUTO_LENGTH guard runs before summarise() is called.
+    # Anything reaching here is ≤2 hours.
     if length <= OLLAMA_CHUNK_SIZE:
-        print(f"   📊 {length:,} chars → Ollama single pass")
+        print(f"   📊 {length:,} chars → Ollama single pass (~{length//1000} min)")
         return summarise_with_ollama(transcript, model), "ollama-single"
 
-    elif length <= GEMINI_DIRECT_THRESHOLD:
-        print(f"   📊 {length:,} chars → Ollama chunked + Gemini merge")
-        return summarise_chunked(transcript, model), "ollama-chunked+gemini"
-
     else:
-        print(f"   📊 {length:,} chars → Gemini direct (large context)")
-        summary = summarise_with_gemini(transcript)
-        if summary.startswith("[Gemini"):
-            # Gemini failed — fall back to chunked
-            print(f"   ⚠️  Gemini direct failed, falling back to chunked")
-            return summarise_chunked(transcript, model), "ollama-chunked+gemini-fallback"
-        return summary, "gemini-direct"
+        # 15 min–2 hr: Ollama chunked → Gemini merge
+        print(f"   📊 {length:,} chars → Ollama chunked + Gemini merge (~{length//1000} min)")
+        return summarise_chunked(transcript, model), "ollama-chunked+gemini"
 
 
 # --- Channel video fetching ---
@@ -401,6 +396,15 @@ def process_video(video_id: str, title: str, channel_name: str, model: str) -> d
         print(f"     ❌ No transcript available")
         return {"status": "failed", "id": video_id, "title": title, "reason": "no transcript"}
     
+    # Flag videos over 2 hours for manual review — too long for auto workflow
+    if len(transcript) > MAX_AUTO_LENGTH:
+        est_mins = len(transcript) // 1000
+        print(f"     ⏱️  Video too long (~{est_mins} min) — flagged for manual review")
+        flag_file = WORKSPACE / "research" / "flagged-long-videos.md"
+        with open(flag_file, "a") as ff:
+            ff.write(f"- [{title}](https://www.youtube.com/watch?v={video_id}) — **{channel_name}** (~{est_mins} min) — flagged {datetime.now().strftime('%Y-%m-%d')}\n")
+        return {"status": "flagged", "id": video_id, "title": title, "reason": f"~{est_mins} min video — manual review needed"}
+    
     print(f"     🤖 Summarising ({len(transcript):,} chars)...")
     summary, method = summarise(transcript, model)
     
@@ -424,6 +428,7 @@ def generate_digest(processed_today: list[dict], spam_reports: list[dict], chann
     filtered = [r for r in processed_today if r.get("status") == "filtered"]
     skipped = [r for r in processed_today if r.get("status") == "skipped"]
     failed = [r for r in processed_today if r.get("status") == "failed"]
+    flagged = [r for r in processed_today if r.get("status") == "flagged"]
 
     date_str = datetime.now().strftime("%Y-%m-%d")
     DIGEST_DIR.mkdir(parents=True, exist_ok=True)
@@ -431,7 +436,12 @@ def generate_digest(processed_today: list[dict], spam_reports: list[dict], chann
     
     with open(digest_file, "w") as f:
         f.write(f"# YouTube Intelligence Digest — {date_str}\n\n")
-        f.write(f"**Processed:** {len(done)} | **Filtered out:** {len(filtered)} | **Skipped (seen):** {len(skipped)} | **Failed:** {len(failed)}\n\n")
+        f.write(f"**Processed:** {len(done)} | **Filtered out:** {len(filtered)} | **Skipped (seen):** {len(skipped)} | **Failed:** {len(failed)} | **Flagged (too long):** {len(flagged)}\n\n")
+        if flagged:
+            f.write("## ⏱️ Long Videos Flagged for Manual Review\n\n")
+            for v in flagged:
+                f.write(f"- [{v['title']}](https://www.youtube.com/watch?v={v['id']}) — {v.get('reason','')}\n")
+            f.write("\n_These are over 2 hours. Review and process manually if worth it._\n\n")
         
         if spam_reports:
             f.write("## ⚠️ High-Volume Channel Alerts\n\n")
