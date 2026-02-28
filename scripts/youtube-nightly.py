@@ -226,12 +226,13 @@ def summarise_with_ollama(transcript: str, model: str) -> str:
         env["OLLAMA_KEEP_ALIVE"] = "-1"  # Keep model in VRAM for duration of pipeline
         result = subprocess.run(
             ["ollama", "run", model],
-            input=prompt, capture_output=True, text=True, timeout=300,
+            input=prompt, capture_output=True, text=True, timeout=600,
             env=env
         )
         return result.stdout.strip() if result.stdout.strip() else f"[Empty output]\n\nStdErr: {result.stderr[:500]}"
     except subprocess.TimeoutExpired:
-        return "[Ollama timed out after 5 minutes]"
+        print("     ⏱️  Ollama timed out — skipping video")
+        return "[Ollama timed out — video skipped]"
     except Exception as e:
         return f"[Ollama failed: {e}]"
 
@@ -242,7 +243,7 @@ def summarise_with_gemini(transcript: str) -> str:
     try:
         result = subprocess.run(
             ["openclaw", "ask", "--model", GEMINI_MODEL, "--no-stream", prompt],
-            capture_output=True, text=True, timeout=300
+            capture_output=True, text=True, timeout=600
         )
         if result.stdout.strip():
             return result.stdout.strip()
@@ -265,7 +266,7 @@ def summarise_chunked(transcript: str, model: str) -> str:
         try:
             result = subprocess.run(
                 ["ollama", "run", model],
-                input=prompt, capture_output=True, text=True, timeout=300
+                input=prompt, capture_output=True, text=True, timeout=600
             )
             chunk_summaries.append(result.stdout.strip() or "[empty]")
         except Exception as e:
@@ -280,7 +281,7 @@ def summarise_chunked(transcript: str, model: str) -> str:
     try:
         result = subprocess.run(
             ["openclaw", "ask", "--model", GEMINI_MODEL, "--no-stream", merge_prompt],
-            capture_output=True, text=True, timeout=300
+            capture_output=True, text=True, timeout=600
         )
         if result.stdout.strip():
             return result.stdout.strip()
