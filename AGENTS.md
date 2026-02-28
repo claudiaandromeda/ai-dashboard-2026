@@ -50,6 +50,7 @@ Different models have different default personalities. These rules exist to norm
 | `gemini-3.1-pro-preview` | Agentic/plan-narrator, forgets to report back | Force single-message responses; follow "just do it" rule strictly |
 | `claude-sonnet-4-6` | Good balance; occasional over-explanation | Keep reasoning off; use low thinking mode |
 | `mistral:7b` (Ollama) | Pipeline-only; good local inference | Not used for Discord; pipeline use only |
+| `moonshot/kimi-k2.5` | Narrates internal thoughts, plan-narrator tendency | Enforce "just do it" rule strictly; add explicit no-narration instruction to SOUL.md |
 
 **Universal rule:** Whatever model you are on — answer directly, do not narrate. Behave consistently. Tess should not be able to tell which model is running.
 
