@@ -19,6 +19,16 @@ import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+# Load .env file if present (for GEMINI_API_KEY etc.)
+_env_file = Path(__file__).parent.parent.parent.parent / ".openclaw" / ".env"
+if not _env_file.exists():
+    _env_file = Path.home() / ".openclaw" / ".env"
+if _env_file.exists():
+    for _line in _env_file.read_text().splitlines():
+        if _line.strip() and not _line.startswith("#") and "=" in _line:
+            _k, _v = _line.split("=", 1)
+            os.environ.setdefault(_k.strip(), _v.strip())
+
 # --- Config ---
 WORKSPACE = Path(__file__).parent.parent
 CHANNELS_FILE = WORKSPACE / "research" / "youtube-channels.json"
@@ -237,20 +247,39 @@ def summarise_with_ollama(transcript: str, model: str) -> str:
         return f"[Ollama failed: {e}]"
 
 
+def call_gemini(prompt: str) -> str | None:
+    """Call Gemini via Google GenAI SDK or REST API. Returns text or None on failure."""
+    import os
+    api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        return None
+    try:
+        import google.generativeai as genai
+        genai.configure(api_key=api_key)
+        model = genai.GenerativeModel(GEMINI_MODEL)
+        response = model.generate_content(prompt)
+        return response.text.strip() if response.text else None
+    except ImportError:
+        pass
+    # Fallback: raw REST API
+    try:
+        import urllib.request, json
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={api_key}"
+        body = json.dumps({"contents": [{"parts": [{"text": prompt}]}]}).encode()
+        req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            data = json.loads(r.read())
+        return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+    except Exception as e:
+        print(f"   ⚠️  Gemini REST failed: {e}")
+        return None
+
+
 def summarise_with_gemini(transcript: str) -> str:
     """Single-pass Gemini summarisation — handles up to ~4M chars"""
     prompt = SUMMARY_PROMPT.format(transcript=transcript)
-    try:
-        result = subprocess.run(
-            ["openclaw", "ask", "--model", GEMINI_MODEL, "--no-stream", prompt],
-            capture_output=True, text=True, timeout=600
-        )
-        if result.stdout.strip():
-            return result.stdout.strip()
-        # Fallback: try via python google SDK if installed
-        return f"[Gemini CLI failed: {result.stderr[:300]}]"
-    except Exception as e:
-        return f"[Gemini failed: {e}]"
+    result = call_gemini(prompt)
+    return result if result else "[Gemini unavailable]"
 
 
 def summarise_chunked(transcript: str, model: str) -> str:
@@ -278,15 +307,9 @@ def summarise_chunked(transcript: str, model: str) -> str:
         f"**Chunk {i+1}/{total}:**\n{s}" for i, s in enumerate(chunk_summaries)
     )
     merge_prompt = MERGE_PROMPT.format(total=total, summaries=merged_input)
-    try:
-        result = subprocess.run(
-            ["openclaw", "ask", "--model", GEMINI_MODEL, "--no-stream", merge_prompt],
-            capture_output=True, text=True, timeout=600
-        )
-        if result.stdout.strip():
-            return result.stdout.strip()
-    except Exception as e:
-        pass
+    merged = call_gemini(merge_prompt)
+    if merged:
+        return merged
 
     # If Gemini merge fails, just concatenate chunk summaries
     print(f"   ⚠️  Gemini merge failed, concatenating chunk summaries")
