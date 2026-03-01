@@ -410,6 +410,74 @@
       "created": "2026-02-26",
       "last_updated": "2026-02-26",
       "notes": "Video IDs from the run are the 47 most recent files in research/summaries/ (processed 2026-02-26 23:xx)."
+    },
+    {
+      "id": "c033",
+      "title": "Test candidate models before adding to fallback chain",
+      "description": "Before deepseek-chat, mistral-small, or any untested model is added to either bot's fallback chain: run a dedicated test session in Discord to evaluate response quality, verbosity, rule-following, and behaviour consistency. Only promote to fallback after passing. Current approved fallback order: gemini-3.1-pro-preview \u2192 haiku \u2192 kimi-k2.5 \u2192 mistral-large \u2192 sonnet.",
+      "status": "pending",
+      "priority": "medium",
+      "deadline": null,
+      "next_action_date": null,
+      "source": "Tess conversation 2026-02-27",
+      "category": "infrastructure",
+      "created": "2026-02-27",
+      "last_updated": "2026-02-27",
+      "notes": "Models to test: deepseek-chat, mistral-small, minimax-m2.5. Test approach: give each a story/question/technical task in Discord, evaluate output quality and rule compliance."
+    },
+    {
+      "id": "c034",
+      "title": "Bot-in-a-Box as paid service \u2014 fallback revenue stream",
+      "description": "When bandwidth allows: offer OpenClaw deployment (Bot in a Box) as paid service. \u00a3300-500 setup + \u00a350-100/month. Target: local SMBs, estate agents, dog sitters, bookkeepers. Demo = Clive. Template exists in shared-knowledge/bots/template/. Elliot can automate VPS provisioning. This is a FALLBACK to main RL projects (DVLT partnership etc) \u2014 not a priority until David has capacity.",
+      "status": "parked",
+      "priority": "low",
+      "deadline": null,
+      "next_action_date": null,
+      "source": "Tess conversation 2026-02-27 + RoboNuggets 336 use cases video",
+      "category": "revenue",
+      "created": "2026-02-27",
+      "last_updated": "2026-02-27",
+      "notes": "Full analysis at research/openclaw-money-opportunities.md. Elliot offered to script full deployment automation (provision VPS, install OpenClaw, apply template = zero manual fulfillment). Lead gen automation also possible. Park until DVLT + other RL priorities are resolved.\n\nYouTube Intelligence Pipeline = key differentiator to bundle with Bot-in-a-Box:\n- Nightly AI/automation digest from 42+ channels\n- Local Ollama (free) + Gemini merge for long videos\n- GPU-accelerated on Titan X (idle between videos = normal)\n- --force flag for re-processing old summaries\n- Output: Word doc with categorised insights (Features/Skills/Money/Integrations)\n- Skill package: scripts/youtube-nightly.py + research/ folder structure + cron job\n- Unique selling point: clients get AI-curated intelligence on their industry nightly, fully autonomous"
+    },
+    {
+      "id": "c035",
+      "title": "Test Qwen3-TTS on Elliot's GPU tonight",
+      "description": "Install and test Qwen3-TTS (1.7B model) on Elliot's Titan X. Clone Tess's voice from a 30-sec sample. Compare output quality vs ElevenLabs. If good: integrate into the AI clone stack.",
+      "status": "completed",
+      "priority": "high",
+      "deadline": "2026-02-28",
+      "source": "Tess conversation 2026-02-27",
+      "category": "ai-cloning",
+      "created": "2026-02-27",
+      "last_updated": "2026-03-01",
+      "completed_date": "2026-03-01",
+      "notes": "COMPLETED 2026-03-01. Qwen3-TTS tested with Tyrelle voice clone. ICL 0.6B output approved by Tess. 1.7B ICL output also generated (31MB, ~15:46 GMT). x_vector_only rejected (too Jamaican). Next step: F5-TTS on Mac mini for better quality."
+    },
+    {
+      "id": "c036",
+      "title": "Install and test Duix.Heygem (self-hosted HeyGen alternative)",
+      "description": "Docker install of Duix.Heygem on Elliot's Linux machine. Test AI video avatar creation. If working: document pipeline for Bot-in-a-Box.",
+      "status": "pending",
+      "priority": "high",
+      "deadline": "2026-02-28",
+      "source": "Tess conversation 2026-02-27",
+      "category": "ai-cloning",
+      "created": "2026-02-27",
+      "last_updated": "2026-02-27",
+      "notes": "GitHub: duixcom/Duix.Heygem. 11k stars. Needs Docker, 100GB storage, RTX 4070+ GPU. Fully offline. Replaces HeyGen ($29/mo). Do AFTER Qwen3-TTS test."
+    },
+    {
+      "id": "c037",
+      "title": "AI clone full stack for Tess \u2014 autonomous social media",
+      "description": "Build the complete: Tess video recording \u2192 Duix.Heygem avatar \u2192 Qwen3-TTS voice \u2192 Claude script \u2192 auto-post pipeline. Target: TikTok + LinkedIn. Fully autonomous, zero API cost.",
+      "status": "pending",
+      "priority": "high",
+      "deadline": null,
+      "source": "Tess conversation 2026-02-27",
+      "category": "ai-cloning",
+      "created": "2026-02-27",
+      "last_updated": "2026-02-27",
+      "notes": "Blocked on: c035 (Qwen3-TTS test), c036 (Duix.Heygem test), AI Samson channel research (overnight run). Strategy: 80% AI clone posts + 20% real Tess. Monetisation: leads, followers, authority building."
     }
   ]
 }
