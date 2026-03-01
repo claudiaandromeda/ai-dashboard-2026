@@ -323,6 +323,19 @@
       "handle": "@CharlieChang",
       "priority": "tier2",
       "notes": "15-min OpenClaw beginner guide. Also covers broader AI tools \u2014 filter for OpenClaw content."
+    },
+    {
+      "name": "AI Samson",
+      "url": "https://www.youtube.com/@aisamsonreal",
+      "tier": "tier1",
+      "focus": "AI cloning, social media automation, personal brand AI",
+      "notes": "Tess priority - AI self-cloning for social media. Process all videos backwards from most recent."
+    },
+    {
+      "name": "Openclaw Labs",
+      "url": "https://www.youtube.com/@Openclawlabs",
+      "tier": "tier1",
+      "notes": "OpenClaw-specific tutorials \u2014 memory, agents, config. High relevance."
     }
   ],
   "to_confirm": [
