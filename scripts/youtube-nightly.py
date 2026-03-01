@@ -228,23 +228,38 @@ CHUNK SUMMARIES:
 """
 
 
+def run_ollama(prompt: str, model: str, timeout: int = 600, max_retries: int = 2) -> str:
+    """Run Ollama with retry logic. Kills hung processes between retries."""
+    env = os.environ.copy()
+    env["OLLAMA_KEEP_ALIVE"] = "-1"
+    for attempt in range(1, max_retries + 1):
+        try:
+            result = subprocess.run(
+                ["ollama", "run", model],
+                input=prompt, capture_output=True, text=True, timeout=timeout, env=env
+            )
+            if result.stdout.strip():
+                return result.stdout.strip()
+            if attempt < max_retries:
+                print(f"     ⚠️  Empty Ollama output (attempt {attempt}/{max_retries}), retrying...")
+                time.sleep(5)
+                continue
+            return f"[Empty output]\n\nStdErr: {result.stderr[:500]}"
+        except subprocess.TimeoutExpired:
+            print(f"     ⏱️  Ollama timed out (attempt {attempt}/{max_retries})")
+            subprocess.run(["pkill", "-f", "ollama run"], capture_output=True)
+            time.sleep(10)
+            if attempt >= max_retries:
+                return "[Ollama timed out after retries — video skipped]"
+        except Exception as e:
+            return f"[Ollama failed: {e}]"
+    return "[Ollama failed after retries]"
+
+
 def summarise_with_ollama(transcript: str, model: str) -> str:
     """Single-pass Ollama summarisation for short transcripts"""
     prompt = SUMMARY_PROMPT.format(transcript=transcript)
-    try:
-        env = os.environ.copy()
-        env["OLLAMA_KEEP_ALIVE"] = "-1"  # Keep model in VRAM for duration of pipeline
-        result = subprocess.run(
-            ["ollama", "run", model],
-            input=prompt, capture_output=True, text=True, timeout=600,
-            env=env
-        )
-        return result.stdout.strip() if result.stdout.strip() else f"[Empty output]\n\nStdErr: {result.stderr[:500]}"
-    except subprocess.TimeoutExpired:
-        print("     ⏱️  Ollama timed out — skipping video")
-        return "[Ollama timed out — video skipped]"
-    except Exception as e:
-        return f"[Ollama failed: {e}]"
+    return run_ollama(prompt, model)
 
 
 def call_gemini(prompt: str) -> str | None:
@@ -293,11 +308,7 @@ def summarise_chunked(transcript: str, model: str) -> str:
         print(f"   🔄 Chunk {n}/{total}...")
         prompt = CHUNK_SUMMARY_PROMPT.format(n=n, total=total, transcript=chunk)
         try:
-            result = subprocess.run(
-                ["ollama", "run", model],
-                input=prompt, capture_output=True, text=True, timeout=600
-            )
-            chunk_summaries.append(result.stdout.strip() or "[empty]")
+            chunk_summaries.append(run_ollama(prompt, model) or "[empty]")
         except Exception as e:
             chunk_summaries.append(f"[chunk {n} failed: {e}]")
 
