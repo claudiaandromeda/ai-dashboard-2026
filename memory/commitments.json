@@ -129,7 +129,7 @@
     {
       "id": "c009",
       "description": "Set up Notion project management \u2014 get API key, create 5 core databases, migrate projects",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium",
       "deadline": null,
       "next_action_date": null,
@@ -137,7 +137,8 @@
       "category": "infrastructure",
       "created": "2026-02-15",
       "last_updated": "2026-02-23",
-      "notes": "Docs: projects/PROJECT_MANAGEMENT_SYSTEM_RECOMMENDATION.md, projects/NOTION_SETUP_CHECKLIST.md"
+      "notes": "Docs: projects/PROJECT_MANAGEMENT_SYSTEM_RECOMMENDATION.md, projects/NOTION_SETUP_CHECKLIST.md \u2014 COMPLETED 2026-03-01. Alvearium workspace fully populated: ~52 tasks, ~24 projects, ~19 team, ~23 decisions, ~26 KB entries. Mem0 active on both bots.",
+      "completed_date": "2026-03-01"
     },
     {
       "id": "c010",
@@ -478,6 +479,66 @@
       "created": "2026-02-27",
       "last_updated": "2026-02-27",
       "notes": "Blocked on: c035 (Qwen3-TTS test), c036 (Duix.Heygem test), AI Samson channel research (overnight run). Strategy: 80% AI clone posts + 20% real Tess. Monetisation: leads, followers, authority building."
+    },
+    {
+      "id": "c038",
+      "title": "Push education files to Elliot's workspace via SSH",
+      "status": "pending",
+      "priority": "medium",
+      "deadline": null,
+      "next_action_date": "2026-03-02",
+      "category": "infrastructure",
+      "created": "2026-03-01",
+      "last_updated": "2026-03-01",
+      "notes": "Elliot's workspace lacks context files. Help him grow up faster."
+    },
+    {
+      "id": "c039",
+      "title": "Create filtered Notion views",
+      "status": "pending",
+      "priority": "medium",
+      "deadline": null,
+      "next_action_date": "2026-03-02",
+      "category": "projects",
+      "created": "2026-03-01",
+      "last_updated": "2026-03-01",
+      "notes": "Filters: Thomas, Ideas, Completed, David's Tasks, Bot Tasks"
+    },
+    {
+      "id": "c040",
+      "title": "Wire Notion summary into Mission Control dashboard",
+      "status": "pending",
+      "priority": "medium",
+      "deadline": null,
+      "next_action_date": "2026-03-02",
+      "category": "projects",
+      "created": "2026-03-01",
+      "last_updated": "2026-03-01",
+      "notes": "Daily task summary feed into Mission Control"
+    },
+    {
+      "id": "c041",
+      "title": "Resume TyrelleAI voice cloning work",
+      "status": "pending",
+      "priority": "high",
+      "deadline": null,
+      "next_action_date": "2026-03-02",
+      "category": "projects",
+      "created": "2026-03-01",
+      "last_updated": "2026-03-01",
+      "notes": "Tess's next stated priority. Kling 3.0 + F5-TTS + Duix.Heygem stack."
+    },
+    {
+      "id": "c042",
+      "title": "Investigate daily log generator cron error 7a1082d9",
+      "status": "pending",
+      "priority": "low",
+      "deadline": null,
+      "next_action_date": "2026-03-02",
+      "category": "infrastructure",
+      "created": "2026-03-01",
+      "last_updated": "2026-03-01",
+      "notes": "Cron ID 7a1082d9 throwing errors \u2014 needs diagnosis"
     }
   ]
 }
