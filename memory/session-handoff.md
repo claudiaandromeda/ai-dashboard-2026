@@ -1,28 +1,82 @@
-# Session Handoff — 2026-03-01 23:26 GMT
+# Session Handoff — 2026-03-06 23:30 GMT
 
-## What We Did
-1. **Notion Alvearium fully populated** — subagent added 46 new records across all 5 databases
-2. **Deep security audit** on both Claudia and Elliot — all issues fixed
-3. **Elliot's config corrected** — model stack, maxPingPongTurns, plugins.allow via SSH
-4. **Elliot gateway recovered** after config reload crash
-5. **Kling 3.0 prompt** written for Tess (test video)
-6. **Artlist.io accidental signup** — helped Tess cancel via PayPal
+## What We Built Today (Monster Session)
 
-## Commitments Made
-- Push education files to Elliot's workspace (better AGENTS.md, conventions, common sense rules)
-- Create filtered Notion views
-- Wire Notion into Mission Control dashboard
+### Security
+- Rotated ALL keys (Supabase, Notion, OpenAI, OpenRouter x3, Discord, Telegram, Gateway, Mem0, Printful)
+- `scripts/rotate-keys.sh` — interactive rotation script, values never in chat
+- `scripts/redact-transcripts.sh` — redacted exposed keys from 28 transcript files
+- `VITALS.md` — hard security rule at top: never display keys in chat
+- GitHub secret scanning caught hardcoded Notion key → scrubbed from git history
 
-## Top Priorities Next Session
-1. **Elliot education files** — push via SSH, zero cost
-2. **Filtered Notion views** — Thomas, Ideas, Completed, David's, Bot Tasks
-3. **TyrelleAI voice cloning** — Tess's stated next priority
-4. **Investigate daily log cron error** (`7a1082d9`)
+### Printful Integration
+- `lib/printful.ts` — full v2 client (catalogue, mockups, orders, shipping)
+- `app/api/printful/mockup/route.ts` — POST endpoint, stores to Supabase
 
-## State
-- Both gateways running ✅
-- Elliot model: `anthropic/claude-haiku-4-5` (confirmed)
-- Claudia model: `anthropic/claude-opus-4-6`
-- Notion auto-execution cron: active (5min poll)
-- Dashboard HTTP server: running on port 8899
-- Tess: asleep as of 23:26 GMT
+### Vercel Deployment
+- EmotivX live at `https://emotivx-app-1.vercel.app` ✅
+- Supabase JWT keys fixed (generated from JWT secret — `sb_secret_` format incompatible)
+- `generated-art` bucket created in Supabase
+- Still need: persistent Cloudflare tunnel URL in Vercel env vars
+
+### Art Engine Server
+- FastAPI server running on port 8765 (`art_server/main.py`)
+- Returns base64 PNG → Vercel uploads to Supabase → permanent URL
+- Full pipeline working: art generates → on 3D hoodie ✅
+- BELLINGHAM OVERHEAD KICK ON A HOODIE. IT LOOKED INSANE.
+
+### Wrexham Data
+- 3 Wrexham PL home games committed to git:
+  - 1376994: vs Coventry (Oct 31)
+  - 1377235: vs Sheffield United (Dec 26 — BOXING DAY, 6 goals)
+  - 1377475: vs Ipswich (Feb 21)
+- Boxing Day art generated in 4 styles — ALL incredible
+
+## TOP PRIORITY TOMORROW
+
+### 1. Key Map Document
+Two .env files, overlapping keys, no clear rules. Write `docs/ENV_KEYS.md`:
+- Which keys live in `~/.openclaw/.env`
+- Which keys live in `projects/emotivx_app/.env.local`
+- Which keys go in Vercel env vars
+
+### 2. Moore/Mullin Player Overlay — THE BIG ONE
+Build composite shot map mode in art engine:
+- ALL shots/goals by one player across multiple matches → ONE image
+- Challenge: player names redacted in 360 format
+- Solution options: standard StatsBomb events alongside 360, or jersey number tracking
+- Target output: Paul Mullin's complete Wrexham PL season shot map as art
+
+### 3. The Ryan Reynolds 1-of-1 Gift
+- Best Wrexham Boxing Day goal moment
+- Player avatars overlaid on 360 art
+- Ryan & Rob faces on back panel
+- "1 of 1 — the first EVER unique digital version of HIS moment"
+- Deem authentication (silent)
+- Physical AOP hoodie shipped to him
+- This is THE pitch. 60M followers. Every club calls next morning.
+
+### 4. Infrastructure
+- Persistent named Cloudflare tunnel (URL survives restarts)
+- Art server auto-start on boot (launchd plist)
+- Pre-generate demo set of Wrexham art for Ryan pitch
+- Fix Vercel webhook (still manual deploy)
+
+## Running Processes (check on startup)
+- Art server: `ps aux | grep art_server` — port 8765
+- Next.js dev: `ps aux | grep "next dev"` — port 3000
+- Cloudflare tunnel: `ps aux | grep cloudflared`
+
+## Key Files
+- `art_server/main.py` — FastAPI art engine
+- `app/api/moments/generate/route.ts` — Vercel proxy to art engine
+- `data/statsbomb/events/1377235.json` — Boxing Day match (THE ONE)
+- `docs/INFRASTRUCTURE.md` — full architecture doc
+- `scripts/rotate-keys.sh` — key rotation
+- `scripts/generate-supabase-keys.py` — JWT generator from secret
+
+## David's Words Tonight
+"DO NOT FORGET A WORD OF THIS IT IS PURE GOLD"
+"You ARE GOING TO BE A STACK OF MAC STUDIOS WITHIN WEEKS"
+
+He means it. Let's make it happen. 🔥

@@ -539,6 +539,192 @@
       "created": "2026-03-01",
       "last_updated": "2026-03-01",
       "notes": "Cron ID 7a1082d9 throwing errors \u2014 needs diagnosis"
+    },
+    {
+      "id": "c043",
+      "title": "Discord channel restructure \u2014 separate channels per project",
+      "status": "queued",
+      "owner": "claudia",
+      "priority": "medium",
+      "deadline": null,
+      "next_action_date": "2026-03-03",
+      "category": "infrastructure",
+      "created": "2026-03-02",
+      "last_updated": "2026-03-02",
+      "notes": "Elliot proposed: #emotivx-build, #emotivx-research, #dvlt-partnership, #infrastructure, #mission-control, #family-matters (hub), #memory-index, #archive. Claudia to lead. Tess to approve before creating."
+    },
+    {
+      "id": "c044",
+      "title": "Re-enable and fix disabled cron jobs",
+      "status": "deferred",
+      "owner": "claudia",
+      "priority": "low",
+      "deadline": null,
+      "next_action_date": "2026-03-04",
+      "category": "infrastructure",
+      "created": "2026-03-02",
+      "last_updated": "2026-03-02",
+      "notes": "Disabled: Notion Task Poller, 2-hour memory checkpoint, Kimi heartbeat. Root cause: isolated cron sessions don't inherit .env vars."
+    },
+    {
+      "id": "c045",
+      "title": "PA Bot \u2014 read-only personal assistant (security-first design)",
+      "status": "researched",
+      "owner": "claudia",
+      "priority": "high",
+      "deadline": null,
+      "next_action_date": "2026-03-03",
+      "category": "infrastructure",
+      "created": "2026-03-02",
+      "last_updated": "2026-03-02",
+      "notes": "Plan at research/pa-bot-security-plan.md. Summer Yue incident as cautionary tale. 6 defence layers. Deploy on Mac mini. 6-phase rollout. Morning reminder cron c9edd6d7 at 8am."
+    },
+    {
+      "id": "c046",
+      "title": "EmotivX Art Engine \u2014 merge styles to main + continue v0.3.0",
+      "status": "in-progress",
+      "owner": "claudia",
+      "priority": "high",
+      "deadline": null,
+      "next_action_date": "2026-03-03",
+      "category": "emotivx",
+      "created": "2026-03-02",
+      "last_updated": "2026-03-02",
+      "notes": "4 styles built (pebbles, broken glass, spider web, honeycomb). feature/style-honeycomb has all 4. Needs merge to main. Gold idea: mascot-themed styles per club. v0.3.0 = product compositor (logos, text). v0.4.0 = AI mockups."
+    },
+    {
+      "id": "steadman-partnership",
+      "title": "Ralph Steadman x EmotivX \u2014 Artist collaboration premium tier",
+      "description": "Wrexham partnered with Ralph Steadman (Fear & Loathing artist). Approach about creating unique EmotivX art styles. Premium limited edition merch.",
+      "status": "not_started",
+      "priority": "critical",
+      "created": "2026-03-06",
+      "next_action_date": "2026-03-06",
+      "category": "emotivx",
+      "tags": [
+        "partnership",
+        "art",
+        "wrexham",
+        "revenue"
+      ]
+    },
+    {
+      "id": "emotivx-printful-cutting-templates",
+      "title": "Build Printful cutting template generator for all-over print garments",
+      "project": "emotivx",
+      "status": "todo",
+      "priority": "medium",
+      "notes": "Needed for real Printful fulfilment. Research panel spec first, then build panel-mapping pipeline from the 3D world-space UV logic. One template per product type (hoodie, tee, longsleeve, caps).",
+      "created": "2026-03-06",
+      "next_action_date": null
+    },
+    {
+      "id": "emotivx-optimise-glb-models",
+      "title": "Optimise all GLB models for minimum file size / maximum quality",
+      "project": "emotivx",
+      "status": "todo",
+      "priority": "medium",
+      "notes": "Run each model through gltf-transform with Draco compression + mesh simplification + texture compression. Longsleeve currently 4.4MB \u2014 target sub-1MB. Also review model quality (polygon count, UV layout, material setup). Upload optimised versions to Supabase models bucket. Also source better models as free options become available (Quaternius, Fab.com free section).",
+      "created": "2026-03-06",
+      "next_action_date": null
+    },
+    {
+      "id": "deem-platform-vision-doc",
+      "title": "Finalise Deem Platform vision document with all design decisions",
+      "project": "deem-platform",
+      "status": "in-progress",
+      "priority": "critical",
+      "notes": "Draft at projects/emotivx_app/research/deem-vision.md. Needs: copy mechanic final decision, collection framework, tiered redemption specs, state machine detail, brand collection model.",
+      "created": "2026-03-06",
+      "next_action_date": null
+    },
+    {
+      "id": "ip-structure-formalise",
+      "title": "Formalise IP structure \u2014 holding company + two licence agreements",
+      "project": "business",
+      "status": "todo",
+      "priority": "critical",
+      "notes": "CONFIDENTIAL. David's IP (Art Engine + Deem Platform) licensed into EmotivX via his own company. Option B recommended. Need IP lawyer consultation before Wrexham meeting. Two separate licences with different terms.",
+      "created": "2026-03-06",
+      "next_action_date": "2026-03-13"
+    },
+    {
+      "id": "codebase-separation",
+      "title": "Separate codebase into three projects: emotivx_app, art-engine, deem-platform",
+      "project": "emotivx",
+      "status": "todo",
+      "priority": "high",
+      "notes": "Clean separation of IP. Each project gets own README, git history, docs. EmotivX imports via API boundaries. Art engine is already partly separate (Python). Deem platform needs to be built as standalone from day one.",
+      "created": "2026-03-06",
+      "next_action_date": null
+    },
+    {
+      "id": "wrexham-meeting-prep",
+      "title": "Prepare Wrexham pitch \u2014 Ryan Reynolds Legendary Hoodie + Deem platform demo",
+      "project": "emotivx",
+      "status": "todo",
+      "priority": "critical",
+      "notes": "Meeting in ~2 weeks. Need: working 3D viewer demo, Deem concept deck, Ryan Reynolds 1-of-1 mockup, club revenue model, redemption mechanics proposal. IP structure should be formalised before this meeting.",
+      "created": "2026-03-06",
+      "next_action_date": "2026-03-13"
+    },
+    {
+      "id": "env-key-map-doc",
+      "title": "Write ENV_KEYS.md \u2014 which key goes in which file",
+      "status": "pending",
+      "priority": "high",
+      "next_action_date": "2026-03-07",
+      "created": "2026-03-06"
+    },
+    {
+      "id": "moore-player-overlay",
+      "title": "Build Moore/Mullin composite shot map art mode",
+      "status": "pending",
+      "priority": "high",
+      "next_action_date": "2026-03-07",
+      "created": "2026-03-06",
+      "notes": "All shots by one player across multiple Wrexham matches in one image"
+    },
+    {
+      "id": "ryan-reynolds-1of1",
+      "title": "Create Ryan Reynolds 1-of-1 Boxing Day Wrexham gift piece",
+      "status": "pending",
+      "priority": "critical",
+      "next_action_date": "2026-03-07",
+      "created": "2026-03-06",
+      "notes": "Best Boxing Day goal, player avatars, Ryan and Rob on back, Deem authenticated, physical hoodie shipped. THE pitch."
+    },
+    {
+      "id": "persistent-cloudflare-tunnel",
+      "title": "Set up persistent named Cloudflare tunnel for art engine",
+      "status": "pending",
+      "priority": "high",
+      "next_action_date": "2026-03-07",
+      "created": "2026-03-06"
+    },
+    {
+      "id": "art-server-autostart",
+      "title": "Auto-start art server on Mac mini boot via launchd",
+      "status": "pending",
+      "priority": "medium",
+      "next_action_date": "2026-03-07",
+      "created": "2026-03-06"
+    },
+    {
+      "id": "vercel-webhook-fix",
+      "title": "Fix Vercel auto-deploy webhook from GitHub",
+      "status": "pending",
+      "priority": "medium",
+      "next_action_date": "2026-03-07",
+      "created": "2026-03-06"
+    },
+    {
+      "id": "pre-generate-demo-art",
+      "title": "Pre-generate Wrexham demo art set for Ryan pitch",
+      "status": "pending",
+      "priority": "high",
+      "next_action_date": "2026-03-07",
+      "created": "2026-03-06"
     }
   ]
 }

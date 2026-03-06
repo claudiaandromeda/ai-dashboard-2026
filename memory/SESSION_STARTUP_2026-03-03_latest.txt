@@ -1,0 +1,25 @@
+SESSION STARTUP REPORT
+Generated: 2026-03-03T13:14:42.688295
+Date: 2026-03-03
+
+RESOURCES AVAILABLE
+==================
+Recovery document: /Users/claudia/.openclaw/workspace/memory/FULL_SESSION_RECOVERY_2026-03-03.md
+Conversation log: /Users/claudia/.openclaw/workspace/memory/conversation-logs/2026-03-03_11-09-11-25_art-engine-rebuild.md
+Reasoning logs: 2 blocks
+Daily log: /Users/claudia/.openclaw/workspace/memory/daily/2026-03-03.md
+
+LAST ACTIVITY
+=============
+Conversation: None
+Reasoning: all-reasoning (from 2026-03-03_all-reasoning.md)
+
+INSTRUCTIONS
+============
+1. Read SESSION_START_STRATEGY.md for detailed startup protocol
+2. If recovery_document exists, read it first
+3. Load conversation_log and reasoning_logs
+4. Use grep to search for topics/decisions
+5. Continue work from last saved point
+
+Files location: /Users/claudia/.openclaw/workspace/memory/
