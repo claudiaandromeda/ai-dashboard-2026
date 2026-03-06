@@ -1,3 +1,4 @@
+import os
 #!/usr/bin/env python3
 """Notion Alvearium Deep Population Script"""
 
@@ -6,7 +7,7 @@ import time
 import urllib.request
 import urllib.error
 
-NOTION_KEY = "os.environ.get("NOTION_API_KEY","")"
+NOTION_KEY = os.environ.get("NOTION_API_KEY", "")
 HEADERS = {
     "Authorization": f"Bearer {NOTION_KEY}",
     "Notion-Version": "2022-06-28",
