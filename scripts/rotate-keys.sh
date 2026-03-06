@@ -43,9 +43,9 @@ update_key() {
 
 # ── .env.local (EmotivX app) ─────────────────────────────────
 echo "📁 EmotivX app (.env.local):"
-update_key "$ENV_LOCAL" "NEXT_PUBLIC_SUPABASE_ANON_KEY"  "Supabase Anon Key"
-update_key "$ENV_LOCAL" "SUPABASE_SERVICE_ROLE_KEY"       "Supabase Service Role Key"
-update_key "$ENV_LOCAL" "SUPABASE_ACCESS_TOKEN"           "Supabase Access Token"
+update_key "$ENV_LOCAL" "NEXT_PUBLIC_SUPABASE_ANON_KEY"  "Supabase Publishable Key (was: Anon Key)"
+update_key "$ENV_LOCAL" "SUPABASE_SERVICE_ROLE_KEY"       "Supabase Secret Key (was: Service Role Key)"
+update_key "$ENV_LOCAL" "SUPABASE_ACCESS_TOKEN"           "Supabase Access Token (Account → Access Tokens)"
 update_key "$ENV_LOCAL" "PRINTFUL_API_KEY"                "Printful API Key"
 
 echo ""
