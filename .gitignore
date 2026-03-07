@@ -105,3 +105,4 @@ frontend/build/
 # Database backups
 *.backup
 *.sql
+memory/session-transcripts/
