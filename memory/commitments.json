@@ -725,6 +725,36 @@
       "priority": "high",
       "next_action_date": "2026-03-07",
       "created": "2026-03-06"
+    },
+    {
+      "id": "tier-system",
+      "title": "Implement 5-tier premium merch system with real-world perks",
+      "description": "Build Common/Uncommon/Rare/Epic/Legendary tier system. Epic/Legendary use secondary supplier (embroidered logos, metal moment plates). Real perks: season tickets, tunnel pass, VIP box, meet-and-greet. Full spec at projects/emotivx_app/docs/tier-system-spec.md",
+      "status": "pending",
+      "priority": "critical",
+      "next_action_date": null,
+      "created": "2026-03-09",
+      "category": "emotivx",
+      "notes": "Big feature — 8-week build. Requires: DB schema, admin UI, team admin UI, merch configurator tier selector, secondary supplier integration, perk fulfillment workflow. Pilot with 1 club first. Dependencies: legal review (perk contracts), secondary supplier RFP, metal plate design.",
+      "phases": [
+        "Phase 1: Database + Admin Setup (Week 1-2)",
+        "Phase 2: Team Admin Inventory (Week 2-3)",
+        "Phase 3: Merch Configurator UI (Week 3-4)",
+        "Phase 4: Secondary Supplier Integration (Week 4-6)",
+        "Phase 5: Perk Fulfillment Workflow (Week 6-8)",
+        "Phase 6: Launch (Week 8+)"
+      ]
+    },
+    {
+      "id": "alternative-suppliers-research",
+      "title": "Research alternative suppliers for non-Printful products and premium tiers",
+      "description": "Find suppliers for: (1) phone cases, mugs, caps, prints (Printful doesn't support these well), (2) Epic/Legendary tiers (embroidery + metal plate riveting). Get quotes, lead times, minimum order quantities. Target: UK-based for fast shipping.",
+      "status": "pending",
+      "priority": "high",
+      "next_action_date": null,
+      "created": "2026-03-09",
+      "category": "emotivx",
+      "notes": "Needed for both remaining product types (Quick Win #7 backlog) and tier system. Candidates: custom embroidery shops, metal engravers (Etsy/Alibaba/local), all-in-one premium platforms. Get 3-5 quotes before deciding."
     }
   ]
 }
