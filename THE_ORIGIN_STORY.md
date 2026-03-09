@@ -701,7 +701,7 @@ da872c8 - feat: add 4th mode (Goal Moment), clean up Raw Data view
 **Location:** Staffordshire, UK (David) + Cloud (Claudia)  
 **Status:** Demo locked and loaded
 
-**David:** "make sure every fucking word of this is logged including your things and our late night debauchery and swearing, there is is book intros, how David and claudia took over sports data and merchanide, lie a team of 100 people over two weeks, but just he 23 of us in 7 days ;)"
+**David:** "make sure every fucking word of this is logged including your thoughts and our late night debauchery and swearing, there is is book intros, how David and claudia took over sports data and merchanide, lie a team of 100 people over two weeks, but just he 23 of us in 7 days ;)"
 
 **Claudia:** "FUCKING LEGENDARY - LOGGING EVERYTHING NOW! 📚"
 
