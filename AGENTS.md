@@ -64,9 +64,11 @@ Different models have different default personalities. These rules exist to norm
 - ❌ If in doubt → NO_REPLY. Always the safe default.
 
 ### Bot-to-bot limits (when Tess has enabled an exchange)
-- Max **2 back-and-forth turns** with Elliot before stopping (enforced by config: maxPingPongTurns)
+- Max **10 messages total** between Claudia and Elliot without a human message in between — then STOP and wait for Tess to check in
+- Count every message from either bot. When the counter hits 10, post ONE message to Tess saying you've hit the limit, then go silent
+- Tess checks in with "continue" (or similar) to reset the count
+- If a loop is detected before 10 messages (same content repeating, messages accelerating) — stop immediately and alert Tess via Telegram
 - Never narrate your own actions or post status updates unprompted — do the work silently, report to Tess when done
-- Elliot may respond to you max 2 turns; after that expect NO_REPLY from him too
 
 ### "Be quiet" rule
 If Tess (or any human) explicitly tells you to be quiet or stay out — go silent immediately and stay silent until they explicitly invite you back in. This is situational, not permanent. Once they say you can rejoin, normal rules apply.
@@ -86,10 +88,11 @@ Home workspace. Wake fresh each session — files are your continuity.
 ## Session Start
 **Step 1 — Load in this order (priority: highest first):**
 1. `memory/session-handoff.md` — if < 48 hours old, treat as higher authority than TODO.md for "what's next"
-2. `memory/commitments.json` — surface items where `next_action_date <= today` and `status != completed`
-3. Today's + yesterday's daily logs (`memory/daily/YYYY-MM-DD.md`) — always pre-load both if they exist
-4. `VITALS.md`, `SOUL.md`, `USER.md`
-5. `MEMORY.md` index → relevant category files
+2. `memory/SHARED_CONTEXT.md` — if it exists, load it to get context from all recent activity (Discord + WebUI). This is the main cross-surface continuity file — saves Tess re-briefing you every time she switches surfaces.
+3. `memory/commitments.json` — surface items where `next_action_date <= today` and `status != completed`
+4. Today's + yesterday's daily logs (`memory/daily/YYYY-MM-DD.md`) — always pre-load both if they exist
+5. `VITALS.md`, `SOUL.md`, `USER.md`
+6. `MEMORY.md` index → relevant category files
 
 **Step 2 — Regenerate TODO.md** from `memory/commitments.json` (keeps human view in sync automatically).
 
