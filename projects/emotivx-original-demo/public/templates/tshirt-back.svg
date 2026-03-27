@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" fill="none">
+  <defs>
+    <clipPath id="tshirt-back-print-area">
+      <rect x="200" y="195" width="200" height="300" rx="8"/>
+    </clipPath>
+    <filter id="tshirt-back-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#tshirt-back-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Back neckline (higher, flatter) -->
+      <path d="M252 146 C268 138, 284 134, 300 132 C316 134, 332 138, 348 146" stroke="rgba(255,255,255,0.3)"/>
+      <!-- Collar ribbing -->
+      <path d="M254 142 C270 134, 286 130, 300 128 C314 130, 330 134, 346 142" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+      <!-- Left shoulder + sleeve -->
+      <path d="M252 146 C240 152, 224 158, 208 164 C178 178, 148 196, 128 216 C112 236, 106 258, 108 278 C110 296, 118 310, 132 316 C142 320, 152 316, 160 308 C170 294, 178 274, 186 256 C190 246, 194 238, 196 228"/>
+      <!-- Right shoulder + sleeve -->
+      <path d="M348 146 C360 152, 376 158, 392 164 C422 178, 452 196, 472 216 C488 236, 494 258, 492 278 C490 296, 482 310, 468 316 C458 320, 448 316, 440 308 C430 294, 422 274, 414 256 C410 246, 406 238, 404 228"/>
+
+      <!-- Left sleeve hem -->
+      <path d="M108 275 C114 300, 124 314, 134 314" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+      <!-- Right sleeve hem -->
+      <path d="M492 275 C486 300, 476 314, 466 314" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+
+      <!-- Shoulder seams -->
+      <path d="M252 146 C240 152, 224 158, 208 164" stroke="rgba(255,255,255,0.1)" stroke-width="0.75" stroke-dasharray="5 4"/>
+      <path d="M348 146 C360 152, 376 158, 392 164" stroke="rgba(255,255,255,0.1)" stroke-width="0.75" stroke-dasharray="5 4"/>
+
+      <!-- Body sides -->
+      <path d="M196 228 L190 556 C190 572, 196 580, 208 584"/>
+      <path d="M404 228 L410 556 C410 572, 404 580, 392 584"/>
+      <!-- Hem -->
+      <path d="M208 584 C240 594, 360 594, 392 584"/>
+      <!-- Hem detail -->
+      <path d="M210 578 C250 586, 350 586, 390 578" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+
+      <!-- Yoke seam -->
+      <path d="M196 228 C250 218, 350 218, 404 228" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="6 4"/>
+
+      <!-- Centre back seam -->
+      <line x1="300" y1="134" x2="300" y2="590" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="8 6"/>
+    </g>
+
+    <!-- Print area outline -->
+    <rect x="200" y="195" width="200" height="300" rx="8"
+          stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 4" fill="none"/>
+  </g>
+</svg>

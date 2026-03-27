@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <defs>
+    <clipPath id="hoodie-back-print-area">
+      <rect x="190" y="240" width="220" height="360" rx="8"/>
+    </clipPath>
+    <filter id="hoodie-back-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="18" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#hoodie-back-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Hood outer (back — taller, rounder) -->
+      <path d="M222 185 C220 132, 230 78, 268 58 C284 46, 316 46, 332 58 C370 78, 380 132, 378 185"/>
+      <!-- Hood bottom edge -->
+      <path d="M222 185 C260 198, 340 198, 378 185" stroke="rgba(255,255,255,0.2)"/>
+
+      <!-- Hood centre back seam -->
+      <line x1="300" y1="50" x2="300" y2="190" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="6 4"/>
+
+      <!-- Left raglan shoulder + sleeve -->
+      <path d="M222 185 C200 200, 178 216, 156 236 C130 260, 108 284, 100 310 C92 340, 88 374, 86 400 L84 420 C84 428, 92 434, 100 432 L118 426 C126 424, 132 418, 134 410 C138 386, 148 358, 162 336 C170 322, 178 310, 182 298"/>
+      <!-- Right raglan shoulder + sleeve -->
+      <path d="M378 185 C400 200, 422 216, 444 236 C470 260, 492 284, 500 310 C508 340, 512 374, 514 400 L516 420 C516 428, 508 434, 500 432 L482 426 C474 424, 468 418, 466 410 C462 386, 452 358, 438 336 C430 322, 422 310, 418 298"/>
+
+      <!-- Left sleeve cuff ribbing -->
+      <path d="M84 414 C88 422, 96 430, 104 428" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+      <path d="M85 408 C90 416, 98 424, 108 422" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+      <path d="M86 402 C92 410, 100 418, 112 416" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+      <!-- Right sleeve cuff ribbing -->
+      <path d="M516 414 C512 422, 504 430, 496 428" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+      <path d="M515 408 C510 416, 502 424, 492 422" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+      <path d="M514 402 C508 410, 500 418, 488 416" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+
+      <!-- Left raglan seam -->
+      <path d="M232 192 C214 232, 198 268, 182 298" stroke="rgba(255,255,255,0.1)" stroke-width="0.75" stroke-dasharray="6 4"/>
+      <!-- Right raglan seam -->
+      <path d="M368 192 C386 232, 402 268, 418 298" stroke="rgba(255,255,255,0.1)" stroke-width="0.75" stroke-dasharray="6 4"/>
+
+      <!-- Yoke seam across upper back -->
+      <path d="M182 298 C240 288, 360 288, 418 298" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="6 4"/>
+
+      <!-- Body sides -->
+      <path d="M182 298 L180 620 C180 634, 186 642, 200 648 C240 658, 300 662, 360 658 C400 654, 414 642, 420 634 L420 620 L418 298"/>
+
+      <!-- Waistband ribbing lines -->
+      <path d="M180 620 C240 630, 360 630, 420 620" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <path d="M182 628 C242 638, 358 638, 418 628" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+      <path d="M184 636 C244 646, 356 646, 416 636" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+      <path d="M188 644 C248 652, 352 652, 412 644" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+
+      <!-- Centre back seam -->
+      <line x1="300" y1="195" x2="300" y2="648" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="8 6"/>
+    </g>
+
+    <!-- Print area outline -->
+    <rect x="190" y="240" width="220" height="360" rx="8"
+          stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 4" fill="none"/>
+  </g>
+</svg>

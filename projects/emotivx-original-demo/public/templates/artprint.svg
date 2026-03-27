@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" fill="none">
+  <defs>
+    <clipPath id="artprint-print-area">
+      <rect x="20" y="20" width="460" height="660" rx="3"/>
+    </clipPath>
+    <filter id="artprint-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="10" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#artprint-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Paper outer edge -->
+      <rect x="20" y="20" width="460" height="660" rx="3"/>
+
+      <!-- Thin paper border line -->
+      <rect x="28" y="28" width="444" height="644" rx="2" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+      <!-- Paper edge shadow bottom-right -->
+      <path d="M478 676 C480 678, 482 680, 480 682" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <line x1="478" y1="678" x2="480" y2="680" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+
+      <!-- Subtle paper shadow on right edge -->
+      <line x1="480" y1="26" x2="480" y2="676" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <!-- Subtle paper shadow on bottom -->
+      <line x1="24" y1="680" x2="476" y2="680" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

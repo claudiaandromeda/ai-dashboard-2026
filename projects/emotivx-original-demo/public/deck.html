@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmotivX Data Pipeline — Demo Presentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/black.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 { color: #DA291C; text-transform: uppercase; }
+        .reveal strong { color: #FFD100; }
+        .reveal .highlight { color: #DA291C; font-weight: bold; }
+        .reveal code { background: rgba(255,255,255,0.1); padding: 0.2em 0.5em; border-radius: 3px; }
+        .reveal .pipeline-stage { background: rgba(218, 41, 28, 0.2); padding: 20px; margin: 15px 0; border-left: 5px solid #DA291C; }
+        .reveal .small { font-size: 0.7em; }
+        .reveal ul { text-align: left; }
+        .reveal .emoji { font-style: normal; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- TITLE SLIDE -->
+            <section data-background-color="#0A0A0A">
+                <h1>EmotivX</h1>
+                <h3>Data → Art → Merchandise</h3>
+                <p style="margin-top: 2em; color: #888;">Turn real sports moments into premium wearable art</p>
+                <p class="small" style="margin-top: 3em; color: #555;">Demo Presentation — 2026-03-09</p>
+            </section>
+
+            <!-- THE BIG PICTURE -->
+            <section>
+                <h2>The Big Picture</h2>
+                <p style="font-size: 1.2em; margin-top: 1.5em;">
+                    EmotivX is not just merch.<br>
+                    It's a <strong>data storytelling platform</strong>.
+                </p>
+                <p style="margin-top: 2em; color: #888;">
+                    We take moments that happen on the pitch<br>
+                    and turn them into wearable art.
+                </p>
+                <p style="margin-top: 1em; color: #FFD100;">
+                    Every hoodie tells a story.<br>
+                    Every data point matters.
+                </p>
+            </section>
+
+            <!-- THE PIPELINE OVERVIEW -->
+            <section>
+                <h2>The Complete Pipeline</h2>
+                <div style="font-size: 0.8em;">
+                    <div class="pipeline-stage">
+                        <strong>1. DATA ACQUISITION</strong><br>
+                        StatsBomb + In-house custom pipeline → Raw event data
+                    </div>
+                    <div class="pipeline-stage">
+                        <strong>2. PHYSICS INTERPOLATION</strong><br>
+                        Sparse data clouds → Smooth data lines
+                    </div>
+                    <div class="pipeline-stage">
+                        <strong>3. ART GENERATION</strong><br>
+                        Data lines + Team palette → Unique artwork
+                    </div>
+                    <div class="pipeline-stage">
+                        <strong>4. CONTENT PLATFORM</strong><br>
+                        Artwork → Print partner → Customer's doorstep
+                    </div>
+                </div>
+            </section>
+
+            <!-- STAGE 1: DATA ACQUISITION -->
+            <section>
+                <section>
+                    <h2>Stage 1: Data Acquisition</h2>
+                    <h3 style="margin-top: 2em;">Two Sources</h3>
+                </section>
+
+                <section>
+                    <h3>Source A: Sports Data Providers</h3>
+                    <p style="color: #888; margin-top: 1em;">Professional-grade event data</p>
+                    <ul style="margin-top: 2em;">
+                        <li>✅ Ultimately all sports, all territories</li>
+                        <li>✅ If your sport has statistics, we can get the data</li>
+                        <li>✅ Trusted by analysts and broadcasters</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Source B: In-house Custom Pipeline <span style="color: #FFD100;">(Proprietary)</span></h3>
+                    <p style="color: #888; margin-top: 1em;">Extract data from ANY broadcast footage</p>
+                    <ul style="margin-top: 2em;">
+                        <li>✅ In-house proprietary system (player/ball/moment tracking)</li>
+                        <li>✅ Pitch homography (2D video → 3D coords)</li>
+                        <li>✅ Works on archive (BBC iPlayer, YouTube)</li>
+                        <li>✅ Future: real-time live streams</li>
+                    </ul>
+                    <p style="margin-top: 1.5em; color: #FFD100; font-weight: bold;">
+                        Unlocks EVERY match ever broadcast
+                    </p>
+                </section>
+
+                <section>
+                    <h3>In-house Custom Pipeline = Competitive Advantage</h3>
+                    <ul style="margin-top: 2em;">
+                        <li><strong>Independence:</strong> Not entirely dependent on external data provider licensing and data</li>
+                        <li><strong>Scale:</strong> Millions of hours of archive footage</li>
+                        <li><strong>Revenue:</strong> License in-house pipeline tech to other companies</li>
+                    </ul>
+                    <p style="margin-top: 2em; color: #888; font-size: 0.9em;">
+                        Status: <span style="color: #0F0;">FULLY BUILT AND WORKING</span>
+                    </p>
+                </section>
+            </section>
+
+            <!-- STAGE 2: PHYSICS INTERPOLATION -->
+            <section>
+                <section>
+                    <h2>Stage 2: Physics Interpolation</h2>
+                    <p style="margin-top: 1.5em;">Turning data clouds into data art</p>
+                </section>
+
+                <section>
+                    <h3>The Problem</h3>
+                    <p style="margin-top: 1em;">Raw data is sparse and ugly:</p>
+                    <div style="background: rgba(255,255,255,0.05); padding: 20px; margin-top: 1.5em; font-family: monospace; text-align: left;">
+                        Event 1: Pass A → B (2 points)<br>
+                        Event 2: Carry by B (2 points)<br>
+                        Event 3: Shot B → goal (2 points)<br>
+                        <span style="color: #DA291C;">Total: 6 sparse points = 3 straight lines</span>
+                    </div>
+                    <p style="margin-top: 1.5em; color: #888;">
+                        Looks choppy. Not beautiful. Won't work on a hoodie.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>The Solution</h3>
+                    <p style="margin-top: 1em;">Physics-based interpolation</p>
+                    <ol style="margin-top: 2em;">
+                        <li>Physics simulation (ball trajectory, player movement)</li>
+                        <li>Spline smoothing (cubic/Bezier curves)</li>
+                        <li>Aesthetic tuning (optimize for BEAUTY, not just accuracy)</li>
+                    </ol>
+                    <p style="margin-top: 2em; color: #FFD100; font-weight: bold;">
+                        Output: 100-300 smooth points → looks natural and beautiful
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Key Innovation</h3>
+                    <p style="font-size: 1.3em; margin-top: 1.5em;">
+                        We optimize for <strong>BEAUTY</strong>,<br>
+                        not just accuracy.
+                    </p>
+                    <p style="margin-top: 2em; color: #888;">
+                        95% data fidelity<br>
+                        100% visual appeal
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Validation: 3D Stadium Viz</h3>
+                    <p style="margin-top: 1em; color: #888;">Interactive 3D playback tool</p>
+                    <ul style="margin-top: 2em;">
+                        <li>Built with proprietary in-house custom pipeline</li>
+                        <li>Ball path animation in 3D stadium</li>
+                        <li>Player positions (freeze frames)</li>
+                        <li>Buildup event playback</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- STAGE 3: ART GENERATION -->
+            <section>
+                <section>
+                    <h2>Stage 3: Art Generation Engine</h2>
+                    <p style="margin-top: 1.5em;">Data lines → Unique artwork</p>
+                </section>
+
+                <section>
+                    <h3>9 Art Styles</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; font-size: 0.7em; margin-top: 1.5em;">
+                        <div style="background: rgba(255,255,255,0.05); padding: 15px;">
+                            <strong>Classic</strong><br>
+                            Art Deco tiles
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 15px;">
+                            <strong>Geometric</strong><br>
+                            Wireframe polygons
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 15px;">
+                            <strong>Camo</strong><br>
+                            Military pattern
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 15px;">
+                            <strong>Spider</strong><br>
+                            Radial web
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 15px;">
+                            <strong>Street</strong><br>
+                            Graffiti brick
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 15px;">
+                            <strong>Marble</strong><br>
+                            Polished stone
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 15px;">
+                            <strong>Smoky</strong><br>
+                            Soft clouds
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 15px;">
+                            <strong>Jackson</strong><br>
+                            Paint splatter
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 15px;">
+                            <strong>Dali</strong><br>
+                            Surrealist
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Team Palette System</h3>
+                    <p style="margin-top: 1em;">Automatic colour harmony</p>
+                    <div style="margin-top: 2em;">
+                        <div style="display: flex; gap: 20px; justify-content: center; align-items: flex-end;">
+                            <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                                <div style="width: 100px; height: 100px; background: #BA0C2F; border-radius: 50%;"></div>
+                                <p class="small" style="margin-top: 10px;">Hero (60%)</p>
+                            </div>
+                            <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                                <div style="width: 75px; height: 75px; background: #FFFFFF; border-radius: 50%; border: 2px solid #333;"></div>
+                                <p class="small" style="margin-top: 10px;">Accent 1 (25%)</p>
+                            </div>
+                            <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                                <div style="width: 50px; height: 50px; background: #FFD100; border-radius: 50%;"></div>
+                                <p class="small" style="margin-top: 10px;">Accent 2 (10%)</p>
+                            </div>
+                            <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                                <div style="width: 30px; height: 30px; background: #115740; border-radius: 50%;"></div>
+                                <p class="small" style="margin-top: 10px;">Accent 3 (5%)</p>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1.5em; color: #888;">Example: Wrexham AFC Home Kit</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Line Effects</h3>
+                    <ul style="margin-top: 2em;">
+                        <li><strong>Default:</strong> Clean glow (minimalist)</li>
+                        <li><strong>Laser:</strong> Neon beam (sci-fi)</li>
+                        <li><strong>Flame:</strong> Fire tongues (intense moments)</li>
+                        <li><strong>Lightning:</strong> Electric forks (explosive power)</li>
+                        <li><strong>Ink:</strong> Watercolor bleed (artistic)</li>
+                        <li><strong>Spray:</strong> Particle scatter (street style)</li>
+                    </ul>
+                    <p style="margin-top: 2em; color: #FFD100;">
+                        All effects respect team palette + adjustable intensity
+                    </p>
+                </section>
+
+                <section>
+                    <h3>3D Garment Preview</h3>
+                    <p style="margin-top: 1em; color: #888;">See your design on a 3D hoodie BEFORE ordering</p>
+                    <ul style="margin-top: 2em;">
+                        <li>Real-time customization (instant preview)</li>
+                        <li>Zoom, spin, view front/back</li>
+                        <li>Texture controls (repeat, rotation, offset)</li>
+                        <li>Works on mobile + desktop</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- STAGE 4: CONTENT PLATFORM -->
+            <section>
+                <section>
+                    <h2>Stage 4: Content Platform</h2>
+                    <p style="margin-top: 1.5em;">From configurator to customer's doorstep</p>
+                </section>
+
+                <section>
+                    <h3>Configurator (Web UI)</h3>
+                    <p style="margin-top: 1em;">User journey in 8 steps:</p>
+                    <ol style="font-size: 0.8em; margin-top: 1.5em;">
+                        <li>Select moment (gallery/search)</li>
+                        <li>Choose garment (hoodie/tshirt/longsleeve)</li>
+                        <li>Pick style (3×3 grid, 9 options)</li>
+                        <li>Customize colours (team palette or advanced)</li>
+                        <li>Add effects (laser/flame/lightning/ink/spray)</li>
+                        <li>Adjust details (sliders for intensity, density, brightness)</li>
+                        <li>Preview 3D (spin, zoom, front/back)</li>
+                        <li>Add to cart (checkout)</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h3>All Over Print Partner Integration</h3>
+                    <p style="margin-top: 1em; color: #888;">On-demand printing (no inventory)</p>
+                    <ol style="margin-top: 2em;">
+                        <li>User completes order (Stripe payment)</li>
+                        <li>EmotivX sends artwork to print partner API</li>
+                        <li>Print partner prints garment (24-48 hours)</li>
+                        <li>Print partner ships to customer (5-10 days)</li>
+                        <li>EmotivX receives profit (markup - cost)</li>
+                    </ol>
+                    <p style="margin-top: 2em; color: #FFD100;">
+                        Scalable, automated, worldwide
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Pricing Example</h3>
+                    <div style="background: rgba(255,255,255,0.05); padding: 30px; margin-top: 1.5em; font-size: 1.1em;">
+                        <div>Print partner base cost: <strong style="color: #DA291C;">$45</strong></div>
+                        <div style="margin-top: 0.5em;">EmotivX markup: <strong style="color: #FFD100;">+$30</strong></div>
+                        <div style="margin-top: 0.5em;">Shipping: <strong>+$10</strong></div>
+                        <div style="border-top: 2px solid #555; margin-top: 1em; padding-top: 1em;">
+                            Retail price: <strong style="color: #0F0; font-size: 1.3em;">$85</strong>
+                        </div>
+                        <div style="margin-top: 1em; color: #888; font-size: 0.8em;">
+                            Target margin: <strong>35-40%</strong>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5em; color: #888; font-size: 0.7em;">
+                        *These are base prices — Legendary editions will sell for significantly more
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Blockchain Digital Twin</h3>
+                    <p style="margin-top: 1em;">Every physical item = blockchain-logged digital twin</p>
+                    <ul style="margin-top: 2em; font-size: 0.9em;">
+                        <li>Purchase triggers digital asset creation (automatic)</li>
+                        <li>Digital twin metadata (SKU, artwork, owner)</li>
+                        <li>QR code / NFC tag (proof of ownership)</li>
+                        <li>Redeemable in metaverse/games</li>
+                        <li><strong>Every digital asset carries real-world value</strong> — from exclusive experiences to club shop discounts. Hard floor value: your asset never drops to zero.</li>
+                        <li>Resell physical → digital ownership transfers</li>
+                    </ul>
+                    <p style="margin-top: 2em; color: #FFD100;">
+                        Separate business unit (exclusively licensed into EmotivX)
+                    </p>
+                </section>
+            </section>
+
+            <!-- WHY IT MATTERS -->
+            <section>
+                <h2>Why This Pipeline Matters</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 2em; font-size: 0.8em;">
+                    <div>
+                        <h3 style="color: #FFD100;">For Customers</h3>
+                        <ul>
+                            <li>Unique (1-of-1, data-driven)</li>
+                            <li>Meaningful (wear YOUR moment)</li>
+                            <li>Quality (premium materials)</li>
+                            <li>Story (conversation starter)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #FFD100;">For Clubs</h3>
+                        <ul>
+                            <li>Revenue (new income stream)</li>
+                            <li>Engagement (fans feel closer)</li>
+                            <li>Marketing (unique content)</li>
+                            <li>Retention (emotional connection)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COMPETITIVE ADVANTAGE -->
+            <section>
+                <h2>Competitive Advantage</h2>
+                <div style="margin-top: 2em;">
+                    <div class="pipeline-stage">
+                        <strong>Technical Barriers</strong><br>
+                        CV training data, physics algorithms, 3D integration
+                    </div>
+                    <div class="pipeline-stage">
+                        <strong>Legal Barriers</strong><br>
+                        Copyrights, patents (pending), trade secrets
+                    </div>
+                    <div class="pipeline-stage">
+                        <strong>Brand Barriers</strong><br>
+                        First-to-market, distinctive aesthetic, quality reputation
+                    </div>
+                </div>
+                <p style="margin-top: 2em; color: #FFD100; font-weight: bold;">
+                    Estimated cost for competitors to replicate: $400k+ and 6-12 months
+                </p>
+            </section>
+
+            <!-- THREE REVENUE STREAMS -->
+            <section>
+                <h2>Three Revenue Streams</h2>
+                <div style="margin-top: 2em; font-size: 0.9em;">
+                    <div class="pipeline-stage">
+                        <strong>1. EmotivX Merch</strong> (Core Business)<br>
+                        Premium sports merchandise, direct-to-consumer
+                    </div>
+                    <div class="pipeline-stage">
+                        <strong>2. Unique Data Pipeline Licensing</strong> (B2B)<br>
+                        Sell broadcast data extraction tech to clubs, broadcasters, analytics companies
+                    </div>
+                    <div class="pipeline-stage">
+                        <strong>3. Blockchain Twin Service</strong> (White-Label)<br>
+                        License digital twin platform to other brands
+                    </div>
+                </div>
+            </section>
+
+            <!-- IP PROTECTION -->
+            <section>
+                <h2>Intellectual Property</h2>
+                <ul style="margin-top: 2em;">
+                    <li><strong>12 protectable innovations</strong> identified</li>
+                    <li><strong>7 potential patent applications</strong> (CV system, interpolation, 3D preview, blockchain, processes)</li>
+                    <li><strong>Copyrights:</strong> Art engine code + visual outputs</li>
+                    <li><strong>Trade secrets:</strong> Training data, algorithms, parameters</li>
+                </ul>
+                <p style="margin-top: 2em; color: #888; font-size: 0.8em;">
+                    More patentable technology to be announced soon
+                </p>
+            </section>
+
+            <!-- KEY TAKEAWAYS -->
+            <section>
+                <h2>Key Takeaways</h2>
+                <ol style="margin-top: 2em; font-size: 1.1em;">
+                    <li>We built the <strong>FULL STACK</strong></li>
+                    <li><strong>Three revenue streams</strong> (digital and physical merchandise and custom data pipelines)</li>
+                    <li><strong>Defensible IP</strong></li>
+                    <li><strong>Scalable</strong> (no inventory, automated)</li>
+                    <li><strong>Emotional</strong> (fans wear moments, not logos)</li>
+                </ol>
+            </section>
+
+            <!-- THANK YOU -->
+            <section data-background-color="#0A0A0A">
+                <h1>Thank You For Your Time</h1>
+                <p style="margin-top: 2em; font-size: 1.5em; color: #FFD100;">
+                    Let's build something amazing.
+                </p>
+                <p style="margin-top: 3em; color: #555; font-size: 0.8em;">
+                    EmotivX — Turn moments into merch
+                </p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            controls: true,
+            progress: true,
+            center: true,
+            slideNumber: 'c/t',
+            keyboard: {
+                39: 'next', // Right arrow
+                37: 'prev', // Left arrow
+                32: 'next', // Spacebar
+            }
+        });
+    </script>
+</body>
+</html>

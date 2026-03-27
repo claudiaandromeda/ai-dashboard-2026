@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" fill="none">
+  <defs>
+    <clipPath id="totebag-print-area">
+      <path d="M92 175 L92 508 C92 530, 106 540, 118 542 C180 550, 320 550, 382 542 C394 540, 408 530, 408 508 L408 175 Z"/>
+    </clipPath>
+    <filter id="totebag-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#totebag-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Handle straps (two parallel straps) -->
+      <path d="M158 170 C156 110, 160 62, 176 40 C188 24, 202 18, 214 18" stroke-width="2.5"/>
+      <path d="M342 170 C344 110, 340 62, 324 40 C312 24, 298 18, 286 18" stroke-width="2.5"/>
+      <!-- Handle inner edges -->
+      <path d="M150 170 C148 115, 154 68, 172 44" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="3 3"/>
+      <path d="M350 170 C352 115, 346 68, 328 44" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="3 3"/>
+
+      <!-- Handle attachment stitching (where straps meet bag) -->
+      <rect x="148" y="170" width="20" height="22" rx="2" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <rect x="332" y="170" width="20" height="22" rx="2" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+      <!-- Bag body -->
+      <path d="M82 170 L76 508 C74 534, 88 548, 112 552 C180 560, 320 560, 388 552 C412 548, 426 534, 424 508 L418 170 Z"/>
+
+      <!-- Top edge / opening -->
+      <path d="M82 170 L418 170" stroke="rgba(255,255,255,0.3)"/>
+      <!-- Top hem fold line -->
+      <path d="M84 178 L416 178" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <!-- Second fold line -->
+      <path d="M86 186 L414 186" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+
+      <!-- Bottom gusset seam -->
+      <path d="M112 546 C180 554, 320 554, 388 546" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="5 4"/>
+
+      <!-- Side seams -->
+      <path d="M82 170 L76 508" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="6 5"/>
+      <path d="M418 170 L424 508" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="6 5"/>
+
+      <!-- Centre fold hint -->
+      <line x1="250" y1="180" x2="250" y2="548" stroke="rgba(255,255,255,0.03)" stroke-width="1" stroke-dasharray="8 8"/>
+    </g>
+  </g>
+</svg>

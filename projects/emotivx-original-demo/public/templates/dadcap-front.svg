@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none">
+  <defs>
+    <clipPath id="dadcap-front-print-area">
+      <path d="M135 105 C140 60, 195 40, 250 36 C305 40, 360 60, 365 105 L368 210 C365 225, 310 236, 250 238 C190 236, 135 225, 132 210 Z"/>
+    </clipPath>
+    <filter id="dadcap-front-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#dadcap-front-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Crown — unstructured, softer/rounder, slightly collapsed -->
+      <path d="M112 218 C110 148, 118 105, 138 78 C168 44, 208 30, 250 26 C292 30, 332 44, 362 78 C382 105, 390 148, 388 218"/>
+
+      <!-- Top button (smaller on dad cap) -->
+      <circle cx="250" cy="26" r="5" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+
+      <!-- Center seam (soft, no rigid panels) -->
+      <path d="M250 32 C250 90, 250 155, 250 218" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="5 5"/>
+
+      <!-- Wrinkle/fold lines (unstructured fabric sag) -->
+      <path d="M184 48 C180 100, 174 160, 170 218" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="4 6"/>
+      <path d="M316 48 C320 100, 326 160, 330 218" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="4 6"/>
+      <!-- Subtle fabric crease -->
+      <path d="M200 80 C196 120, 190 170, 186 218" stroke="rgba(255,255,255,0.04)" stroke-width="0.75"/>
+      <path d="M300 80 C304 120, 310 170, 314 218" stroke="rgba(255,255,255,0.04)" stroke-width="0.75"/>
+
+      <!-- Brim — pre-curved (dad cap style, not flat) -->
+      <path d="M112 218 C106 228, 94 252, 90 272 C86 290, 98 306, 112 314 C156 340, 202 348, 250 350 C298 348, 344 340, 388 314 C402 306, 414 290, 410 272 C406 252, 394 228, 388 218"/>
+
+      <!-- Brim top edge / seam -->
+      <path d="M112 218 C170 234, 330 234, 388 218" stroke="rgba(255,255,255,0.18)"/>
+
+      <!-- Brim curve detail (more arched than snapback) -->
+      <path d="M106 286 C180 318, 320 318, 394 286" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+      <!-- Brim stitching rows -->
+      <path d="M98 298 C170 328, 330 328, 402 298" stroke="rgba(255,255,255,0.07)" stroke-width="0.75" stroke-dasharray="3 3"/>
+      <path d="M94 280 C170 308, 330 308, 406 280" stroke="rgba(255,255,255,0.06)" stroke-width="0.75" stroke-dasharray="3 3"/>
+
+      <!-- Sweatband -->
+      <path d="M118 224 C180 238, 320 238, 382 224" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 3"/>
+    </g>
+  </g>
+</svg>

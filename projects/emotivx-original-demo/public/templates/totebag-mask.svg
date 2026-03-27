@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" fill="white">
+  <!-- Premium tote bag body — slightly wider at top, flat bottom -->
+  <path d="
+    M82 170
+    L76 508
+    C74 534, 88 548, 112 552
+    C180 560, 320 560, 388 552
+    C412 548, 426 534, 424 508
+    L418 170
+    Z
+  "/>
+</svg>

@@ -1,0 +1,57 @@
+{
+  "name": "emotivx_app",
+  "version": "1.0.0",
+  "description": "The EmotivX Image Creation Platform (ICP) transforms raw athlete and brand\r moments into market-ready fan experiences.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "statsbomb:fetch": "node scripts/fetch-statsbomb.js",
+    "statsbomb:list-matches": "node scripts/list-statsbomb-matches.js",
+    "statsbomb:normalize": "node scripts/normalize-statsbomb.js",
+    "statsbomb:detect-moments": "node scripts/detect-moments.js",
+    "statsbomb:detect-moments:all": "node scripts/detect-moments.js --all",
+    "statsbomb:push-matches": "node scripts/push-matches.js",
+    "statsbomb:pipeline": "node scripts/pipeline-statsbomb.js",
+    "statsbomb:pipeline:latest": "node scripts/pipeline-statsbomb.js --auto-latest",
+    "statsbomb:smoke": "node scripts/smoke-test.js",
+    "statsbomb:360": "python scripts/ingest_statsbomb_360.py",
+    "statsbomb:360:frames": "python scripts/ingest_statsbomb_360.py --frames-only",
+    "statsbomb:360:events": "python scripts/ingest_statsbomb_360.py --events-only",
+    "statsbomb:360:euro-2024": "node scripts/rebuild-euro-2024-360.js",
+    "art:calibrate": "python scripts/calibrate_pitch.py",
+    "art:render": "python scripts/precision_art_engine.py",
+    "supabase:counts": "node scripts/supabase-counts.js",
+    "supabase:preview": "node scripts/preview-moments.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@react-three/postprocessing": "^3.0.4",
+    "@supabase/ssr": "^0.9.0",
+    "@supabase/supabase-js": "^2.90.1",
+    "@types/three": "^0.183.1",
+    "dotenv": "^17.2.3",
+    "lucide-react": "^0.562.0",
+    "next": "^16.1.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "three": "^0.183.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/react": "19.2.8",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "5.9.3"
+  }
+}

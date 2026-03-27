@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" fill="none">
+  <defs>
+    <clipPath id="framedprint-print-area">
+      <rect x="55" y="55" width="390" height="590" rx="2"/>
+    </clipPath>
+    <filter id="framedprint-shadow" x="-8%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="14" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#framedprint-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Outer frame — thick (8-10px visual weight) -->
+      <rect x="8" y="8" width="484" height="684" rx="3"/>
+      <!-- Frame inner step -->
+      <rect x="14" y="14" width="472" height="672" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+      <!-- Frame profile depth line -->
+      <rect x="20" y="20" width="460" height="660" rx="2" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+      <!-- Frame shadow (right + bottom edges to suggest depth) -->
+      <line x1="492" y1="14" x2="492" y2="690" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+      <line x1="12" y1="694" x2="490" y2="694" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+
+      <!-- Mat border -->
+      <rect x="38" y="38" width="424" height="624" rx="2" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+
+      <!-- Art opening -->
+      <rect x="55" y="55" width="390" height="590" rx="1" stroke="rgba(255,255,255,0.3)"/>
+
+      <!-- Mat bevel corners (mitre lines) -->
+      <line x1="38" y1="38" x2="55" y2="55" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <line x1="462" y1="38" x2="445" y2="55" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <line x1="38" y1="662" x2="55" y2="645" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <line x1="462" y1="662" x2="445" y2="645" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+      <!-- Frame corner mitres -->
+      <line x1="8" y1="8" x2="20" y2="20" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+      <line x1="492" y1="8" x2="480" y2="20" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+      <line x1="8" y1="692" x2="20" y2="680" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+      <line x1="492" y1="692" x2="480" y2="680" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+
+      <!-- Glass reflection hint -->
+      <path d="M60 60 C80 58, 130 56, 140 60 C130 70, 80 90, 60 100 Z" stroke="rgba(255,255,255,0.03)" stroke-width="0.75" fill="none"/>
+    </g>
+  </g>
+</svg>

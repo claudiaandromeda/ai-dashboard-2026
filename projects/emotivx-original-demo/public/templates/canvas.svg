@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" fill="none">
+  <defs>
+    <clipPath id="canvas-print-area">
+      <rect x="28" y="28" width="444" height="644" rx="2"/>
+    </clipPath>
+    <filter id="canvas-shadow" x="-8%" y="-5%" width="125%" height="120%">
+      <feDropShadow dx="4" dy="4" stdDeviation="10" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#canvas-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Canvas face -->
+      <rect x="28" y="28" width="444" height="644" rx="2"/>
+
+      <!-- Gallery wrap — right edge (trapezoid suggesting depth) -->
+      <path d="M472 28 L494 50 L494 694 L472 672" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+      <!-- Right edge fill hint -->
+      <path d="M474 34 L492 52" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+      <!-- Gallery wrap — bottom edge (trapezoid suggesting depth) -->
+      <path d="M28 672 L50 694 L494 694" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+      <!-- Bottom edge fill hint -->
+      <path d="M34 674 L52 692" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+      <!-- Bottom-right corner -->
+      <path d="M472 672 L494 694" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+      <!-- Canvas texture hint -->
+      <line x1="34" y1="220" x2="468" y2="220" stroke="rgba(255,255,255,0.025)" stroke-width="0.5"/>
+      <line x1="34" y1="440" x2="468" y2="440" stroke="rgba(255,255,255,0.025)" stroke-width="0.5"/>
+
+      <!-- Staple marks on right edge -->
+      <line x1="482" y1="100" x2="488" y2="100" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <line x1="482" y1="240" x2="488" y2="240" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <line x1="482" y1="380" x2="488" y2="380" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <line x1="482" y1="520" x2="488" y2="520" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <line x1="482" y1="640" x2="488" y2="640" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+
+      <!-- Staple marks on bottom edge -->
+      <line x1="120" y1="684" x2="120" y2="690" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <line x1="260" y1="684" x2="260" y2="690" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <line x1="400" y1="684" x2="400" y2="690" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

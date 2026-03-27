@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" fill="none">
+  <defs>
+    <clipPath id="longsleeve-front-print-area">
+      <rect x="200" y="225" width="200" height="240" rx="8"/>
+    </clipPath>
+    <filter id="longsleeve-front-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#longsleeve-front-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Crew neckline -->
+      <path d="M252 140 C264 128, 278 120, 300 118 C322 120, 336 128, 348 140" stroke="rgba(255,255,255,0.3)"/>
+      <!-- Collar ribbing (double line) -->
+      <path d="M255 145 C268 133, 282 126, 300 124 C318 126, 332 133, 345 145" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <path d="M258 150 C270 138, 284 132, 300 130 C316 132, 330 138, 342 150" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+
+      <!-- Left shoulder + long sleeve -->
+      <path d="M252 140 C240 148, 224 156, 208 164 C180 178, 154 196, 134 218 C114 244, 96 282, 82 328 C70 370, 62 418, 56 462 C52 494, 50 516, 52 526 C54 534, 62 538, 72 536 L90 530 C98 528, 104 522, 106 514 C110 484, 118 448, 130 412 C142 372, 158 338, 176 308 C184 294, 192 278, 196 264"/>
+      <!-- Right shoulder + long sleeve -->
+      <path d="M348 140 C360 148, 376 156, 392 164 C420 178, 446 196, 466 218 C486 244, 504 282, 518 328 C530 370, 538 418, 544 462 C548 494, 550 516, 548 526 C546 534, 538 538, 528 536 L510 530 C502 528, 496 522, 494 514 C490 484, 482 448, 470 412 C458 372, 442 338, 424 308 C416 294, 408 278, 404 264"/>
+
+      <!-- Left wrist cuff ribbing -->
+      <path d="M52 522 C58 532, 68 536, 76 534" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+      <path d="M53 516 C60 526, 70 530, 80 528" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+      <path d="M54 510 C62 520, 72 524, 84 522" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+      <!-- Right wrist cuff ribbing -->
+      <path d="M548 522 C542 532, 532 536, 524 534" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+      <path d="M547 516 C540 526, 530 530, 520 528" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+      <path d="M546 510 C538 520, 528 524, 516 522" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+
+      <!-- Elbow seam marks -->
+      <path d="M90 380 C96 374, 104 370, 112 368" stroke="rgba(255,255,255,0.08)" stroke-width="0.75" stroke-dasharray="4 4"/>
+      <path d="M510 380 C504 374, 496 370, 488 368" stroke="rgba(255,255,255,0.08)" stroke-width="0.75" stroke-dasharray="4 4"/>
+
+      <!-- Shoulder seams -->
+      <path d="M252 140 C240 148, 224 156, 208 164" stroke="rgba(255,255,255,0.1)" stroke-width="0.75" stroke-dasharray="5 4"/>
+      <path d="M348 140 C360 148, 376 156, 392 164" stroke="rgba(255,255,255,0.1)" stroke-width="0.75" stroke-dasharray="5 4"/>
+
+      <!-- Body sides -->
+      <path d="M196 218 L190 598 C190 614, 196 622, 208 626"/>
+      <path d="M404 218 L410 598 C410 614, 404 622, 392 626"/>
+      <!-- Hem -->
+      <path d="M208 626 C240 636, 360 636, 392 626"/>
+      <!-- Hem detail -->
+      <path d="M210 620 C250 628, 350 628, 390 620" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+
+      <!-- Side seams -->
+      <path d="M196 218 L190 598" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="6 5"/>
+      <path d="M404 218 L410 598" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="6 5"/>
+
+      <!-- Centre seam -->
+      <line x1="300" y1="126" x2="300" y2="632" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="8 6"/>
+    </g>
+
+    <!-- Print area outline -->
+    <rect x="200" y="225" width="200" height="240" rx="8"
+          stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 4" fill="none"/>
+  </g>
+</svg>

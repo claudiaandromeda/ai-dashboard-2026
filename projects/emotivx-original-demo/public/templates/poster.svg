@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" fill="none">
+  <defs>
+    <clipPath id="poster-print-area">
+      <rect x="14" y="14" width="472" height="672" rx="1"/>
+    </clipPath>
+    <filter id="poster-shadow" x="-8%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#poster-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Poster sheet -->
+      <rect x="14" y="14" width="472" height="672" rx="1"/>
+
+      <!-- Thin inner border -->
+      <rect x="22" y="22" width="456" height="656" rx="1" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+
+      <!-- Paper curl — bottom-right corner lift -->
+      <path d="M476 672 C480 672, 484 668, 486 662 C488 656, 484 652, 480 654 C476 656, 474 664, 476 672 Z"
+            stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <!-- Shadow under curl -->
+      <path d="M470 680 C476 682, 484 678, 488 670" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+      <!-- Subtle paper edge shadow on right -->
+      <line x1="486" y1="18" x2="486" y2="660" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <!-- Subtle paper edge shadow on bottom -->
+      <line x1="18" y1="686" x2="472" y2="686" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

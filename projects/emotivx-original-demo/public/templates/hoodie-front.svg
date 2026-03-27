@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" fill="none">
+  <!-- Realistic hoodie detail overlay — subtle seams, stitching, fabric structure -->
+  
+  <!-- Hood shape — soft curve, not pointy -->
+  <path d="M258 58 C238 62, 224 78, 220 102 C218 118, 217 138, 218 158"
+        stroke="rgba(255,255,255,0.12)" stroke-width="1" fill="none"/>
+  <path d="M342 58 C362 62, 376 78, 380 102 C382 118, 383 138, 382 158"
+        stroke="rgba(255,255,255,0.12)" stroke-width="1" fill="none"/>
+  <!-- Hood opening curve -->
+  <path d="M228 148 C260 172, 300 178, 340 172 C360 168, 372 158, 372 148"
+        stroke="rgba(255,255,255,0.15)" stroke-width="1.2" fill="none"/>
+  <!-- Inner hood lining -->
+  <path d="M238 138 C268 158, 300 164, 332 158 C352 152, 362 142, 362 136"
+        stroke="rgba(255,255,255,0.06)" stroke-width="0.8" fill="none"/>
+  
+  <!-- Drawstrings -->
+  <path d="M276 170 L272 226" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <path d="M324 170 L328 226" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <!-- Drawstring tips -->
+  <circle cx="271" cy="228" r="2" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="329" cy="228" r="2" fill="rgba(255,255,255,0.08)"/>
+  
+  <!-- Shoulder seam lines — raglan curve -->
+  <path d="M218 158 C204 164, 184 178, 160 198 C136 228, 114 258, 104 292"
+        stroke="rgba(255,255,255,0.07)" stroke-width="0.8" stroke-dasharray="4 3" fill="none"/>
+  <path d="M382 158 C396 164, 416 178, 440 198 C464 228, 486 258, 496 292"
+        stroke="rgba(255,255,255,0.07)" stroke-width="0.8" stroke-dasharray="4 3" fill="none"/>
+  
+  <!-- Kangaroo pocket -->
+  <path d="M210 420 C216 408, 240 400, 270 398 L330 398 C360 400, 384 408, 390 420 
+           L392 480 C386 492, 360 498, 330 500 L270 500 C240 498, 214 492, 208 480 Z"
+        stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/>
+  <!-- Pocket opening -->
+  <path d="M262 446 L338 446" stroke="rgba(255,255,255,0.06)" stroke-width="0.8"/>
+  
+  <!-- Centre front seam -->
+  <line x1="300" y1="178" x2="300" y2="632" 
+        stroke="rgba(255,255,255,0.03)" stroke-width="0.6" stroke-dasharray="6 5"/>
+  
+  <!-- Waistband ribbing — 3 subtle parallel lines -->
+  <path d="M178 590 C240 604, 360 604, 422 590" stroke="rgba(255,255,255,0.08)" stroke-width="0.8" fill="none"/>
+  <path d="M180 598 C242 612, 358 612, 420 598" stroke="rgba(255,255,255,0.06)" stroke-width="0.6" fill="none"/>
+  <path d="M182 606 C244 618, 356 618, 418 606" stroke="rgba(255,255,255,0.05)" stroke-width="0.6" fill="none"/>
+  
+  <!-- Sleeve cuff ribbing — left -->
+  <path d="M88 378 C92 392, 100 400, 110 404" stroke="rgba(255,255,255,0.06)" stroke-width="0.6" fill="none"/>
+  <path d="M90 384 C94 396, 102 402, 112 406" stroke="rgba(255,255,255,0.04)" stroke-width="0.6" fill="none"/>
+  <!-- Sleeve cuff ribbing — right -->
+  <path d="M512 378 C508 392, 500 400, 490 404" stroke="rgba(255,255,255,0.06)" stroke-width="0.6" fill="none"/>
+  <path d="M510 384 C506 396, 498 402, 488 406" stroke="rgba(255,255,255,0.04)" stroke-width="0.6" fill="none"/>
+  
+  <!-- Subtle fabric fold lines — barely visible, creates depth -->
+  <path d="M240 300 C244 380, 242 460, 246 540" stroke="rgba(255,255,255,0.02)" stroke-width="0.5" fill="none"/>
+  <path d="M360 300 C356 380, 358 460, 354 540" stroke="rgba(255,255,255,0.02)" stroke-width="0.5" fill="none"/>
+  
+  <!-- Small woven label on pocket -->
+  <rect x="294" y="486" width="12" height="6" rx="1" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" fill="rgba(255,255,255,0.03)"/>
+</svg>

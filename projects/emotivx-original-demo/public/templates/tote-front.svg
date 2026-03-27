@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" fill="none">
+  <defs>
+    <clipPath id="tote-front-print-area">
+      <rect x="75" y="180" width="350" height="350" rx="6"/>
+    </clipPath>
+    <filter id="tote-front-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#tote-front-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Bag body -->
+      <path d="M60 155 C58 350, 56 520, 55 550 C55 570, 65 578, 75 580 C150 588, 350 588, 425 580 C435 578, 445 570, 445 550 C444 520, 442 350, 440 155 Z"/>
+
+      <!-- Top opening -->
+      <path d="M60 155 C150 148, 350 148, 440 155" stroke="rgba(255,255,255,0.3)"/>
+      <path d="M64 163 C154 156, 346 156, 436 163" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+      <!-- Left handle -->
+      <path d="M145 155 C145 100, 145 65, 155 45 C165 30, 178 24, 195 24"
+            stroke="rgba(255,255,255,0.35)" stroke-width="2.5"/>
+      <path d="M225 155 C225 100, 225 65, 215 45 C205 30, 198 24, 195 24"
+            stroke="rgba(255,255,255,0.35)" stroke-width="2.5"/>
+      <!-- Left handle inner -->
+      <path d="M153 155 C153 105, 155 70, 163 50" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <path d="M217 155 C217 105, 215 70, 207 50" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+
+      <!-- Right handle -->
+      <path d="M275 155 C275 100, 275 65, 285 45 C295 30, 302 24, 305 24"
+            stroke="rgba(255,255,255,0.35)" stroke-width="2.5"/>
+      <path d="M355 155 C355 100, 355 65, 345 45 C335 30, 322 24, 305 24"
+            stroke="rgba(255,255,255,0.35)" stroke-width="2.5"/>
+      <!-- Right handle inner -->
+      <path d="M283 155 C283 105, 285 70, 293 50" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <path d="M347 155 C347 105, 345 70, 337 50" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+
+      <!-- Bottom seam -->
+      <path d="M75 572 C150 580, 350 580, 425 572" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="5 4"/>
+
+      <!-- Side seams -->
+      <path d="M60 155 C58 350, 56 520, 55 550" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="6 5"/>
+      <path d="M440 155 C442 350, 444 520, 445 550" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="6 5"/>
+
+      <!-- Vertical fold lines -->
+      <line x1="165" y1="165" x2="162" y2="572" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="335" y1="165" x2="338" y2="572" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

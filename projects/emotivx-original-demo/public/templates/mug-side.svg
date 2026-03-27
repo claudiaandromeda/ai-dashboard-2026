@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <defs>
+    <clipPath id="mug-side-print-area">
+      <rect x="85" y="80" width="330" height="280" rx="6"/>
+    </clipPath>
+    <filter id="mug-side-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#mug-side-shadow)">
+    <g stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Mug body — tapered cylinder -->
+      <path d="M78 60 C78 56, 250 48, 422 60 L432 378 C432 400, 420 412, 402 416 C340 426, 160 426, 98 416 C80 412, 68 400, 68 378 Z"/>
+
+      <!-- Rim — top lip (double line for thickness) -->
+      <path d="M72 58 C72 50, 250 42, 428 58" stroke="rgba(255,255,255,0.3)"/>
+      <path d="M76 66 C76 58, 250 52, 424 66" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+      <!-- Handle (right side — C-shape, clear and prominent) -->
+      <path d="M422 115 C460 108, 502 118, 530 152 C558 190, 562 238, 552 278 C542 318, 516 348, 482 358 C456 364, 436 356, 422 338"
+            stroke="rgba(255,255,255,0.35)" stroke-width="2.5"/>
+      <!-- Handle inner -->
+      <path d="M426 148 C454 142, 486 152, 506 178 C526 208, 530 246, 522 278 C514 308, 494 328, 468 334 C450 338, 436 330, 426 316"
+            stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+      <!-- Base line -->
+      <path d="M98 408 C160 418, 340 418, 402 408" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <!-- Base bottom edge -->
+      <path d="M102 416 C180 424, 320 424, 398 416" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+
+      <!-- Cylindrical body curve shading (vertical) -->
+      <path d="M136 68 C134 200, 128 340, 122 408" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+      <path d="M364 68 C366 200, 372 340, 378 408" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+      <path d="M250 56 C250 200, 250 340, 250 420" stroke="rgba(255,255,255,0.03)" stroke-width="0.75"/>
+    </g>
+  </g>
+</svg>

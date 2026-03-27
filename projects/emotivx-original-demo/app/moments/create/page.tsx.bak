@@ -1,0 +1,475 @@
+/**
+ * Create Your Moment
+ * 
+ * 4-step wizard:
+ * 1. Pick a match (Euro 2024)
+ * 2. Generate artwork (Python engine with real StatsBomb data)
+ * 3. Customize (sliders for style, detail, bloom, etc.)
+ * 4. Export (download, social preview, save to gallery)
+ */
+
+"use client";
+
+import { useState, useEffect, useCallback, useRef } from "react";
+import { Loader2, Download, Share2, ChevronLeft, ChevronRight } from "lucide-react";
+
+interface Match {
+  match_id: number;
+  home_team: { home_team_name: string };
+  away_team: { away_team_name: string };
+  home_score: number;
+  away_score: number;
+  match_date: string;
+}
+
+interface GeneratedMoment {
+  imageUrl: string;
+  match: string;
+  stats: {
+    home_passes: number;
+    away_passes: number;
+    home_shots: number;
+    away_shots: number;
+    home_possession: number;
+  };
+}
+
+type Step = "select" | "generate" | "customize" | "export";
+
+const STYLES = [
+  { id: "geometric", label: "🔷 Geometric" },
+  { id: "camo", label: "🎭 Camo" },
+  { id: "futuristic", label: "⚡ Futuristic" },
+  { id: "street", label: "🏙️ Street" },
+  { id: "classic", label: "📚 Classic" },
+];
+
+export default function CreateMomentPage() {
+  const [step, setStep] = useState<Step>("select");
+  const [matches, setMatches] = useState<Match[]>([]);
+  const [selectedMatch, setSelectedMatch] = useState<Match | null>(null);
+  const [style, setStyle] = useState("geometric");
+  const [generating, setGenerating] = useState(false);
+  const [moment, setMoment] = useState<GeneratedMoment | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  // Sliders for customization
+  const [bgDetail, setBgDetail] = useState(50);
+  const [dataDetail, setDataDetail] = useState(50);
+  const [bloom, setBloom] = useState(50);
+  const [intensity, setIntensity] = useState(50);
+  const [dataScale, setDataScale] = useState(50);
+
+  // Load matches on mount
+  useEffect(() => {
+    const loadMatches = async () => {
+      try {
+        const response = await fetch("/api/euro-2024/matches");
+        const data = await response.json();
+        setMatches(data);
+      } catch (err) {
+        setError("Failed to load matches");
+        console.error(err);
+      }
+    };
+
+    loadMatches();
+  }, []);
+
+  // Auto-regenerate when customization params change
+  useEffect(() => {
+    if (moment && selectedMatch) {
+      const timer = setTimeout(() => {
+        generateMoment(selectedMatch);
+      }, 300); // Debounce to avoid too many rapid API calls
+      return () => clearTimeout(timer);
+    }
+  }, [style, bgDetail, dataDetail, bloom, intensity, dataScale, selectedMatch?.match_id]);
+
+  const handleSelectMatch = (match: Match) => {
+    setSelectedMatch(match);
+    setStep("generate");
+    generateMoment(match);
+  };
+
+  const generateMoment = async (match: Match) => {
+    setGenerating(true);
+    setError(null);
+
+    try {
+      const payload = {
+        matchId: match.match_id,
+        style,
+        bgDetail,
+        dataDetail,
+        bloom,
+        intensity,
+        dataScale,
+        width: 1024,
+      };
+      
+      console.log("📤 Sending to API:", payload);
+      
+      const response = await fetch("/api/moments/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const text = await response.text();
+      console.log("📥 API Response Status:", response.status);
+      
+      if (!response.ok) {
+        throw new Error(`API returned ${response.status}: ${text}`);
+      }
+
+      const data = JSON.parse(text);
+      console.log("✅ Parsed data, setting moment...");
+      setMoment(data);
+      setStep("customize");
+      console.log("✅ Moment rendered");
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error("❌ Generation error:", msg);
+      setError(msg);
+    } finally {
+      setGenerating(false);
+    }
+  };
+
+  const handleRegenerateWithParams = async () => {
+    if (!selectedMatch) return;
+    console.log("Regenerating with params:", { style, bgDetail, dataDetail, bloom, intensity, dataScale });
+    await generateMoment(selectedMatch);
+  };
+
+  const handleExport = async () => {
+    if (!moment) return;
+
+    try {
+      // Convert data URL to blob and download
+      const link = document.createElement("a");
+      link.href = moment.imageUrl;
+      link.download = `moment-${selectedMatch?.match_id}-${Date.now()}.png`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      setStep("export");
+    } catch (err) {
+      setError("Download failed");
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white">
+      {/* Header */}
+      <div className="border-b border-white/10 bg-black/40 backdrop-blur">
+        <div className="mx-auto max-w-7xl px-6 py-6">
+          <h1 className="text-3xl font-bold">✨ Create Your Moment</h1>
+          <p className="mt-2 text-gray-400">
+            Transform Euro 2024 matches into stunning artwork with real StatsBomb data
+          </p>
+        </div>
+      </div>
+
+      {/* Progress Indicator */}
+      <div className="mx-auto max-w-7xl px-6 py-4">
+        <div className="flex items-center gap-2 text-sm">
+          <span className={step === "select" ? "font-bold text-cyan-400" : "text-gray-500"}>
+            1. Select Match
+          </span>
+          <div className={`h-1 w-12 ${["select"].includes(step) ? "bg-gray-700" : "bg-cyan-500"}`} />
+          <span
+            className={step === "generate" ? "font-bold text-cyan-400" : "text-gray-500"}
+          >
+            2. Generate
+          </span>
+          <div className={`h-1 w-12 ${["select", "generate"].includes(step) ? "bg-gray-700" : "bg-cyan-500"}`} />
+          <span
+            className={step === "customize" ? "font-bold text-cyan-400" : "text-gray-500"}
+          >
+            3. Customize
+          </span>
+          <div className={`h-1 w-12 ${["select", "generate", "customize"].includes(step) ? "bg-gray-700" : "bg-cyan-500"}`} />
+          <span className={step === "export" ? "font-bold text-cyan-400" : "text-gray-500"}>
+            4. Export
+          </span>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="mx-auto max-w-7xl px-6 py-10">
+        {/* Step 1: Select Match */}
+        {step === "select" && (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-semibold text-cyan-300">Choose a Match</h2>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {matches.map((match) => (
+                <button
+                  key={match.match_id}
+                  onClick={() => handleSelectMatch(match)}
+                  className="rounded-lg border border-white/10 bg-white/5 p-4 transition hover:border-cyan-400/50 hover:bg-white/10"
+                >
+                  <div className="font-semibold">
+                    {match.home_team.home_team_name} {match.home_score} -{" "}
+                    {match.away_score} {match.away_team.away_team_name}
+                  </div>
+                  <div className="mt-2 text-sm text-gray-400">
+                    {new Date(match.match_date).toLocaleDateString("en-GB", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Step 2: Generating */}
+        {step === "generate" && (
+          <div className="flex flex-col items-center justify-center space-y-6 py-20">
+            {generating ? (
+              <>
+                <Loader2 className="h-12 w-12 animate-spin text-cyan-400" />
+                <div className="text-center">
+                  <p className="text-xl font-semibold">Generating your artwork...</p>
+                  <p className="mt-2 text-gray-400">
+                    {selectedMatch?.home_team.home_team_name} vs{" "}
+                    {selectedMatch?.away_team.away_team_name}
+                  </p>
+                </div>
+              </>
+            ) : (
+              <div className="text-center">
+                <p className="text-gray-400">Ready to generate</p>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Step 3: Customize */}
+        {step === "customize" && moment && (
+          <div className="grid gap-8 lg:grid-cols-3">
+            {/* Image Preview */}
+            <div className="lg:col-span-2 space-y-4">
+              <h2 className="text-2xl font-semibold text-cyan-300">Your Artwork</h2>
+              <div className="rounded-lg border border-white/10 overflow-hidden">
+                <img
+                  src={moment.imageUrl}
+                  alt="Generated moment"
+                  className="w-full"
+                />
+              </div>
+
+              {/* Match Info */}
+              <div className="rounded-lg border border-white/10 bg-white/5 p-4">
+                <p className="text-sm font-semibold text-cyan-400">{moment.match}</p>
+                <div className="mt-3 grid grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p className="text-gray-400">Passes</p>
+                    <p className="font-semibold">
+                      {moment.stats.home_passes} | {moment.stats.away_passes}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-gray-400">Shots</p>
+                    <p className="font-semibold">
+                      {moment.stats.home_shots} | {moment.stats.away_shots}
+                    </p>
+                  </div>
+                  <div className="col-span-2">
+                    <p className="text-gray-400 mb-1">Possession</p>
+                    <div className="flex items-center gap-2">
+                      <div className="flex-1 h-2 bg-gray-700 rounded overflow-hidden">
+                        <div
+                          className="h-full bg-cyan-500"
+                          style={{ width: `${moment.stats.home_possession}%` }}
+                        />
+                      </div>
+                      <span className="text-xs font-semibold w-10 text-right">
+                        {Math.round(moment.stats.home_possession)}%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Customization Panel */}
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-cyan-300">Customize</h3>
+
+              {/* Style Selector */}
+              <div className="space-y-2">
+                <label className="block text-sm font-semibold text-gray-300">Style</label>
+                <div className="space-y-2">
+                  {STYLES.map((s) => (
+                    <button
+                      key={s.id}
+                      onClick={() => {
+                        setStyle(s.id);
+                      }}
+                      className={`w-full rounded px-3 py-2 text-sm font-medium transition ${
+                        style === s.id
+                          ? "border-cyan-400 bg-cyan-400/10 text-cyan-300"
+                          : "border-white/10 bg-white/5 text-white hover:border-white/20"
+                      }`}
+                    >
+                      {s.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Sliders */}
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">
+                    Background Detail: {bgDetail}
+                  </label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={bgDetail}
+                    onChange={(e) => setBgDetail(Number(e.target.value))}
+                    className="w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">
+                    Data Detail: {dataDetail}
+                  </label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={dataDetail}
+                    onChange={(e) => setDataDetail(Number(e.target.value))}
+                    className="w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">
+                    Bloom: {bloom}
+                  </label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={bloom}
+                    onChange={(e) => setBloom(Number(e.target.value))}
+                    className="w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">
+                    Intensity: {intensity}
+                  </label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={intensity}
+                    onChange={(e) => setIntensity(Number(e.target.value))}
+                    className="w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">
+                    Data Scale: {dataScale}
+                  </label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={dataScale}
+                    onChange={(e) => setDataScale(Number(e.target.value))}
+                    className="w-full"
+                  />
+                </div>
+              </div>
+
+              {/* Regenerate Button */}
+              <button
+                onClick={handleRegenerateWithParams}
+                disabled={generating}
+                className="w-full rounded-lg bg-cyan-600 px-4 py-2 font-semibold text-white hover:bg-cyan-700 disabled:opacity-50"
+              >
+                {generating ? "Regenerating..." : "Regenerate"}
+              </button>
+
+              {/* Export Button */}
+              <button
+                onClick={handleExport}
+                className="w-full rounded-lg border border-cyan-400 bg-transparent px-4 py-2 font-semibold text-cyan-400 hover:bg-cyan-400/10"
+              >
+                <Download className="inline mr-2 h-4 w-4" />
+                Download PNG
+              </button>
+
+              {/* Navigation */}
+              <button
+                onClick={() => setStep("select")}
+                className="w-full rounded-lg border border-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/5"
+              >
+                <ChevronLeft className="inline mr-2 h-4 w-4" />
+                Back to Matches
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Step 4: Export Success */}
+        {step === "export" && (
+          <div className="flex flex-col items-center justify-center space-y-6 py-20">
+            <div className="rounded-lg border border-cyan-400/50 bg-cyan-400/10 p-8 text-center">
+              <p className="text-2xl font-bold text-cyan-300">✨ Moment Created!</p>
+              <p className="mt-4 text-gray-400">Your artwork has been downloaded.</p>
+              <div className="mt-6 space-y-3">
+                <button
+                  onClick={() => {
+                    setStep("select");
+                    setSelectedMatch(null);
+                    setMoment(null);
+                  }}
+                  className="block w-full rounded-lg bg-cyan-600 px-4 py-2 font-semibold text-white hover:bg-cyan-700"
+                >
+                  Create Another Moment
+                </button>
+                <button
+                  onClick={() => (window.location.href = "/moments/gallery")}
+                  className="block w-full rounded-lg border border-cyan-400 px-4 py-2 font-semibold text-cyan-400 hover:bg-cyan-400/10"
+                >
+                  View Gallery
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Error State */}
+        {error && (
+          <div className="fixed top-4 right-4 max-w-md rounded-lg border border-red-400 bg-red-900 p-6 text-white shadow-lg z-50">
+            <p className="font-bold text-lg">Error</p>
+            <p className="mt-2 text-sm text-red-100">{error}</p>
+            <p className="mt-3 text-xs text-red-200">Check browser console for details (F12)</p>
+            <button
+              onClick={() => setError(null)}
+              className="mt-4 rounded bg-red-700 px-3 py-1 text-sm hover:bg-red-600"
+            >
+              Dismiss
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
