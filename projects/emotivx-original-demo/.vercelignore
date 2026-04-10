@@ -1,0 +1,18 @@
+# Large data files not needed in production serverless functions
+data/statsbomb/
+data/euro2024/
+
+# Art engine (Python, not used in Next.js build)
+art_engine/
+
+# Scripts
+scripts/
+
+# Docs and research
+docs/deck-images/
+research/
+
+# Dev files
+*.bak
+*.py
+requirements.txt

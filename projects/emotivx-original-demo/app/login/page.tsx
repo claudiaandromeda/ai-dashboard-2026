@@ -86,7 +86,7 @@ function LoginContent() {
               onChange={(e) => setEmail(e.target.value)}
               required
               placeholder="you@example.com"
-              className="w-full rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-3 text-sm text-white placeholder-[#555555] outline-none transition focus:border-[#DA291C]/50"
+              className="w-full rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-3 text-sm text-white placeholder-[#555555] outline-none transition focus:border-[#8AE234]/50"
             />
           </div>
 
@@ -100,14 +100,14 @@ function LoginContent() {
               onChange={(e) => setPassword(e.target.value)}
               required
               placeholder="••••••••"
-              className="w-full rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-3 text-sm text-white placeholder-[#555555] outline-none transition focus:border-[#DA291C]/50"
+              className="w-full rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-3 text-sm text-white placeholder-[#555555] outline-none transition focus:border-[#8AE234]/50"
             />
           </div>
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full rounded-lg bg-[#DA291C] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#DA291C]/90 disabled:opacity-50"
+            className="w-full rounded-full bg-[#8AE234] px-4 py-3 text-sm font-semibold text-[#080810] transition hover:bg-[#8AE234]/90 disabled:opacity-50"
           >
             {loading ? "Signing in..." : "Sign In"}
           </button>
@@ -115,7 +115,7 @@ function LoginContent() {
 
         <p className="mt-6 text-center text-sm text-[#888888]">
           Don&apos;t have an account?{" "}
-          <Link href="/signup" className="text-[#DA291C] hover:underline">
+          <Link href="/signup" className="text-[#8AE234] hover:underline">
             Sign Up
           </Link>
         </p>

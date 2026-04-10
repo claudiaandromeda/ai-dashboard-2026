@@ -64,7 +64,7 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
             <span className="text-lg">🛒</span>
             <h2 className="text-sm font-bold text-white">Your Cart</h2>
             {itemCount > 0 && (
-              <span className="flex h-5 min-w-[20px] items-center justify-center rounded-full bg-[#DA291C] px-1.5 text-[10px] font-bold text-white">
+              <span className="flex h-5 min-w-[20px] items-center justify-center rounded-full bg-[#8AE234] px-1.5 text-[10px] font-bold text-white">
                 {itemCount}
               </span>
             )}
@@ -86,7 +86,7 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
             <Link
               href="/"
               onClick={onClose}
-              className="flex items-center gap-1.5 text-xs font-semibold text-[#DA291C] transition hover:text-[#DA291C]/80"
+              className="flex items-center gap-1.5 text-xs font-semibold text-[#8AE234] transition hover:text-[#8AE234]/80"
             >
               Browse Moments <ArrowRight className="h-3.5 w-3.5" />
             </Link>
@@ -122,7 +122,7 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
                               onChange={(e) =>
                                 updateSize(item.momentId, item.productType, item.size, e.target.value)
                               }
-                              className="rounded border border-white/10 bg-[#1F1F1F] px-1 py-0.5 text-[10px] text-white outline-none focus:border-[#DA291C]/40"
+                              className="rounded border border-white/10 bg-[#1F1F1F] px-1 py-0.5 text-[10px] text-white outline-none focus:border-[#8AE234]/40"
                             >
                               {SIZES.map((s) => (
                                 <option key={s} value={s}>
@@ -181,7 +181,7 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
                         onClick={() =>
                           removeItem(item.momentId, item.productType, item.size)
                         }
-                        className="mt-0.5 h-5 w-5 shrink-0 text-[#888888] transition hover:text-[#DA291C]"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-[#888888] transition hover:text-[#8AE234]"
                       >
                         <X className="h-3.5 w-3.5" />
                       </button>
@@ -204,7 +204,7 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
               <Link
                 href="/checkout"
                 onClick={onClose}
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#DA291C] py-3 text-sm font-semibold text-white transition hover:bg-[#DA291C]/90"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-[#8AE234] py-3 text-sm font-semibold text-[#080810] transition hover:bg-[#8AE234]/90"
               >
                 Proceed to Checkout
               </Link>

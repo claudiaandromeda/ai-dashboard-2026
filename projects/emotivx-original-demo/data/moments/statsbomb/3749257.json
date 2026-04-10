@@ -1,0 +1,1590 @@
+[
+  {
+    "moment_id": "cf896e1723706172f10501f5719658a6c2e699ee2b82e73378996d77cf98b93e",
+    "match_id": "3749257",
+    "event_id": "0d622785-15d0-42e7-ade2-4dd1f55da46a",
+    "moment_type": "Goal",
+    "title": "Paul Dickov Goal vs Arsenal",
+    "description": "Goal",
+    "timestamp": "--competition-idT00:25:24.457Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-goal-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:25:20.569Z",
+        "Label": "Dribble",
+        "Value": "2e704397-5499-441f-a35f-db2b2aae3d86",
+        "Actor": "Frank Mohammed Sinclair",
+        "Team": "Leicester City",
+        "X": 0.7591666666666667,
+        "Y": 0.8712500000000001,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:25:20.569Z",
+        "Label": "Carry",
+        "Value": "e751d834-5713-44d9-9953-4aea5bbceaa3",
+        "Actor": "Frank Mohammed Sinclair",
+        "Team": "Leicester City",
+        "X": 0.7591666666666667,
+        "Y": 0.8712500000000001,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:25:22.527Z",
+        "Label": "Pass",
+        "Value": "26678b20-21fa-4d86-aeb4-81e29469c755",
+        "Actor": "Frank Mohammed Sinclair",
+        "Team": "Leicester City",
+        "X": 0.7875,
+        "Y": 0.73875,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:25:24.457Z",
+        "Label": "Ball Receipt*",
+        "Value": "a1b0029c-de1d-4abf-b4bf-00bd72e8ca0a",
+        "Actor": "Paul Dickov",
+        "Team": "Leicester City",
+        "X": 0.9783333333333334,
+        "Y": 0.41375,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:25:24.457Z",
+        "Label": "Shot",
+        "Value": "0d622785-15d0-42e7-ade2-4dd1f55da46a",
+        "Actor": "Paul Dickov",
+        "Team": "Leicester City",
+        "X": 0.9783333333333334,
+        "Y": 0.3975,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:25:24.457Z",
+        "Label": "Shot",
+        "Value": "0d622785-15d0-42e7-ade2-4dd1f55da46a",
+        "Actor": "Paul Dickov",
+        "Team": "Leicester City",
+        "X": 0.9783333333333334,
+        "Y": 0.3975,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "7d9a50ac58ad4a677363624e1b111cda22c13b51748e396488bbf9b6f5fe58c7",
+    "match_id": "3749257",
+    "event_id": "42db5935-2196-4942-b043-2cb1e07ea2ba",
+    "moment_type": "Goal",
+    "title": "Thierry Henry Goal vs Leicester City",
+    "description": "Goal",
+    "timestamp": "--competition-idT00:01:45.631Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-goal-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:01:45.631Z",
+        "Label": "Shot",
+        "Value": "42db5935-2196-4942-b043-2cb1e07ea2ba",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.9025,
+        "Y": 0.50125,
+        "Context": {
+          "Phase": "Other"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:01:45.631Z",
+        "Label": "Shot",
+        "Value": "42db5935-2196-4942-b043-2cb1e07ea2ba",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.9025,
+        "Y": 0.50125,
+        "Context": {
+          "Phase": "Other"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "284a2e8773fdd9aeb5fc75aacabd5ef78adf07ba325b01dbe22836c365ce11b3",
+    "match_id": "3749257",
+    "event_id": "d6d4ee81-d296-4c6a-a45e-5c3064379d17",
+    "moment_type": "Goal",
+    "title": "Patrick Vieira Goal vs Leicester City",
+    "description": "Goal",
+    "timestamp": "--competition-idT00:20:53.409Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-goal-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:20:45.829Z",
+        "Label": "Carry",
+        "Value": "bdee6dca-c9e0-4d80-a77a-7ab265166682",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.6491666666666667,
+        "Y": 0.51375,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:20:51.064Z",
+        "Label": "Pass",
+        "Value": "f6395241-c80a-4994-8561-15ce8762dd27",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.7200000000000001,
+        "Y": 0.44000000000000006,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:20:52.654Z",
+        "Label": "Ball Receipt*",
+        "Value": "5733dc53-fe27-43fc-accc-f63e6af1dc8e",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.895,
+        "Y": 0.42625,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:20:52.654Z",
+        "Label": "Carry",
+        "Value": "745314b2-3fe0-461f-9916-3ea7cf71c9e6",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.895,
+        "Y": 0.42625,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:20:53.409Z",
+        "Label": "Shot",
+        "Value": "d6d4ee81-d296-4c6a-a45e-5c3064379d17",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.9208333333333333,
+        "Y": 0.50125,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:20:53.409Z",
+        "Label": "Shot",
+        "Value": "d6d4ee81-d296-4c6a-a45e-5c3064379d17",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.9208333333333333,
+        "Y": 0.50125,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "b946d068ab782ef4012061e070672cd8e2b1b2380605a677458abc2e8681658d",
+    "match_id": "3749257",
+    "event_id": "70e1fd39-5ea8-4fcc-86cc-f34ea431c118",
+    "moment_type": "Assist",
+    "title": "Patrick Vieira Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:03:11.017Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:03:07.418Z",
+        "Label": "Ball Receipt*",
+        "Value": "2b2a9570-0d88-443d-a649-451313f54138",
+        "Actor": "Laureano Bisan-Etame Mayer",
+        "Team": "Arsenal",
+        "X": 0.7116666666666667,
+        "Y": 0.9175000000000001,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:03:07.418Z",
+        "Label": "Carry",
+        "Value": "eda44bfd-86f0-41bb-a41d-b6bbbb39d68f",
+        "Actor": "Laureano Bisan-Etame Mayer",
+        "Team": "Arsenal",
+        "X": 0.7116666666666667,
+        "Y": 0.9175000000000001,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:03:09.281Z",
+        "Label": "Pass",
+        "Value": "c1f7cdb4-c408-4fd3-a939-b8961aa6ed08",
+        "Actor": "Laureano Bisan-Etame Mayer",
+        "Team": "Arsenal",
+        "X": 0.7233333333333333,
+        "Y": 0.89125,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:03:11.017Z",
+        "Label": "Ball Receipt*",
+        "Value": "cb9f2aa9-ed1b-4150-8f0c-382862afe2b9",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.6358333333333334,
+        "Y": 0.775,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:03:11.017Z",
+        "Label": "Pass",
+        "Value": "70e1fd39-5ea8-4fcc-86cc-f34ea431c118",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.6358333333333334,
+        "Y": 0.775,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:03:11.017Z",
+        "Label": "Pass",
+        "Value": "70e1fd39-5ea8-4fcc-86cc-f34ea431c118",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.6358333333333334,
+        "Y": 0.775,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "5a396ed5fa5c499122ecc8ef4005fc536af9af49dfb183405b84344e8a1701ac",
+    "match_id": "3749257",
+    "event_id": "74875bb2-02c7-4e03-8464-1a4c4ee59c7d",
+    "moment_type": "Assist",
+    "title": "Dennis Bergkamp Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:07:18.153Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:07:16.358Z",
+        "Label": "Ball Receipt*",
+        "Value": "7524883b-3045-45d9-a08c-e5fa883c00ce",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.7041666666666667,
+        "Y": 0.35,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:07:16.358Z",
+        "Label": "Carry",
+        "Value": "3b41a5c6-a8b3-400a-b2a5-3768ab18e5cc",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.7041666666666667,
+        "Y": 0.35,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:07:17.304Z",
+        "Label": "Pass",
+        "Value": "1becd137-3c4d-42b5-b9b1-ba6499f819f9",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.7041666666666667,
+        "Y": 0.40374999999999994,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:07:18.153Z",
+        "Label": "Ball Receipt*",
+        "Value": "7a961e69-cdee-4e82-b08f-fdd3b27ee293",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.8116666666666668,
+        "Y": 0.49625,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:07:18.153Z",
+        "Label": "Pass",
+        "Value": "74875bb2-02c7-4e03-8464-1a4c4ee59c7d",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.8116666666666668,
+        "Y": 0.49625,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:07:18.153Z",
+        "Label": "Pass",
+        "Value": "74875bb2-02c7-4e03-8464-1a4c4ee59c7d",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.8116666666666668,
+        "Y": 0.49625,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "d23937ec651b561289a7f6c8dcb4de16269a4ff5978f1843edc98314690c7eaf",
+    "match_id": "3749257",
+    "event_id": "3c269ea7-42a9-4e17-8f88-28b8331b6e03",
+    "moment_type": "Assist",
+    "title": "Dennis Bergkamp Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:08:10.241Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:08:09.418Z",
+        "Label": "Pass",
+        "Value": "7b33c081-095f-4596-a95d-e2b20e75c0b0",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.6333333333333333,
+        "Y": 0.2975,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:08:10.071Z",
+        "Label": "Pressure",
+        "Value": "d057bf6e-9815-4c1d-b3c3-6e4a7dfe57dd",
+        "Actor": "Frank Mohammed Sinclair",
+        "Team": "Leicester City",
+        "X": 0.24083333333333332,
+        "Y": 0.7125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:08:10.205Z",
+        "Label": "Ball Receipt*",
+        "Value": "674cd90c-dd32-42c2-b864-ee662c07949c",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.76,
+        "Y": 0.28875,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:08:10.205Z",
+        "Label": "Carry",
+        "Value": "e9caed60-e9fb-4779-ab30-0c4edfc9c427",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.76,
+        "Y": 0.28875,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:08:10.241Z",
+        "Label": "Pass",
+        "Value": "3c269ea7-42a9-4e17-8f88-28b8331b6e03",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.7658333333333334,
+        "Y": 0.29125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:08:10.241Z",
+        "Label": "Pass",
+        "Value": "3c269ea7-42a9-4e17-8f88-28b8331b6e03",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.7658333333333334,
+        "Y": 0.29125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "cdaa3c0dd9eebe29bdc15d85870454f7c47ea33da55901d9cb0dc931829ec4be",
+    "match_id": "3749257",
+    "event_id": "26678b20-21fa-4d86-aeb4-81e29469c755",
+    "moment_type": "Assist",
+    "title": "Frank Mohammed Sinclair Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:25:22.527Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:25:13.352Z",
+        "Label": "Carry",
+        "Value": "f6876ffc-a61e-42eb-89a1-8ad1b24bf300",
+        "Actor": "Frank Mohammed Sinclair",
+        "Team": "Leicester City",
+        "X": 0.3458333333333333,
+        "Y": 0.9025000000000001,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:25:20.569Z",
+        "Label": "Dribbled Past",
+        "Value": "8a987e6f-f536-477d-b15d-cf8c512f7417",
+        "Actor": "Sulzeer Jeremiah ''Sol' Campbell",
+        "Team": "Arsenal",
+        "X": 0.24166666666666667,
+        "Y": 0.13,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:25:20.569Z",
+        "Label": "Dribble",
+        "Value": "2e704397-5499-441f-a35f-db2b2aae3d86",
+        "Actor": "Frank Mohammed Sinclair",
+        "Team": "Leicester City",
+        "X": 0.7591666666666667,
+        "Y": 0.8712500000000001,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:25:20.569Z",
+        "Label": "Carry",
+        "Value": "e751d834-5713-44d9-9953-4aea5bbceaa3",
+        "Actor": "Frank Mohammed Sinclair",
+        "Team": "Leicester City",
+        "X": 0.7591666666666667,
+        "Y": 0.8712500000000001,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:25:22.527Z",
+        "Label": "Pass",
+        "Value": "26678b20-21fa-4d86-aeb4-81e29469c755",
+        "Actor": "Frank Mohammed Sinclair",
+        "Team": "Leicester City",
+        "X": 0.7875,
+        "Y": 0.73875,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:25:22.527Z",
+        "Label": "Pass",
+        "Value": "26678b20-21fa-4d86-aeb4-81e29469c755",
+        "Actor": "Frank Mohammed Sinclair",
+        "Team": "Leicester City",
+        "X": 0.7875,
+        "Y": 0.73875,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "4c002dded5c78b2f2866ccc01ee3852668959605305922cc3f75c0b793e652a9",
+    "match_id": "3749257",
+    "event_id": "3825e8eb-9d4f-4c7a-9fce-6eb28f92cef4",
+    "moment_type": "Assist",
+    "title": "Patrick Vieira Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:31:16.221Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:31:12.287Z",
+        "Label": "Carry",
+        "Value": "e5dbef68-4379-4e20-a4bc-ef21926bf030",
+        "Actor": "Ashley Cole",
+        "Team": "Arsenal",
+        "X": 0.7033333333333334,
+        "Y": 0.1025,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:31:12.328Z",
+        "Label": "Pass",
+        "Value": "2dcc9bab-9e31-4250-9be5-3baad0205f6e",
+        "Actor": "Ashley Cole",
+        "Team": "Arsenal",
+        "X": 0.7033333333333334,
+        "Y": 0.09875,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:31:13.671Z",
+        "Label": "Ball Receipt*",
+        "Value": "2077be02-0678-4c09-81ec-502b0e5892bf",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.6433333333333333,
+        "Y": 0.3675,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:31:13.671Z",
+        "Label": "Carry",
+        "Value": "24cd8aca-c84e-48cf-9e83-982d19e14fde",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.6433333333333333,
+        "Y": 0.3675,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:31:16.221Z",
+        "Label": "Pass",
+        "Value": "3825e8eb-9d4f-4c7a-9fce-6eb28f92cef4",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.6733333333333333,
+        "Y": 0.475,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:31:16.221Z",
+        "Label": "Pass",
+        "Value": "3825e8eb-9d4f-4c7a-9fce-6eb28f92cef4",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.6733333333333333,
+        "Y": 0.475,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "0d5e92aa5a4ed9b5e7e422bf233b92ae57da59b57f72257011b8f0c4d529cc8e",
+    "match_id": "3749257",
+    "event_id": "85fa73f0-7aca-445c-8cff-a0a81898c617",
+    "moment_type": "Assist",
+    "title": "Thierry Henry Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:32:14.112Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:32:12.665Z",
+        "Label": "Carry",
+        "Value": "d4c5219a-4b15-4641-b3f8-16176c361eda",
+        "Actor": "Nikos Dabizas",
+        "Team": "Leicester City",
+        "X": 0.12583333333333332,
+        "Y": 0.49874999999999997,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:32:12.765Z",
+        "Label": "Pressure",
+        "Value": "8502d383-75e0-4ce9-8fbb-eaff0175579e",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.86,
+        "Y": 0.475,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:32:13.232Z",
+        "Label": "Pass",
+        "Value": "4dea7ab9-0816-4029-8101-803d187eb11b",
+        "Actor": "Nikos Dabizas",
+        "Team": "Leicester City",
+        "X": 0.1408333333333333,
+        "Y": 0.52625,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:32:14.112Z",
+        "Label": "Ball Receipt*",
+        "Value": "95ad232f-fdb2-4442-a681-881a4a80aaf8",
+        "Actor": "Billy McKinlay",
+        "Team": "Leicester City",
+        "X": 0.1716666666666667,
+        "Y": 0.515,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:32:14.112Z",
+        "Label": "Pass",
+        "Value": "85fa73f0-7aca-445c-8cff-a0a81898c617",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.8308333333333333,
+        "Y": 0.48125,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:32:14.112Z",
+        "Label": "Pass",
+        "Value": "85fa73f0-7aca-445c-8cff-a0a81898c617",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.8308333333333333,
+        "Y": 0.48125,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "17290e58f6ff1e183e3ecbac3f2421c408ce059bbfb6e4c969de926507baf73b",
+    "match_id": "3749257",
+    "event_id": "727cd3cb-43b1-4e2e-bd92-92db6c34f2d6",
+    "moment_type": "Assist",
+    "title": "Patrick Vieira Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:38:52.393Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:38:49.276Z",
+        "Label": "Carry",
+        "Value": "7150c534-3132-454f-a2bb-847139a1883e",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.5399999999999999,
+        "Y": 0.18125,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:38:50.890Z",
+        "Label": "Pass",
+        "Value": "08eedf37-16b6-4091-b4d9-b5d1ad509957",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.58,
+        "Y": 0.27375,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:38:51.665Z",
+        "Label": "Ball Receipt*",
+        "Value": "ffdb7eed-a489-4c9b-83b4-6acc612972c9",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.7108333333333333,
+        "Y": 0.36124999999999996,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:38:51.665Z",
+        "Label": "Carry",
+        "Value": "e0ccd09f-c61e-4cb1-abd6-cebd0b7a2ff0",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.7108333333333333,
+        "Y": 0.36124999999999996,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:38:52.393Z",
+        "Label": "Pass",
+        "Value": "727cd3cb-43b1-4e2e-bd92-92db6c34f2d6",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.7525,
+        "Y": 0.37625000000000003,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:38:52.393Z",
+        "Label": "Pass",
+        "Value": "727cd3cb-43b1-4e2e-bd92-92db6c34f2d6",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.7525,
+        "Y": 0.37625000000000003,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "0bac2a974f0f11cff94361e1f84697e7da384a9d3797ca860e1b8572755a6a5f",
+    "match_id": "3749257",
+    "event_id": "5eab9fee-e21c-4cda-91d4-410a7d04806a",
+    "moment_type": "Assist",
+    "title": "Robert Pirès Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:39:18.565Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:39:13.630Z",
+        "Label": "Carry",
+        "Value": "1bd6673e-a277-4abc-bf97-b4e5e7d21f81",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.7066666666666667,
+        "Y": 0.66125,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:39:14.208Z",
+        "Label": "Pass",
+        "Value": "394dc736-df5b-4e0b-9a38-ccdddf665f85",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.7025,
+        "Y": 0.6537499999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:39:15.450Z",
+        "Label": "Ball Receipt*",
+        "Value": "99e7a64c-492e-4fa7-b5ae-ec306f057463",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.6916666666666667,
+        "Y": 0.49749999999999994,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:39:15.450Z",
+        "Label": "Carry",
+        "Value": "36d6b196-c465-43ec-80eb-22cdca0ed255",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.6916666666666667,
+        "Y": 0.49749999999999994,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:39:18.565Z",
+        "Label": "Pass",
+        "Value": "5eab9fee-e21c-4cda-91d4-410a7d04806a",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.7025,
+        "Y": 0.48624999999999996,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:39:18.565Z",
+        "Label": "Pass",
+        "Value": "5eab9fee-e21c-4cda-91d4-410a7d04806a",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.7025,
+        "Y": 0.48624999999999996,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "eb467df4a0d1e0a2d46ed626ea5d689f7433d351847f0d95aed56a33dd187670",
+    "match_id": "3749257",
+    "event_id": "aa84f43d-7b38-4bd5-b93c-7eb6ad18dc06",
+    "moment_type": "Assist",
+    "title": "Thierry Henry Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:40:00.451Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:39:57.113Z",
+        "Label": "Carry",
+        "Value": "5476aff0-df33-459e-8683-03252716f54f",
+        "Actor": "Gilberto Aparecido da Silva",
+        "Team": "Arsenal",
+        "X": 0.41750000000000004,
+        "Y": 0.63625,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:39:59.177Z",
+        "Label": "Pass",
+        "Value": "36bde5a0-7409-4750-ade4-46f283371193",
+        "Actor": "Gilberto Aparecido da Silva",
+        "Team": "Arsenal",
+        "X": 0.49083333333333334,
+        "Y": 0.57375,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:40:00.411Z",
+        "Label": "Ball Receipt*",
+        "Value": "616f6877-b2c5-408c-b870-267609883c49",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7033333333333334,
+        "Y": 0.3775,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:40:00.411Z",
+        "Label": "Carry",
+        "Value": "4d753432-bc5f-47d5-a404-bf5037a21017",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7033333333333334,
+        "Y": 0.3775,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:40:00.451Z",
+        "Label": "Pass",
+        "Value": "aa84f43d-7b38-4bd5-b93c-7eb6ad18dc06",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7033333333333334,
+        "Y": 0.3775,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:40:00.451Z",
+        "Label": "Pass",
+        "Value": "aa84f43d-7b38-4bd5-b93c-7eb6ad18dc06",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7033333333333334,
+        "Y": 0.3775,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "fa02d8a50aa715d7bb1f314f7da9ae5abf071cc4916d3118ee07a6f221f080eb",
+    "match_id": "3749257",
+    "event_id": "5634040b-b32a-48ce-803d-f6d7cac5937e",
+    "moment_type": "Assist",
+    "title": "Ashley Cole Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:46:20.324Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:46:18.805Z",
+        "Label": "Pass",
+        "Value": "0ff1f6dc-7f47-4201-9b6c-3537890e560d",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.9441666666666666,
+        "Y": 0.18,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:46:19.260Z",
+        "Label": "Ball Receipt*",
+        "Value": "06ef6869-d5ed-4013-8293-88b458beff73",
+        "Actor": "Ashley Cole",
+        "Team": "Arsenal",
+        "X": 0.9033333333333334,
+        "Y": 0.185,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:46:19.260Z",
+        "Label": "Carry",
+        "Value": "5f65e4b7-5e28-4bb1-83c7-07455cc6bf96",
+        "Actor": "Ashley Cole",
+        "Team": "Arsenal",
+        "X": 0.9033333333333334,
+        "Y": 0.185,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:46:19.844Z",
+        "Label": "Pressure",
+        "Value": "361eb53e-9958-4c76-97d3-5ab360da451a",
+        "Actor": "Marcus Bent",
+        "Team": "Leicester City",
+        "X": 0.056666666666666664,
+        "Y": 0.7575000000000001,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:46:20.324Z",
+        "Label": "Pass",
+        "Value": "5634040b-b32a-48ce-803d-f6d7cac5937e",
+        "Actor": "Ashley Cole",
+        "Team": "Arsenal",
+        "X": 0.9108333333333333,
+        "Y": 0.24874999999999997,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:46:20.324Z",
+        "Label": "Pass",
+        "Value": "5634040b-b32a-48ce-803d-f6d7cac5937e",
+        "Actor": "Ashley Cole",
+        "Team": "Arsenal",
+        "X": 0.9108333333333333,
+        "Y": 0.24874999999999997,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "8f1133bf9b3a86080bfdc0dae8ffaa18ab2da7635c1f32fe76f895a64eecea46",
+    "match_id": "3749257",
+    "event_id": "418d0d9f-fc32-4923-a4ed-4062e7fdda30",
+    "moment_type": "Assist",
+    "title": "Fredrik Ljungberg Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:09:12.949Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:09:04.739Z",
+        "Label": "Carry",
+        "Value": "fee4ffdb-b9fd-435e-9b27-b05561326741",
+        "Actor": "Laureano Bisan-Etame Mayer",
+        "Team": "Arsenal",
+        "X": 0.615,
+        "Y": 0.9625,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:09:10.821Z",
+        "Label": "Pass",
+        "Value": "e16c63f5-fc96-49b8-9865-99ba612bb5c0",
+        "Actor": "Laureano Bisan-Etame Mayer",
+        "Team": "Arsenal",
+        "X": 0.7958333333333333,
+        "Y": 0.79875,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:09:12.065Z",
+        "Label": "Ball Receipt*",
+        "Value": "bb1d8029-12ae-45c1-8c74-598690ba95a2",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": 0.7391666666666666,
+        "Y": 0.76125,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:09:12.065Z",
+        "Label": "Carry",
+        "Value": "f955389a-b36b-49fb-b563-c8e955df05d1",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": 0.7391666666666666,
+        "Y": 0.76125,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:09:12.949Z",
+        "Label": "Pass",
+        "Value": "418d0d9f-fc32-4923-a4ed-4062e7fdda30",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": 0.7666666666666667,
+        "Y": 0.70375,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:09:12.949Z",
+        "Label": "Pass",
+        "Value": "418d0d9f-fc32-4923-a4ed-4062e7fdda30",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": 0.7666666666666667,
+        "Y": 0.70375,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "c8851482b97fd20262676ace070bc1c8e19d770d678461b27c077eb338cfb67b",
+    "match_id": "3749257",
+    "event_id": "018b9196-e89c-4198-b745-444d7f552496",
+    "moment_type": "Assist",
+    "title": "Robert Pirès Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:11:40.728Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:11:40.728Z",
+        "Label": "Pass",
+        "Value": "018b9196-e89c-4198-b745-444d7f552496",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 1,
+        "Y": 1,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:11:40.728Z",
+        "Label": "Pass",
+        "Value": "018b9196-e89c-4198-b745-444d7f552496",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 1,
+        "Y": 1,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "39ff327f48ee5852603fec2ebb67808819a6abc274db52672d81ea32479e2b43",
+    "match_id": "3749257",
+    "event_id": "f6395241-c80a-4994-8561-15ce8762dd27",
+    "moment_type": "Assist",
+    "title": "Dennis Bergkamp Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:20:51.064Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:20:45.132Z",
+        "Label": "Carry",
+        "Value": "90babfb1-103a-4450-ad93-523208fc5047",
+        "Actor": "Gilberto Aparecido da Silva",
+        "Team": "Arsenal",
+        "X": 0.6708333333333333,
+        "Y": 0.5974999999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:20:45.143Z",
+        "Label": "Pass",
+        "Value": "35cb41b4-457b-4f53-922c-afd5276bd768",
+        "Actor": "Gilberto Aparecido da Silva",
+        "Team": "Arsenal",
+        "X": 0.6708333333333333,
+        "Y": 0.5974999999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:20:45.829Z",
+        "Label": "Ball Receipt*",
+        "Value": "398e4550-1ac3-4a6c-b6b1-3dee3ccd8b75",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.6491666666666667,
+        "Y": 0.51375,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:20:45.829Z",
+        "Label": "Carry",
+        "Value": "bdee6dca-c9e0-4d80-a77a-7ab265166682",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.6491666666666667,
+        "Y": 0.51375,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:20:51.064Z",
+        "Label": "Pass",
+        "Value": "f6395241-c80a-4994-8561-15ce8762dd27",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.7200000000000001,
+        "Y": 0.44000000000000006,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:20:51.064Z",
+        "Label": "Pass",
+        "Value": "f6395241-c80a-4994-8561-15ce8762dd27",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.7200000000000001,
+        "Y": 0.44000000000000006,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "e7a2656e5ccb0d825cab4b8301730d9d05405de9ca313f3b976085c55344b69c",
+    "match_id": "3749257",
+    "event_id": "c155f823-2379-4544-881f-976179b7878b",
+    "moment_type": "Assist",
+    "title": "Dennis Bergkamp Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:27:31.988Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:27:27.616Z",
+        "Label": "Carry",
+        "Value": "875b65ac-2371-48ee-9316-a36e755dbafd",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.4075,
+        "Y": 0.39625,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:27:29.661Z",
+        "Label": "Pass",
+        "Value": "f50382e4-33db-4f60-b672-b684cd11523c",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.4691666666666666,
+        "Y": 0.47000000000000003,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:27:30.902Z",
+        "Label": "Ball Receipt*",
+        "Value": "4983748c-ba2d-4c38-996e-c1ba5932332b",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.64,
+        "Y": 0.5225,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:27:30.902Z",
+        "Label": "Carry",
+        "Value": "73d81ede-e455-4df1-93fe-5c35d21639e6",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.64,
+        "Y": 0.5225,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:27:31.988Z",
+        "Label": "Pass",
+        "Value": "c155f823-2379-4544-881f-976179b7878b",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.6866666666666668,
+        "Y": 0.54125,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:27:31.988Z",
+        "Label": "Pass",
+        "Value": "c155f823-2379-4544-881f-976179b7878b",
+        "Actor": "Dennis Bergkamp",
+        "Team": "Arsenal",
+        "X": 0.6866666666666668,
+        "Y": 0.54125,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "6ab36ad20e56fdc11eb53077c8390db505f0896bc7189ac79a7d7e28d2ecfedb",
+    "match_id": "3749257",
+    "event_id": "085d2401-f304-40d2-81b4-d844908c4ea5",
+    "moment_type": "Assist",
+    "title": "José Antonio Reyes Calderón Assist vs Leicester City",
+    "description": "Goal Assist",
+    "timestamp": "--competition-idT00:38:28.585Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "--competition-idT00:38:24.031Z",
+        "Label": "Pass",
+        "Value": "0558c7a5-596e-410e-88c9-978a679ff48c",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.6649999999999999,
+        "Y": 0.25875,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "--competition-idT00:38:25.537Z",
+        "Label": "Ball Receipt*",
+        "Value": "ae055927-abbf-441b-9b9f-7ebf018994f2",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.56,
+        "Y": 0.495,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "--competition-idT00:38:27.178Z",
+        "Label": "Pass",
+        "Value": "b2fb20f7-b5b6-41aa-aea7-b845de8af8bb",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.5783333333333334,
+        "Y": 0.5275000000000001,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "--competition-idT00:38:28.365Z",
+        "Label": "Ball Receipt*",
+        "Value": "f65c9409-1b68-4349-bc99-512a3dbdbf30",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.6708333333333333,
+        "Y": 0.63375,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "--competition-idT00:38:28.585Z",
+        "Label": "Pass",
+        "Value": "085d2401-f304-40d2-81b4-d844908c4ea5",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.6941666666666666,
+        "Y": 0.6799999999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "--competition-idT00:38:28.585Z",
+        "Label": "Pass",
+        "Value": "085d2401-f304-40d2-81b4-d844908c4ea5",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.6941666666666666,
+        "Y": 0.6799999999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  }
+]

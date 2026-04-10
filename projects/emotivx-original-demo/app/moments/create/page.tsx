@@ -535,7 +535,7 @@ export default function CreateMomentPage() {
                         onClick={() => setStyle(s.id)}
                         className={`relative overflow-hidden rounded-lg px-2 py-3 text-center transition text-xs ${
                           active
-                            ? "border-2 border-[#DA291C] text-white"
+                            ? "border-2 border-[#8AE234] text-white"
                             : "border border-white/10 bg-[#1A1111] text-white hover:border-white/20"
                         }`}
                       >
@@ -663,7 +663,7 @@ export default function CreateMomentPage() {
                     }
                   }}
                   disabled={generating || !moment}
-                  className="w-full rounded-lg bg-[#DA291C] px-4 py-3 font-display font-bold text-white text-lg uppercase tracking-wide hover:bg-[#c0241a] disabled:opacity-50 transition"
+                  className="w-full rounded-full bg-[#8AE234] px-4 py-3 font-display font-bold text-[#080810] text-lg uppercase tracking-wide hover:bg-[#c0241a] disabled:opacity-50 transition"
                 >
                   🛒 ORDER ON A HOODIE →
                 </button>

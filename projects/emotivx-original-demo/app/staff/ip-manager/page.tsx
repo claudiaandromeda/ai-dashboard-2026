@@ -110,7 +110,7 @@ export default function IPManagerPage() {
                 <span
                   className={`rounded-full px-1.5 py-0.5 text-[10px] ${
                     active
-                      ? "bg-[#DA291C]/20 text-[#DA291C]"
+                      ? "bg-[#8AE234]/20 text-[#8AE234]"
                       : "bg-white/5 text-[#555555]"
                   }`}
                 >
@@ -118,7 +118,7 @@ export default function IPManagerPage() {
                 </span>
               )}
               {active && (
-                <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[#DA291C]" />
+                <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[#8AE234]" />
               )}
             </button>
           );
@@ -210,7 +210,7 @@ function PlayersTab() {
               setSearch(e.target.value);
               setPage(1);
             }}
-            className="w-64 rounded-lg border border-white/10 bg-[#1F1F1F] py-2 pl-9 pr-3 text-xs text-white placeholder-[#555555] outline-none transition focus:border-[#DA291C]/40"
+            className="w-64 rounded-lg border border-white/10 bg-[#1F1F1F] py-2 pl-9 pr-3 text-xs text-white placeholder-[#555555] outline-none transition focus:border-[#8AE234]/40"
           />
         </div>
         <div className="flex items-center gap-3">
@@ -218,14 +218,14 @@ function PlayersTab() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="appearance-none rounded-lg border border-white/10 bg-[#1F1F1F] px-3 py-2 pr-8 text-xs text-white outline-none transition focus:border-[#DA291C]/40"
+              className="appearance-none rounded-lg border border-white/10 bg-[#1F1F1F] px-3 py-2 pr-8 text-xs text-white outline-none transition focus:border-[#8AE234]/40"
             >
               <option value="number">Sort by Number</option>
               <option value="name">Sort by Name</option>
             </select>
             <ChevronDown className="pointer-events-none absolute right-2 top-1/2 h-3 w-3 -translate-y-1/2 text-[#555555]" />
           </div>
-          <button className="flex items-center gap-1.5 rounded-lg bg-[#DA291C] px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#DA291C]/90">
+          <button className="flex items-center gap-1.5 rounded-full bg-[#8AE234] px-4 py-2 text-xs font-semibold text-[#080810] transition hover:bg-[#8AE234]/90">
             <Plus className="h-3.5 w-3.5" />
             Add Player
           </button>
@@ -309,7 +309,7 @@ function PlayersTab() {
                     <button
                       onClick={() => handleGenerateAvatar(player)}
                       disabled={isGenerating}
-                      className="flex items-center gap-1.5 rounded-lg border border-[#DA291C]/30 px-3 py-1.5 text-[10px] font-semibold text-[#DA291C] transition hover:bg-[#DA291C]/10 disabled:opacity-50"
+                      className="flex items-center gap-1.5 rounded-lg border border-[#8AE234]/30 px-3 py-1.5 text-[10px] font-semibold text-[#8AE234] transition hover:bg-[#8AE234]/10 disabled:opacity-50"
                     >
                       {isGenerating ? (
                         <>
@@ -336,7 +336,7 @@ function PlayersTab() {
                       <button className="rounded p-1 text-[#888888] transition hover:bg-white/5 hover:text-white">
                         <Pencil className="h-3.5 w-3.5" />
                       </button>
-                      <button className="rounded p-1 text-[#888888] transition hover:bg-white/5 hover:text-[#DA291C]">
+                      <button className="rounded p-1 text-[#888888] transition hover:bg-white/5 hover:text-[#8AE234]">
                         <Trash2 className="h-3.5 w-3.5" />
                       </button>
                     </div>
@@ -418,7 +418,7 @@ function PlayersTab() {
               )}
               <button
                 onClick={() => setPreviewPlayer(null)}
-                className="rounded-lg bg-[#DA291C] px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#DA291C]/90"
+                className="rounded-full bg-[#8AE234] px-4 py-2 text-xs font-semibold text-[#080810] transition hover:bg-[#8AE234]/90"
               >
                 Close
               </button>
@@ -483,7 +483,7 @@ function BrandingTab() {
                   onChange={(e) =>
                     setColors((c) => ({ ...c, [key]: e.target.value }))
                   }
-                  className="w-28 rounded-lg border border-white/10 bg-[#1F1F1F] px-3 py-2 text-xs uppercase text-white outline-none transition focus:border-[#DA291C]/40"
+                  className="w-28 rounded-lg border border-white/10 bg-[#1F1F1F] px-3 py-2 text-xs uppercase text-white outline-none transition focus:border-[#8AE234]/40"
                 />
               </div>
             </div>
@@ -493,7 +493,7 @@ function BrandingTab() {
 
       {/* Save */}
       <div className="flex justify-end">
-        <button className="rounded-lg bg-[#DA291C] px-6 py-2.5 text-xs font-semibold text-white transition hover:bg-[#DA291C]/90">
+        <button className="rounded-full bg-[#8AE234] px-6 py-2.5 text-xs font-semibold text-[#080810] transition hover:bg-[#8AE234]/90">
           Save Branding
         </button>
       </div>
@@ -516,11 +516,11 @@ function UploadSection({
       <p className="mb-4 text-[10px] text-[#555555]">{description}</p>
       <div className="flex items-center gap-4">
         {/* Thumbnail placeholder */}
-        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg border border-dashed border-white/10 bg-[#0A0A0A]">
+        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg border border-dashed border-white/10 bg-[#080810]">
           <Upload className="h-5 w-5 text-[#555555]" />
         </div>
         <div className="flex gap-2">
-          <button className="rounded-lg border border-[#DA291C] px-4 py-2 text-xs font-semibold text-[#DA291C] transition hover:bg-[#DA291C]/10">
+          <button className="rounded-lg border border-[#8AE234] px-4 py-2 text-xs font-semibold text-[#8AE234] transition hover:bg-[#8AE234]/10">
             Upload Logo
           </button>
           <button className="rounded-lg border border-white/10 px-4 py-2 text-xs text-[#888888] transition hover:bg-white/5">
@@ -549,7 +549,7 @@ function BackgroundsTab() {
             <input
               type="text"
               placeholder="e.g. Red Marble"
-              className="w-full rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-2.5 text-xs text-white placeholder-[#555555] outline-none transition focus:border-[#DA291C]/40"
+              className="w-full rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-2.5 text-xs text-white placeholder-[#555555] outline-none transition focus:border-[#8AE234]/40"
             />
           </div>
           <div>
@@ -557,7 +557,7 @@ function BackgroundsTab() {
               Style
             </label>
             <div className="relative">
-              <select className="w-full appearance-none rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-2.5 pr-8 text-xs text-white outline-none transition focus:border-[#DA291C]/40">
+              <select className="w-full appearance-none rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-2.5 pr-8 text-xs text-white outline-none transition focus:border-[#8AE234]/40">
                 <option>Abstract</option>
                 <option>Geometric</option>
                 <option>Organic</option>
@@ -575,7 +575,7 @@ function BackgroundsTab() {
           <textarea
             rows={3}
             placeholder="Describe the artistic background you want to generate..."
-            className="w-full rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-2.5 text-xs text-white placeholder-[#555555] outline-none transition focus:border-[#DA291C]/40"
+            className="w-full rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-2.5 text-xs text-white placeholder-[#555555] outline-none transition focus:border-[#8AE234]/40"
           />
         </div>
 
@@ -584,7 +584,7 @@ function BackgroundsTab() {
           <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-[#888888]">
             Reference Image
           </label>
-          <div className="flex min-h-[120px] cursor-pointer items-center justify-center rounded-lg border-2 border-dashed border-white/10 bg-[#0A0A0A] transition hover:border-[#DA291C]/30">
+          <div className="flex min-h-[120px] cursor-pointer items-center justify-center rounded-lg border-2 border-dashed border-white/10 bg-[#080810] transition hover:border-[#8AE234]/30">
             <div className="text-center">
               <Upload className="mx-auto mb-2 h-6 w-6 text-[#555555]" />
               <p className="text-xs font-semibold uppercase tracking-wider text-[#555555]">
@@ -595,7 +595,7 @@ function BackgroundsTab() {
         </div>
 
         {/* Generate button */}
-        <button className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[#DA291C] py-3 text-xs font-semibold text-white transition hover:bg-[#DA291C]/90">
+        <button className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-[#8AE234] py-3 text-xs font-semibold text-[#080810] transition hover:bg-[#8AE234]/90">
           <Sparkles className="h-3.5 w-3.5" />
           Generate Background
         </button>
@@ -609,7 +609,7 @@ function BackgroundsTab() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {/* Demo card */}
           <div className="overflow-hidden rounded-xl border border-[rgba(220,38,38,0.15)] bg-[#111111]">
-            <div className="flex h-32 items-center justify-center bg-gradient-to-br from-[#DA291C]/20 via-[#111111] to-[#DA291C]/10">
+            <div className="flex h-32 items-center justify-center bg-gradient-to-br from-[#8AE234]/20 via-[#111111] to-[#8AE234]/10">
               <span className="text-xs text-[#555555]">Preview</span>
             </div>
             <div className="flex items-center justify-between p-4">
@@ -623,7 +623,7 @@ function BackgroundsTab() {
                 <button className="rounded p-1.5 text-[#888888] transition hover:bg-white/5 hover:text-white">
                   <Download className="h-3.5 w-3.5" />
                 </button>
-                <button className="rounded p-1.5 text-[#888888] transition hover:bg-white/5 hover:text-[#DA291C]">
+                <button className="rounded p-1.5 text-[#888888] transition hover:bg-white/5 hover:text-[#8AE234]">
                   <Trash2 className="h-3.5 w-3.5" />
                 </button>
               </div>

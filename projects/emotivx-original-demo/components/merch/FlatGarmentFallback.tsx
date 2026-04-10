@@ -67,7 +67,7 @@ export default function FlatGarmentFallback({
   }, [artworkUrl, textureControls]);
 
   const fallbackBg = !artworkUrl
-    ? { background: "linear-gradient(135deg, #DA291C 0%, #1a0a0a 50%, #DA291C 100%)" }
+    ? { background: "linear-gradient(135deg, #8AE234 0%, #1a0a0a 50%, #8AE234 100%)" }
     : {};
 
   return (
@@ -89,7 +89,7 @@ export default function FlatGarmentFallback({
       {loading && (
         <div className="absolute inset-0 z-10 flex items-center justify-center rounded-xl bg-black/60 backdrop-blur-sm">
           <div className="flex flex-col items-center gap-2">
-            <div className="h-10 w-10 animate-spin rounded-full border-2 border-white/20 border-t-[#DA291C]" />
+            <div className="h-10 w-10 animate-spin rounded-full border-2 border-white/20 border-t-[#8AE234]" />
             <span className="text-xs text-white/60">Generating artwork…</span>
           </div>
         </div>

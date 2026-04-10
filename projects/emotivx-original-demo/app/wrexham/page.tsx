@@ -426,7 +426,7 @@ export default function WrexhamPage() {
   /* ─── SHOWCASE (main page) ─────────────────────────────────── */
   if (step === "showcase") {
     return (
-      <div className="min-h-screen bg-[#0a0a0a] text-white relative overflow-hidden">
+      <div className="min-h-screen bg-[#080810] text-white relative overflow-hidden">
         <DragonWatermark />
 
         {/* ── HERO ──────────────────────────────────────────── */}
@@ -747,7 +747,7 @@ export default function WrexhamPage() {
   /* ─── GENERATING STATE ─────────────────────────────────────── */
   if (step === "generate") {
     return (
-      <div className="min-h-screen bg-[#0a0a0a] text-white flex flex-col items-center justify-center">
+      <div className="min-h-screen bg-[#080810] text-white flex flex-col items-center justify-center">
         <Loader2 className="h-12 w-12 animate-spin text-red-400" />
         <p className="mt-4 text-xl font-semibold">Generating 360° artwork...</p>
         {selectedGoal && (
@@ -759,7 +759,7 @@ export default function WrexhamPage() {
 
   /* ─── CUSTOMIZE STATE ──────────────────────────────────────── */
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white">
+    <div className="min-h-screen bg-[#080810] text-white">
       {/* Header */}
       <div className="border-b border-white/5 bg-black/40 backdrop-blur">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center gap-4">
@@ -860,7 +860,7 @@ export default function WrexhamPage() {
                 className="w-full accent-red-500 h-1.5" />
             </div>
 
-            <div className="space-y-2 sticky bottom-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a] pt-4 pb-2">
+            <div className="space-y-2 sticky bottom-0 bg-gradient-to-t from-[#080810] via-[#080810] pt-4 pb-2">
               <button onClick={handleExport} disabled={generating}
                 className="w-full rounded-lg bg-red-600 px-4 py-3 font-semibold text-white hover:bg-red-700 disabled:opacity-50 transition">
                 {generating ? "Rendering..." : "Download PNG"}

@@ -54,7 +54,7 @@ export default function AvatarGeneratorPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] px-4 py-8">
+    <div className="min-h-screen bg-[#080810] px-4 py-8">
       <div className="mx-auto max-w-6xl">
 
         {/* Header */}
@@ -186,7 +186,7 @@ export default function AvatarGeneratorPage() {
               <p className="text-xs font-bold text-[#888888] uppercase tracking-wider mb-4">Preview</p>
 
               {/* Avatar display */}
-              <div className="rounded-xl bg-[#0A0A0A] border border-white/5 aspect-square flex items-center justify-center relative overflow-hidden mb-4">
+              <div className="rounded-xl bg-[#080810] border border-white/5 aspect-square flex items-center justify-center relative overflow-hidden mb-4">
                 {generated ? (
                   <>
                     <Image

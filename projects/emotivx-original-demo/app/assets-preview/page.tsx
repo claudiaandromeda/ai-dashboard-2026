@@ -49,14 +49,14 @@ export default function AssetsPreviewPage() {
   );
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] pb-20">
+    <div className="min-h-screen bg-[#080810] pb-20">
       {/* Hero */}
-      <div className="relative overflow-hidden border-b border-white/5 bg-gradient-to-b from-[#111111] to-[#0A0A0A] px-6 py-14 text-center">
+      <div className="relative overflow-hidden border-b border-white/5 bg-gradient-to-b from-[#111111] to-[#080810] px-6 py-14 text-center">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute -top-20 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-[#DA291C] blur-3xl" />
+          <div className="absolute -top-20 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-[#8AE234] blur-3xl" />
         </div>
         <div className="relative mx-auto max-w-3xl">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#DA291C]/30 bg-[#DA291C]/10 px-4 py-1.5 text-xs font-semibold text-[#DA291C] uppercase tracking-wider">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8AE234]/30 bg-[#8AE234]/10 px-4 py-1.5 text-xs font-semibold text-[#8AE234] uppercase tracking-wider">
             <Layers className="h-3 w-3" />
             Work In Progress
           </div>
@@ -67,7 +67,7 @@ export default function AssetsPreviewPage() {
             15 generative textures produced for composite hoodie artwork. These will be layered with the EmotivX data lines to create the final all-over-print designs.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-[#555555]">
-            <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-[#DA291C]" />15 textures generated</span>
+            <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-[#8AE234]" />15 textures generated</span>
             <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-[#888888]" />5 categories</span>
             <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-[#444444]" />Composite stage: pending</span>
           </div>
@@ -90,7 +90,7 @@ export default function AssetsPreviewPage() {
               style={activeCategory === cat && cat !== "All" ? { borderColor: CATEGORY_COLORS[cat], color: CATEGORY_COLORS[cat], backgroundColor: `${CATEGORY_COLORS[cat]}15` } : {}}
               className={`rounded-full border px-4 py-1.5 text-xs font-medium transition ${
                 activeCategory === cat
-                  ? "border-[#DA291C] bg-[#DA291C]/10 text-white"
+                  ? "border-[#8AE234] bg-[#8AE234]/10 text-white"
                   : "border-white/10 text-[#888888] hover:border-white/30 hover:text-white"
               }`}
             >
@@ -146,7 +146,7 @@ export default function AssetsPreviewPage() {
               { step: "02", title: "Composite Data Line", desc: "Overlay the EmotivX goal data line SVG on top of the chosen texture at full-garment scale", status: "next" },
               { step: "03", title: "Hoodie Mockup", desc: "Apply composite to the garment template and send to Printful for production-ready print files", status: "pending" },
             ].map((item) => (
-              <div key={item.step} className="rounded-xl border border-white/5 bg-[#0A0A0A] p-5">
+              <div key={item.step} className="rounded-xl border border-white/5 bg-[#080810] p-5">
                 <div className="mb-3 flex items-center justify-between">
                   <span className="font-display text-2xl font-extrabold text-[#333333]">{item.step}</span>
                   <span className={`rounded-full px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide ${

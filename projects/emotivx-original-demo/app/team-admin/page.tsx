@@ -19,7 +19,7 @@ import { TEAM_REGISTRY, type TeamConfig } from "@/lib/teams";
 
 /* ─── Constants ────────────────────────────────────────────────────── */
 
-const ACCENT = "#DA291C";
+const ACCENT = "#8AE234";
 const TEAM_KEY = "Wrexham";
 const WREXHAM_MATCHES = [1376994, 1377235, 1377475];
 
@@ -259,7 +259,7 @@ export default function TeamAdminPage() {
             <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
               {/* Logo */}
               <div className="flex flex-col items-center gap-3">
-                <div className="relative h-24 w-24 overflow-hidden rounded-xl border border-white/10 bg-[#0A0A0A]">
+                <div className="relative h-24 w-24 overflow-hidden rounded-xl border border-white/10 bg-[#080810]">
                   <Image
                     src={team.logoUrl}
                     alt={`${team.name} logo`}
@@ -343,7 +343,7 @@ export default function TeamAdminPage() {
                       return (
                         <div
                           key={key}
-                          className="flex flex-col gap-3 rounded-lg border border-white/5 bg-[#0A0A0A] p-3 sm:flex-row sm:items-center sm:justify-between"
+                          className="flex flex-col gap-3 rounded-lg border border-white/5 bg-[#080810] p-3 sm:flex-row sm:items-center sm:justify-between"
                         >
                           {/* Goal info */}
                           <div className="flex items-center gap-3">
@@ -468,7 +468,7 @@ export default function TeamAdminPage() {
                   type="text"
                   value={storeName}
                   onChange={(e) => setStoreName(e.target.value)}
-                  className="w-full rounded-lg border border-white/10 bg-[#0A0A0A] px-3 py-2 text-sm text-white outline-none transition focus:border-white/20"
+                  className="w-full rounded-lg border border-white/10 bg-[#080810] px-3 py-2 text-sm text-white outline-none transition focus:border-white/20"
                 />
               </div>
 
@@ -481,7 +481,7 @@ export default function TeamAdminPage() {
                   type="number"
                   value={maxEdition}
                   onChange={(e) => setMaxEdition(e.target.value)}
-                  className="w-full rounded-lg border border-white/10 bg-[#0A0A0A] px-3 py-2 text-sm text-white outline-none transition focus:border-white/20"
+                  className="w-full rounded-lg border border-white/10 bg-[#080810] px-3 py-2 text-sm text-white outline-none transition focus:border-white/20"
                 />
               </div>
 

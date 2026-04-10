@@ -1,0 +1,136 @@
+{
+  "_meta": {
+    "description": "Club colour configurations for EmotivX art generation. Each club has home and away palettes with primary, secondary, and accent colours.",
+    "format": "hex colours, ordered by visual dominance"
+  },
+  "clubs": {
+    "arsenal": {
+      "name": "Arsenal",
+      "short": "ARS",
+      "home": {
+        "primary": "#EF0107",
+        "secondary": "#FFFFFF",
+        "accent": "#023474",
+        "background": "#9C824A"
+      },
+      "away": {
+        "primary": "#FFF200",
+        "secondary": "#023474",
+        "accent": "#EF0107",
+        "background": "#1B1B1B"
+      }
+    },
+    "manchester_united": {
+      "name": "Manchester United",
+      "short": "MUN",
+      "home": {
+        "primary": "#DA291C",
+        "secondary": "#FFFFFF",
+        "accent": "#FFE500",
+        "background": "#1B1B1B"
+      },
+      "away": {
+        "primary": "#1B1B1B",
+        "secondary": "#DA291C",
+        "accent": "#FFFFFF",
+        "background": "#2D2D2D"
+      }
+    },
+    "wrexham": {
+      "name": "Wrexham AFC",
+      "short": "WXM",
+      "home": {
+        "primary": "#DA291C",
+        "secondary": "#FFFFFF",
+        "accent": "#C9A84C",
+        "background": "#0A0A0A"
+      },
+      "away": {
+        "primary": "#F0D000",
+        "secondary": "#1A5C2A",
+        "accent": "#DA291C",
+        "background": "#0D1A0F"
+      }
+    },
+    "barcelona": {
+      "name": "FC Barcelona",
+      "short": "BAR",
+      "home": {
+        "primary": "#A50044",
+        "secondary": "#004D98",
+        "accent": "#EDBB00",
+        "background": "#1A0A1A"
+      },
+      "away": {
+        "primary": "#EDBB00",
+        "secondary": "#A50044",
+        "accent": "#004D98",
+        "background": "#1A1A0A"
+      }
+    },
+    "liverpool": {
+      "name": "Liverpool FC",
+      "short": "LIV",
+      "home": {
+        "primary": "#C8102E",
+        "secondary": "#F6EB61",
+        "accent": "#00B2A9",
+        "background": "#1A0808"
+      },
+      "away": {
+        "primary": "#F6EB61",
+        "secondary": "#C8102E",
+        "accent": "#FFFFFF",
+        "background": "#1A1A08"
+      }
+    },
+    "chelsea": {
+      "name": "Chelsea FC",
+      "short": "CHE",
+      "home": {
+        "primary": "#034694",
+        "secondary": "#FFFFFF",
+        "accent": "#DBA111",
+        "background": "#0A0A1A"
+      },
+      "away": {
+        "primary": "#FFFFFF",
+        "secondary": "#034694",
+        "accent": "#DBA111",
+        "background": "#1A1A1A"
+      }
+    },
+    "tottenham": {
+      "name": "Tottenham Hotspur",
+      "short": "TOT",
+      "home": {
+        "primary": "#FFFFFF",
+        "secondary": "#132257",
+        "accent": "#FFFFFF",
+        "background": "#0A0A1A"
+      },
+      "away": {
+        "primary": "#132257",
+        "secondary": "#FFFFFF",
+        "accent": "#7EC4E4",
+        "background": "#1A1A2A"
+      }
+    },
+    "manchester_city": {
+      "name": "Manchester City",
+      "short": "MCI",
+      "home": {
+        "primary": "#6CABDD",
+        "secondary": "#FFFFFF",
+        "accent": "#1C2C5B",
+        "background": "#0A1A2A"
+      },
+      "away": {
+        "primary": "#1C2C5B",
+        "secondary": "#6CABDD",
+        "accent": "#FFFFFF",
+        "background": "#1A1A2A"
+      }
+    }
+  }
+}

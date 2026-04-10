@@ -28,7 +28,7 @@ interface Props {
 export default function AdjustmentSliders({
   values,
   onChange,
-  accentColor = "#DA291C",
+  accentColor = "#8AE234",
 }: Props) {
   return (
     <div>
@@ -79,7 +79,7 @@ export default function AdjustmentSliders({
           width: 16px;
           height: 16px;
           border-radius: 50%;
-          background: var(--accent, #da291c);
+          background: var(--accent, #8AE234);
           cursor: pointer;
           border: 2px solid #fff;
         }
@@ -87,7 +87,7 @@ export default function AdjustmentSliders({
           width: 16px;
           height: 16px;
           border-radius: 50%;
-          background: var(--accent, #da291c);
+          background: var(--accent, #8AE234);
           cursor: pointer;
           border: 2px solid #fff;
         }

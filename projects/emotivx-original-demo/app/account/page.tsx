@@ -134,12 +134,12 @@ export default function AccountPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] px-4 py-8">
+    <div className="min-h-screen bg-[#080810] px-4 py-8">
       <div className="mx-auto max-w-5xl">
 
         {/* Header */}
         <div className="mb-8 flex items-center gap-5">
-          <div className="h-16 w-16 rounded-full bg-[#BA0C2F] flex items-center justify-center shrink-0">
+          <div className="h-16 w-16 rounded-full bg-[#8AE234] flex items-center justify-center shrink-0 text-[#080810]">
             <span className="font-display text-2xl font-bold text-white">{DEMO_USER.avatar}</span>
           </div>
           <div>
@@ -149,7 +149,7 @@ export default function AccountPage() {
               <div className="relative h-4 w-4">
                 <Image src="https://r2.thesportsdb.com/images/media/team/badge/ezpymt1675092551.png" alt="Wrexham" fill className="object-contain" />
               </div>
-              <span className="text-xs font-semibold text-[#BA0C2F]">{DEMO_USER.club} Fan</span>
+              <span className="text-xs font-semibold text-[#8AE234]">{DEMO_USER.club} Fan</span>
             </div>
           </div>
           <div className="ml-auto hidden sm:flex gap-3 text-center">
@@ -179,7 +179,7 @@ export default function AccountPage() {
               >
                 <Icon className="h-3.5 w-3.5" />
                 {t.label}
-                {active && <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[#BA0C2F]" />}
+                {active && <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[#8AE234]" />}
               </button>
             );
           })}
@@ -272,7 +272,7 @@ export default function AccountPage() {
                         showNameNumber={true}
                         showLogo={true}
                         logoUrl="https://r2.thesportsdb.com/images/media/team/badge/ezpymt1675092551.png"
-                        teamColour="#BA0C2F"
+                        teamColour="#8AE234"
                         height={260}
                       />
                     </div>
@@ -298,7 +298,7 @@ export default function AccountPage() {
                         showNameNumber={true}
                         showLogo={true}
                         logoUrl="https://r2.thesportsdb.com/images/media/team/badge/ezpymt1675092551.png"
-                        teamColour="#BA0C2F"
+                        teamColour="#8AE234"
                         height={260}
                       />
                     </div>
@@ -443,7 +443,7 @@ export default function AccountPage() {
         {/* Club tab */}
         {tab === "club" && (
           <div className="space-y-4">
-            <div className="rounded-xl border border-[#BA0C2F]/20 bg-[#BA0C2F]/5 p-6">
+            <div className="rounded-xl border border-[#8AE234]/20 bg-[#8AE234]/5 p-6">
               <div className="flex items-center gap-4 mb-6">
                 <div className="relative h-16 w-16">
                   <Image src="https://r2.thesportsdb.com/images/media/team/badge/ezpymt1675092551.png" alt="Wrexham" fill className="object-contain" />
@@ -491,7 +491,7 @@ export default function AccountPage() {
                   <span className="text-xs text-[#555555]">{f.label}</span>
                   <div className="flex items-center gap-2">
                     <span className="text-sm text-white">{f.value}</span>
-                    <button className="text-[10px] text-[#BA0C2F] hover:underline">Edit</button>
+                    <button className="text-[10px] text-[#8AE234] hover:underline">Edit</button>
                   </div>
                 </div>
               ))}

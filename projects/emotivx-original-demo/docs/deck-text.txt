@@ -1,0 +1,336 @@
+Celebrating the Emotion of Sport
+
+Technology Deck for DVLT Meeting / Workshop
+March 2026
+
+Creating the leading global fan engagement ecosystem by
+immortalising every emotive moment in sport
+
+What is EmotivX?
+EmotivX is a Web 3.0 engagement and reward ecosystem for leading global brands and IP owners (sports
+clubs & federations, brands, athletes, and media & content owners) focused on leveraging the ‘most emotive
+moments in sport’ to create unique 1-of-1 digital and physical assets.
+EmotivX is a technology business using sporting data feeds to create commemorative assets of the most
+emotive moments across sports, then converting those assets into data-driven outcomes that generate new
+revenue streams, fan engagement, and long-term brand equity.
+The key component parts of EmotivX are:
+Secure, trusted, walled-garden digital asset marketplace
+Latest applications of AI/ML technologies
+Global community of passionate sports fans, brands and IP owners
+Unique, customised digital collectibles and merchandise created from sports data (archive & live)
+Recurring commercial model through continuous engagement and reward
+Print-on-demand fulfilment model for all physical goods
+
+EmotivX Product
+
+Ecosystem Process Flow
+
+Data Processing Platform
+
+Content Creation Platform
+
+Digital Assets
+Near-instantaneously
+available to the fans
+
+Physical Merch
+
+Data lines of sporting moments
+(live or archive) across global
+sport are near-instantaneously
+created via automation
+
+All pre-approved, contracted assets
+and artistic design styles are preloaded to ensure partner / brand IP
+integrity
+
+EmotivX Product
+
+Digital & Merch Assets
+Digital Assets
+
+Digital Asset Management:
+Instantaneous and automated production of digital assets, based on every
+emotive moment in sport (goals, touchdowns, tries, knock-outs...etc.)
+Digital assets are securely stored on the blockchain (walled garden)
+Initially free ‘digital twins’ for fans buying EmotivX physical merch
+Tradable digital assets, assigned initial values based on the ‘moment’ and
+managed scarcity of created assets
+Secondary marketplace provides recurring revenue for EmotivX and partners
+
+Physical Merch
+
+Physical Merchandise Management:
+40+ SKUs available from Content Creation Platform (e.g., 1:1 hoodies, tshirts, bags, hats, phone covers etc.), all created in under one minute
+Spiralling AI technologies ensure patterns are throughout the entire product
+Incentives for purchasing at live events / in-stadia (end-to-end purchasing
+via app or kiosk)
+Fans can customise with seat numbers etc.
+Third-party, print-on-demand fulfilment (via Printful)
+
+EmotivX Product
+Additional Graphical Elements:
+A ‘featured moment’ banner within the consumer app focused on that Rooney wonder goal
+Some of the many SKUs of physical merchandise that the Ronney goal produces
+
+EmotivX Product - The Demo
+
+EmotivX Product
+
+In-Stadia Fan Engagement
+
+“Putting fans and brands at the beating heart of sport” - digital opportunity for the partner /
+brand to engage with their fans at an emotive time as soon as a ‘moment’ has occurred and
+been captured.
+Above, there is a digital momento that can be shown to the fans on an in-stadium screen
+and/ or via the club app. To the right, the EmotivX plan includes in-stadia / in retail kiosks for
+fans to buy digital & physical assets of goals etc. from the team (archive to present day).
+
+Exponential Growth Engine
+Ecosystem: Exponential Growth
+
+EmotivX
+Building an Ecosystem
+Sports
+
+8
+
+Leagues / Federations
+
+11
+
+Teams / Clubs
+
+>950
+
+Athletes
+
+>600,000
+
+Brands
+
+>4,100
+
+Exponential Growth Engine
+
+Ecosystem: Single Large Brand Growth Potential
+
+Phase One GTM Strategy
+A Considered Approach to Digital Assets: Club / Team
+1. Launch
+a. Focus will be on the creation of digital assets from archive data (e.g., the Top 100 Goals in the club’s history)
+b. Potential for fan engagement ahead of the launch (a fan poll to confirm the top 100 goals to become digital assets)
+
+2. Strategy
+a. All digital assets will have five levels of scarcity (Common, Uncommon, Rare, Epic & Legendary), as well as a defined
+number of assets released per goal
+b. Tiered (increasing) prices will be applied to these digital assets (where the Common will remain at no cost to the fan)
+c. All digital assets, including the Common, will be linked to a range of redeemable real-world assets (e.g., drinks, food,
+apparel, access etc.) that have a ‘value’ to the fan if redeemed
+i. Real-world value will be linked to EmotivX assets (e.g., higher level of scarcity digital assets, merch etc.)
+ii. The partner will select their chosen real-world assets, ensuring that a sensible margin is maintained
+
+d. Merch designs will be developed in advance to cover the campaign (e.g., Top 100 Goals)
+
+3. Roadmap
+a. Lagged live goals (‘Archive Moments’ available to the fan within days of the ‘moment’)
+b. Key ‘moments’: Goal of the Week, Goal of the Month etc.
+c. Live data creation of assets, available to the fan within seconds of the emotive moments
+
+Technology & Component Parts
+High-Level Workflow & Component Parts
+
+Third-party, real-time sports data feeds into EmotivX
+DPP - the Data Processing Platform digests, interrogates and repurposes the sports data
+CCP - the Content Creation Platform transforms the data objects from the DPP into distributable assets
+(both Digital and Physical)
+CMS - the Campaign Management System is the ‘ordering system’ and triggers campaign flows
+CVM - the Content Verification Module checks and verifies all physical & digital assets before distribution
+Physical Fulfiment - merchandise produced to order and fulfilled by expert third-party (Printful)
+Digital Fulfilment - digital assets sent to the primary marketplace
+TRS - the Tracking & Reporting System is the back-office for EmotivX and single source of truth
+
+Please see the dedicated Technology Deck for more in-depth information
+
+Technology & Component Parts
+Flow Visual
+
+DPP
+
+CCP
+
+CONSUMERS
+
+Data Processing Platform
+
+Content Creation platform
+
+Various channels: Mobile app, kiosks + more
+
+The DPP and the CCP are Critical and Integrated Components
+at the Heart of EmotivX
+
+Technology & Component Parts
+Workflow Schematic
+Rejected
+Asset
+Review
+
+Secondary
+Digital
+Market
+Place
+
+Primary
+Digital
+MarketPlace
+Digital
+Asset
+Creation
+
+XML
+Data
+Feeds
+
+Data
+Processing
+Platform
+(DPP)
+
+Content
+Creation
+Platform
+(CCP)
+
+Campaign
+Management
+System
+(CMS)
+
+Content
+Verification
+Module
+(CVM)
+
+Store
+front
+Availability
+
+Payment
+Platform
+
+Digital
+Product
+Customer
+Physical
+Product
+Customer
+
+Physical
+Asset
+Creation
+Merchandise
+Market
+Place
+
+Rejected
+Asset
+Review
+
+Data Aquisition Data Processing
+
+Asset
+Creation
+
+Campaign
+Managememt
+
+Content
+Verification
+
+Marketplace
+
+Tracking & Reporting System (TRS)
+
+Fullfilmet
+Platform
+(PrintFul)
+
+Payment
+
+Fullfilment
+
+Technology & Component Parts
+Key Technological Component Parts: Phase One Launch
+Sports Data Feeds
+Captured and managed by the EmotivX team
+Initially football (archive data in phase one)
+
+CCP
+Already developed by the EmotivX team
+Physical fulfilment already integrated to Printful (with payment mechanism)
+
+EmotivX Front-End
+Part built in-house
+Decision on how launch partner consumers will interact with EmotivX (partner iFrame and/ or EmotivX App)
+EmotivX will fully develop and deploy the front-end
+
+Outstanding Items
+DPP - full build is not required for phase one, but is important for the roadmap and commitment to launch partners
+CMS - can be handled in-house initially for launch partners
+TRS - can be handled in-house initially for launch partners
+DAM - we need the ability to mint digital assets, but not secondary market trading initially
+CVM - for launch, this will be manual pre-checking with no fan customisation functionality available
+
+Collaboration with DVLT
+Mutual Commercial Synergies
+EmotivX would work with DVLT in numerous ways to add value to both propositions:
+Launch collaboration
+
+EmotivX to launch with ADIO technology embedded as suitable and subject to time & resources
+Discussions / workshops to be had about physical crypto anchors going into physical merchandise
+Archive and lagged live can make use of ADIO triggers in certain scenarios, BUT fully live implementations are the
+‘killer app’ for both parties
+
+Synergistic products / partners
+
+Cross-promotion of products - not just ADIO, but holograms, the in-stadia options via API Media and more
+Mutual PR opportunities in global sport will natural develop over time
+Roadmap of opportunities to be set out
+
+Revenue generation
+
+EmotivX product sales (digital and physical in primary and secondary markets)
+Data Score & Data Value = revenue for DVLT, EmotivX & partners (clubs, brands etc) over time
+
+Collaboration with DVLT
+ADIO Collaboration Visual
+The Stadium EmotivX
+Experience:
+Amazing / crucial goal
+scored by the home team
+Jumbotron message and
+ADIO signal
+Opted-in fans get immediate
+offer to ‘OWN THAT GOAL’
+Purchase your ‘I WAS THERE’
+momento on your phone or
+via the stadium kiosk
+Opted-in fans at home also
+get the signal / opportunity
+
+Summary
+EmotivX will partner with DVLT to initially create a PoC with a midtier UK launch partner in football
+Limited technology input required from DVLT for the initial launch
+DPP build and ADIO integration / operation as suitable
+Decision on the DAM strategy to be had
+
+Global MSA will include the longer-term intent for collaboration on
+technology
+Significant mutual benefits for the parties along the roadmap
+EmotivX greatly looks forward to working with DVLT and bringing
+this shared vision to life
+
+Celebrating the Emotion of Sport
+
+

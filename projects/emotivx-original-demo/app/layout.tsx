@@ -1,32 +1,14 @@
 import "./globals.css";
-import { Barlow_Condensed, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import NavbarWrapper from "@/components/ui/NavbarWrapper";
 import Footer from "@/components/ui/Footer";
 import RoleSwitcher from "@/components/ui/RoleSwitcher";
 import AuthProvider from "@/components/auth/AuthProvider";
 import { CartProvider } from "@/components/cart/CartProvider";
 
-const barlowCondensed = Barlow_Condensed({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-display",
-  style: ["normal", "italic"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-body",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-});
-
 export const metadata = {
-  title: "EmotivX — Premium Sports Merchandise",
+  title: "EmotivX — Immortalising Every Emotive Moment in Sport",
   description:
-    "Shop personalized gear featuring the biggest plays in sports history.",
+    "EmotivX transforms live sport into instant, collectible media inventory.",
 };
 
 export default function RootLayout({
@@ -35,8 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`dark ${barlowCondensed.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
-      <body className="min-h-screen bg-[#0A0A0A] font-body text-white antialiased">
+    <html lang="en" className="dark">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+      </head>
+      <body className="min-h-screen bg-[#080810] font-body text-white antialiased">
         <AuthProvider>
           <CartProvider>
             <NavbarWrapper />

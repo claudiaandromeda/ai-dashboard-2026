@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 /* ------------------------------------------------------------------ */
 /*  Data                                                               */
@@ -59,7 +60,7 @@ function LinkColumn({
           <li key={link.label}>
             <Link
               href={link.href}
-              className="text-sm text-[#9CA3AF] transition hover:text-[#DA291C]"
+              className="text-sm text-[#9CA3AF] transition hover:text-[#8AE234]"
             >
               {link.label}
             </Link>
@@ -87,17 +88,14 @@ export default function Footer() {
   }
 
   return (
-    <footer className="border-t border-white/5 bg-[#0A0A0A]">
+    <footer className="border-t border-white/5 bg-[#080810]">
       {/* ---- Top Section: 4 columns ---- */}
       <div className="mx-auto max-w-6xl px-6 pb-12 pt-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1 — Brand */}
           <div className="space-y-4">
-            <Link
-              href="/"
-              className="font-display text-lg font-extrabold tracking-[0.2em] text-white uppercase hover:opacity-80 transition"
-            >
-              EMOTIV<span className="text-[#DA291C]">X</span>
+            <Link href="/" className="hover:opacity-80 transition">
+              <Image src="/images/emotivx-logo.png" alt="EmotivX" width={240} height={80} className="h-20 w-auto" />
             </Link>
             <p className="text-sm leading-relaxed text-[#9CA3AF]">
               Turn real sports moments into premium merch
@@ -108,7 +106,7 @@ export default function Footer() {
                 <a
                   key={s.label}
                   href={s.href}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-[10px] font-semibold text-[#9CA3AF] transition hover:border-[#DA291C]/40 hover:text-[#DA291C]"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-[10px] font-semibold text-[#9CA3AF] transition hover:border-[#8AE234]/40 hover:text-[#8AE234]"
                 >
                   {s.label}
                 </a>
@@ -142,11 +140,11 @@ export default function Footer() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@email.com"
-              className="flex-1 rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-2.5 text-sm text-white placeholder-[#888888] outline-none focus:border-[#DA291C]/40"
+              className="flex-1 rounded-lg border border-white/10 bg-[#1F1F1F] px-4 py-2.5 text-sm text-white placeholder-[#888888] outline-none focus:border-[#8AE234]/40"
             />
             <button
               type="submit"
-              className="shrink-0 rounded-lg bg-[#DA291C] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#DA291C]/90"
+              className="shrink-0 rounded-full bg-[#8AE234] px-5 py-2.5 text-sm font-semibold text-[#080810] transition hover:bg-[#8AE234]/90"
             >
               Subscribe
             </button>
@@ -165,7 +163,7 @@ export default function Footer() {
                 href="https://github.com/statsbomb/open-data"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#9CA3AF] underline decoration-white/20 transition hover:text-[#DA291C]"
+                className="text-[#9CA3AF] underline decoration-white/20 transition hover:text-[#8AE234]"
               >
                 StatsBomb Open Data
               </a>

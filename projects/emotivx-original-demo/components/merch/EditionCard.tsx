@@ -48,7 +48,7 @@ export default function EditionCard({
   homeScore,
   awayScore,
   matchDate,
-  teamColour = "#DA291C",
+  teamColour = "#8AE234",
   accentColour = "#C9A84C",
 }: EditionCardProps) {
   const disp    = fmtName(scorerName);

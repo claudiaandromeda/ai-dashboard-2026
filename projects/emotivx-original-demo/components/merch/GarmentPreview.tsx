@@ -78,7 +78,7 @@ const TEMPLATES: Record<ProductType, TemplateConfig> = {
 };
 
 const DEFAULT_GRADIENT =
-  "linear-gradient(135deg, #DA291C 0%, #1a1a2e 50%, #DA291C 100%)";
+  "linear-gradient(135deg, #8AE234 0%, #1a1a2e 50%, #8AE234 100%)";
 
 /* ── Component ─────────────────────────────────────────────────────── */
 
@@ -142,7 +142,7 @@ export default function GarmentPreview({
       {/* Ambient glow behind the product */}
       <div
         className="pointer-events-none absolute inset-0 -z-10 opacity-30 blur-3xl"
-        style={{ background: "radial-gradient(circle, rgba(218,41,28,0.25), transparent 70%)" }}
+        style={{ background: "radial-gradient(circle, rgba(138,226,52,0.25), transparent 70%)" }}
       />
 
       {/* ── Artwork fills product shape via SVG mask ── */}

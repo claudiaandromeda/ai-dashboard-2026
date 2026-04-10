@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "match_id": 3941017,
+    "competition": "UEFA Euro 2024",
+    "stage": "Round of 16",
+    "home_team": "England",
+    "away_team": "Slovakia",
+    "date": "2024-06-30"
+  },
+  "goal": {
+    "id": "b5e67076-7ccb-4e18-8f02-555b8c4f27fd",
+    "index": 3586,
+    "period": 2,
+    "timestamp": "00:49:33.833",
+    "minute": 94,
+    "second": 33,
+    "type": { "id": 16, "name": "Shot" },
+    "possession": 142,
+    "possession_team": { "id": 768, "name": "England" },
+    "play_pattern": { "id": 4, "name": "From Throw In" },
+    "team": { "id": 768, "name": "England" },
+    "player": { "id": 30714, "name": "Jude Bellingham" },
+    "position": { "id": 9, "name": "Right Defensive Midfield" },
+    "location": [110.1, 40.9],
+    "duration": 0.840563,
+    "related_events": ["a25ba6af-356c-4793-8704-7c7c06f4855c"],
+    "shot": {
+      "statsbomb_xg": 0.103242844,
+      "end_location": [120.0, 43.3, 1.6],
+      "key_pass_id": "b3b058c0-3733-4609-84ea-63abedcbf446",
+      "technique": { "id": 94, "name": "Overhead Kick" },
+      "body_part": { "id": 40, "name": "Right Foot" },
+      "type": { "id": 87, "name": "Open Play" },
+      "outcome": { "id": 97, "name": "Goal" },
+      "first_time": true,
+      "freeze_frame": [
+        { "location": [111.1, 58.9], "player": { "id": 35653, "name": "Tomas Suslov" }, "position": { "id": 21, "name": "Left Wing" }, "teammate": false },
+        { "location": [108.7, 51.3], "player": { "id": 6798, "name": "Stanislav Lobotka" }, "position": { "id": 9, "name": "Right Defensive Midfield" }, "teammate": false },
+        { "location": [108.9, 48.6], "player": { "id": 11383, "name": "Laszlo Benes" }, "position": { "id": 11, "name": "Left Defensive Midfield" }, "teammate": false },
+        { "location": [111.0, 50.2], "player": { "id": 16879, "name": "David Hancko" }, "position": { "id": 8, "name": "Left Wing Back" }, "teammate": false },
+        { "location": [110.0, 44.7], "player": { "id": 15546, "name": "Matus Bero" }, "position": { "id": 17, "name": "Right Wing" }, "teammate": false },
+        { "location": [114.6, 47.0], "player": { "id": 6990, "name": "Milan Skriniar" }, "position": { "id": 5, "name": "Left Center Back" }, "teammate": false },
+        { "location": [113.7, 43.7], "player": { "id": 20043, "name": "Norbert Gyomber" }, "position": { "id": 4, "name": "Center Back" }, "teammate": false },
+        { "location": [112.9, 40.8], "player": { "id": 16298, "name": "Denis Vavro" }, "position": { "id": 3, "name": "Right Center Back" }, "teammate": false },
+        { "location": [112.1, 36.7], "player": { "id": 9722, "name": "Peter Pekarik" }, "position": { "id": 7, "name": "Right Wing Back" }, "teammate": false },
+        { "location": [118.7, 41.5], "player": { "id": 3711, "name": "Martin Dubravka" }, "position": { "id": 1, "name": "Goalkeeper" }, "teammate": false },
+        { "location": [111.1, 76.7], "player": { "id": 3205, "name": "Kyle Walker" }, "position": { "id": 2, "name": "Right Back" }, "teammate": true },
+        { "location": [97.4, 43.6], "player": { "id": 9000, "name": "Eberechi Eze" }, "position": { "id": 16, "name": "Left Midfield" }, "teammate": true },
+        { "location": [113.5, 54.9], "player": { "id": 3244, "name": "John Stones" }, "position": { "id": 3, "name": "Right Center Back" }, "teammate": true },
+        { "location": [110.0, 51.5], "player": { "id": 3943, "name": "Declan Rice" }, "position": { "id": 11, "name": "Left Defensive Midfield" }, "teammate": true },
+        { "location": [112.5, 49.7], "player": { "id": 34526, "name": "Marc Guehi" }, "position": { "id": 5, "name": "Left Center Back" }, "teammate": true },
+        { "location": [104.3, 39.6], "player": { "id": 22084, "name": "Bukayo Saka" }, "position": { "id": 6, "name": "Left Back" }, "teammate": true },
+        { "location": [113.1, 43.6], "player": { "id": 3834, "name": "Ivan Toney" }, "position": { "id": 24, "name": "Left Center Forward" }, "teammate": true },
+        { "location": [109.6, 37.0], "player": { "id": 10955, "name": "Harry Kane" }, "position": { "id": 22, "name": "Right Center Forward" }, "teammate": true }
+      ]
+    }
+  },
+  "buildup": [
+    {
+      "id": "740360d4-497f-4254-87dc-761c7ced5c23",
+      "index": 3581,
+      "period": 2,
+      "timestamp": "00:49:30.973",
+      "minute": 94,
+      "second": 30,
+      "type": { "id": 30, "name": "Pass" },
+      "team": { "id": 768, "name": "England" },
+      "player": { "id": 3205, "name": "Kyle Walker" },
+      "position": { "id": 2, "name": "Right Back" },
+      "location": [114.2, 80.0],
+      "duration": 1.870863,
+      "pass": {
+        "recipient": { "id": 34526, "name": "Marc Guehi" },
+        "length": 28.477535,
+        "angle": -1.6446056,
+        "height": { "id": 3, "name": "High Pass" },
+        "end_location": [112.1, 51.6],
+        "type": { "id": 67, "name": "Throw-in" }
+      }
+    },
+    {
+      "id": "79c968c4-fe00-4fbf-9ece-561908db4dd2",
+      "index": 3582,
+      "period": 2,
+      "timestamp": "00:49:32.844",
+      "minute": 94,
+      "second": 32,
+      "type": { "id": 42, "name": "Ball Receipt*" },
+      "team": { "id": 768, "name": "England" },
+      "player": { "id": 34526, "name": "Marc Guehi" },
+      "position": { "id": 5, "name": "Left Center Back" },
+      "location": [112.1, 51.6]
+    },
+    {
+      "id": "0d62c1b5-6c24-4368-8692-8511920b2b1d",
+      "index": 3583,
+      "period": 2,
+      "timestamp": "00:49:32.844",
+      "minute": 94,
+      "second": 32,
+      "type": { "id": 4, "name": "Duel" },
+      "team": { "id": 908, "name": "Slovakia" },
+      "player": { "id": 16879, "name": "David Hancko" },
+      "position": { "id": 8, "name": "Left Wing Back" },
+      "location": [8.0, 28.5],
+      "under_pressure": true,
+      "duel": {
+        "type": { "id": 10, "name": "Aerial Lost" }
+      }
+    },
+    {
+      "id": "b3b058c0-3733-4609-84ea-63abedcbf446",
+      "index": 3584,
+      "period": 2,
+      "timestamp": "00:49:32.844",
+      "minute": 94,
+      "second": 32,
+      "type": { "id": 30, "name": "Pass" },
+      "team": { "id": 768, "name": "England" },
+      "player": { "id": 34526, "name": "Marc Guehi" },
+      "position": { "id": 5, "name": "Left Center Back" },
+      "location": [112.1, 51.6],
+      "duration": 1.005745,
+      "under_pressure": true,
+      "pass": {
+        "recipient": { "id": 30714, "name": "Jude Bellingham" },
+        "length": 10.885311,
+        "angle": -1.75558,
+        "height": { "id": 3, "name": "High Pass" },
+        "end_location": [110.1, 40.9],
+        "assisted_shot_id": "b5e67076-7ccb-4e18-8f02-555b8c4f27fd",
+        "goal_assist": true,
+        "aerial_won": true
+      }
+    },
+    {
+      "id": "c76d5442-dda1-44d6-b320-9492cd295204",
+      "index": 3585,
+      "period": 2,
+      "timestamp": "00:49:33.833",
+      "minute": 94,
+      "second": 33,
+      "type": { "id": 42, "name": "Ball Receipt*" },
+      "team": { "id": 768, "name": "England" },
+      "player": { "id": 30714, "name": "Jude Bellingham" },
+      "position": { "id": 9, "name": "Right Defensive Midfield" },
+      "location": [110.1, 40.9]
+    }
+  ],
+  "match_summary": {
+    "player": "Jude Bellingham",
+    "player_id": 30714,
+    "total_events": 175,
+    "passes": 35,
+    "carries": 39,
+    "shots": 2,
+    "dribbles": 4,
+    "ball_receipts": 46,
+    "pressures": 22,
+    "duels": 7,
+    "ball_recoveries": 5
+  }
+}

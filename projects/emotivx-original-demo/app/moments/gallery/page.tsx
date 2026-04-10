@@ -253,7 +253,7 @@ function FilterSelect({
 /* ------------------------------------------------------------------ */
 
 function MomentCard({ goal }: { goal: GoalWithMatch }) {
-  const colour = TEAM_COLOURS[goal.team] || "#DA291C";
+  const colour = TEAM_COLOURS[goal.team] || "#8AE234";
   const matchLine = goal.match
     ? `${goal.match.home_team} ${goal.match.home_score}–${goal.match.away_score} ${goal.match.away_team}`
     : "";
@@ -415,7 +415,7 @@ export default function MomentsGalleryPage() {
       </div>
 
       {/* Sticky filter bar */}
-      <div className="sticky top-0 z-30 border-b border-white/5 bg-[#0a0a0a]/95 backdrop-blur">
+      <div className="sticky top-0 z-30 border-b border-white/5 bg-[#080810]/95 backdrop-blur">
         <div className="mx-auto max-w-7xl px-6 py-4">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <FilterSelect
@@ -464,7 +464,7 @@ export default function MomentsGalleryPage() {
                 setTeam("");
                 setStage("");
               }}
-              className="mt-4 text-xs font-semibold text-[#DA291C] hover:underline"
+              className="mt-4 text-xs font-semibold text-[#8AE234] hover:underline"
             >
               Clear filters
             </button>

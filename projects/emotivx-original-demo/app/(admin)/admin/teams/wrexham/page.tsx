@@ -73,7 +73,7 @@ export default function WrexhamAdminPage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-[#10B981] animate-pulse" />
                 LIVE
               </span>
-              <span className="rounded-full bg-[#DA291C]/10 border border-[#DA291C]/20 px-3 py-1 text-xs font-bold text-[#DA291C]">
+              <span className="rounded-full bg-[#8AE234]/10 border border-[#8AE234]/20 px-3 py-1 text-xs font-bold text-[#8AE234]">
                 EmotivX Admin View
               </span>
             </div>
@@ -119,7 +119,7 @@ export default function WrexhamAdminPage() {
               <Icon className="h-3.5 w-3.5" />
               {t.label}
               {t.adminOnly && (
-                <span className="rounded bg-[#DA291C]/20 px-1 py-0.5 text-[9px] font-bold text-[#DA291C]">ADMIN</span>
+                <span className="rounded bg-[#8AE234]/20 px-1 py-0.5 text-[9px] font-bold text-[#8AE234]">ADMIN</span>
               )}
               {active && <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[#BA0C2F]" />}
             </button>
@@ -255,7 +255,7 @@ function PipelineTab() {
               href: "/wrexham/360-viewer?mode=replay",
             },
           ].map(m => (
-            <Link key={m.label} href={m.href} className="rounded-lg border border-white/10 bg-[#0A0A0A] p-4 hover:border-[#BA0C2F]/30 transition">
+            <Link key={m.label} href={m.href} className="rounded-lg border border-white/10 bg-[#080810] p-4 hover:border-[#BA0C2F]/30 transition">
               <p className="text-sm font-bold text-white mb-1">{m.label}</p>
               <p className="text-[11px] text-[#555555] leading-relaxed">{m.desc}</p>
             </Link>
@@ -275,7 +275,7 @@ function PipelineTab() {
             { label: "Merch Platform", status: "live", detail: "Printful integration active", color: "#10B981" },
           ].map((step, i) => (
             <div key={i} className="flex sm:flex-col items-center gap-2 flex-1">
-              <div className="rounded-lg border border-white/5 bg-[#0A0A0A] p-3 flex-1 w-full">
+              <div className="rounded-lg border border-white/5 bg-[#080810] p-3 flex-1 w-full">
                 <div className="flex items-center gap-1.5 mb-1">
                   <span className="h-1.5 w-1.5 rounded-full animate-pulse" style={{ background: step.color }} />
                   <p className="text-[10px] font-bold text-white">{step.label}</p>
@@ -294,7 +294,7 @@ function PipelineTab() {
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-1">
             <p className="text-sm font-bold text-white">Next: Replace StatsBomb with Elliot's CV System</p>
-            <span className="rounded bg-[#DA291C]/20 px-2 py-0.5 text-[10px] font-bold text-[#DA291C]">ADMIN ONLY</span>
+            <span className="rounded bg-[#8AE234]/20 px-2 py-0.5 text-[10px] font-bold text-[#8AE234]">ADMIN ONLY</span>
           </div>
           <p className="text-xs text-[#888888]">
             Our own CV tracking eliminates third-party data costs entirely.
@@ -349,7 +349,7 @@ function MomentsTab() {
                 const s = m.sales[tier.id as keyof typeof m.sales];
                 const mx = m.max[tier.id as keyof typeof m.max];
                 return (
-                  <div key={tier.id} className="rounded-lg border border-white/5 bg-[#0A0A0A] px-2.5 py-1.5 flex items-center gap-1.5">
+                  <div key={tier.id} className="rounded-lg border border-white/5 bg-[#080810] px-2.5 py-1.5 flex items-center gap-1.5">
                     <Icon className="h-3 w-3" style={{ color: tier.color }} />
                     <span className="text-xs font-bold text-white">{s}/{mx}</span>
                   </div>
@@ -400,7 +400,7 @@ function BrandingTab() {
               </div>
             ))}
           </div>
-          <div className="rounded-lg border border-white/5 bg-[#0A0A0A] p-4 flex items-center justify-center">
+          <div className="rounded-lg border border-white/5 bg-[#080810] p-4 flex items-center justify-center">
             <div className="relative h-20 w-20">
               <Image src="https://r2.thesportsdb.com/images/media/team/badge/ezpymt1675092551.png" alt="Wrexham" fill className="object-contain" />
             </div>
@@ -412,8 +412,8 @@ function BrandingTab() {
         </div>
       </div>
 
-      <div className="rounded-xl border border-[#DA291C]/20 bg-[#DA291C]/5 p-4 flex items-center gap-3">
-        <Lock className="h-4 w-4 text-[#DA291C] shrink-0" />
+      <div className="rounded-xl border border-[#8AE234]/20 bg-[#8AE234]/5 p-4 flex items-center gap-3">
+        <Lock className="h-4 w-4 text-[#8AE234] shrink-0" />
         <p className="text-xs text-[#888888]">
           <span className="text-white font-semibold">Admin override active.</span> You can modify brand settings on behalf of the club.
           Changes will be reflected immediately in the fan-facing merch preview.
@@ -434,7 +434,7 @@ function RevenueTab({ totalRev, totalUnits }: { totalRev: number; totalUnits: nu
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {[
           { label: "Gross Revenue", value: `£${(totalRev / 1000).toFixed(1)}k`, color: WREXHAM_GOLD },
-          { label: "EmotivX (15%)", value: `£${(emotivxCut / 1000).toFixed(1)}k`, color: "#DA291C" },
+          { label: "EmotivX (15%)", value: `£${(emotivxCut / 1000).toFixed(1)}k`, color: "#8AE234" },
           { label: "Club (75%)", value: `£${(clubCut / 1000).toFixed(1)}k`, color: "#10B981" },
           { label: "Players (10%)", value: `£${(playerCut / 1000).toFixed(1)}k`, color: "#8B5CF6" },
         ].map(s => (
@@ -450,7 +450,7 @@ function RevenueTab({ totalRev, totalUnits }: { totalRev: number; totalUnits: nu
         <div className="space-y-3">
           {[
             { label: "Club (Wrexham AFC)", pct: 75, color: "#10B981", value: clubCut },
-            { label: "EmotivX Platform", pct: 15, color: "#DA291C", value: emotivxCut },
+            { label: "EmotivX Platform", pct: 15, color: "#8AE234", value: emotivxCut },
             { label: "Players (NIL Rights)", pct: 10, color: "#8B5CF6", value: playerCut },
           ].map(r => (
             <div key={r.label}>
@@ -491,8 +491,8 @@ function AdminToolsTab() {
     <div className="space-y-4">
 
       {/* Admin-only banner */}
-      <div className="rounded-xl border border-[#DA291C]/30 bg-[#DA291C]/10 p-4 flex items-center gap-3">
-        <Shield className="h-5 w-5 text-[#DA291C] shrink-0" />
+      <div className="rounded-xl border border-[#8AE234]/30 bg-[#8AE234]/10 p-4 flex items-center gap-3">
+        <Shield className="h-5 w-5 text-[#8AE234] shrink-0" />
         <p className="text-sm text-white">
           These tools are <strong>EmotivX admin only</strong> — not visible to club staff or fans.
         </p>

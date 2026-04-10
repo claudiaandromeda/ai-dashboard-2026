@@ -1,0 +1,2621 @@
+[
+  {
+    "moment_id": "1967e5c3bc250d9410dd49718a9594753c388e003f76217ec6c31a874d8ab7cf",
+    "match_id": "3749246",
+    "event_id": "4c14e2ff-ecc6-4ba1-9981-a71be09979fe",
+    "moment_type": "Goal",
+    "title": "Thierry Henry Goal vs Manchester United",
+    "description": "Goal",
+    "timestamp": "2004-03-28T00:04:08.945Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-goal-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:04:05.814Z",
+        "Label": "Ball Receipt*",
+        "Value": "85d4b2ad-3c84-4d2a-b856-3504fc2628e1",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.675,
+        "Y": 0.385,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:04:05.814Z",
+        "Label": "Carry",
+        "Value": "e71d1b4c-99c7-4b1c-9434-75eb120bf01e",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.675,
+        "Y": 0.385,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:04:07.389Z",
+        "Label": "Pass",
+        "Value": "396f650e-cdec-4825-89b9-ab2decdf3c6e",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.7166666666666667,
+        "Y": 0.4025,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:04:07.991Z",
+        "Label": "Ball Receipt*",
+        "Value": "3cba8216-2301-4dee-ba8b-75e3b20e1176",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7100000000000001,
+        "Y": 0.5287499999999999,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:04:07.991Z",
+        "Label": "Carry",
+        "Value": "0dc16165-43b8-497a-8612-9b9a9a5b33bb",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7100000000000001,
+        "Y": 0.5287499999999999,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:04:08.945Z",
+        "Label": "Shot",
+        "Value": "4c14e2ff-ecc6-4ba1-9981-a71be09979fe",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7366666666666667,
+        "Y": 0.5925,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "abcb795cb18fa8d0e9959a23d26511fbb4edd343088e1852c4e3602405b0b0b8",
+    "match_id": "3749246",
+    "event_id": "d1157746-a05d-4d68-8505-96d63171f935",
+    "moment_type": "Goal",
+    "title": "Louis Saha Goal vs Arsenal",
+    "description": "Goal",
+    "timestamp": "2004-03-28T00:40:29.356Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-goal-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:40:23.126Z",
+        "Label": "Carry",
+        "Value": "d54bba37-588d-491a-bb37-b457efe9f3ff",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.7133333333333333,
+        "Y": 0.62,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:40:25.956Z",
+        "Label": "Pass",
+        "Value": "4983f82f-2cc5-414e-a825-f22aa8895f5e",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.7158333333333334,
+        "Y": 0.63625,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:40:27.653Z",
+        "Label": "Ball Receipt*",
+        "Value": "04a54db1-6178-4fd1-ab09-c753d81e5653",
+        "Actor": "Ole Gunnar Solskjær",
+        "Team": "Manchester United",
+        "X": 0.9083333333333333,
+        "Y": 0.75125,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:40:27.653Z",
+        "Label": "Pass",
+        "Value": "6f272600-db9c-4722-a9ff-2e71b2a1c943",
+        "Actor": "Ole Gunnar Solskjær",
+        "Team": "Manchester United",
+        "X": 0.9041666666666667,
+        "Y": 0.7537499999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:40:29.277Z",
+        "Label": "Ball Receipt*",
+        "Value": "dba13599-1281-4d26-a11e-4ca500fc7df1",
+        "Actor": "Louis Saha",
+        "Team": "Manchester United",
+        "X": 0.9575,
+        "Y": 0.4175,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:40:29.356Z",
+        "Label": "Shot",
+        "Value": "d1157746-a05d-4d68-8505-96d63171f935",
+        "Actor": "Louis Saha",
+        "Team": "Manchester United",
+        "X": 0.9566666666666667,
+        "Y": 0.41875,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "0129bc3d0f4b3a40f0f9fa8df268233a11c74fa631c02f455ee43cbb5fda6e4e",
+    "match_id": "3749246",
+    "event_id": "2e918017-56f4-4919-b2ce-23f8d199adee",
+    "moment_type": "Assist",
+    "title": "Gary Neville Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:00:44.788Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:00:39.273Z",
+        "Label": "Ball Receipt*",
+        "Value": "70ffd1ce-30c6-43dc-99ca-3a43a7ccbf73",
+        "Actor": "Eric Daniel Djemba-Djemba",
+        "Team": "Manchester United",
+        "X": 0.4825,
+        "Y": 0.48375,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:00:39.273Z",
+        "Label": "Carry",
+        "Value": "a34058aa-0c74-4a95-8ac0-02372ff43ac1",
+        "Actor": "Eric Daniel Djemba-Djemba",
+        "Team": "Manchester United",
+        "X": 0.4825,
+        "Y": 0.48375,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:00:41.171Z",
+        "Label": "Pass",
+        "Value": "94084bb4-506a-48e1-a05c-db8348e0bdbf",
+        "Actor": "Eric Daniel Djemba-Djemba",
+        "Team": "Manchester United",
+        "X": 0.3975,
+        "Y": 0.57125,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:00:42.503Z",
+        "Label": "Ball Receipt*",
+        "Value": "16f756fc-64ed-4b84-ba04-ef47b0fe6699",
+        "Actor": "Gary Neville",
+        "Team": "Manchester United",
+        "X": 0.3575,
+        "Y": 0.8699999999999999,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:00:42.503Z",
+        "Label": "Carry",
+        "Value": "96264674-9d63-4e24-a9f8-31d65812f64b",
+        "Actor": "Gary Neville",
+        "Team": "Manchester United",
+        "X": 0.3575,
+        "Y": 0.8699999999999999,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:00:44.788Z",
+        "Label": "Pass",
+        "Value": "2e918017-56f4-4919-b2ce-23f8d199adee",
+        "Actor": "Gary Neville",
+        "Team": "Manchester United",
+        "X": 0.4083333333333333,
+        "Y": 0.8387499999999999,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "fb470d6b7f3f9e156195c50dafee5f2bce9d9a154982b7308e410befcf502867",
+    "match_id": "3749246",
+    "event_id": "e934864c-e91e-4e91-8b58-44608a013a3e",
+    "moment_type": "Assist",
+    "title": "John O''Shea Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:07:11.754Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:07:07.112Z",
+        "Label": "Ball Receipt*",
+        "Value": "a598a727-8d64-4280-a38e-c0ed65afec65",
+        "Actor": "Ryan Giggs",
+        "Team": "Manchester United",
+        "X": 0.9166666666666666,
+        "Y": 0.042499999999999996,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:07:07.112Z",
+        "Label": "Carry",
+        "Value": "61abfded-f282-437e-a2bb-b8f542fdddd9",
+        "Actor": "Ryan Giggs",
+        "Team": "Manchester United",
+        "X": 0.9166666666666666,
+        "Y": 0.042499999999999996,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:07:07.214Z",
+        "Label": "Pressure",
+        "Value": "8972aab8-feb6-4c9f-9717-3a17474deb5b",
+        "Actor": "Laureano Bisan-Etame Mayer",
+        "Team": "Arsenal",
+        "X": 0.07833333333333334,
+        "Y": 0.9175000000000001,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:07:10.377Z",
+        "Label": "Pass",
+        "Value": "e3d06958-d862-452d-8c02-aef23a0237d7",
+        "Actor": "Ryan Giggs",
+        "Team": "Manchester United",
+        "X": 0.9016666666666667,
+        "Y": 0.061250000000000006,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:07:11.754Z",
+        "Label": "Ball Receipt*",
+        "Value": "22c86103-6f23-4969-81c5-e819b46a36ca",
+        "Actor": "John O''Shea",
+        "Team": "Manchester United",
+        "X": 0.7333333333333333,
+        "Y": 0.10500000000000001,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:07:11.754Z",
+        "Label": "Pass",
+        "Value": "e934864c-e91e-4e91-8b58-44608a013a3e",
+        "Actor": "John O''Shea",
+        "Team": "Manchester United",
+        "X": 0.7174999999999999,
+        "Y": 0.1125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "b92adc6c74e2f84e7d2c6d95fef24ac323882b56e8ccf1366c0ea714c8ab5c2e",
+    "match_id": "3749246",
+    "event_id": "95cc4ee0-9e07-4546-a1bf-ac5eccdbb700",
+    "moment_type": "Assist",
+    "title": "Thierry Henry Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:08:11.268Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:08:07.248Z",
+        "Label": "Ball Receipt*",
+        "Value": "c483ba6c-15a2-442a-a114-ae80b388dbd4",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.49916666666666665,
+        "Y": 0.5025000000000001,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:08:08.466Z",
+        "Label": "Pass",
+        "Value": "9739c82e-5ab9-4886-a2c7-2c50a0747a9e",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.5183333333333333,
+        "Y": 0.495,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:08:09.320Z",
+        "Label": "Pressure",
+        "Value": "2cdd42c0-5909-4b38-99fc-6dc058215f4d",
+        "Actor": "Mikaël Silvestre",
+        "Team": "Manchester United",
+        "X": 0.3358333333333333,
+        "Y": 0.50625,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:08:09.345Z",
+        "Label": "Ball Receipt*",
+        "Value": "93126ccf-fd33-4e46-92fa-304986aa4d19",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.6433333333333333,
+        "Y": 0.50875,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:08:09.345Z",
+        "Label": "Carry",
+        "Value": "4063d48d-b2f7-4a3d-bd88-ad2e67204032",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.6433333333333333,
+        "Y": 0.50875,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:08:11.268Z",
+        "Label": "Pass",
+        "Value": "95cc4ee0-9e07-4546-a1bf-ac5eccdbb700",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7216666666666666,
+        "Y": 0.5962500000000001,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "e87e9a6391aebea0bfcdf85b5ac24b851516832244c57cff294739515829c868",
+    "match_id": "3749246",
+    "event_id": "0c8bbc27-2f14-4b06-98db-adf88d4a8bf8",
+    "moment_type": "Assist",
+    "title": "Thierry Henry Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:08:29.012Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:08:28.109Z",
+        "Label": "Ball Recovery",
+        "Value": "afff1c14-d2d6-4a86-85f2-c3af49e4a08a",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7408333333333333,
+        "Y": 0.5625,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:08:28.109Z",
+        "Label": "Carry",
+        "Value": "0124deb2-3750-43e8-982f-0e3ad063785a",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7408333333333333,
+        "Y": 0.5625,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:08:29.012Z",
+        "Label": "Pass",
+        "Value": "0c8bbc27-2f14-4b06-98db-adf88d4a8bf8",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7533333333333334,
+        "Y": 0.5900000000000001,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "fe87031043439a3994fd002b52567f366c60338b37bafef2d03769a0237132fe",
+    "match_id": "3749246",
+    "event_id": "d2f89712-c1a9-4018-a4e3-cb7404f41233",
+    "moment_type": "Assist",
+    "title": "Darren Fletcher Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:12:22.995Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:12:22.995Z",
+        "Label": "Pass",
+        "Value": "d2f89712-c1a9-4018-a4e3-cb7404f41233",
+        "Actor": "Darren Fletcher",
+        "Team": "Manchester United",
+        "X": 1,
+        "Y": 0.00125,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "d02bb3e434923f9c279fe9db63692e8ec54c4cac91d3a60b10c0935c6ea11e07",
+    "match_id": "3749246",
+    "event_id": "1f82fd44-c8c6-44c4-b2d6-f0d84a71abe8",
+    "moment_type": "Assist",
+    "title": "Patrick Vieira Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:14:17.756Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:14:13.145Z",
+        "Label": "Ball Recovery",
+        "Value": "5ea6aa79-83c0-4bd1-ba05-abae33052089",
+        "Actor": "Eduardo César Daude Gaspar",
+        "Team": "Arsenal",
+        "X": 0.20583333333333334,
+        "Y": 0.45375,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:14:15.120Z",
+        "Label": "Pass",
+        "Value": "f71d25ab-cf49-40f0-811d-edcc469b6b58",
+        "Actor": "Eduardo César Daude Gaspar",
+        "Team": "Arsenal",
+        "X": 0.38416666666666666,
+        "Y": 0.40750000000000003,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:14:16.106Z",
+        "Label": "Ball Receipt*",
+        "Value": "9d85b005-8938-4321-a94e-cb1ae19d5e6b",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.45916666666666667,
+        "Y": 0.31875,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:14:16.106Z",
+        "Label": "Carry",
+        "Value": "574dcde6-ac06-44df-97f3-471e75c6854c",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.45916666666666667,
+        "Y": 0.31875,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:14:17.756Z",
+        "Label": "Pass",
+        "Value": "1f82fd44-c8c6-44c4-b2d6-f0d84a71abe8",
+        "Actor": "Patrick Vieira",
+        "Team": "Arsenal",
+        "X": 0.5425,
+        "Y": 0.225,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "483c1cbb502346617295edf458e9f053acd74139e9c0cacc8ada2de72072bb08",
+    "match_id": "3749246",
+    "event_id": "a4b23410-c3b0-4a35-9ef1-9114d84f0db4",
+    "moment_type": "Assist",
+    "title": "Robert Pirès Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:23:48.569Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:23:48.569Z",
+        "Label": "Pass",
+        "Value": "a4b23410-c3b0-4a35-9ef1-9114d84f0db4",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 1,
+        "Y": 1,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "d57d4f97dbf645c888df70e14b98897d699e44f66b0930cb44be2aaf8c3b8532",
+    "match_id": "3749246",
+    "event_id": "251caa73-89da-4156-95c1-6d3faae67c50",
+    "moment_type": "Assist",
+    "title": "Gaël Clichy Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:27:51.517Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:27:47.237Z",
+        "Label": "Ball Receipt*",
+        "Value": "463de512-8df6-46dd-8d30-6213f1aa832f",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.7591666666666667,
+        "Y": 0.08,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:27:47.237Z",
+        "Label": "Carry",
+        "Value": "51db0ddc-5b02-4efb-89ee-3c8e817b7200",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.7591666666666667,
+        "Y": 0.08,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:27:49.509Z",
+        "Label": "Pass",
+        "Value": "caee1e17-607c-434d-8920-26d7d824b5ca",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.7075,
+        "Y": 0.14125000000000001,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:27:50.755Z",
+        "Label": "Ball Receipt*",
+        "Value": "50182279-8874-4119-a79f-25861155db0a",
+        "Actor": "Gaël Clichy",
+        "Team": "Arsenal",
+        "X": 0.7591666666666667,
+        "Y": 0.0725,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:27:50.755Z",
+        "Label": "Carry",
+        "Value": "5c12a35a-8bc1-4f53-8ea9-fd01bebdb9ea",
+        "Actor": "Gaël Clichy",
+        "Team": "Arsenal",
+        "X": 0.7591666666666667,
+        "Y": 0.0725,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:27:51.517Z",
+        "Label": "Pass",
+        "Value": "251caa73-89da-4156-95c1-6d3faae67c50",
+        "Actor": "Gaël Clichy",
+        "Team": "Arsenal",
+        "X": 0.8025,
+        "Y": 0.06875,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "74c2c3f35617665cdcdc271152d698ff29770c40c626b87d425bda44965b4786",
+    "match_id": "3749246",
+    "event_id": "aa7fc862-6bda-473b-aa9c-df9d7e369e01",
+    "moment_type": "Assist",
+    "title": "Thierry Henry Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:36:48.144Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:36:44.643Z",
+        "Label": "Pass",
+        "Value": "4730d6cf-945b-48f1-a333-7c71b9861450",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.6475000000000001,
+        "Y": 0.25625,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:36:46.402Z",
+        "Label": "Ball Receipt*",
+        "Value": "2ee3f500-581c-4a2e-986e-dc28ee32d660",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.8666666666666667,
+        "Y": 0.26749999999999996,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:36:46.402Z",
+        "Label": "Carry",
+        "Value": "06364229-69df-4794-9d17-6cda3195abcb",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.8666666666666667,
+        "Y": 0.26749999999999996,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:36:47.174Z",
+        "Label": "Pressure",
+        "Value": "de094d21-6b63-41f1-a8ae-378f215309da",
+        "Actor": "Darren Fletcher",
+        "Team": "Manchester United",
+        "X": 0.10083333333333333,
+        "Y": 0.7212500000000001,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:36:48.144Z",
+        "Label": "Pass",
+        "Value": "aa7fc862-6bda-473b-aa9c-df9d7e369e01",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.8908333333333334,
+        "Y": 0.25875,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "0d99b7ebb7edffea8a0ab58e64d3dbfd8a3a6bc877a90fc1c9950ab61b7e1239",
+    "match_id": "3749246",
+    "event_id": "3a1b115b-f382-46bf-87da-c82eb6e00dbb",
+    "moment_type": "Assist",
+    "title": "Eric Daniel Djemba-Djemba Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:39:21.721Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:39:18.238Z",
+        "Label": "Ball Receipt*",
+        "Value": "432c3c85-fb58-470a-b574-595bc20e7f6e",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.5458333333333333,
+        "Y": 0.20125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:39:18.238Z",
+        "Label": "Carry",
+        "Value": "afa5db3b-a0e6-43b4-a820-123a96a07e44",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.5458333333333333,
+        "Y": 0.20125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:39:19.509Z",
+        "Label": "Pass",
+        "Value": "54396b2d-eca9-4f10-b863-d53efb534c15",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.5433333333333333,
+        "Y": 0.225,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:39:20.601Z",
+        "Label": "Ball Receipt*",
+        "Value": "5fe33221-3759-483a-8a39-1146d725a960",
+        "Actor": "Eric Daniel Djemba-Djemba",
+        "Team": "Manchester United",
+        "X": 0.5858333333333333,
+        "Y": 0.395,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:39:20.601Z",
+        "Label": "Carry",
+        "Value": "2185a75f-2b17-4e4d-8cec-bb10fb44c169",
+        "Actor": "Eric Daniel Djemba-Djemba",
+        "Team": "Manchester United",
+        "X": 0.5858333333333333,
+        "Y": 0.395,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:39:21.721Z",
+        "Label": "Pass",
+        "Value": "3a1b115b-f382-46bf-87da-c82eb6e00dbb",
+        "Actor": "Eric Daniel Djemba-Djemba",
+        "Team": "Manchester United",
+        "X": 0.5891666666666667,
+        "Y": 0.40625,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "d6fec35dee3d2c4acfae8a7ff9d3fbe41aeb829148518c6d3960d3042c571216",
+    "match_id": "3749246",
+    "event_id": "c28ea0a6-9fe3-4c3c-a10a-a05571033f08",
+    "moment_type": "Assist",
+    "title": "Ryan Giggs Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:45:39.008Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:45:35.170Z",
+        "Label": "Pass",
+        "Value": "7dc91cee-258a-48e4-a65e-389e82dbf208",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.715,
+        "Y": 0.06999999999999999,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:45:37.295Z",
+        "Label": "Ball Receipt*",
+        "Value": "453ab2f7-2e4d-4f70-af03-c6eb1bdcdd19",
+        "Actor": "Ryan Giggs",
+        "Team": "Manchester United",
+        "X": 0.8825000000000001,
+        "Y": 0.34125,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:45:37.295Z",
+        "Label": "Carry",
+        "Value": "fd40b31a-1e0e-4d5c-a874-222d660130e5",
+        "Actor": "Ryan Giggs",
+        "Team": "Manchester United",
+        "X": 0.8825000000000001,
+        "Y": 0.34125,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:45:39.008Z",
+        "Label": "Pass",
+        "Value": "c28ea0a6-9fe3-4c3c-a10a-a05571033f08",
+        "Actor": "Ryan Giggs",
+        "Team": "Manchester United",
+        "X": 0.8941666666666667,
+        "Y": 0.2725,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:00:00.000Z",
+        "Label": "Half Start",
+        "Value": "f25c7c86-3935-44f6-956f-de973512cf91",
+        "Team": "Manchester United",
+        "X": null,
+        "Y": null,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:00:00.000Z",
+        "Label": "Half Start",
+        "Value": "308051e4-a6ec-4a26-918f-73e3d04a8184",
+        "Team": "Arsenal",
+        "X": null,
+        "Y": null,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "ddbd5016f6d974e47c2309e5a8cf19d9207c601c00cf9f2f72ee49c11a5bb84d",
+    "match_id": "3749246",
+    "event_id": "396f650e-cdec-4825-89b9-ab2decdf3c6e",
+    "moment_type": "Assist",
+    "title": "José Antonio Reyes Calderón Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:04:07.389Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:04:03.566Z",
+        "Label": "Pass",
+        "Value": "9132d759-1ae6-410c-afb5-8fe1710e24f9",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.5683333333333334,
+        "Y": 0.39125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:04:04.779Z",
+        "Label": "Ball Receipt*",
+        "Value": "7c1a1b1b-3442-4745-a87f-bb236085bb20",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.6549999999999999,
+        "Y": 0.4575,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:04:04.840Z",
+        "Label": "Pass",
+        "Value": "2effedca-baf8-4964-a149-af82e396080e",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.6549999999999999,
+        "Y": 0.4575,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:04:05.814Z",
+        "Label": "Ball Receipt*",
+        "Value": "85d4b2ad-3c84-4d2a-b856-3504fc2628e1",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.675,
+        "Y": 0.385,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:04:05.814Z",
+        "Label": "Carry",
+        "Value": "e71d1b4c-99c7-4b1c-9434-75eb120bf01e",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.675,
+        "Y": 0.385,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:04:07.389Z",
+        "Label": "Pass",
+        "Value": "396f650e-cdec-4825-89b9-ab2decdf3c6e",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.7166666666666667,
+        "Y": 0.4025,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "dc6787bb9885f996cc399398b271e16b72c0ef19140092c7f132fb0d12924e18",
+    "match_id": "3749246",
+    "event_id": "4c655ebb-36b6-423c-8278-eaf0d9029bd2",
+    "moment_type": "Assist",
+    "title": "Robert Pirès Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:10:17.603Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:10:17.603Z",
+        "Label": "Pass",
+        "Value": "4c655ebb-36b6-423c-8278-eaf0d9029bd2",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 1,
+        "Y": 1,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "61850db1b70b3b6c3b9b71aeb5b7b13a79268d28189ec09db020254ae25fa503",
+    "match_id": "3749246",
+    "event_id": "b469a1ec-09a3-41df-8940-a0fd18ecb531",
+    "moment_type": "Assist",
+    "title": "Darren Fletcher Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:13:04.243Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:13:01.239Z",
+        "Label": "Carry",
+        "Value": "ae7a7812-7a72-4d74-8ce5-50229a2f2f92",
+        "Actor": "Eric Daniel Djemba-Djemba",
+        "Team": "Manchester United",
+        "X": 0.8191666666666666,
+        "Y": 0.80625,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:13:02.128Z",
+        "Label": "Pressure",
+        "Value": "ebb955f1-8008-4a5b-9b8e-12f48f5561d5",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.11916666666666667,
+        "Y": 0.12250000000000001,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:13:02.797Z",
+        "Label": "Pass",
+        "Value": "8d541219-a6d7-4722-b7c8-0c5868a1217a",
+        "Actor": "Eric Daniel Djemba-Djemba",
+        "Team": "Manchester United",
+        "X": 0.8491666666666667,
+        "Y": 0.8400000000000001,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:13:04.059Z",
+        "Label": "Ball Receipt*",
+        "Value": "53117098-fc9c-4ebe-ad5a-6462238ac448",
+        "Actor": "Darren Fletcher",
+        "Team": "Manchester United",
+        "X": 0.8933333333333333,
+        "Y": 0.9324999999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:13:04.059Z",
+        "Label": "Carry",
+        "Value": "1a029b8c-ee44-4cbf-84c2-e276f982f959",
+        "Actor": "Darren Fletcher",
+        "Team": "Manchester United",
+        "X": 0.8933333333333333,
+        "Y": 0.9324999999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:13:04.243Z",
+        "Label": "Pass",
+        "Value": "b469a1ec-09a3-41df-8940-a0fd18ecb531",
+        "Actor": "Darren Fletcher",
+        "Team": "Manchester United",
+        "X": 0.8933333333333333,
+        "Y": 0.9324999999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "fdc53b1772217dcbe1c3dc4345445e4662532050b7be4bf8391b81d4e06010d0",
+    "match_id": "3749246",
+    "event_id": "5551ec11-f5ae-47cf-b072-423f50145248",
+    "moment_type": "Assist",
+    "title": "Paul Scholes Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:22:25.381Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:22:20.524Z",
+        "Label": "Carry",
+        "Value": "c41d20b7-4886-458b-afaf-516a5f354c23",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.4691666666666666,
+        "Y": 0.28500000000000003,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:22:20.618Z",
+        "Label": "Pressure",
+        "Value": "46a19f08-c0c3-4377-be4a-c8f3ad824121",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.5733333333333334,
+        "Y": 0.66125,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:22:21.337Z",
+        "Label": "Dispossessed",
+        "Value": "ba8cb0fd-921a-480f-ba26-2111feb23f86",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.43833333333333335,
+        "Y": 0.29125,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:22:21.337Z",
+        "Label": "Duel",
+        "Value": "88018f23-bee7-4c4e-a5ec-5da1b678c541",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.5625,
+        "Y": 0.71,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:22:21.337Z",
+        "Label": "Carry",
+        "Value": "896e1cd0-a2b8-46bc-b482-b1cfaebe34e0",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.5625,
+        "Y": 0.71,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:22:25.381Z",
+        "Label": "Pass",
+        "Value": "5551ec11-f5ae-47cf-b072-423f50145248",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.56,
+        "Y": 0.7474999999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "c6c59e250397c4d89ce863128700a1e6abc742cc436bd3c6e601090d5503b4f3",
+    "match_id": "3749246",
+    "event_id": "29a7fab7-54ed-44d4-a8a6-2d1d85181eb4",
+    "moment_type": "Assist",
+    "title": "José Antonio Reyes Calderón Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:25:07.371Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:25:03.727Z",
+        "Label": "Pass",
+        "Value": "9ad8c4c3-76fe-4db1-85c7-7078ef49a006",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 1,
+        "Y": 1,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:25:05.518Z",
+        "Label": "Clearance",
+        "Value": "7622f646-a7e5-4fbd-afb2-d6e8d7a69848",
+        "Actor": "Roy Keane",
+        "Team": "Manchester United",
+        "X": 0.09166666666666666,
+        "Y": 0.51,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:25:07.371Z",
+        "Label": "Pass",
+        "Value": "29a7fab7-54ed-44d4-a8a6-2d1d85181eb4",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": 0.7241666666666667,
+        "Y": 0.57125,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "585cf3eb2c6054cca449fa08ff208066414d0e98c6dbdb68a9cca084ad04e005",
+    "match_id": "3749246",
+    "event_id": "bbf53987-58db-4ceb-955f-5114595719da",
+    "moment_type": "Assist",
+    "title": "Robert Pirès Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:33:59.971Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:33:55.809Z",
+        "Label": "Pass",
+        "Value": "063ea9b0-8cd2-477c-b521-4036f4fdcf34",
+        "Actor": "Gilberto Aparecido da Silva",
+        "Team": "Arsenal",
+        "X": 0.19083333333333333,
+        "Y": 0.36124999999999996,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:33:58.279Z",
+        "Label": "Ball Receipt*",
+        "Value": "e0e406bf-ffc0-4110-9ca9-919647d6ab15",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.2525,
+        "Y": 0.061250000000000006,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:33:58.279Z",
+        "Label": "Carry",
+        "Value": "330050f7-bd2d-4f2e-9510-571b9a71443f",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.2525,
+        "Y": 0.061250000000000006,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:33:59.971Z",
+        "Label": "Pass",
+        "Value": "bbf53987-58db-4ceb-955f-5114595719da",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.29416666666666663,
+        "Y": 0.065,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "c1a3014088ae55641ebf52a2cdc523761ccb82b5f686bb2d00ba95bce2ae49a9",
+    "match_id": "3749246",
+    "event_id": "f87fa893-23e9-45a6-8f80-9bc9a36e0865",
+    "moment_type": "Assist",
+    "title": "Ole Gunnar Solskjær Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:37:31.819Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:37:28.175Z",
+        "Label": "Ball Receipt*",
+        "Value": "9f2ab2d3-1459-4f42-b713-bf7b1ae42410",
+        "Actor": "Roy Keane",
+        "Team": "Manchester United",
+        "X": 0.955,
+        "Y": 0.0475,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:37:28.175Z",
+        "Label": "Carry",
+        "Value": "c2f5746c-d3c5-4641-a887-bba11f86df16",
+        "Actor": "Roy Keane",
+        "Team": "Manchester United",
+        "X": 0.955,
+        "Y": 0.0475,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:37:29.337Z",
+        "Label": "Pass",
+        "Value": "6ccce32a-fb01-4776-82d9-df0dc5eba183",
+        "Actor": "Roy Keane",
+        "Team": "Manchester United",
+        "X": 0.955,
+        "Y": 0.0475,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:37:30.860Z",
+        "Label": "Ball Receipt*",
+        "Value": "91f1f698-43da-49fe-b051-5a44532f2831",
+        "Actor": "Ole Gunnar Solskjær",
+        "Team": "Manchester United",
+        "X": 0.8933333333333333,
+        "Y": 0.19875,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:37:30.860Z",
+        "Label": "Carry",
+        "Value": "220e307f-f208-431c-845f-85021388169e",
+        "Actor": "Ole Gunnar Solskjær",
+        "Team": "Manchester United",
+        "X": 0.8933333333333333,
+        "Y": 0.19875,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:37:31.819Z",
+        "Label": "Pass",
+        "Value": "f87fa893-23e9-45a6-8f80-9bc9a36e0865",
+        "Actor": "Ole Gunnar Solskjær",
+        "Team": "Manchester United",
+        "X": 0.8633333333333333,
+        "Y": 0.2725,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "9e671aa0c4c349b115a9b2050b94d3eab85ff45436b022ca9e74d8efd1e1cc64",
+    "match_id": "3749246",
+    "event_id": "6f272600-db9c-4722-a9ff-2e71b2a1c943",
+    "moment_type": "Assist",
+    "title": "Ole Gunnar Solskjær Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:40:27.653Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:40:22.499Z",
+        "Label": "Pass",
+        "Value": "00efa627-926d-4708-bb5b-15410f0881c1",
+        "Actor": "Ruud van Nistelrooy",
+        "Team": "Manchester United",
+        "X": 0.6933333333333334,
+        "Y": 0.53625,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:40:23.126Z",
+        "Label": "Ball Receipt*",
+        "Value": "81e1484b-1697-4c21-b1a1-152aa1913c4b",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.7133333333333333,
+        "Y": 0.62,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:40:23.126Z",
+        "Label": "Carry",
+        "Value": "d54bba37-588d-491a-bb37-b457efe9f3ff",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.7133333333333333,
+        "Y": 0.62,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:40:25.956Z",
+        "Label": "Pass",
+        "Value": "4983f82f-2cc5-414e-a825-f22aa8895f5e",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.7158333333333334,
+        "Y": 0.63625,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:40:27.653Z",
+        "Label": "Ball Receipt*",
+        "Value": "04a54db1-6178-4fd1-ab09-c753d81e5653",
+        "Actor": "Ole Gunnar Solskjær",
+        "Team": "Manchester United",
+        "X": 0.9083333333333333,
+        "Y": 0.75125,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:40:27.653Z",
+        "Label": "Pass",
+        "Value": "6f272600-db9c-4722-a9ff-2e71b2a1c943",
+        "Actor": "Ole Gunnar Solskjær",
+        "Team": "Manchester United",
+        "X": 0.9041666666666667,
+        "Y": 0.7537499999999999,
+        "Context": {
+          "Phase": "From Throw In"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "39178d01161310f973d4a144ec95fe04b88cc94e9ee3a095533a2485dd0b5ddd",
+    "match_id": "3749246",
+    "event_id": "a1595a05-ca49-4a5f-952c-7b998a317f8d",
+    "moment_type": "Assist",
+    "title": "Eduardo César Daude Gaspar Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:42:08.530Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:42:01.931Z",
+        "Label": "Ball Receipt*",
+        "Value": "94cbb906-23f7-47dd-ab84-994daf741d76",
+        "Actor": "Laureano Bisan-Etame Mayer",
+        "Team": "Arsenal",
+        "X": 0.505,
+        "Y": 0.96125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:42:01.931Z",
+        "Label": "Carry",
+        "Value": "b15b729f-f3d2-404f-bf33-adbf3d99b78e",
+        "Actor": "Laureano Bisan-Etame Mayer",
+        "Team": "Arsenal",
+        "X": 0.505,
+        "Y": 0.96125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:42:05.178Z",
+        "Label": "Pass",
+        "Value": "20f47272-592c-4ce7-9a1c-c1e3a9101fa2",
+        "Actor": "Laureano Bisan-Etame Mayer",
+        "Team": "Arsenal",
+        "X": 0.6208333333333333,
+        "Y": 0.80625,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:42:06.391Z",
+        "Label": "Ball Receipt*",
+        "Value": "778968f2-66d9-4810-bce4-8503990c33e2",
+        "Actor": "Eduardo César Daude Gaspar",
+        "Team": "Arsenal",
+        "X": 0.65,
+        "Y": 0.4125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:42:06.391Z",
+        "Label": "Carry",
+        "Value": "c2803346-6fc3-4c85-b59e-e93339f1680e",
+        "Actor": "Eduardo César Daude Gaspar",
+        "Team": "Arsenal",
+        "X": 0.65,
+        "Y": 0.4125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:42:08.530Z",
+        "Label": "Pass",
+        "Value": "a1595a05-ca49-4a5f-952c-7b998a317f8d",
+        "Actor": "Eduardo César Daude Gaspar",
+        "Team": "Arsenal",
+        "X": 0.7216666666666666,
+        "Y": 0.38125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "bde9d791a291bdab03ba7874bf98fb5d672674355f67e18fccefaa0a05b688e9",
+    "match_id": "3749246",
+    "event_id": "0a02346a-ec1d-45cf-9ca4-9a814a438135",
+    "moment_type": "Assist",
+    "title": "Thierry Henry Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:42:28.548Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:42:28.548Z",
+        "Label": "Pass",
+        "Value": "0a02346a-ec1d-45cf-9ca4-9a814a438135",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 1,
+        "Y": 0.00125,
+        "Context": {
+          "Phase": "From Corner"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "d364adaed27dea579f26b175791c1f93e6157e131e3c634c96f26d64dface61f",
+    "match_id": "3749246",
+    "event_id": "21ddb344-30af-4fff-bcc4-aff42a3c03b7",
+    "moment_type": "Assist",
+    "title": "Ryan Giggs Assist vs Arsenal",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:44:28.436Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:44:26.500Z",
+        "Label": "Ball Receipt*",
+        "Value": "7a856afd-a1be-4da5-8bfc-c2cf7dcf9c07",
+        "Actor": "Ruud van Nistelrooy",
+        "Team": "Manchester United",
+        "X": 0.8583333333333333,
+        "Y": 0.5325,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:44:26.500Z",
+        "Label": "Carry",
+        "Value": "908f97b9-9c74-4a9c-ba6a-42a9553aac94",
+        "Actor": "Ruud van Nistelrooy",
+        "Team": "Manchester United",
+        "X": 0.8583333333333333,
+        "Y": 0.5325,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:44:26.657Z",
+        "Label": "Pass",
+        "Value": "97a60143-0180-440e-8251-edc9b7cbdd4c",
+        "Actor": "Ruud van Nistelrooy",
+        "Team": "Manchester United",
+        "X": 0.8583333333333333,
+        "Y": 0.5325,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:44:28.392Z",
+        "Label": "Ball Receipt*",
+        "Value": "eec23bde-1e46-42be-81cf-b3053cb386ff",
+        "Actor": "Ryan Giggs",
+        "Team": "Manchester United",
+        "X": 0.9233333333333333,
+        "Y": 0.66125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:44:28.392Z",
+        "Label": "Carry",
+        "Value": "a9cf0ce9-d45c-4a50-8f21-9a5c1de5d99a",
+        "Actor": "Ryan Giggs",
+        "Team": "Manchester United",
+        "X": 0.9233333333333333,
+        "Y": 0.66125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:44:28.436Z",
+        "Label": "Pass",
+        "Value": "21ddb344-30af-4fff-bcc4-aff42a3c03b7",
+        "Actor": "Ryan Giggs",
+        "Team": "Manchester United",
+        "X": 0.9233333333333333,
+        "Y": 0.66125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "affb31e906ab96b6465192527ab4c59051b6aeb04b4b43bfc835f1855490dc17",
+    "match_id": "3749246",
+    "event_id": "a5d0791d-bc40-47eb-b332-7e5d09b07837",
+    "moment_type": "Assist",
+    "title": "Eduardo César Daude Gaspar Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:44:49.392Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:44:49.392Z",
+        "Label": "Pass",
+        "Value": "a5d0791d-bc40-47eb-b332-7e5d09b07837",
+        "Actor": "Eduardo César Daude Gaspar",
+        "Team": "Arsenal",
+        "X": 0.7558333333333334,
+        "Y": 0.29874999999999996,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "6bede22769edc817c238ec5d2fe22f60b2a88635a0d40bf780e6b0aea5fb994a",
+    "match_id": "3749246",
+    "event_id": "302f784b-5dc7-4a8c-9e7a-8df60988c248",
+    "moment_type": "Assist",
+    "title": "Thierry Henry Assist vs Manchester United",
+    "description": "Goal Assist",
+    "timestamp": "2004-03-28T00:44:57.169Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-assist-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:44:53.696Z",
+        "Label": "Block",
+        "Value": "832f318c-1a3e-4c46-88c4-45d721a3399e",
+        "Actor": "Gary Neville",
+        "Team": "Manchester United",
+        "X": 0.12416666666666668,
+        "Y": 0.70125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:44:53.816Z",
+        "Label": "Goal Keeper",
+        "Value": "4c19c13e-c6ec-438f-8f94-c9a7a985ddff",
+        "Actor": "Roy Carroll",
+        "Team": "Manchester United",
+        "X": 0.009166666666666667,
+        "Y": 0.5225,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:44:55.557Z",
+        "Label": "Ball Recovery",
+        "Value": "f6fc287a-2e3c-4114-8d08-e28d25166937",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7975,
+        "Y": 0.58375,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:44:55.557Z",
+        "Label": "Carry",
+        "Value": "6b28f331-8967-440a-8e64-a9aa7d5f8af6",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7975,
+        "Y": 0.58375,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:44:56.519Z",
+        "Label": "Pressure",
+        "Value": "dd60a888-e194-4e64-b729-59993da82340",
+        "Actor": "Mikaël Silvestre",
+        "Team": "Manchester United",
+        "X": 0.16,
+        "Y": 0.4175,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:44:57.169Z",
+        "Label": "Pass",
+        "Value": "302f784b-5dc7-4a8c-9e7a-8df60988c248",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.7908333333333334,
+        "Y": 0.61625,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "11f0673b803a42fea9d077ae4663714ca031dc9a58893be3e40499d241fd2774",
+    "match_id": "3749246",
+    "event_id": "d6ce843c-3dd8-4d76-bc7d-0c51642b95e1",
+    "moment_type": "Yellow Card",
+    "title": "Paul Scholes Yellow Card vs Arsenal",
+    "description": "Yellow Card",
+    "timestamp": "2004-03-28T00:24:38.551Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-yellow-card-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:24:35.458Z",
+        "Label": "Pass",
+        "Value": "fc5a222d-660a-49b2-bd74-38a2e9d2146e",
+        "Actor": "Kolo Habib Touré",
+        "Team": "Arsenal",
+        "X": 0.1575,
+        "Y": 0.71,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:24:37.142Z",
+        "Label": "Ball Receipt*",
+        "Value": "ddda6e5c-1902-4e74-8e9f-2bdc4d1ebd5c",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": 0.2875,
+        "Y": 0.81125,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:24:37.142Z",
+        "Label": "Carry",
+        "Value": "c6842d44-556b-4a46-87a3-840f58a607b8",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": 0.2875,
+        "Y": 0.81125,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:24:38.124Z",
+        "Label": "Pressure",
+        "Value": "fff0a481-42ec-4278-9dd3-593a0951cdba",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.6908333333333334,
+        "Y": 0.23500000000000001,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:24:38.551Z",
+        "Label": "Foul Committed",
+        "Value": "d6ce843c-3dd8-4d76-bc7d-0c51642b95e1",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.6675,
+        "Y": 0.2425,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:24:38.551Z",
+        "Label": "Foul Won",
+        "Value": "2405feab-c730-44ac-94a8-3c162b4b011c",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": 0.3333333333333333,
+        "Y": 0.75875,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "f604eb27b530ddfee1b46a432e0df5921c6187186816518cb1e5a54f929dfb9f",
+    "match_id": "3749246",
+    "event_id": "f56ce2dc-f3a5-48de-a3e5-64fd9632fcab",
+    "moment_type": "Yellow Card",
+    "title": "Gaël Clichy Yellow Card vs Manchester United",
+    "description": "Yellow Card",
+    "timestamp": "2004-03-28T00:28:14.560Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-yellow-card-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:28:10.336Z",
+        "Label": "Pass",
+        "Value": "894ad55c-95eb-4422-8720-f91150f7cfb7",
+        "Actor": "Ole Gunnar Solskjær",
+        "Team": "Manchester United",
+        "X": 0.3408333333333333,
+        "Y": 0.93625,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:28:11.965Z",
+        "Label": "Ball Receipt*",
+        "Value": "34f0acee-3cc2-42d7-9690-8d5f1f012aac",
+        "Actor": "Louis Saha",
+        "Team": "Manchester United",
+        "X": 0.4791666666666667,
+        "Y": 0.76125,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:28:11.965Z",
+        "Label": "Carry",
+        "Value": "65e3751e-fedf-4fb2-9842-5e01e8bc16f3",
+        "Actor": "Louis Saha",
+        "Team": "Manchester United",
+        "X": 0.4791666666666667,
+        "Y": 0.76125,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:28:13.259Z",
+        "Label": "Pressure",
+        "Value": "48682900-f122-4742-b04b-ec8c18ac2acd",
+        "Actor": "Gaël Clichy",
+        "Team": "Arsenal",
+        "X": 0.46416666666666667,
+        "Y": 0.2475,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:28:14.560Z",
+        "Label": "Foul Committed",
+        "Value": "f56ce2dc-f3a5-48de-a3e5-64fd9632fcab",
+        "Actor": "Gaël Clichy",
+        "Team": "Arsenal",
+        "X": 0.3958333333333333,
+        "Y": 0.395,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:28:14.560Z",
+        "Label": "Foul Won",
+        "Value": "db90ed92-bcaa-4baf-a4ab-482cb97a0390",
+        "Actor": "Louis Saha",
+        "Team": "Manchester United",
+        "X": 0.605,
+        "Y": 0.60625,
+        "Context": {
+          "Phase": "From Counter"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "1c68b1066479c75fa81b07b2887285624a1232d7da2d690fd17dc2d314a2216e",
+    "match_id": "3749246",
+    "event_id": "afe0cc33-f8b6-4c39-9f95-0fcb35632693",
+    "moment_type": "Substitution",
+    "title": "Eric Daniel Djemba-Djemba Substitution vs Arsenal",
+    "description": "Substitution",
+    "timestamp": "2004-03-28T00:13:29.083Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-substitution-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:13:10.835Z",
+        "Label": "Pass",
+        "Value": "87b5710e-a8e4-4d0c-974f-0d590e98ac29",
+        "Actor": "Jens Lehmann",
+        "Team": "Arsenal",
+        "X": 0.07083333333333333,
+        "Y": 0.64,
+        "Context": {
+          "Phase": "From Keeper"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:13:13.398Z",
+        "Label": "Ball Receipt*",
+        "Value": "e25ac4f6-2a33-487e-98a2-8882d255858c",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.33166666666666667,
+        "Y": 0.8775000000000001,
+        "Context": {
+          "Phase": "From Keeper"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:13:17.945Z",
+        "Label": "Pressure",
+        "Value": "317d55ab-67c4-42f7-9018-b2d78fdc89b5",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.45916666666666667,
+        "Y": 0.05125,
+        "Context": {
+          "Phase": "From Keeper"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:13:18.294Z",
+        "Label": "Dribble",
+        "Value": "21032427-80bc-42b6-b40c-265f093aaeb6",
+        "Actor": "Thierry Henry",
+        "Team": "Arsenal",
+        "X": 0.5125,
+        "Y": 0.9574999999999999,
+        "Context": {
+          "Phase": "From Keeper"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:13:18.294Z",
+        "Label": "Duel",
+        "Value": "98f1bf3f-443d-4109-b0c8-67fc4f029f9b",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.48833333333333334,
+        "Y": 0.04375,
+        "Context": {
+          "Phase": "From Keeper"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:13:29.083Z",
+        "Label": "Substitution",
+        "Value": "afe0cc33-f8b6-4c39-9f95-0fcb35632693",
+        "Actor": "Eric Daniel Djemba-Djemba",
+        "Team": "Manchester United",
+        "X": null,
+        "Y": null,
+        "Context": {
+          "Phase": "From Keeper"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "045a5391142fb1822614ed33f73647f0c9409dd21dd15c1183c17a2c218df03a",
+    "match_id": "3749246",
+    "event_id": "ce02c206-077a-46ae-8125-55f7abeca8a6",
+    "moment_type": "Substitution",
+    "title": "Darren Fletcher Substitution vs Arsenal",
+    "description": "Substitution",
+    "timestamp": "2004-03-28T00:26:05.675Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-substitution-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:25:51.633Z",
+        "Label": "Carry",
+        "Value": "9ef68863-015c-4530-97cc-e1802f69efb1",
+        "Actor": "Gaël Clichy",
+        "Team": "Arsenal",
+        "X": 0.19583333333333333,
+        "Y": 0.1325,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:25:51.710Z",
+        "Label": "Pass",
+        "Value": "195e53d0-a93d-41c3-b67c-92b7423fb1a5",
+        "Actor": "Gaël Clichy",
+        "Team": "Arsenal",
+        "X": 0.19583333333333333,
+        "Y": 0.1325,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:25:53.139Z",
+        "Label": "Ball Receipt*",
+        "Value": "a5cf74a4-a687-41e7-b573-8c5668c821dd",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.36333333333333334,
+        "Y": 0.061250000000000006,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:25:56.024Z",
+        "Label": "Pass",
+        "Value": "dd65d681-bb63-4e25-9c74-8f85799dc6aa",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.4083333333333333,
+        "Y": 0.03625,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:25:56.250Z",
+        "Label": "Block",
+        "Value": "cf04c6cc-05fa-47f5-9030-daaa693ab5e8",
+        "Actor": "Gary Neville",
+        "Team": "Manchester United",
+        "X": 0.49916666666666665,
+        "Y": 0.885,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:26:05.675Z",
+        "Label": "Substitution",
+        "Value": "ce02c206-077a-46ae-8125-55f7abeca8a6",
+        "Actor": "Darren Fletcher",
+        "Team": "Manchester United",
+        "X": null,
+        "Y": null,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "3801ecfc51dcdef1be07be1672223a2d1e2b75a20b1dc1068078fb648235055e",
+    "match_id": "3749246",
+    "event_id": "a3d9ef83-afd5-4071-8078-43eadcb54872",
+    "moment_type": "Substitution",
+    "title": "José Antonio Reyes Calderón Substitution vs Manchester United",
+    "description": "Substitution",
+    "timestamp": "2004-03-28T00:32:02.437Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-substitution-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:31:38.331Z",
+        "Label": "Pass",
+        "Value": "f5b8d403-e15a-4e1e-969b-06148a499935",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.5075,
+        "Y": 0.85375,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:31:38.607Z",
+        "Label": "Ball Receipt*",
+        "Value": "d7bd0ab2-20f2-48c2-9a21-088301970990",
+        "Actor": "Eduardo César Daude Gaspar",
+        "Team": "Arsenal",
+        "X": 0.5608333333333333,
+        "Y": 0.86875,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:31:38.607Z",
+        "Label": "Block",
+        "Value": "c748c83f-6927-4034-a315-9a6754db164e",
+        "Actor": "Paul Scholes",
+        "Team": "Manchester United",
+        "X": 0.4716666666666667,
+        "Y": 0.13625,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:31:39.027Z",
+        "Label": "Pass",
+        "Value": "edf87548-6d84-4931-a96c-f670ad5ee3ec",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": 0.51,
+        "Y": 0.8712500000000001,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:31:40.286Z",
+        "Label": "Ball Receipt*",
+        "Value": "4819856b-e183-4a77-9250-4aaf3209f3b6",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": 0.49416666666666664,
+        "Y": 0.99875,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:32:02.437Z",
+        "Label": "Substitution",
+        "Value": "a3d9ef83-afd5-4071-8078-43eadcb54872",
+        "Actor": "José Antonio Reyes Calderón",
+        "Team": "Arsenal",
+        "X": null,
+        "Y": null,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "874feca1ca738b20f4818f060893b22f3bf1929f5c42ffa9ca2cf0dea9e54c19",
+    "match_id": "3749246",
+    "event_id": "54d17f33-dc23-41e3-be97-b513534956ee",
+    "moment_type": "Substitution",
+    "title": "Fredrik Ljungberg Substitution vs Manchester United",
+    "description": "Substitution",
+    "timestamp": "2004-03-28T00:36:54.023Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-substitution-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:36:23.113Z",
+        "Label": "Pass",
+        "Value": "d3094824-a59f-443b-9d79-152f353055fc",
+        "Actor": "Jens Lehmann",
+        "Team": "Arsenal",
+        "X": 0.10250000000000001,
+        "Y": 0.4025,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:36:25.898Z",
+        "Label": "Foul Committed",
+        "Value": "bc0e8c15-7742-4441-a307-dca1aa1e3d1d",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": 0.6108333333333333,
+        "Y": 0.42874999999999996,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:36:25.898Z",
+        "Label": "Foul Won",
+        "Value": "d009dda4-eb64-47f2-a78a-dcb3c60b19ad",
+        "Actor": "Wes Brown",
+        "Team": "Manchester United",
+        "X": 0.38999999999999996,
+        "Y": 0.5725,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:36:54.023Z",
+        "Label": "Substitution",
+        "Value": "54d17f33-dc23-41e3-be97-b513534956ee",
+        "Actor": "Fredrik Ljungberg",
+        "Team": "Arsenal",
+        "X": null,
+        "Y": null,
+        "Context": {
+          "Phase": "From Free Kick"
+        }
+      }
+    ]
+  },
+  {
+    "moment_id": "f646e47b67d6dbcd2ede2199833b87cd76f3ba41cf86cd7a75985336e979c616",
+    "match_id": "3749246",
+    "event_id": "4b763ec1-261c-4094-95ad-a5d0fbcb12d2",
+    "moment_type": "Substitution",
+    "title": "Robert Pirès Substitution vs Manchester United",
+    "description": "Substitution",
+    "timestamp": "2004-03-28T00:40:11.561Z",
+    "sport": "soccer",
+    "league": "Premier League",
+    "competition": "Premier League",
+    "venue": "Highbury Stadium",
+    "ruleset_version": "statsbomb-substitution-v1",
+    "data_lines": [
+      {
+        "Sequence": 1,
+        "Timestamp": "2004-03-28T00:39:33.869Z",
+        "Label": "Ball Receipt*",
+        "Value": "65f66b38-4ca6-4ed0-9300-4a6fc8323e72",
+        "Actor": "Gary Neville",
+        "Team": "Manchester United",
+        "X": 0.13416666666666668,
+        "Y": 0.6849999999999999,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 2,
+        "Timestamp": "2004-03-28T00:39:33.869Z",
+        "Label": "Carry",
+        "Value": "0d0168c3-e1ed-48e4-8957-e26c378b6b88",
+        "Actor": "Gary Neville",
+        "Team": "Manchester United",
+        "X": 0.13416666666666668,
+        "Y": 0.6849999999999999,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 3,
+        "Timestamp": "2004-03-28T00:39:33.938Z",
+        "Label": "Pass",
+        "Value": "9f2caa7b-7fe1-49ea-aa9d-fa7d54dddf88",
+        "Actor": "Gary Neville",
+        "Team": "Manchester United",
+        "X": 0.13416666666666668,
+        "Y": 0.68125,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 4,
+        "Timestamp": "2004-03-28T00:39:35.890Z",
+        "Label": "Ball Receipt*",
+        "Value": "50044922-3f5c-4bdc-8e07-dd386ceb0789",
+        "Actor": "Ole Gunnar Solskjær",
+        "Team": "Manchester United",
+        "X": 0.3783333333333333,
+        "Y": 0.9400000000000001,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 5,
+        "Timestamp": "2004-03-28T00:39:35.890Z",
+        "Label": "Interception",
+        "Value": "bfa95823-87b4-478e-af0b-440286a380af",
+        "Actor": "Gaël Clichy",
+        "Team": "Arsenal",
+        "X": 0.63,
+        "Y": 0.08499999999999999,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      },
+      {
+        "Sequence": 6,
+        "Timestamp": "2004-03-28T00:40:11.561Z",
+        "Label": "Substitution",
+        "Value": "4b763ec1-261c-4094-95ad-a5d0fbcb12d2",
+        "Actor": "Robert Pirès",
+        "Team": "Arsenal",
+        "X": null,
+        "Y": null,
+        "Context": {
+          "Phase": "Regular Play"
+        }
+      }
+    ]
+  }
+]

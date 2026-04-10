@@ -14,7 +14,7 @@ interface ProductMockupProps {
 }
 
 const DEFAULT_GRADIENT =
-  "linear-gradient(135deg, #DA291C 0%, #1a1a2e 50%, #DA291C 100%)";
+  "linear-gradient(135deg, #8AE234 0%, #1a1a2e 50%, #8AE234 100%)";
 
 export default function ProductMockup({
   product,
@@ -33,7 +33,7 @@ export default function ProductMockup({
         className="pointer-events-none absolute inset-0 -z-10 opacity-30 blur-3xl"
         style={{
           background:
-            "radial-gradient(circle, rgba(218,41,28,0.25), transparent 70%)",
+            "radial-gradient(circle, rgba(138,226,52,0.25), transparent 70%)",
         }}
       />
 
@@ -178,7 +178,7 @@ function CanvasMockup({ bg }: { bg: string }) {
   return (
     <div className="relative flex items-center justify-center" style={{ width: "55%", aspectRatio: "3 / 4" }}>
       {/* Shadow depth — gives gallery-wrap look */}
-      <div className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#0a0a0a]" />
+      <div className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#080810]" />
       {/* Canvas face */}
       <div
         className="absolute inset-0 border border-white/10"

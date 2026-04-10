@@ -48,7 +48,7 @@ export default async function PlayerCardPage({
   if (!player) notFound();
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
+    <div className="min-h-screen bg-[#080810]">
       <div className="mx-auto max-w-6xl px-6 pb-20 pt-10">
         {/* Back link */}
         <Link

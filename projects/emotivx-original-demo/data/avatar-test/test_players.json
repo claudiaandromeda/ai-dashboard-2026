@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Jude Bellingham",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Jude_Bellingham_2023.jpg/440px-Jude_Bellingham_2023.jpg",
+    "team": "England",
+    "jersey_number": 10
+  },
+  {
+    "name": "Lamine Yamal",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Lamine_Yamal_Euro_2024_%28cropped%29.jpeg/440px-Lamine_Yamal_Euro_2024_%28cropped%29.jpeg",
+    "team": "Spain",
+    "jersey_number": 19
+  },
+  {
+    "name": "Florian Wirtz",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/20240614_AUT_vs_FRA_Wirtz_002_%28cropped%29.jpg/440px-20240614_AUT_vs_FRA_Wirtz_002_%28cropped%29.jpg",
+    "team": "Germany",
+    "jersey_number": 17
+  }
+]

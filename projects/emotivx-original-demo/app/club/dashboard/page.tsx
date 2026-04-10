@@ -117,7 +117,7 @@ export default function ClubDashboard() {
             {recentActivity.map((item, i) => (
               <div
                 key={i}
-                className="flex items-start justify-between gap-4 rounded-lg border border-white/5 bg-[#0A0A0A] p-3"
+                className="flex items-start justify-between gap-4 rounded-lg border border-white/5 bg-[#080810] p-3"
               >
                 <p className="text-xs text-white/80">{item.text}</p>
                 <span className="shrink-0 text-[10px] text-[#555555]">
@@ -144,7 +144,7 @@ export default function ClubDashboard() {
                 <Link
                   key={action.title}
                   href={action.href}
-                  className="group flex items-center gap-4 rounded-lg border border-white/5 bg-[#0A0A0A] p-4 transition hover:border-white/10"
+                  className="group flex items-center gap-4 rounded-lg border border-white/5 bg-[#080810] p-4 transition hover:border-white/10"
                 >
                   <div
                     className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg"

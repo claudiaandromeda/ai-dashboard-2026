@@ -319,12 +319,12 @@ function Section({ title, defaultOpen = false, children }: {
 const ART_STYLES = [
   { id: "classic",    label: "Classic"   },
   { id: "geometric",  label: "Geometric" },
-  { id: "camo",       label: "Camo"      },
+  { id: "jackson",    label: "Jackson"   },
   { id: "futuristic", label: "Spider"    },
   { id: "street",     label: "Street"    },
   { id: "marble",     label: "Marble"    },
   { id: "smoky",      label: "Smoky"     },
-  { id: "jackson",    label: "Jackson"   },
+  { id: "camo",       label: "Camo"      },
   { id: "dali",       label: "Dali"      },
 ] as const;
 type BaseStyleId = (typeof ART_STYLES)[number]["id"];
@@ -378,7 +378,7 @@ function Slider({
         step={step}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="h-1 w-full cursor-pointer appearance-none rounded-full bg-white/10 accent-[#DA291C] [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[#DA291C]"
+        className="h-1 w-full cursor-pointer appearance-none rounded-full bg-white/10 accent-[#8AE234] [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[#8AE234]"
       />
     </div>
   );
@@ -412,7 +412,7 @@ function MerchPreviewContent() {
   const [bgColours, setBgColours]           = useState<ColourName[]>([]);   // additional bg colours
   const [dataColours, setDataColours]       = useState<ColourName[]>([]);   // legacy — kept for dep arrays
   const [dataLineColour, setDataLineColour]     = useState<ColourName | null>("White");  // glow + line - default white for Wrexham
-  const [dataPointColour, setDataPointColour]   = useState<ColourName | null>("Forest");  // markers - default green for Wrexham
+  const [dataPointColour, setDataPointColour]   = useState<ColourName | null>("White");  // markers - default green for Wrexham
   const [colourPanelOpen, setColourPanelOpen] = useState<"base" | "data" | null>("base");
   const [advancedColours, setAdvancedColours] = useState(false);
   const [activePaletteSlot, setActivePaletteSlot] = useState(0); // 0=hero, 1-3=accent
@@ -472,8 +472,90 @@ function MerchPreviewContent() {
     setDataLineColour(null);
     setDataPointColour(null);
   };
+  const CLASSIC_TEXTURE_CONTROLS = {
+    repeat: 2.5,
+    rotation: 89,
+    offsetX: 0.82,
+    offsetY: 0,
+    brightness: 1.0,
+  };
+
+  const GEOMETRIC_TEXTURE_CONTROLS = {
+    repeat: 2.5,
+    rotation: 78,
+    offsetX: 0.7,
+    offsetY: 0.92,
+    brightness: 1.0,
+  };
+
+  const STREET_TEXTURE_CONTROLS = {
+    repeat: 1.5,
+    rotation: 184,
+    offsetX: 1.0,
+    offsetY: 0.01,
+    brightness: 1.0,
+  };
+
+  const JACKSON_TEXTURE_CONTROLS = {
+    repeat: 1.5,
+    rotation: 89,
+    offsetX: 0.82,
+    offsetY: 0.95,
+    brightness: 1.0,
+  };
+
   const handleStyleChange = (id: BaseStyleId) => {
     setBaseStyle(id);
+    if (id === "classic") {
+      setSelectedColour("Wrexham Red");
+      setDataLineColour("White");
+      setDataPointColour("White");
+      setAuraColour("White");
+      setGlowIntensity(9);
+      setMarkerSize(50);
+      setLineThickness(50);
+      setUniversalIntensity(50);
+      setBrightness(50);
+      setTextureControls(CLASSIC_TEXTURE_CONTROLS);
+    } else if (id === "jackson") {
+      setSelectedColour("White");
+      setBgColours(["Wrexham Red", "Wrexham Gold", "Forest"]);
+      setDataLineColour("Black");
+      setDataPointColour("White");
+      setAuraColour("White");
+      setGlowIntensity(21);
+      setMarkerSize(50);
+      setLineThickness(21);
+      setUniversalIntensity(23);
+      setBrightness(60);
+      setTextureControls(JACKSON_TEXTURE_CONTROLS);
+
+    } else if (id === "street") {
+      setSelectedColour("Wrexham Red");
+      setDataLineColour("Wrexham Red");
+      setDataPointColour("White");
+      setAuraColour("Wrexham Red");
+      setGlowIntensity(9);
+      setMarkerSize(50);
+      setLineThickness(50);
+      setUniversalIntensity(50);
+      setBrightness(50);
+      setTextureControls(STREET_TEXTURE_CONTROLS);
+
+    } else if (id === "geometric") {
+      setSelectedColour("Gold");
+      setDataLineColour("Gold");
+      setDataPointColour("Wrexham Gold");
+      setAuraColour("Gold");
+      setGlowIntensity(10);
+      setMarkerSize(6);
+      setLineThickness(49);
+      setUniversalIntensity(51);
+      setBrightness(28);
+      setTextureControls(GEOMETRIC_TEXTURE_CONTROLS);
+
+
+    }
   };
   const handleKitChange = (kit: KitVariant) => {
     setKitVariant(kit);
@@ -493,15 +575,15 @@ function MerchPreviewContent() {
     }
   };
   const [lineEffect, setLineEffect] = useState(effect);
-  const [glowIntensity, setGlowIntensity] = useState(4);
+  const [glowIntensity, setGlowIntensity] = useState(9);
   const [patternDensity, setPatternDensity] = useState(50);
   const [lineThickness, setLineThickness] = useState(50);
   const [contrast, setContrast] = useState(50);
-  const [auraColour, setAuraColour] = useState<ColourName | null>(null);
+  const [auraColour, setAuraColour] = useState<ColourName | null>("White");
   const [universalIntensity, setUniversalIntensity] = useState(50);
   const [brightness, setBrightness] = useState(50);
   const [showMarkers, setShowMarkers] = useState(true);
-  const [markerSize, setMarkerSize] = useState(80);
+  const [markerSize, setMarkerSize] = useState(50);
   const [linkTransforms, setLinkTransforms] = useState(true);
   const [artworkUrl, setArtworkUrl] = useState<string | null>(artUrlParam || null);
   const [regenerating, setRegenerating] = useState(false);
@@ -549,7 +631,7 @@ function MerchPreviewContent() {
   /* ── Fetch overlay texture (logo + badge) when team/view/name changes ── */
 
 
-  const [textureControls, setTextureControls] = useState<TextureControls>(DEFAULT_TEXTURE_CONTROLS);
+  const [textureControls, setTextureControls] = useState<TextureControls>(CLASSIC_TEXTURE_CONTROLS);
   const setTC = (key: keyof TextureControls) => (v: number) =>
     setTextureControls((c) => ({ ...c, [key]: v }));
 
@@ -569,7 +651,7 @@ function MerchPreviewContent() {
     : null);
 
   const placeholderGradient =
-    "linear-gradient(135deg, #BA0C2F 0%, #0a0a0a 50%, #BA0C2F 100%)";
+    "linear-gradient(135deg, #BA0C2F 0%, #080810 50%, #BA0C2F 100%)";
 
   /* ── Auto-regenerate on style/slider changes (debounced) ────────── */
   const regenTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -626,10 +708,10 @@ function MerchPreviewContent() {
             primary: primaryHex,
             secondary: resolvedExtraColours[0] ?? "#FFFFFF",
             accent: resolvedExtraColours[1] ?? "#C9A84C",
-            background: "#0A0A0A",
+            background: "#080810",
           },
           // Logo + badge are now in a separate overlay texture (non-tiling)
-          teamColour: teamConfig?.primaryColour ?? "#DA291C",
+          teamColour: teamConfig?.primaryColour ?? "#8AE234",
           dataPrimary:   COLOURS.find(c => c.name === resolvedDataPrimary)?.hex ?? null,
           dataSecondary: COLOURS.find(c => c.name === resolvedDataSecondary)?.hex ?? null,
           showMarkers: showMarkers,
@@ -736,7 +818,7 @@ function MerchPreviewContent() {
       <div className="grid gap-10 lg:grid-cols-[3fr_2fr]">
         {/* ============ LEFT — Product Viewer + Product Grid ============ */}
         <div>
-          <div className="relative w-full overflow-hidden rounded-xl border border-white/5 bg-[#0a0a0a]" style={{ aspectRatio: "1/1" }}>
+          <div className="relative w-full overflow-hidden rounded-xl border border-white/5 bg-[#080810]" style={{ aspectRatio: "1/1" }}>
             {(product.productType === "hoodie" || product.productType === "tshirt" || product.productType === "longsleeve") ? (
               <div className="absolute inset-0 w-full h-full">
               <GarmentViewerWithFallback
@@ -790,14 +872,14 @@ function MerchPreviewContent() {
                 <div>
                   <p className="text-xs font-semibold text-white">
                     Add team logo
-                    <span className="ml-2 text-[#DA291C]">+£{LOGO_PRICE}</span>
+                    <span className="ml-2 text-[#8AE234]">+£{LOGO_PRICE}</span>
                   </p>
                   <p className="text-[10px] text-[#888888]">Team crest on left chest</p>
                 </div>
                 <button
                   onClick={() => setShowLogo(!showLogo)}
                   className={`relative h-6 w-11 flex-shrink-0 rounded-full transition-colors ${
-                    showLogo ? "bg-[#DA291C]" : "bg-white/10"
+                    showLogo ? "bg-[#8AE234]" : "bg-white/10"
                   }`}
                 >
                   <div className={`absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${
@@ -810,7 +892,7 @@ function MerchPreviewContent() {
                 <div>
                   <p className="text-xs font-semibold text-white">
                     Add player name and number
-                    <span className="ml-2 text-[#DA291C]">+£{NAME_NUMBER_PRICE}</span>
+                    <span className="ml-2 text-[#8AE234]">+£{NAME_NUMBER_PRICE}</span>
                   </p>
                   <p className="text-[10px] text-[#888888]">
                     {scorerName ? `${scorerName} · #${scorerNumber}` : "Scorer name + number"} · back of garment
@@ -819,7 +901,7 @@ function MerchPreviewContent() {
                 <button
                   onClick={() => setIncludeNameNumber(!includeNameNumber)}
                   className={`relative h-6 w-11 flex-shrink-0 rounded-full transition-colors ${
-                    includeNameNumber ? "bg-[#DA291C]" : "bg-white/10"
+                    includeNameNumber ? "bg-[#8AE234]" : "bg-white/10"
                   }`}
                 >
                   <div className={`absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${
@@ -841,7 +923,7 @@ function MerchPreviewContent() {
                 }}
                 className={`flex flex-col items-center justify-center gap-0.5 rounded-lg border-2 px-1 py-2.5 text-center transition-all sm:py-2 ${
                   selectedProduct === p.label
-                    ? "scale-[1.03] border-[#DA291C] bg-[#DA291C]/10"
+                    ? "scale-[1.03] border-[#8AE234] bg-[#8AE234]/10"
                     : "border-white/5 bg-[#111111] hover:border-white/15 hover:bg-white/5"
                 }`}
               >
@@ -852,7 +934,7 @@ function MerchPreviewContent() {
                   {p.shortLabel}
                 </span>
                 <span className={`text-[9px] tabular-nums ${
-                  selectedProduct === p.label ? "text-[#DA291C]" : "text-[#888888]"
+                  selectedProduct === p.label ? "text-[#8AE234]" : "text-[#888888]"
                 }`}>
                   £{p.price}
                 </span>
@@ -887,7 +969,7 @@ function MerchPreviewContent() {
             </div>
 
             <div className="mt-4 flex items-center gap-2 rounded-lg bg-white/5 px-3 py-2">
-              <Truck className="h-3.5 w-3.5 flex-shrink-0 text-[#DA291C]" />
+              <Truck className="h-3.5 w-3.5 flex-shrink-0 text-[#8AE234]" />
               <p className="text-[11px] text-[#888888]">
                 Printed on demand by Printful · Ships in 5–7 days
               </p>
@@ -908,7 +990,7 @@ function MerchPreviewContent() {
               homeScore={homeScore}
               awayScore={awayScore}
               matchDate={matchDateStr ?? ""}
-              teamColour={teamConfig?.primaryColour ?? "#DA291C"}
+              teamColour={teamConfig?.primaryColour ?? "#8AE234"}
               accentColour="#C9A84C"
             />
             <p className="mt-2 text-xs text-[#888888]">
@@ -957,7 +1039,7 @@ function MerchPreviewContent() {
                                     onClick={() => { setMatchId(match.matchId); setGoalIndex(String(g.index)); }}
                                     className={`rounded-lg px-3 py-1.5 text-left text-[11px] font-medium transition-colors ${
                                       active
-                                        ? "bg-[#DA291C] text-white"
+                                        ? "bg-[#8AE234] text-white"
                                         : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
                                     }`}
                                   >
@@ -984,7 +1066,7 @@ function MerchPreviewContent() {
                           onClick={() => handleKitChange(kit)}
                           className={`rounded-full px-4 py-1 text-[11px] font-semibold capitalize transition-colors ${
                             kitVariant === kit
-                              ? "bg-[#DA291C] text-white"
+                              ? "bg-[#8AE234] text-white"
                               : "text-gray-500 hover:text-gray-300"
                           }`}
                         >
@@ -1007,7 +1089,7 @@ function MerchPreviewContent() {
                         onClick={() => handleStyleChange(s.id)}
                         className={`rounded-lg px-2 py-2 text-[11px] font-medium transition-colors ${
                           baseStyle === s.id
-                            ? "bg-[#DA291C] text-white"
+                            ? "bg-[#8AE234] text-white"
                             : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
                         }`}
                       >
@@ -1138,7 +1220,7 @@ function MerchPreviewContent() {
                             onClick={() => setLineEffect(e.id)}
                             className={`rounded-full px-3 py-1.5 text-[11px] font-medium transition-colors ${
                               lineEffect === e.id
-                                ? "bg-[#DA291C] text-white"
+                                ? "bg-[#8AE234] text-white"
                                 : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
                             }`}
                           >
@@ -1198,7 +1280,7 @@ function MerchPreviewContent() {
                     <Slider label="Universal Intensity" value={universalIntensity} onChange={setUniversalIntensity} />
                     <Slider label="Brightness" value={brightness} onChange={setBrightness} />
                     {/* Data point controls */}
-                    <div className="flex items-center justify-between rounded-lg border border-white/5 bg-[#0a0a0a] px-4 py-2.5">
+                    <div className="flex items-center justify-between rounded-lg border border-white/5 bg-[#080810] px-4 py-2.5">
                       <div>
                         <p className="text-xs font-semibold text-white">Show data points</p>
                         <p className="text-[10px] text-[#888888]">Display markers along the line</p>
@@ -1206,7 +1288,7 @@ function MerchPreviewContent() {
                       <button
                         onClick={() => setShowMarkers(!showMarkers)}
                         className={`relative h-6 w-11 flex-shrink-0 rounded-full transition-colors ${
-                          showMarkers ? "bg-[#DA291C]" : "bg-white/10"
+                          showMarkers ? "bg-[#8AE234]" : "bg-white/10"
                         }`}
                       >
                         <div className={`absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${
@@ -1216,7 +1298,7 @@ function MerchPreviewContent() {
                     </div>
                     {showMarkers && <Slider label="Data Point Size" value={markerSize} onChange={setMarkerSize} />}
                     {/* Link transforms toggle */}
-                    <div className="flex items-center justify-between rounded-lg border border-white/5 bg-[#0a0a0a] px-4 py-2.5">
+                    <div className="flex items-center justify-between rounded-lg border border-white/5 bg-[#080810] px-4 py-2.5">
                       <div>
                         <p className="text-xs font-semibold text-white">Link transforms</p>
                         <p className="text-[10px] text-[#888888]">Background &amp; data move together</p>
@@ -1224,7 +1306,7 @@ function MerchPreviewContent() {
                       <button
                         onClick={() => setLinkTransforms(!linkTransforms)}
                         className={`relative h-6 w-11 flex-shrink-0 rounded-full transition-colors ${
-                          linkTransforms ? "bg-[#DA291C]" : "bg-white/10"
+                          linkTransforms ? "bg-[#8AE234]" : "bg-white/10"
                         }`}
                       >
                         <div className={`absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${
@@ -1249,7 +1331,7 @@ function MerchPreviewContent() {
                           <Slider label="Brightness" value={textureControls.brightness} min={0.4} max={2.0} step={0.05} onChange={setTC("brightness")} displayVal={textureControls.brightness.toFixed(2)} />
                           <button
                             className="w-full rounded-lg border border-white/8 py-1.5 text-[11px] text-white/40 transition hover:text-white/60"
-                            onClick={() => setTextureControls(DEFAULT_TEXTURE_CONTROLS)}
+                            onClick={() => setTextureControls(baseStyle === "classic" ? CLASSIC_TEXTURE_CONTROLS : (baseStyle === "geometric" ? GEOMETRIC_TEXTURE_CONTROLS : (baseStyle === "jackson" ? JACKSON_TEXTURE_CONTROLS : (baseStyle === "street" ? STREET_TEXTURE_CONTROLS : DEFAULT_TEXTURE_CONTROLS))))}
                           >
                             Reset pattern
                           </button>
@@ -1299,7 +1381,7 @@ function MerchPreviewContent() {
                     onClick={() => setSelectedSize(size)}
                     className={`rounded-lg py-2.5 text-xs font-semibold transition-colors ${
                       selectedSize === size
-                        ? "bg-[#DA291C] text-white"
+                        ? "bg-[#8AE234] text-white"
                         : "border border-white/10 text-gray-400 hover:border-white/20 hover:text-white"
                     }`}
                   >
@@ -1328,7 +1410,7 @@ function MerchPreviewContent() {
               </div>
               <div className="flex justify-between text-[#888888]">
                 <span>Moment Badge</span>
-                <span className="text-[#DA291C] text-xs font-semibold">Included</span>
+                <span className="text-[#8AE234] text-xs font-semibold">Included</span>
               </div>
               {showLogo && (
                 <div className="flex justify-between text-[#888888]">
@@ -1354,10 +1436,10 @@ function MerchPreviewContent() {
           {/* ── ADD TO CART ──────────────────────────────────── */}
           <button
             onClick={handleAddToCart}
-            className={`flex w-full items-center justify-center gap-2 rounded-xl py-4 text-base font-bold text-white transition-colors ${
+            className={`flex w-full items-center justify-center gap-2 rounded-full py-4 text-base font-bold transition-colors ${
               addedToCart
-                ? "bg-green-600"
-                : "bg-[#DA291C] hover:bg-[#b82318]"
+                ? "bg-green-600 text-white"
+                : "bg-[#8AE234] text-[#080810] hover:bg-[#b82318]"
             }`}
           >
             {addedToCart ? (
@@ -1377,7 +1459,7 @@ function MerchPreviewContent() {
           <button
             onClick={handleOrderHoodie}
             disabled={ordering || !artworkUrl}
-            className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#DA291C]/40 py-3 text-sm font-bold text-[#DA291C] transition-colors hover:bg-[#DA291C]/10 disabled:opacity-40"
+            className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#8AE234]/40 py-3 text-sm font-bold text-[#8AE234] transition-colors hover:bg-[#8AE234]/10 disabled:opacity-40"
           >
             {ordering ? (
               <><RefreshCw className="h-4 w-4 animate-spin" /> Placing order…</>
@@ -1442,7 +1524,7 @@ function MerchPreviewContent() {
                     <tr
                       key={size}
                       className={`border-b border-white/5 ${
-                        selectedSize === size ? "bg-[#DA291C]/10 text-white" : "text-[#888888]"
+                        selectedSize === size ? "bg-[#8AE234]/10 text-white" : "text-[#888888]"
                       }`}
                     >
                       <td className="px-3 py-2 font-semibold text-white">{size}</td>
@@ -1478,12 +1560,12 @@ class PageErrorBoundary extends Component<
   render() {
     if (this.state.error) {
       return (
-        <div className="min-h-screen bg-[#0A0A0A] flex flex-col items-center justify-center text-white gap-4">
+        <div className="min-h-screen bg-[#080810] flex flex-col items-center justify-center text-white gap-4">
           <p className="text-lg">Something went wrong</p>
           <p className="text-sm text-zinc-400 max-w-md text-center">{this.state.error.message}</p>
           <button
             onClick={() => { this.setState({ error: null }); }}
-            className="px-6 py-2 bg-[#DA291C] rounded-lg hover:bg-red-700 transition-colors"
+            className="px-6 py-2 bg-[#8AE234] rounded-full text-[#080810] hover:bg-red-700 transition-colors"
           >
             Try Again
           </button>
@@ -1497,7 +1579,7 @@ class PageErrorBoundary extends Component<
 export default function MerchPreviewPage() {
   return (
     <PageErrorBoundary>
-      <Suspense fallback={<div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center text-white">Loading...</div>}>
+      <Suspense fallback={<div className="min-h-screen bg-[#080810] flex items-center justify-center text-white">Loading...</div>}>
         <MerchPreviewContent />
       </Suspense>
     </PageErrorBoundary>

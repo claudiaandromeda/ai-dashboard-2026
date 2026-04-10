@@ -10,7 +10,7 @@ export default function PrivacyPage() {
         <p>
           We do not sell your personal data. For questions about our privacy
           practices, contact us at{" "}
-          <span className="text-[#DA291C]">privacy@emotivx.com</span>.
+          <span className="text-[#8AE234]">privacy@emotivx.com</span>.
         </p>
       </div>
     </div>

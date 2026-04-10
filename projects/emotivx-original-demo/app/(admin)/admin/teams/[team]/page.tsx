@@ -62,7 +62,7 @@ export default function TeamAdminPage() {
           Once they sign up, you'll have full admin access to their moments, IP, and revenue.
         </p>
         <div className="flex flex-col gap-2">
-          <button className="flex items-center justify-center gap-2 rounded-lg bg-[#DA291C] py-2.5 text-sm font-bold text-white hover:bg-[#DA291C]/90 transition">
+          <button className="flex items-center justify-center gap-2 rounded-full bg-[#8AE234] py-2.5 text-sm font-bold text-[#080810] hover:bg-[#8AE234]/90 transition">
             <Mail className="h-4 w-4" />
             Resend Invitation
           </button>

@@ -1,0 +1,40 @@
+.env.local
+.env.*.local
+data/normalized/
+data/statsbomb/events/
+# Allow Wrexham match files
+!data/statsbomb/events/1376994.json
+!data/statsbomb/events/1377235.json
+!data/statsbomb/events/1377475.json
+data/statsbomb/lineups/
+data/statsbomb/three-sixty/
+
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+
+# Next.js Build Output
+.next/
+out/
+
+# Supabase
+supabase/.temp/
+# Do NOT ignore supabase/migrations/*.sql
+
+# Environment Variables
+.env
+*.env.local
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Personal/Temp docs (based on your screenshot)
+Initial Prompt for CCP.*
+URGENT - Must Change Before Live.md
+art_engine/output/
+
+docs/video-frames/
+docs/video-frames-full/
+.vercel

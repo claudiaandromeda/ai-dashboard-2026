@@ -11,7 +11,7 @@ export default function TermsPage() {
         <p>
           Merchandise is printed on-demand. Orders are non-refundable except for
           defective items. For full terms, contact{" "}
-          <span className="text-[#DA291C]">legal@emotivx.com</span>.
+          <span className="text-[#8AE234]">legal@emotivx.com</span>.
         </p>
       </div>
     </div>

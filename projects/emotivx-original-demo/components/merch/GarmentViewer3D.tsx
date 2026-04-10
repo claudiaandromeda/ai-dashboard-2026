@@ -177,10 +177,10 @@ function createGradientTexture(): THREE.CanvasTexture {
   canvas.height = 1024;
   const ctx = canvas.getContext("2d")!;
   const grad = ctx.createLinearGradient(0, 0, 1024, 1024);
-  grad.addColorStop(0, "#DA291C");
+  grad.addColorStop(0, "#8AE234");
   grad.addColorStop(0.45, "#1a0a0a");
   grad.addColorStop(0.55, "#0a0a1a");
-  grad.addColorStop(1, "#DA291C");
+  grad.addColorStop(1, "#8AE234");
   ctx.fillStyle = grad;
   ctx.fillRect(0, 0, 1024, 1024);
   const tex = new THREE.CanvasTexture(canvas);
@@ -487,7 +487,7 @@ function GarmentMesh({
   playerName,
   playerNumber,
   showNameNumber = true,
-  teamColour = "#DA291C",
+  teamColour = "#8AE234",
 }: {
   modelPath: string;
   garmentType?: string;
@@ -752,7 +752,7 @@ function LoadingSkeleton({ height }: { height: number }) {
   return (
     <div className="flex items-center justify-center rounded-xl bg-white/5" style={{ height }}>
       <div className="flex flex-col items-center gap-3">
-        <div className="h-16 w-16 animate-spin rounded-full border-2 border-white/10 border-t-[#DA291C]" />
+        <div className="h-16 w-16 animate-spin rounded-full border-2 border-white/10 border-t-[#8AE234]" />
         <span className="text-xs text-white/40">Loading 3D model…</span>
       </div>
     </div>
@@ -775,7 +775,7 @@ export default function GarmentViewer3D({
   playerName,
   playerNumber,
   showNameNumber = true,
-  teamColour = "#DA291C",
+  teamColour = "#8AE234",
 }: GarmentViewer3DProps) {
   // Use per-garment camera Z from config unless caller has explicitly set a zoom
   const cfg = GARMENT_CONFIGS[garmentType] ?? GARMENT_CONFIGS.hoodie;
@@ -820,7 +820,7 @@ export default function GarmentViewer3D({
       {loading && (
         <div className="absolute inset-0 z-20 flex items-center justify-center rounded-xl bg-black/60 backdrop-blur-sm">
           <div className="flex flex-col items-center gap-2">
-            <div className="h-10 w-10 animate-spin rounded-full border-2 border-white/20 border-t-[#DA291C]" />
+            <div className="h-10 w-10 animate-spin rounded-full border-2 border-white/20 border-t-[#8AE234]" />
             <span className="text-xs text-white/60">Generating artwork…</span>
           </div>
         </div>

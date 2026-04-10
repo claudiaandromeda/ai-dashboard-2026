@@ -53,7 +53,7 @@ const SHIPPING_COST = 4.99;
 /* ------------------------------------------------------------------ */
 
 const INPUT_CLS =
-  "w-full rounded-lg border border-white/10 bg-[#1A1A1A] px-3.5 py-3 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#DA291C] focus:ring-1 focus:ring-[#DA291C]/30";
+  "w-full rounded-lg border border-white/10 bg-[#1A1A1A] px-3.5 py-3 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#8AE234] focus:ring-1 focus:ring-[#8AE234]/30";
 
 /* ------------------------------------------------------------------ */
 /*  Progress Bar                                                       */
@@ -74,9 +74,9 @@ function ProgressBar({ current }: { current: number }) {
                 <div
                   className={`flex h-9 w-9 items-center justify-center rounded-full text-xs font-bold transition-all ${
                     isActive
-                      ? "bg-[#DA291C] text-white shadow-[0_0_12px_rgba(218,41,28,0.4)]"
+                      ? "bg-[#8AE234] text-white shadow-[0_0_12px_rgba(138,226,52,0.4)]"
                       : isDone
-                        ? "bg-[#DA291C]/20 text-[#DA291C]"
+                        ? "bg-[#8AE234]/20 text-[#8AE234]"
                         : "bg-[#1A1A1A] text-[#555]"
                   }`}
                 >
@@ -87,7 +87,7 @@ function ProgressBar({ current }: { current: number }) {
                     isActive
                       ? "text-white"
                       : isDone
-                        ? "text-[#DA291C]"
+                        ? "text-[#8AE234]"
                         : "text-[#555]"
                   }`}
                 >
@@ -99,7 +99,7 @@ function ProgressBar({ current }: { current: number }) {
                 <div className="mx-2 h-px flex-1">
                   <div
                     className={`h-full ${
-                      i < current ? "bg-[#DA291C]/40" : "bg-white/5"
+                      i < current ? "bg-[#8AE234]/40" : "bg-white/5"
                     }`}
                   />
                 </div>
@@ -150,7 +150,7 @@ export default function CheckoutPage() {
         <p className="text-sm text-[#888]">Your cart is empty.</p>
         <Link
           href="/moments/gallery"
-          className="flex items-center gap-1.5 text-xs font-semibold text-[#DA291C] transition hover:text-[#DA291C]/80"
+          className="flex items-center gap-1.5 text-xs font-semibold text-[#8AE234] transition hover:text-[#8AE234]/80"
         >
           <ArrowLeft className="h-3.5 w-3.5" /> Browse Moments
         </Link>
@@ -201,7 +201,7 @@ export default function CheckoutPage() {
                           <p className="mt-0.5 text-xs text-[#888]">
                             Size: {item.size} · Colour: Black
                           </p>
-                          <p className="mt-0.5 text-xs text-[#DA291C]">
+                          <p className="mt-0.5 text-xs text-[#8AE234]">
                             {item.momentName}
                           </p>
                         </div>
@@ -260,7 +260,7 @@ export default function CheckoutPage() {
                             item.size,
                           )
                         }
-                        className="mt-1 h-5 w-5 shrink-0 text-[#555] transition hover:text-[#DA291C]"
+                        className="mt-1 h-5 w-5 shrink-0 text-[#555] transition hover:text-[#8AE234]"
                       >
                         <X className="h-4 w-4" />
                       </button>
@@ -272,7 +272,7 @@ export default function CheckoutPage() {
               <button
                 type="button"
                 onClick={() => setStep(1)}
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#DA291C] py-3.5 text-sm font-semibold text-white transition hover:bg-[#DA291C]/90"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-[#8AE234] py-3.5 text-sm font-semibold text-[#080810] transition hover:bg-[#8AE234]/90"
               >
                 Continue to Shipping <ArrowRight className="h-4 w-4" />
               </button>
@@ -405,7 +405,7 @@ export default function CheckoutPage() {
 
               <button
                 type="submit"
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#DA291C] py-3.5 text-sm font-semibold text-white transition hover:bg-[#DA291C]/90"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-[#8AE234] py-3.5 text-sm font-semibold text-[#080810] transition hover:bg-[#8AE234]/90"
               >
                 Continue to Payment <ArrowRight className="h-4 w-4" />
               </button>
@@ -475,7 +475,7 @@ export default function CheckoutPage() {
 
               <button
                 type="submit"
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#DA291C] py-4 text-sm font-bold text-white transition hover:bg-[#DA291C]/90"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-[#8AE234] py-4 text-sm font-bold text-[#080810] transition hover:bg-[#8AE234]/90"
               >
                 <Lock className="h-4 w-4" /> Pay £{total.toFixed(2)}
               </button>
@@ -517,7 +517,7 @@ export default function CheckoutPage() {
                       <p className="text-[10px] text-[#888]">
                         Size: {item.size} · Colour: Black
                       </p>
-                      <p className="text-[10px] text-[#DA291C]">
+                      <p className="text-[10px] text-[#8AE234]">
                         {item.momentName}
                       </p>
                       <div className="mt-1 flex items-center justify-between">
@@ -544,7 +544,7 @@ export default function CheckoutPage() {
                 value={promo}
                 onChange={(e) => setPromo(e.target.value)}
                 placeholder="Promo code"
-                className="flex-1 rounded-lg border border-white/10 bg-[#1A1A1A] px-3 py-2.5 text-xs text-white placeholder-[#555] outline-none transition focus:border-[#DA291C] focus:ring-1 focus:ring-[#DA291C]/30"
+                className="flex-1 rounded-lg border border-white/10 bg-[#1A1A1A] px-3 py-2.5 text-xs text-white placeholder-[#555] outline-none transition focus:border-[#8AE234] focus:ring-1 focus:ring-[#8AE234]/30"
               />
               <button
                 type="button"

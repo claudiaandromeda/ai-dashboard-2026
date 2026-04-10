@@ -53,7 +53,7 @@ export default function RoleSwitcher() {
                 onClick={() => setOpen(false)}
                 className={`flex items-center gap-3 px-4 py-3 text-sm transition-colors hover:bg-white/5 ${
                   key === current
-                    ? "bg-[#DA291C]/10 text-[#DA291C]"
+                    ? "bg-[#8AE234]/10 text-[#8AE234]"
                     : "text-white/70"
                 }`}
               >
@@ -68,7 +68,7 @@ export default function RoleSwitcher() {
       {/* Pill button */}
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 rounded-full border border-white/10 bg-[#1A1A1A] px-4 py-2.5 text-sm font-semibold tracking-wide text-white shadow-lg transition-all hover:border-[#DA291C]/40 hover:bg-[#1A1A1A]/90"
+        className="flex items-center gap-2 rounded-full border border-white/10 bg-[#1A1A1A] px-4 py-2.5 text-sm font-semibold tracking-wide text-white shadow-lg transition-all hover:border-[#8AE234]/40 hover:bg-[#1A1A1A]/90"
       >
         <span className="text-base">{view.icon}</span>
         <span>{view.label}</span>

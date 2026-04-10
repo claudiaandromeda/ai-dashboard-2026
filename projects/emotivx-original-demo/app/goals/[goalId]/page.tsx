@@ -70,16 +70,16 @@ const LINE_EFFECTS = [
 const TEAM_COLOURS: Record<string, { primary: string; secondary: string }> = {
   Germany: { primary: "#000000", secondary: "#FFFFFF" },
   Scotland: { primary: "#003078", secondary: "#FFFFFF" },
-  Spain: { primary: "#DA291C", secondary: "#F1BF00" },
+  Spain: { primary: "#8AE234", secondary: "#F1BF00" },
   France: { primary: "#002395", secondary: "#FFFFFF" },
   England: { primary: "#FFFFFF", secondary: "#002B5C" },
   Italy: { primary: "#0066B2", secondary: "#FFFFFF" },
-  Portugal: { primary: "#006847", secondary: "#DA291C" },
+  Portugal: { primary: "#006847", secondary: "#8AE234" },
   Netherlands: { primary: "#FF6600", secondary: "#FFFFFF" },
-  Belgium: { primary: "#DA291C", secondary: "#FDDA24" },
+  Belgium: { primary: "#8AE234", secondary: "#FDDA24" },
   Croatia: { primary: "#EF3340", secondary: "#FFFFFF" },
-  Switzerland: { primary: "#DA291C", secondary: "#FFFFFF" },
-  Turkey: { primary: "#DA291C", secondary: "#FFFFFF" },
+  Switzerland: { primary: "#8AE234", secondary: "#FFFFFF" },
+  Turkey: { primary: "#8AE234", secondary: "#FFFFFF" },
   Austria: { primary: "#ED2939", secondary: "#FFFFFF" },
   Hungary: { primary: "#477050", secondary: "#CE2939" },
   Romania: { primary: "#002B7F", secondary: "#FCD116" },
@@ -89,7 +89,7 @@ const TEAM_COLOURS: Record<string, { primary: string; secondary: string }> = {
   Slovakia: { primary: "#0B4EA2", secondary: "#FFFFFF" },
   Slovenia: { primary: "#005DA6", secondary: "#FFFFFF" },
   Albania: { primary: "#E41E20", secondary: "#000000" },
-  Georgia: { primary: "#DA291C", secondary: "#FFFFFF" },
+  Georgia: { primary: "#8AE234", secondary: "#FFFFFF" },
   Ukraine: { primary: "#005BBB", secondary: "#FFD500" },
   "Czech Republic": { primary: "#11457E", secondary: "#D7141A" },
 };
@@ -151,7 +151,7 @@ function DatalineCanvas({
         preserveAspectRatio="xMidYMid meet"
       >
         {/* Dark pitch background with subtle grid */}
-        <rect width={W} height={H} fill="#0A0A0A" />
+        <rect width={W} height={H} fill="#080810" />
 
         {/* Pitch grid lines */}
         {Array.from({ length: 11 }).map((_, i) => (
@@ -328,7 +328,7 @@ function ArtResult({
       <div className="flex flex-col gap-3 sm:flex-row">
         <Link
           href={`/merch-preview?goalId=${goalId}&style=${style}`}
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-[#DA291C] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#DA291C]/90"
+          className="flex flex-1 items-center justify-center gap-2 rounded-full bg-[#8AE234] px-6 py-3.5 text-sm font-bold text-[#080810] transition hover:bg-[#8AE234]/90"
         >
           <span>🛒</span> Create Merch from This Moment
         </Link>
@@ -373,7 +373,7 @@ function StyleSwatch({
     ),
     futuristic: (
       <svg viewBox="0 0 40 40" className="h-full w-full">
-        <rect width={40} height={40} fill="#0a0a0a" />
+        <rect width={40} height={40} fill="#080810" />
         <line x1={0} y1={20} x2={40} y2={20} stroke={primary} strokeWidth={1} opacity={0.6} />
         <line x1={20} y1={0} x2={20} y2={40} stroke={primary} strokeWidth={1} opacity={0.6} />
         <circle cx={20} cy={20} r={8} fill="none" stroke={secondary} strokeWidth={1} opacity={0.5} />
@@ -396,14 +396,14 @@ function StyleSwatch({
     ),
     honeycomb: (
       <svg viewBox="0 0 40 40" className="h-full w-full">
-        <rect width={40} height={40} fill="#0a0a0a" />
+        <rect width={40} height={40} fill="#080810" />
         <polygon points="20,4 32,12 32,28 20,36 8,28 8,12" fill="none" stroke={primary} strokeWidth={1.5} opacity={0.6} />
         <polygon points="20,10 28,15 28,25 20,30 12,25 12,15" fill={primary} opacity={0.2} />
       </svg>
     ),
     jackson: (
       <svg viewBox="0 0 40 40" className="h-full w-full">
-        <rect width={40} height={40} fill="#0a0a0a" />
+        <rect width={40} height={40} fill="#080810" />
         <path d="M5,35 Q15,5 25,20 T38,8" fill="none" stroke={primary} strokeWidth={2} opacity={0.6} />
         <path d="M2,10 Q20,30 35,15" fill="none" stroke={secondary} strokeWidth={1.5} opacity={0.4} />
       </svg>
@@ -417,7 +417,7 @@ function StyleSwatch({
     ),
     smoky: (
       <svg viewBox="0 0 40 40" className="h-full w-full">
-        <rect width={40} height={40} fill="#0a0a0a" />
+        <rect width={40} height={40} fill="#080810" />
         <circle cx={15} cy={20} r={12} fill={primary} opacity={0.15} />
         <circle cx={28} cy={18} r={10} fill={secondary} opacity={0.1} />
       </svg>
@@ -476,7 +476,7 @@ export default function GoalDetailPage({
 
   /* ---- Team colours ---- */
   const teamName = data?.goal.team ?? "";
-  const colours = TEAM_COLOURS[teamName] ?? { primary: "#DA291C", secondary: "#FFFFFF" };
+  const colours = TEAM_COLOURS[teamName] ?? { primary: "#8AE234", secondary: "#FFFFFF" };
 
   /* ---- Generate art ---- */
   const handleGenerate = useCallback(async () => {
@@ -528,7 +528,7 @@ export default function GoalDetailPage({
           <p className="text-sm text-[#888888]">{error ?? "Goal not found"}</p>
           <Link
             href="/competitions/euro-2024"
-            className="mt-4 inline-block text-xs text-[#DA291C] hover:underline"
+            className="mt-4 inline-block text-xs text-[#8AE234] hover:underline"
           >
             Back to Euro 2024
           </Link>
@@ -612,7 +612,7 @@ export default function GoalDetailPage({
                 }}
                 className={`group relative flex items-center gap-3 rounded-lg border bg-[#111111] px-3 py-3 text-left transition ${
                   selectedStyle === s.id
-                    ? "border-[#DA291C] shadow-[0_0_12px_rgba(218,41,28,0.2)]"
+                    ? "border-[#8AE234] shadow-[0_0_12px_rgba(138,226,52,0.2)]"
                     : "border-white/10 hover:border-white/20"
                 }`}
               >
@@ -650,7 +650,7 @@ export default function GoalDetailPage({
                   }}
                   className={`rounded-full px-3 py-1.5 text-[11px] font-semibold transition ${
                     selectedEffect === e.id
-                      ? "bg-[#DA291C] text-white"
+                      ? "bg-[#8AE234] text-white"
                       : "bg-[#111111] text-[#888888] hover:text-white border border-white/10"
                   }`}
                 >
@@ -664,7 +664,7 @@ export default function GoalDetailPage({
           <button
             onClick={handleGenerate}
             disabled={generating}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#DA291C] px-6 py-4 text-sm font-bold text-white transition hover:bg-[#DA291C]/90 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex w-full items-center justify-center gap-2 rounded-full bg-[#8AE234] px-6 py-4 text-sm font-bold text-[#080810] transition hover:bg-[#8AE234]/90 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {generating ? (
               <>
@@ -722,7 +722,7 @@ export default function GoalDetailPage({
           UEFA Euro 2024 · StatsBomb Open Data ·{" "}
           <Link
             href="/competitions/euro-2024"
-            className="text-[#DA291C] hover:underline"
+            className="text-[#8AE234] hover:underline"
           >
             All Matches
           </Link>

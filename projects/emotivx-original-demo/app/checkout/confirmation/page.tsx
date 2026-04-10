@@ -114,7 +114,7 @@ export default function ConfirmationPage() {
 
       {/* ---- Delivery estimate ---- */}
       <div className="flex items-center gap-3 rounded-xl border border-white/5 bg-[#111] px-6 py-4">
-        <Truck className="h-5 w-5 text-[#DA291C]" />
+        <Truck className="h-5 w-5 text-[#8AE234]" />
         <div className="text-left">
           <p className="text-xs font-semibold text-white">
             Estimated Delivery
@@ -148,7 +148,7 @@ export default function ConfirmationPage() {
                     <p className="text-[10px] text-[#888]">
                       Size: {item.size} · Qty: {item.quantity}
                     </p>
-                    <p className="text-[10px] text-[#DA291C]">
+                    <p className="text-[10px] text-[#8AE234]">
                       {item.momentName}
                     </p>
                   </div>
@@ -190,7 +190,7 @@ export default function ConfirmationPage() {
       <div className="flex flex-col gap-3 sm:flex-row">
         <Link
           href="/moments/gallery"
-          className="flex items-center justify-center gap-2 rounded-lg bg-[#DA291C] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#DA291C]/90"
+          className="flex items-center justify-center gap-2 rounded-full bg-[#8AE234] px-7 py-3.5 text-sm font-semibold text-[#080810] transition hover:bg-[#8AE234]/90"
         >
           Continue Shopping <ArrowRight className="h-4 w-4" />
         </Link>

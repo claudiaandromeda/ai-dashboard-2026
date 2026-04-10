@@ -121,7 +121,7 @@ export default function GlobalSearch() {
           if (results && query.trim().length >= 2) setOpen(true);
         }}
         placeholder="Search teams, players..."
-        className="w-48 rounded-lg border border-white/10 bg-[#1F1F1F] py-2 pl-9 pr-3 text-xs text-white placeholder-[#888888] outline-none focus:border-[#DA291C]/40 focus:w-64 transition-all"
+        className="w-48 rounded-lg border border-white/10 bg-[#1F1F1F] py-2 pl-9 pr-3 text-xs text-white placeholder-[#888888] outline-none focus:border-[#8AE234]/40 focus:w-64 transition-all"
       />
 
       {showDropdown && (

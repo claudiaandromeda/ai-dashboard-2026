@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+:root {
+  --font-display: 'Roboto', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
 @theme {
   --font-mono: var(--font-mono, ui-monospace, SFMono-Regular, "SF Mono",
     Menlo, Consolas, "Liberation Mono", monospace);
@@ -11,7 +16,7 @@ body {
 }
 
 body {
-  background-color: #0a0a0a;
+  background-color: #080810;
   color: #ffffff;
 }
 
@@ -30,6 +35,20 @@ body {
 
 .sync-pulse {
   animation: syncPulse 1s ease-in-out infinite;
+}
+
+/* Corporate button style */
+.btn-primary {
+  background-color: #8AE234;
+  color: #080810;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 0 16px rgba(138, 226, 52, 0.35);
+  transition: all 0.3s;
+}
+.btn-primary:hover {
+  box-shadow: 0 0 24px rgba(138, 226, 52, 0.55);
+  opacity: 0.9;
 }
 
 @keyframes syncPulse {

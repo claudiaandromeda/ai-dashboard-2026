@@ -54,7 +54,7 @@ const EFL_TEAMS: EFLTeam[] = [
 ];
 
 const STATUS_CONFIG = {
-  onboarded: { label: "Live", color: "#10B981", bg: "#064E3B", icon: CheckCircle },
+  onboarded: { label: "Live", color: "#8AE234", bg: "#1a2e0a", icon: CheckCircle },
   invited: { label: "Invited", color: "#F59E0B", bg: "#451A03", icon: Clock },
   prospect: { label: "Prospect", color: "#555555", bg: "#1A1A1A", icon: AlertCircle },
 };
@@ -74,10 +74,10 @@ export default function AdminPage() {
   const prospects = EFL_TEAMS.filter(t => t.status === "prospect").length;
 
   return (
-    <div className="space-y-8">
+    <div className="mx-auto max-w-6xl px-6 py-8 space-y-8">
       {/* Header */}
       <div className="flex items-center gap-4">
-        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#DA291C] shrink-0">
+        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#8AE234] shrink-0">
           <Shield className="h-6 w-6 text-white" />
         </div>
         <div>
@@ -87,14 +87,14 @@ export default function AdminPage() {
         <div className="ml-auto flex flex-wrap gap-3">
           <Link
             href="/admin/cv"
-            className="flex items-center gap-2 rounded-lg border border-[#10B981]/30 bg-[#10B981]/10 px-3 py-2 text-xs font-semibold text-[#10B981] hover:bg-[#10B981]/20 transition"
+            className="flex items-center gap-2 rounded-lg border border-[#8AE234]/30 bg-[#8AE234]/10 px-3 py-2 text-xs font-semibold text-[#8AE234] hover:bg-[#8AE234]/20 transition"
           >
             <Cpu className="h-3.5 w-3.5" />
             EmotivX Tracking System
           </Link>
           <Link
             href="/wrexham/360-viewer"
-            className="flex items-center gap-2 rounded-lg border border-[#BA0C2F]/30 bg-[#BA0C2F]/10 px-3 py-2 text-xs font-semibold text-[#BA0C2F] hover:bg-[#BA0C2F]/20 transition"
+            className="flex items-center gap-2 rounded-lg border border-[#2196F3]/30 bg-[#2196F3]/10 px-3 py-2 text-xs font-semibold text-[#2196F3] hover:bg-[#2196F3]/20 transition"
           >
             <Zap className="h-3.5 w-3.5" />
             360° Stadium Demo
@@ -106,7 +106,7 @@ export default function AdminPage() {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {[
           { label: "Total Teams", value: EFL_TEAMS.length, color: "#FFFFFF", sub: "EFL League One" },
-          { label: "Live", value: onboarded, color: "#10B981", sub: "Earning revenue" },
+          { label: "Live", value: onboarded, color: "#8AE234", sub: "Earning revenue" },
           { label: "Invited", value: invited, color: "#F59E0B", sub: "Awaiting sign-up" },
           { label: "Prospects", value: prospects, color: "#555555", sub: "Not yet contacted" },
         ].map(s => (
@@ -127,7 +127,7 @@ export default function AdminPage() {
             placeholder="Search teams..."
             value={search}
             onChange={e => setSearch(e.target.value)}
-            className="w-full rounded-lg border border-white/10 bg-[#111111] pl-9 pr-4 py-2.5 text-sm text-white placeholder-[#444] focus:border-[#DA291C]/50 focus:outline-none"
+            className="w-full rounded-lg border border-white/10 bg-[#111111] pl-9 pr-4 py-2.5 text-sm text-white placeholder-[#444] focus:border-[#8AE234]/50 focus:outline-none"
           />
         </div>
         <div className="flex gap-2">
@@ -135,7 +135,7 @@ export default function AdminPage() {
             <button
               key={f}
               onClick={() => setStatusFilter(f)}
-              className={`rounded-full px-3 py-1.5 text-xs font-medium capitalize transition ${statusFilter === f ? "bg-[#DA291C] text-white" : "border border-white/10 text-[#888888] hover:text-white"}`}
+              className={`rounded-full px-3 py-1.5 text-xs font-medium capitalize transition ${statusFilter === f ? "bg-[#8AE234] text-white" : "border border-white/10 text-[#888888] hover:text-white"}`}
             >
               {f}
             </button>
@@ -195,7 +195,7 @@ export default function AdminPage() {
               <div className="flex gap-2 text-[10px]">
                 <span className="rounded px-2 py-1 bg-white/5 text-[#888888]">P{team.played}</span>
                 <span className="rounded px-2 py-1 bg-white/5 text-white font-bold">{team.points}pts</span>
-                <span className={`rounded px-2 py-1 bg-white/5 ${team.gd >= 0 ? "text-[#10B981]" : "text-[#EF4444]"}`}>
+                <span className={`rounded px-2 py-1 bg-white/5 ${team.gd >= 0 ? "text-[#8AE234]" : "text-[#EF4444]"}`}>
                   {team.gd >= 0 ? "+" : ""}{team.gd} GD
                 </span>
                 {team.moments > 0 && (

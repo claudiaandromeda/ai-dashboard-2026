@@ -20,7 +20,7 @@ interface Props {
 export default function LineEffectSelector({
   selected,
   onSelect,
-  accentColor = "#DA291C",
+  accentColor = "#8AE234",
 }: Props) {
   return (
     <div>

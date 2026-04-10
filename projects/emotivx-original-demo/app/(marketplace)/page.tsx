@@ -40,10 +40,10 @@ const AUDIENCES = [
   {
     icon: Users,
     title: "For Fans",
-    color: "#BA0C2F",
+    color: "#8AE234",
     headline: "Own the moment. Wear the memory.",
     points: [
-      "Real goal data turned into wearable art",
+      "Real moment data turned into wearable art",
       "Every piece is a numbered edition — truly yours",
       "Hoodies, tees, prints, phone cases",
       "Ships worldwide, printed on demand",
@@ -166,7 +166,7 @@ function AnimatedDataLine() {
         <path
           key={li}
           d="M222.4 66.6 C223.1 70.2, 227.1 84.7, 226.4 88.2 C225.7 91.8, 225.4 94.4, 218.3 87.9 C211.2 81.4, 197.1 56.2, 183.9 49.4 C170.8 42.6, 137.4 29.9, 139.4 47.1 C141.4 64.3, 179.7 140.8, 196.1 152.6 C212.5 164.4, 228.3 121.0, 237.9 118.2 C247.5 115.4, 251.7 126.9, 253.4 135.8 C255.1 144.8, 242.2 165.6, 248.0 171.9 C253.8 178.2, 250.6 188.4, 288.5 173.6 C326.4 158.8, 444.4 108.4, 475.5 83.2 C506.6 58.0, 465.0 26.9, 474.8 22.2 C484.6 17.5, 518.3 55.6, 534.2 55.2 C550.1 54.8, 564.0 7.6, 570.0 20.0 C576.0 32.4, 656.1 114.4, 570.0 129.7 C483.9 145.0, 133.0 115.7, 53.6 111.6 C-25.8 107.5, 84.3 102.0, 93.4 105.1 C102.5 108.2, 97.4 140.0, 108.3 130.1 C119.2 120.1, 146.1 61.5, 158.9 45.4 C171.7 29.3, 133.9 24.9, 185.2 33.3 C236.5 41.7, 411.6 83.2, 466.7 96.0 C521.8 108.8, 498.8 108.9, 516.0 110.0 C533.2 111.1, 561.0 104.0, 570.0 102.8"
-          stroke={li === 3 ? "white" : "#BA0C2F"}
+          stroke={li === 3 ? "white" : "#8AE234"}
           strokeWidth={w}
           strokeLinecap="round"
           pathLength={pathLength}
@@ -191,7 +191,7 @@ function AnimatedDataLine() {
         { x: 516.0, y: 110.0, pct: 0.95 },
       ].map((pt, i) => (
         progress >= pt.pct ? (
-          <circle key={i} cx={pt.x} cy={pt.y} r="3.5" fill="#BA0C2F" opacity="0.85" />
+          <circle key={i} cx={pt.x} cy={pt.y} r="3.5" fill="#8AE234" opacity="0.85" />
         ) : null
       ))}
 
@@ -200,7 +200,7 @@ function AnimatedDataLine() {
         <g>
           <circle cx={570} cy={102.8} r="6" fill="white" />
           <circle cx={570} cy={102.8} r="13" stroke="white" strokeWidth="1.5" fill="none" opacity="0.4" />
-          <circle cx={570} cy={102.8} r="22" stroke="#BA0C2F" strokeWidth="1" fill="none" opacity="0.2" />
+          <circle cx={570} cy={102.8} r="22" stroke="#8AE234" strokeWidth="1" fill="none" opacity="0.2" />
           <text x={536} y={95} fill="white" fontSize="11" fontFamily="monospace" fontWeight="bold">GOAL</text>
         </g>
       )}
@@ -253,7 +253,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
+    <div className="min-h-screen bg-[#080810]">
 
       {/* ═══ HERO ═══ */}
       <section className="relative overflow-hidden">
@@ -262,7 +262,7 @@ export default function HomePage() {
           style={{ backgroundImage: "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)", backgroundSize: "60px 60px" }}
         />
         {/* Red glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[600px] w-[800px] rounded-full bg-[#BA0C2F] opacity-[0.06] blur-[120px] pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[600px] w-[800px] rounded-full bg-[#8AE234] opacity-[0.06] blur-[120px] pointer-events-none" />
 
         <div className="relative mx-auto max-w-7xl px-4 pt-20 pb-16 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -278,17 +278,17 @@ export default function HomePage() {
                     fill className="object-contain"
                   />
                 </div>
-                <div className="flex items-center gap-2 rounded-full border border-[#BA0C2F]/30 bg-[#BA0C2F]/10 px-3 py-1">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#BA0C2F] animate-pulse" />
-                  <span className="text-xs font-semibold text-[#BA0C2F]">Wrexham AFC · Live</span>
+                <div className="flex items-center gap-2 rounded-full border border-[#8AE234]/30 bg-[#8AE234]/10 px-3 py-1">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#8AE234] animate-pulse" />
+                  <span className="text-xs font-semibold text-[#8AE234]">Wrexham AFC · Live</span>
                 </div>
               </div>
 
               {/* Headline */}
               <div>
                 <h1 className="font-display text-6xl sm:text-7xl font-extrabold uppercase leading-none tracking-tight text-white">
-                  Every goal<br />
-                  <span className="text-[#BA0C2F]">becomes</span><br />
+                  Every moment<br />
+                  <span className="text-[#8AE234]">becomes</span><br />
                   something<br />
                   <span className="italic text-[#555]">real.</span>
                 </h1>
@@ -296,17 +296,17 @@ export default function HomePage() {
 
               <p className="text-lg text-[#888888] leading-relaxed max-w-md">
                 EmotivX transforms real match data into limited-edition merchandise.
-                The goal happened. The data is permanent. Now it's yours to wear.
+                The moment happened. The data is permanent. Now it's yours to wear.
               </p>
 
               {/* CTAs */}
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/merch-preview?team=wrexham"
-                  className="flex items-center gap-2 rounded-xl bg-[#BA0C2F] px-6 py-3.5 text-sm font-bold text-white hover:bg-[#BA0C2F]/90 transition"
+                  className="flex items-center gap-2 rounded-full bg-[#8AE234] px-6 py-3.5 text-sm font-semibold text-[#080810] hover:bg-[#8AE234]/90 transition shadow-[0_0_16px_rgba(138,226,52,0.35)]"
                 >
                   <Shirt className="h-4 w-4" />
-                  Shop Wrexham Moments
+                  Shop Now
                 </Link>
                 <Link
                   href="/staff/dashboard"
@@ -322,7 +322,7 @@ export default function HomePage() {
                 {[
                   { v: "£312k", l: "Revenue this season" },
                   { v: "805", l: "Editions sold" },
-                  { v: "3", l: "Goal moments live" },
+                  { v: "3", l: "Live moments" },
                 ].map(s => (
                   <div key={s.l}>
                     <p className="text-xl font-bold text-white">{s.v}</p>
@@ -336,7 +336,7 @@ export default function HomePage() {
             <div className="rounded-2xl border border-white/5 bg-[#111111] p-6">
               <div className="mb-4 flex items-center justify-between">
                 <div>
-                  <p className="text-xs font-bold text-[#BA0C2F] uppercase tracking-wider">Live Data Line</p>
+                  <p className="text-xs font-bold text-[#8AE234] uppercase tracking-wider">Live Data Line</p>
                   <p className="text-xs text-[#555555]">Windass · 80&apos; · Wrexham 2–1 Sheff Utd · xG 0.75</p>
                 </div>
                 <span className="flex items-center gap-1.5 rounded-full bg-[#10B981]/10 px-2.5 py-1 text-[10px] font-bold text-[#10B981]">
@@ -348,7 +348,7 @@ export default function HomePage() {
               <div className="mt-4 flex items-center justify-between">
                 <Link
                   href="/merch-preview?team=wrexham"
-                  className="flex items-center gap-1.5 rounded-lg bg-[#BA0C2F]/10 px-3 py-2 text-xs font-semibold text-[#BA0C2F] hover:bg-[#BA0C2F]/20 transition"
+                  className="flex items-center gap-1.5 rounded-lg bg-[#8AE234]/10 px-3 py-2 text-xs font-semibold text-[#8AE234] hover:bg-[#8AE234]/20 transition"
                 >
                   <Shirt className="h-3.5 w-3.5" />
                   Preview on Merch
@@ -392,15 +392,15 @@ export default function HomePage() {
                 showNameNumber={true}
                 showLogo={true}
                 logoUrl="https://r2.thesportsdb.com/images/media/team/badge/ezpymt1675092551.png"
-                teamPrimaryColour="#BA0C2F"
-                garmentColour="#BA0C2F"
+                teamPrimaryColour="#8AE234"
+                garmentColour="#8AE234"
                 height={480}
               />
             </div>
 
             {/* Right — copy */}
             <div className="space-y-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#BA0C2F]">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8AE234]">
                 Phygital Moment
               </p>
               <h2 className="font-display text-4xl sm:text-5xl font-extrabold uppercase leading-tight text-white">
@@ -429,7 +429,7 @@ export default function HomePage() {
               {/* CTA */}
               <Link
                 href="/merch-preview"
-                className="inline-flex items-center gap-2 rounded-xl bg-[#BA0C2F] px-6 py-3.5 text-sm font-bold text-white hover:bg-[#BA0C2F]/90 transition"
+                className="inline-flex items-center gap-2 rounded-full bg-[#8AE234] px-6 py-3.5 text-sm font-semibold text-[#080810] hover:bg-[#8AE234]/90 transition shadow-[0_0_16px_rgba(138,226,52,0.35)]"
               >
                 <Shirt className="h-4 w-4" />
                 View on Merch
@@ -442,7 +442,7 @@ export default function HomePage() {
       {/* ═══ FOR EVERYONE ═══ */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="mb-12 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#BA0C2F] mb-3">The Platform</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8AE234] mb-3">The Platform</p>
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold uppercase text-white">
             Built for everyone<br /><span className="text-[#555]">in football.</span>
           </h2>
@@ -499,7 +499,7 @@ export default function HomePage() {
                   </Link>
                 </div>
                 {/* Right side visual */}
-                <div className="rounded-xl border border-white/5 bg-[#0A0A0A] p-6 flex flex-col gap-3">
+                <div className="rounded-xl border border-white/5 bg-[#080810] p-6 flex flex-col gap-3">
                   {i === 0 && (
                     <>
                       <p className="text-xs text-[#555555] uppercase tracking-wider">Featured Drop</p>
@@ -563,7 +563,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#BA0C2F] mb-2">Wrexham AFC</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8AE234] mb-2">Wrexham AFC</p>
               <h2 className="font-display text-4xl font-extrabold uppercase text-white">Featured Moments</h2>
             </div>
             <Link href="/merch-preview?team=wrexham" className="flex items-center gap-1.5 text-sm text-[#888888] hover:text-white transition">
@@ -575,9 +575,9 @@ export default function HomePage() {
             {FEATURED_MOMENTS.map((m, i) => {
               const RIcon = m.rarityIcon;
               return (
-                <Link key={i} href="/merch-preview?team=wrexham" className="group rounded-2xl border border-white/5 bg-[#111111] p-5 hover:border-[#BA0C2F]/30 transition flex flex-col gap-4">
+                <Link key={i} href="/merch-preview?team=wrexham" className="group rounded-2xl border border-white/5 bg-[#111111] p-5 hover:border-[#8AE234]/30 transition flex flex-col gap-4">
                   {/* Data line preview */}
-                  <div className="rounded-xl bg-[#0A0A0A] p-4">
+                  <div className="rounded-xl bg-[#080810] p-4">
                     <svg viewBox="0 0 200 80" className="w-full" fill="none">
                       <path
                         d={i === 0
@@ -585,10 +585,10 @@ export default function HomePage() {
                           : i === 1
                           ? "M10 72 C18 64, 28 48, 42 42 C55 36, 68 44, 78 38 C88 32, 92 16, 108 12 C120 8, 130 18, 138 26 C128 32, 112 28, 106 36 C118 40, 136 38, 150 30 C162 22, 168 10, 180 6 C186 10, 190 16, 192 12"
                           : "M10 74 C20 66, 32 54, 44 60 C36 50, 24 40, 20 30 C32 22, 48 26, 60 34 C72 42, 80 56, 94 50 C106 44, 116 28, 130 22 C142 16, 152 26, 160 34 C150 40, 136 36, 130 44 C144 48, 162 44, 174 34 C182 26, 188 18, 192 14"}
-                        stroke="#BA0C2F" strokeWidth="2" strokeLinecap="round" opacity="0.9"
+                        stroke="#8AE234" strokeWidth="2" strokeLinecap="round" opacity="0.9"
                       />
                       <circle cx="192" cy={i === 0 ? 10 : i === 1 ? 12 : 14} r="4" fill="#fff" />
-                      <circle cx="192" cy={i === 0 ? 10 : i === 1 ? 12 : 14} r="9" stroke="#BA0C2F" strokeWidth="1" fill="none" opacity="0.3" />
+                      <circle cx="192" cy={i === 0 ? 10 : i === 1 ? 12 : 14} r="9" stroke="#8AE234" strokeWidth="1" fill="none" opacity="0.3" />
                     </svg>
                   </div>
 
@@ -608,7 +608,7 @@ export default function HomePage() {
                       <p className="text-xs text-[#555555]">{m.editions}</p>
                       <p className="text-lg font-bold text-white">{m.price}</p>
                     </div>
-                    <span className="flex items-center gap-1 rounded-lg bg-[#BA0C2F]/10 px-3 py-1.5 text-xs font-semibold text-[#BA0C2F] group-hover:bg-[#BA0C2F]/20 transition">
+                    <span className="flex items-center gap-1 rounded-lg bg-[#8AE234]/10 px-3 py-1.5 text-xs font-semibold text-[#8AE234] group-hover:bg-[#8AE234]/20 transition">
                       Get It <ArrowRight className="h-3 w-3" />
                     </span>
                   </div>
@@ -624,7 +624,7 @@ export default function HomePage() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {PLATFORM_STATS.map(s => (
             <div key={s.label} className="rounded-2xl border border-white/5 bg-[#111111] p-6 text-center">
-              <p className="font-display text-4xl font-extrabold text-[#BA0C2F]">{s.value}</p>
+              <p className="font-display text-4xl font-extrabold text-[#8AE234]">{s.value}</p>
               <p className="mt-2 text-sm font-semibold text-white">{s.label}</p>
               <p className="mt-1 text-[10px] text-[#555555]">{s.sub}</p>
             </div>
@@ -636,15 +636,15 @@ export default function HomePage() {
       <section className="border-t border-white/5 bg-[#0D0D0D]">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
           <div className="mb-12 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#BA0C2F] mb-3">The Process</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8AE234] mb-3">The Process</p>
             <h2 className="font-display text-4xl sm:text-5xl font-extrabold uppercase text-white">
-              Goal to garment.<br /><span className="text-[#555]">In minutes.</span>
+              Moment to garment.<br /><span className="text-[#555]">In minutes.</span>
             </h2>
           </div>
 
           <div className="grid sm:grid-cols-4 gap-4">
             {[
-              { n: "01", icon: Zap, title: "Goal Happens", desc: "Real match data captured — every pass, shot, and trajectory recorded by our CV system" },
+              { n: "01", icon: Zap, title: "Moment Happens", desc: "Real match data captured — every pass, shot, and trajectory recorded by our CV system" },
               { n: "02", icon: TrendingUp, title: "Data Line Generated", desc: "The ball's exact path becomes a unique visual signature — your Data Line™" },
               { n: "03", icon: Package, title: "Art Created", desc: "AI renders the Data Line into team-coloured artwork across limited edition tiers" },
               { n: "04", icon: Shirt, title: "Merch Ships", desc: "Fans order their edition, printed on demand, shipped worldwide. Every piece numbered." },
@@ -657,8 +657,8 @@ export default function HomePage() {
                       <ChevronRight className="h-4 w-4 text-[#333]" />
                     </div>
                   )}
-                  <p className="font-display text-4xl font-extrabold text-[#BA0C2F]/20 mb-4">{step.n}</p>
-                  <Icon className="h-6 w-6 text-[#BA0C2F] mb-3" />
+                  <p className="font-display text-4xl font-extrabold text-[#8AE234]/20 mb-4">{step.n}</p>
+                  <Icon className="h-6 w-6 text-[#8AE234] mb-3" />
                   <p className="text-sm font-bold text-white mb-2">{step.title}</p>
                   <p className="text-xs text-[#555555] leading-relaxed">{step.desc}</p>
                 </div>
@@ -672,7 +672,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#BA0C2F] mb-2">Clubs</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8AE234] mb-2">Clubs</p>
             <h2 className="font-display text-4xl font-extrabold uppercase text-white">
               Live now.<br /><span className="text-[#555]">EFL-wide coming soon.</span>
             </h2>
@@ -684,7 +684,7 @@ export default function HomePage() {
 
         <div className="grid sm:grid-cols-3 gap-4">
           {/* Wrexham — live */}
-          <Link href="/staff/dashboard" className="group rounded-2xl border border-[#BA0C2F]/30 bg-[#BA0C2F]/5 p-6 hover:border-[#BA0C2F]/50 transition">
+          <Link href="/staff/dashboard" className="group rounded-2xl border border-[#8AE234]/30 bg-[#8AE234]/5 p-6 hover:border-[#8AE234]/50 transition">
             <div className="flex items-center gap-4 mb-4">
               <div className="relative h-14 w-14">
                 <Image src="https://r2.thesportsdb.com/images/media/team/badge/ezpymt1675092551.png" alt="Wrexham" fill className="object-contain" />
@@ -735,9 +735,9 @@ export default function HomePage() {
       {/* ═══ FINAL CTA ═══ */}
       <section className="border-t border-white/5 bg-[#0D0D0D]">
         <div className="mx-auto max-w-4xl px-4 py-24 sm:px-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#BA0C2F] mb-4">Early Access</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8AE234] mb-4">Early Access</p>
           <h2 className="font-display text-5xl sm:text-6xl font-extrabold uppercase text-white mb-6">
-            Your club.<br />Your moments.<br /><span className="text-[#BA0C2F]">Your revenue.</span>
+            Your club.<br />Your moments.<br /><span className="text-[#8AE234]">Your revenue.</span>
           </h2>
           <p className="text-lg text-[#888888] mb-10 max-w-lg mx-auto">
             EmotivX is live with Wrexham AFC. We're onboarding EFL League One clubs now.
@@ -746,7 +746,7 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/staff/dashboard"
-              className="flex items-center gap-2 rounded-xl bg-[#BA0C2F] px-8 py-4 text-sm font-bold text-white hover:bg-[#BA0C2F]/90 transition"
+              className="flex items-center gap-2 rounded-full bg-[#8AE234] px-8 py-4 text-sm font-semibold text-[#080810] hover:bg-[#8AE234]/90 transition shadow-[0_0_16px_rgba(138,226,52,0.35)]"
             >
               <Shield className="h-4 w-4" />
               Club Portal Demo

@@ -45,9 +45,9 @@ export default function CVSystemPage() {
   const [liveMode, setLiveMode] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] pb-20">
+    <div className="min-h-screen bg-[#080810] pb-20">
       {/* Header */}
-      <div className="border-b border-emerald-500/20 bg-gradient-to-b from-emerald-950/30 to-[#0A0A0A] px-6 py-10">
+      <div className="border-b border-emerald-500/20 bg-gradient-to-b from-emerald-950/30 to-[#080810] px-6 py-10">
         <div className="mx-auto max-w-6xl">
           <Link href="/admin" className="mb-6 inline-flex items-center gap-1.5 text-xs text-emerald-600 hover:text-emerald-400 transition">
             <ArrowLeft className="h-3 w-3" />
@@ -192,7 +192,7 @@ export default function CVSystemPage() {
                     {job.confidence}%
                   </div>
                   <div className="text-[10px] text-[#555555]">confidence</div>
-                  <Link href="/merch-preview" className="mt-1 inline-flex items-center gap-1 text-[10px] text-[#DA291C] hover:underline">
+                  <Link href="/merch-preview" className="mt-1 inline-flex items-center gap-1 text-[10px] text-[#8AE234] hover:underline">
                     View merch <Zap className="h-2.5 w-2.5" />
                   </Link>
                 </div>

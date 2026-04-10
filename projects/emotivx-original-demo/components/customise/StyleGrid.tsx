@@ -32,7 +32,7 @@ interface Props {
 export default function StyleGrid({
   selected,
   onSelect,
-  accentColor = "#DA291C",
+  accentColor = "#8AE234",
   patterns,
 }: Props) {
   const items: PatternOption[] =

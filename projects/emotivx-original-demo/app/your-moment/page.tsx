@@ -27,7 +27,7 @@ import Image from "next/image";
 
 /* ── Colour presets (popular school/college colours) ─────────────── */
 const COLOUR_PRESETS = [
-  { name: "Red & White", primary: "#DA291C", secondary: "#FFFFFF" },
+  { name: "Green & White", primary: "#8AE234", secondary: "#FFFFFF" },
   { name: "Blue & Gold", primary: "#003DA5", secondary: "#FFD700" },
   { name: "Green & White", primary: "#006B3F", secondary: "#FFFFFF" },
   { name: "Black & Amber", primary: "#1A1A1A", secondary: "#FFB81C" },
@@ -43,7 +43,7 @@ export default function YourMomentPage() {
   const [videoPreview, setVideoPreview] = useState<string | null>(null);
   const [stripImage, setStripImage] = useState<File | null>(null);
   const [stripPreview, setStripPreview] = useState<string | null>(null);
-  const [primaryColour, setPrimaryColour] = useState("#DA291C");
+  const [primaryColour, setPrimaryColour] = useState("#8AE234");
   const [secondaryColour, setSecondaryColour] = useState("#FFFFFF");
   const [colourMode, setColourMode] = useState<"picker" | "image">("picker");
   const [homeTeam, setHomeTeam] = useState("");
@@ -86,18 +86,18 @@ export default function YourMomentPage() {
 
   /* ── Render ─────────────────────────────────────────────────────── */
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white">
+    <div className="min-h-screen bg-[#080810] text-white">
       {/* ── Hero Section ──────────────────────────────────────────── */}
       <section className="relative overflow-hidden border-b border-white/5">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#DA291C]/10 via-transparent to-[#DA291C]/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#8AE234]/10 via-transparent to-[#8AE234]/5" />
         <div className="relative mx-auto max-w-5xl px-6 py-16 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#DA291C]/30 bg-[#DA291C]/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#DA291C]">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8AE234]/30 bg-[#8AE234]/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#8AE234]">
             <Sparkles className="h-3.5 w-3.5" />
             Now Available for Everyone
           </div>
           <h1 className="text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
             Turn{" "}
-            <span className="bg-gradient-to-r from-[#DA291C] to-[#ff6b6b] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#2196F3] to-[#8AE234] bg-clip-text text-transparent">
               Any Goal
             </span>{" "}
             Into Wearable Art
@@ -108,13 +108,13 @@ export default function YourMomentPage() {
           </p>
           <div className="mt-6 flex items-center justify-center gap-6 text-sm text-[#666]">
             <span className="flex items-center gap-1.5">
-              <Film className="h-4 w-4 text-[#DA291C]" /> Upload any footage
+              <Film className="h-4 w-4 text-[#8AE234]" /> Upload any footage
             </span>
             <span className="flex items-center gap-1.5">
-              <Zap className="h-4 w-4 text-[#DA291C]" /> AI-powered analysis
+              <Zap className="h-4 w-4 text-[#8AE234]" /> AI-powered analysis
             </span>
             <span className="flex items-center gap-1.5">
-              <Shirt className="h-4 w-4 text-[#DA291C]" /> Premium merch
+              <Shirt className="h-4 w-4 text-[#8AE234]" /> Premium merch
             </span>
           </div>
         </div>
@@ -127,13 +127,13 @@ export default function YourMomentPage() {
           {/* ── Step 1: Upload Footage ──────────────────────────── */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#DA291C] text-sm font-black">1</div>
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#8AE234] text-sm font-black">1</div>
               <div>
                 <h2 className="text-lg font-bold">Upload Match Footage</h2>
                 <p className="text-sm text-[#666]">
                   Phone footage, GoPro, anything — we&apos;ll extract the play data using computer vision
                 </p>
-                <p className="mt-1 text-xs text-[#DA291C]/70 italic">
+                <p className="mt-1 text-xs text-[#8AE234]/70 italic">
                   For best results, upload a short clip of around 3–5 minutes with the key moment roughly in the middle.
                   The more of the pitch visible, the better our AI can track the action.
                 </p>
@@ -151,9 +151,9 @@ export default function YourMomentPage() {
             {!videoPreview ? (
               <button
                 onClick={() => videoRef.current?.click()}
-                className="group flex w-full items-center justify-center gap-3 rounded-xl border-2 border-dashed border-white/10 bg-white/[0.01] px-6 py-12 transition hover:border-[#DA291C]/40 hover:bg-[#DA291C]/5"
+                className="group flex w-full items-center justify-center gap-3 rounded-xl border-2 border-dashed border-white/10 bg-white/[0.01] px-6 py-12 transition hover:border-[#8AE234]/40 hover:bg-[#8AE234]/5"
               >
-                <Upload className="h-8 w-8 text-[#555] transition group-hover:text-[#DA291C]" />
+                <Upload className="h-8 w-8 text-[#555] transition group-hover:text-[#8AE234]" />
                 <div className="text-left">
                   <p className="font-semibold text-[#888] group-hover:text-white">
                     Drop your match video here or click to browse
@@ -187,7 +187,7 @@ export default function YourMomentPage() {
           {/* ── Step 2: Team Details ───────────────────────────── */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#DA291C] text-sm font-black">2</div>
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#8AE234] text-sm font-black">2</div>
               <div>
                 <h2 className="text-lg font-bold">Match &amp; Team Details</h2>
                 <p className="text-sm text-[#666]">Tell us about the game</p>
@@ -204,7 +204,7 @@ export default function YourMomentPage() {
                   value={homeTeam}
                   onChange={(e) => setHomeTeam(e.target.value)}
                   placeholder="e.g. Westfield Academy"
-                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#DA291C]/50 focus:ring-1 focus:ring-[#DA291C]/30"
+                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#8AE234]/50 focus:ring-1 focus:ring-[#8AE234]/30"
                 />
               </div>
               <div>
@@ -216,7 +216,7 @@ export default function YourMomentPage() {
                   value={awayTeam}
                   onChange={(e) => setAwayTeam(e.target.value)}
                   placeholder="e.g. Riverside College"
-                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#DA291C]/50 focus:ring-1 focus:ring-[#DA291C]/30"
+                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#8AE234]/50 focus:ring-1 focus:ring-[#8AE234]/30"
                 />
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function YourMomentPage() {
           {/* ── Step 3: Team Colours ──────────────────────────── */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#DA291C] text-sm font-black">3</div>
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#8AE234] text-sm font-black">3</div>
               <div>
                 <h2 className="text-lg font-bold">Team Colours</h2>
                 <p className="text-sm text-[#666]">
@@ -240,7 +240,7 @@ export default function YourMomentPage() {
                 onClick={() => setColourMode("picker")}
                 className={`flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition ${
                   colourMode === "picker"
-                    ? "bg-[#DA291C] text-white"
+                    ? "bg-[#8AE234] text-white"
                     : "bg-white/5 text-[#888] hover:bg-white/10"
                 }`}
               >
@@ -250,7 +250,7 @@ export default function YourMomentPage() {
                 onClick={() => setColourMode("image")}
                 className={`flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition ${
                   colourMode === "image"
-                    ? "bg-[#DA291C] text-white"
+                    ? "bg-[#8AE234] text-white"
                     : "bg-white/5 text-[#888] hover:bg-white/10"
                 }`}
               >
@@ -272,7 +272,7 @@ export default function YourMomentPage() {
                         onClick={() => { setPrimaryColour(p.primary); setSecondaryColour(p.secondary); }}
                         className={`group flex items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-semibold transition ${
                           primaryColour === p.primary && secondaryColour === p.secondary
-                            ? "border-[#DA291C]/50 bg-[#DA291C]/10 text-white"
+                            ? "border-[#8AE234]/50 bg-[#8AE234]/10 text-white"
                             : "border-white/10 bg-white/5 text-[#888] hover:border-white/20"
                         }`}
                       >
@@ -337,9 +337,9 @@ export default function YourMomentPage() {
                 {!stripPreview ? (
                   <button
                     onClick={() => stripRef.current?.click()}
-                    className="group flex w-full items-center justify-center gap-3 rounded-xl border-2 border-dashed border-white/10 bg-white/[0.01] px-6 py-8 transition hover:border-[#DA291C]/40 hover:bg-[#DA291C]/5"
+                    className="group flex w-full items-center justify-center gap-3 rounded-xl border-2 border-dashed border-white/10 bg-white/[0.01] px-6 py-8 transition hover:border-[#8AE234]/40 hover:bg-[#8AE234]/5"
                   >
-                    <Shirt className="h-6 w-6 text-[#555] transition group-hover:text-[#DA291C]" />
+                    <Shirt className="h-6 w-6 text-[#555] transition group-hover:text-[#8AE234]" />
                     <div className="text-left">
                       <p className="font-semibold text-[#888] group-hover:text-white">
                         Upload a photo of the team strip
@@ -375,7 +375,7 @@ export default function YourMomentPage() {
           {/* ── Step 4: The Moment ────────────────────────────── */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#DA291C] text-sm font-black">4</div>
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#8AE234] text-sm font-black">4</div>
               <div>
                 <h2 className="text-lg font-bold">Describe the Moment</h2>
                 <p className="text-sm text-[#666]">
@@ -395,7 +395,7 @@ export default function YourMomentPage() {
                   value={playerName}
                   onChange={(e) => setPlayerName(e.target.value)}
                   placeholder="e.g. Jake Thompson"
-                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#DA291C]/50 focus:ring-1 focus:ring-[#DA291C]/30"
+                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#8AE234]/50 focus:ring-1 focus:ring-[#8AE234]/30"
                 />
               </div>
               <div>
@@ -407,7 +407,7 @@ export default function YourMomentPage() {
                   value={playerNumber}
                   onChange={(e) => setPlayerNumber(e.target.value)}
                   placeholder="e.g. 9"
-                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#DA291C]/50 focus:ring-1 focus:ring-[#DA291C]/30"
+                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#8AE234]/50 focus:ring-1 focus:ring-[#8AE234]/30"
                 />
               </div>
             </div>
@@ -426,7 +426,7 @@ export default function YourMomentPage() {
                     value={eventMinute}
                     onChange={(e) => setEventMinute(e.target.value)}
                     placeholder="e.g. 34"
-                    className="w-full rounded-lg border border-white/10 bg-white/5 py-2.5 pl-10 pr-4 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#DA291C]/50 focus:ring-1 focus:ring-[#DA291C]/30"
+                    className="w-full rounded-lg border border-white/10 bg-white/5 py-2.5 pl-10 pr-4 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#8AE234]/50 focus:ring-1 focus:ring-[#8AE234]/30"
                   />
                   <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-[#555]">min</span>
                 </div>
@@ -441,7 +441,7 @@ export default function YourMomentPage() {
                   value={eventDescription}
                   onChange={(e) => setEventDescription(e.target.value)}
                   placeholder="e.g. Winning goal from outside the box"
-                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#DA291C]/50 focus:ring-1 focus:ring-[#DA291C]/30"
+                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-[#555] outline-none transition focus:border-[#8AE234]/50 focus:ring-1 focus:ring-[#8AE234]/30"
                 />
               </div>
             </div>
@@ -452,9 +452,9 @@ export default function YourMomentPage() {
             <button
               onClick={handleGenerate}
               disabled={!canGenerate || generating}
-              className={`group flex items-center gap-3 rounded-2xl px-10 py-4 text-lg font-black uppercase tracking-wider transition ${
+              className={`group flex items-center gap-3 rounded-full px-10 py-4 text-lg font-black uppercase tracking-wider transition ${
                 canGenerate && !generating
-                  ? "bg-[#DA291C] text-white shadow-lg shadow-[#DA291C]/25 hover:bg-[#ff3333] hover:shadow-xl hover:shadow-[#DA291C]/30"
+                  ? "bg-[#8AE234] text-[#080810] shadow-lg shadow-[#8AE234]/25 hover:bg-[#ff3333] hover:shadow-xl hover:shadow-[#8AE234]/30"
                   : "cursor-not-allowed bg-white/5 text-[#555]"
               }`}
             >
@@ -485,8 +485,8 @@ export default function YourMomentPage() {
 
           {/* ── Generated Result ──────────────────────────────── */}
           {generated && (
-            <div className="rounded-2xl border border-[#DA291C]/30 bg-[#DA291C]/5 p-6 text-center">
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#DA291C]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#DA291C]">
+            <div className="rounded-2xl border border-[#8AE234]/30 bg-[#8AE234]/5 p-6 text-center">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#8AE234]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#8AE234]">
                 <Star className="h-3.5 w-3.5" /> Moment Generated
               </div>
               <h3 className="text-2xl font-black">
@@ -507,7 +507,7 @@ export default function YourMomentPage() {
                       Your unique data-driven artwork is ready.
                       Choose your merchandise and customise the design.
                     </p>
-                    <button className="mt-3 flex items-center gap-2 rounded-lg bg-[#DA291C] px-4 py-2 text-sm font-bold text-white transition hover:bg-[#ff3333]">
+                    <button className="mt-3 flex items-center gap-2 rounded-full bg-[#8AE234] px-4 py-2 text-sm font-bold text-[#080810] transition hover:bg-[#ff3333]">
                       Customise &amp; Order <ChevronRight className="h-4 w-4" />
                     </button>
                   </div>
@@ -529,7 +529,7 @@ export default function YourMomentPage() {
               { icon: <Shirt className="h-6 w-6" />, title: "Wear It", desc: "Your moment becomes data-driven art on hoodies, t-shirts, prints — truly one of a kind." },
             ].map((step, i) => (
               <div key={i} className="rounded-xl border border-white/5 bg-white/[0.02] p-5 text-center">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#DA291C]/10 text-[#DA291C]">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#8AE234]/10 text-[#8AE234]">
                   {step.icon}
                 </div>
                 <h3 className="font-bold">{step.title}</h3>

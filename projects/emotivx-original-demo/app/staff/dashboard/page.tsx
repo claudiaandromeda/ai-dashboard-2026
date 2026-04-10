@@ -12,7 +12,7 @@ import {
 
 /* ─── Wrexham 2024/25 League One Season ─── */
 
-const WREXHAM_RED = "#BA0C2F";
+const WREXHAM_RED = "#8AE234";
 const WREXHAM_GOLD = "#C9A84C";
 
 type GameResult = "W" | "D" | "L" | "upcoming";
@@ -136,7 +136,7 @@ function calcRevenue(sales: Record<string, number>) {
 const PALETTE_PRESETS = [
   { name: "Home Kit", primary: "#BA0C2F", secondary: "#FFFFFF", accent: "#C9A84C" },
   { name: "Away Kit", primary: "#FFD100", secondary: "#1A5C2A", accent: "#BA0C2F" },
-  { name: "Dark Mode", primary: "#0A0A0A", secondary: "#BA0C2F", accent: "#FFFFFF" },
+  { name: "Dark Mode", primary: "#080810", secondary: "#BA0C2F", accent: "#FFFFFF" },
   { name: "Gold Special", primary: "#C9A84C", secondary: "#1A1A1A", accent: "#BA0C2F" },
 ];
 
@@ -189,7 +189,7 @@ export default function StaffDashboardPage() {
         <div className="ml-auto hidden sm:flex gap-3">
           <Link
             href="/merch-preview?team=wrexham"
-            className="flex items-center gap-2 rounded-lg border border-[#BA0C2F]/40 px-3 py-2 text-xs font-semibold text-[#BA0C2F] hover:bg-[#BA0C2F]/10 transition"
+            className="flex items-center gap-2 rounded-lg border border-[#8AE234]/40 px-3 py-2 text-xs font-semibold text-[#8AE234] hover:bg-[#8AE234]/10 transition"
           >
             <Eye className="h-3.5 w-3.5" />
             View Merch Preview
@@ -204,7 +204,7 @@ export default function StaffDashboardPage() {
           { label: "Won", value: wins, color: "#10B981" },
           { label: "Drawn", value: draws, color: "#F59E0B" },
           { label: "Lost", value: losses, color: "#EF4444" },
-          { label: "Goals", value: totalGoals, color: "#BA0C2F" },
+          { label: "Goals", value: totalGoals, color: "#8AE234" },
           { label: "Revenue", value: `£${(totalRevenue / 1000).toFixed(0)}k`, color: WREXHAM_GOLD },
         ].map(stat => (
           <div key={stat.label} className="rounded-xl border border-white/5 bg-[#111111] p-4">
@@ -227,7 +227,7 @@ export default function StaffDashboardPage() {
             >
               <Icon className="h-3.5 w-3.5" />
               {tab.label}
-              {active && <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[#BA0C2F]" />}
+              {active && <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[#8AE234]" />}
             </button>
           );
         })}
@@ -268,7 +268,7 @@ function ScheduleTab({ games }: { games: Game[] }) {
             <button
               key={f}
               onClick={() => setFilter(f)}
-              className={`rounded-full px-3 py-1.5 text-xs font-medium capitalize transition ${filter === f ? "bg-[#BA0C2F] text-white" : "border border-white/10 text-[#888888] hover:text-white"}`}
+              className={`rounded-full px-3 py-1.5 text-xs font-medium capitalize transition ${filter === f ? "bg-[#8AE234] text-white" : "border border-white/10 text-[#888888] hover:text-white"}`}
             >
               {f}
             </button>
@@ -283,7 +283,7 @@ function ScheduleTab({ games }: { games: Game[] }) {
             key={game.id}
             className={`flex items-center gap-3 rounded-xl border px-4 py-3 cursor-pointer transition ${
               selected?.id === game.id
-                ? "border-[#BA0C2F]/50 bg-[#BA0C2F]/5"
+                ? "border-[#8AE234]/50 bg-[#8AE234]/5"
                 : "border-white/5 bg-[#111111] hover:border-white/10"
             }`}
             onClick={() => setSelected(selected?.id === game.id ? null : game)}
@@ -295,7 +295,7 @@ function ScheduleTab({ games }: { games: Game[] }) {
               </p>
             </div>
             {/* H/A badge */}
-            <span className={`rounded px-1.5 py-0.5 text-[10px] font-bold shrink-0 ${game.venue === "H" ? "bg-[#BA0C2F]/20 text-[#BA0C2F]" : "bg-white/5 text-[#888888]"}`}>
+            <span className={`rounded px-1.5 py-0.5 text-[10px] font-bold shrink-0 ${game.venue === "H" ? "bg-[#8AE234]/20 text-[#8AE234]" : "bg-white/5 text-[#888888]"}`}>
               {game.venue}
             </span>
             {/* Opponent */}
@@ -313,7 +313,7 @@ function ScheduleTab({ games }: { games: Game[] }) {
             )}
             {/* Goals badge */}
             {game.goals && game.goals.length > 0 && (
-              <span className="shrink-0 rounded-full bg-[#BA0C2F]/20 px-2 py-0.5 text-[10px] text-[#BA0C2F] font-medium">
+              <span className="shrink-0 rounded-full bg-[#8AE234]/20 px-2 py-0.5 text-[10px] text-[#8AE234] font-medium">
                 {game.goals.length}⚽
               </span>
             )}
@@ -323,8 +323,8 @@ function ScheduleTab({ games }: { games: Game[] }) {
 
       {/* Goal selector panel */}
       {selected && selected.goals && selected.goals.length > 0 && (
-        <div className="rounded-xl border border-[#BA0C2F]/30 bg-[#BA0C2F]/5 p-4">
-          <p className="text-xs font-bold text-[#BA0C2F] uppercase tracking-wider mb-3">
+        <div className="rounded-xl border border-[#8AE234]/30 bg-[#8AE234]/5 p-4">
+          <p className="text-xs font-bold text-[#8AE234] uppercase tracking-wider mb-3">
             Goals vs {selected.opponent} — Select to create merch
           </p>
           <div className="grid sm:grid-cols-3 gap-3">
@@ -340,12 +340,12 @@ function ScheduleTab({ games }: { games: Game[] }) {
                     <span className="text-white">{goal.xg.toFixed(2)}</span>
                   </div>
                   <div className="h-1.5 rounded-full bg-white/5">
-                    <div className="h-full rounded-full bg-[#BA0C2F]" style={{ width: `${goal.xg * 100}%` }} />
+                    <div className="h-full rounded-full bg-[#8AE234]" style={{ width: `${goal.xg * 100}%` }} />
                   </div>
                 </div>
                 <button
                   onClick={() => {}}
-                  className="w-full rounded-lg bg-[#BA0C2F] py-1.5 text-[10px] font-bold text-white hover:bg-[#BA0C2F]/90 transition flex items-center justify-center gap-1.5"
+                  className="w-full rounded-full bg-[#8AE234] py-1.5 text-[10px] font-bold text-[#080810] hover:bg-[#8AE234]/90 transition flex items-center justify-center gap-1.5"
                 >
                   <Zap className="h-3 w-3" />
                   Create Merch Set
@@ -400,9 +400,9 @@ function MomentGeneratorTab() {
           <button
             key={m.id}
             onClick={() => setMode(m.id as typeof mode)}
-            className={`flex-1 rounded-xl border p-3 text-left transition ${mode === m.id ? "border-[#BA0C2F]/50 bg-[#BA0C2F]/5" : "border-white/5 bg-[#111111] hover:border-white/10"}`}
+            className={`flex-1 rounded-xl border p-3 text-left transition ${mode === m.id ? "border-[#8AE234]/50 bg-[#8AE234]/5" : "border-white/5 bg-[#111111] hover:border-white/10"}`}
           >
-            <m.icon className={`h-4 w-4 mb-1.5 ${mode === m.id ? "text-[#BA0C2F]" : "text-[#555555]"}`} />
+            <m.icon className={`h-4 w-4 mb-1.5 ${mode === m.id ? "text-[#8AE234]" : "text-[#555555]"}`} />
             <p className="text-xs font-semibold text-white">{m.label}</p>
             <p className="text-[10px] text-[#555555]">{m.desc}</p>
           </button>
@@ -420,7 +420,7 @@ function MomentGeneratorTab() {
                   <button
                     key={i}
                     onClick={() => { setSelectedGoal(i); setGenerated(false); }}
-                    className={`w-full rounded-lg border px-4 py-3 text-left transition ${selectedGoal === i ? "border-[#BA0C2F]/50 bg-[#BA0C2F]/5" : "border-white/5 bg-[#111111]"}`}
+                    className={`w-full rounded-lg border px-4 py-3 text-left transition ${selectedGoal === i ? "border-[#8AE234]/50 bg-[#8AE234]/5" : "border-white/5 bg-[#111111]"}`}
                   >
                     <div className="flex items-center justify-between">
                       <div>
@@ -466,7 +466,7 @@ function MomentGeneratorTab() {
                         max={tier.id === "common" ? 2000 : tier.id === "uncommon" ? 500 : tier.id === "rare" ? 200 : tier.id === "epic" ? 50 : 10}
                         value={rarityControls[tier.id]}
                         onChange={e => setRarityControls(prev => ({ ...prev, [tier.id]: parseInt(e.target.value) }))}
-                        className="w-full accent-[#BA0C2F]"
+                        className="w-full accent-[#8AE234]"
                       />
                       <p className="text-[10px] text-[#444444] mt-1">{tier.description}</p>
                     </div>
@@ -482,7 +482,7 @@ function MomentGeneratorTab() {
             <button
               onClick={handleAutoGenerate}
               disabled={generating}
-              className="w-full rounded-xl bg-[#BA0C2F] py-3 text-sm font-bold text-white hover:bg-[#BA0C2F]/90 transition disabled:opacity-50 flex items-center justify-center gap-2"
+              className="w-full rounded-full bg-[#8AE234] py-3 text-sm font-bold text-[#080810] hover:bg-[#8AE234]/90 transition disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {generating ? (
                 <><RefreshCw className="h-4 w-4 animate-spin" /> Generating Data Line...</>
@@ -498,9 +498,9 @@ function MomentGeneratorTab() {
             {generated ? (
               <div className="flex-1 flex flex-col gap-4">
                 {/* SVG data line preview */}
-                <div className="rounded-lg bg-[#0A0A0A] border border-white/5 p-4 flex-1 flex items-center justify-center">
+                <div className="rounded-lg bg-[#080810] border border-white/5 p-4 flex-1 flex items-center justify-center">
                   <svg viewBox="0 0 300 180" className="w-full max-h-48" fill="none">
-                    <rect width="300" height="180" fill="#0A0A0A" />
+                    <rect width="300" height="180" fill="#080810" />
                     {/* Pitch outline */}
                     <rect x="20" y="20" width="260" height="140" rx="2" stroke="#222" strokeWidth="1" />
                     <line x1="150" y1="20" x2="150" y2="160" stroke="#222" strokeWidth="0.5" />
@@ -529,19 +529,19 @@ function MomentGeneratorTab() {
                   </svg>
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-xs">
-                  <div className="rounded-lg bg-[#0A0A0A] p-3">
+                  <div className="rounded-lg bg-[#080810] p-3">
                     <p className="text-[#555555]">Player</p>
                     <p className="text-white font-bold">{goal.player}</p>
                   </div>
-                  <div className="rounded-lg bg-[#0A0A0A] p-3">
+                  <div className="rounded-lg bg-[#080810] p-3">
                     <p className="text-[#555555]">Minute</p>
                     <p className="text-white font-bold">{goal.minute}'</p>
                   </div>
-                  <div className="rounded-lg bg-[#0A0A0A] p-3">
+                  <div className="rounded-lg bg-[#080810] p-3">
                     <p className="text-[#555555]">xG</p>
                     <p className="font-bold" style={{ color: "#10B981" }}>{goal.xg.toFixed(2)}</p>
                   </div>
-                  <div className="rounded-lg bg-[#0A0A0A] p-3">
+                  <div className="rounded-lg bg-[#080810] p-3">
                     <p className="text-[#555555]">Total editions</p>
                     <p className="text-white font-bold">{Object.values(rarityControls).reduce((a, b) => a + b, 0)}</p>
                   </div>
@@ -552,7 +552,7 @@ function MomentGeneratorTab() {
                   </button>
                   <Link
                     href="/merch-preview?team=wrexham"
-                    className="flex-1 rounded-lg bg-[#BA0C2F] py-2 text-xs font-bold text-white hover:bg-[#BA0C2F]/90 transition text-center"
+                    className="flex-1 rounded-full bg-[#8AE234] py-2 text-xs font-bold text-[#080810] hover:bg-[#8AE234]/90 transition text-center"
                   >
                     Preview on Merch →
                   </Link>
@@ -586,18 +586,18 @@ function MomentGeneratorTab() {
                 <input
                   type="text"
                   placeholder={field.placeholder}
-                  className="w-full rounded-lg border border-white/10 bg-[#0A0A0A] px-3 py-2 text-sm text-white placeholder-[#333] focus:border-[#BA0C2F]/50 focus:outline-none"
+                  className="w-full rounded-lg border border-white/10 bg-[#080810] px-3 py-2 text-sm text-white placeholder-[#333] focus:border-[#8AE234]/50 focus:outline-none"
                 />
               </div>
             ))}
           </div>
           <div>
             <label className="text-xs text-[#888888] mb-2 block">Draw Data Line Points</label>
-            <div className="rounded-lg border border-dashed border-white/10 bg-[#0A0A0A] h-40 flex items-center justify-center">
+            <div className="rounded-lg border border-dashed border-white/10 bg-[#080810] h-40 flex items-center justify-center">
               <p className="text-xs text-[#333]">Click to place waypoints on pitch</p>
             </div>
           </div>
-          <button className="rounded-lg bg-[#BA0C2F] px-6 py-2.5 text-sm font-bold text-white hover:bg-[#BA0C2F]/90 transition">
+          <button className="rounded-full bg-[#8AE234] px-6 py-2.5 text-sm font-bold text-[#080810] hover:bg-[#8AE234]/90 transition">
             Create Moment
           </button>
         </div>
@@ -607,7 +607,7 @@ function MomentGeneratorTab() {
         <div className="rounded-xl border border-white/5 bg-[#111111] p-6 space-y-4">
           <div className="flex items-center gap-2 mb-2">
             <p className="text-sm font-semibold text-white">Upload Footage & Calibrate</p>
-            <span className="rounded bg-[#BA0C2F]/20 px-2 py-0.5 text-[10px] font-bold text-[#BA0C2F]">ORIGINAL FEATURE</span>
+            <span className="rounded bg-[#8AE234]/20 px-2 py-0.5 text-[10px] font-bold text-[#8AE234]">ORIGINAL FEATURE</span>
           </div>
           <p className="text-xs text-[#888888]">
             This is the original EmotivX moment creation system — upload broadcast footage, calibrate the pitch,
@@ -619,9 +619,9 @@ function MomentGeneratorTab() {
               { step: "2", label: "Calibrate Pitch", desc: "Mark 4 corners to set homography", icon: Target },
               { step: "3", label: "Extract Moment", desc: "Select frame range, auto-track ball", icon: Zap },
             ].map(s => (
-              <div key={s.step} className="rounded-lg border border-white/5 bg-[#0A0A0A] p-4">
+              <div key={s.step} className="rounded-lg border border-white/5 bg-[#080810] p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xl font-bold text-[#BA0C2F]/30 font-display">{s.step}</span>
+                  <span className="text-xl font-bold text-[#8AE234]/30 font-display">{s.step}</span>
                   <s.icon className="h-4 w-4 text-[#555555]" />
                 </div>
                 <p className="text-xs font-semibold text-white mb-1">{s.label}</p>
@@ -672,7 +672,7 @@ function IPManagerTab() {
       {/* Colour palette */}
       <div className="rounded-xl border border-white/5 bg-[#111111] p-5 space-y-4">
         <div className="flex items-center gap-2">
-          <Palette className="h-4 w-4 text-[#BA0C2F]" />
+          <Palette className="h-4 w-4 text-[#8AE234]" />
           <h3 className="text-sm font-bold text-white">Colour Palette Control</h3>
           <span className="text-[10px] text-[#555555] ml-auto">Applied to all merch & data line art</span>
         </div>
@@ -683,7 +683,7 @@ function IPManagerTab() {
             <button
               key={i}
               onClick={() => applyPreset(preset, i)}
-              className={`flex items-center gap-2 rounded-lg border px-3 py-2 text-xs font-medium transition ${activePreset === i ? "border-[#BA0C2F]/50 text-white" : "border-white/5 text-[#888888] hover:text-white"}`}
+              className={`flex items-center gap-2 rounded-lg border px-3 py-2 text-xs font-medium transition ${activePreset === i ? "border-[#8AE234]/50 text-white" : "border-white/5 text-[#888888] hover:text-white"}`}
             >
               <span className="flex gap-1">
                 <span className="h-3 w-3 rounded-full" style={{ background: preset.primary }} />
@@ -706,7 +706,7 @@ function IPManagerTab() {
               <label className="text-xs text-[#888888] mb-2 block">{c.label}</label>
               <div className="flex items-center gap-2">
                 <input type="color" value={c.value} onChange={e => c.set(e.target.value)} className="h-9 w-9 rounded cursor-pointer border-0 bg-transparent" />
-                <input type="text" value={c.value} onChange={e => c.set(e.target.value)} className="flex-1 rounded-lg border border-white/10 bg-[#0A0A0A] px-3 py-2 text-xs text-white font-mono focus:border-[#BA0C2F]/50 focus:outline-none" />
+                <input type="text" value={c.value} onChange={e => c.set(e.target.value)} className="flex-1 rounded-lg border border-white/10 bg-[#080810] px-3 py-2 text-xs text-white font-mono focus:border-[#8AE234]/50 focus:outline-none" />
               </div>
             </div>
           ))}
@@ -719,7 +719,7 @@ function IPManagerTab() {
           <div className="flex-[0.5]" style={{ background: accentColor }} />
         </div>
 
-        <button className="rounded-lg bg-[#BA0C2F] px-4 py-2 text-xs font-bold text-white hover:bg-[#BA0C2F]/90 transition">
+        <button className="rounded-full bg-[#8AE234] px-4 py-2 text-xs font-bold text-[#080810] hover:bg-[#8AE234]/90 transition">
           Save & Apply to Merch Preview
         </button>
       </div>
@@ -727,11 +727,11 @@ function IPManagerTab() {
       {/* Club logo */}
       <div className="rounded-xl border border-white/5 bg-[#111111] p-5 space-y-4">
         <div className="flex items-center gap-2">
-          <Settings className="h-4 w-4 text-[#BA0C2F]" />
+          <Settings className="h-4 w-4 text-[#8AE234]" />
           <h3 className="text-sm font-bold text-white">Club Logo Management</h3>
         </div>
         <div className="flex items-center gap-6">
-          <div className="h-24 w-24 relative shrink-0 rounded-xl border border-white/5 bg-[#0A0A0A] flex items-center justify-center p-2">
+          <div className="h-24 w-24 relative shrink-0 rounded-xl border border-white/5 bg-[#080810] flex items-center justify-center p-2">
             <Image
               src="https://r2.thesportsdb.com/images/media/team/badge/ezpymt1675092551.png"
               alt="Wrexham AFC"
@@ -759,7 +759,7 @@ function IPManagerTab() {
         </div>
         <div className="grid sm:grid-cols-2 gap-3">
           {SPONSOR_SLOTS.map(slot => (
-            <div key={slot.id} className="rounded-lg border border-dashed border-white/10 bg-[#0A0A0A] p-4 flex items-center gap-3">
+            <div key={slot.id} className="rounded-lg border border-dashed border-white/10 bg-[#080810] p-4 flex items-center gap-3">
               <div className="h-10 w-10 rounded border border-white/5 bg-[#111111] flex items-center justify-center shrink-0">
                 <Plus className="h-4 w-4 text-[#333]" />
               </div>
@@ -791,7 +791,7 @@ function SalesTab({ moments, totalRevenue }: { moments: typeof PUBLISHED_MOMENTS
         {[
           { label: "Total Revenue", value: `£${(totalRevenue / 1000).toFixed(1)}k`, icon: DollarSign, color: WREXHAM_GOLD },
           { label: "Units Sold", value: totalUnits.toLocaleString(), icon: Package, color: "#10B981" },
-          { label: "Active Moments", value: moments.length, icon: Zap, color: "#BA0C2F" },
+          { label: "Active Moments", value: moments.length, icon: Zap, color: "#8AE234" },
           { label: "Avg per Moment", value: `£${(totalRevenue / moments.length / 1000).toFixed(1)}k`, icon: TrendingUp, color: "#8B5CF6" },
         ].map(stat => {
           const Icon = stat.icon;
@@ -831,7 +831,7 @@ function SalesTab({ moments, totalRevenue }: { moments: typeof PUBLISHED_MOMENTS
 
               {/* Progress bar */}
               <div className="h-1.5 rounded-full bg-white/5 mb-3">
-                <div className="h-full rounded-full bg-[#BA0C2F]" style={{ width: `${pct}%` }} />
+                <div className="h-full rounded-full bg-[#8AE234]" style={{ width: `${pct}%` }} />
               </div>
 
               {/* Rarity breakdown */}
@@ -841,7 +841,7 @@ function SalesTab({ moments, totalRevenue }: { moments: typeof PUBLISHED_MOMENTS
                   const max = m.maxEditions[tier.id as keyof typeof m.maxEditions] || 0;
                   const Icon = tier.icon;
                   return (
-                    <div key={tier.id} className="rounded-lg border border-white/5 bg-[#0A0A0A] px-3 py-2 flex items-center gap-1.5">
+                    <div key={tier.id} className="rounded-lg border border-white/5 bg-[#080810] px-3 py-2 flex items-center gap-1.5">
                       <Icon className="h-3 w-3" style={{ color: tier.color }} />
                       <span className="text-xs font-bold text-white">{sold}</span>
                       <span className="text-[10px] text-[#555555]">/ {max}</span>
@@ -869,7 +869,7 @@ function SalesTab({ moments, totalRevenue }: { moments: typeof PUBLISHED_MOMENTS
               <span className="font-bold" style={{ color: WREXHAM_GOLD }}>£95,825</span>
             </div>
           </div>
-          <div className="rounded-lg bg-[#0A0A0A] border border-white/5 p-4">
+          <div className="rounded-lg bg-[#080810] border border-white/5 p-4">
             <p className="text-xs text-[#555555] mb-3">Season projection (46 games, avg 2.5 goals each)</p>
             <div className="space-y-1.5 text-xs">
               <div className="flex justify-between"><span className="text-[#888888]">Total goal moments</span><span className="text-white">115</span></div>

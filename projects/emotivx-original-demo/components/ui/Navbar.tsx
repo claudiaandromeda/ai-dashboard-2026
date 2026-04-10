@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -90,48 +91,31 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ── Presentation Banner ── */}
-      <div className="w-full bg-[#DA291C] px-4 py-1.5 text-center text-xs font-semibold text-white flex items-center justify-center gap-3">
-        <span className="opacity-80">📊 INVESTOR DEMO — EmotivX Platform</span>
-        <a
-          href={PRESENTATION_URL}
-          
-          
-          className="rounded bg-white/20 px-2.5 py-0.5 text-white hover:bg-white/30 transition font-bold tracking-wide"
-        >
-          Open Deck →
-        </a>
-        <span className="opacity-60 hidden sm:inline">|</span>
-        <Link href="/assets-preview" className="hidden sm:inline opacity-80 hover:opacity-100 transition underline underline-offset-2">Assets In Progress</Link>
-      </div>
-      <nav className="sticky top-0 z-40 w-full border-b border-white/10 bg-[#0A0A0A]/80 backdrop-blur-md">
-        <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
+
+      <nav className="sticky top-0 z-40 w-full border-b border-white/10 bg-[#080810]/80 backdrop-blur-md">
+        <div className="mx-auto flex h-32 max-w-7xl items-center justify-between px-4 sm:px-6">
           {/* ---- Left: Logo + Nav Links ---- */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4">
             {/* Logo */}
-            <Link
-              href="/"
-              className="shrink-0 font-display text-lg font-extrabold tracking-[0.2em] text-white uppercase transition hover:opacity-80"
-            >
-              EMOTIV<span className="text-[#DA291C]">X</span>
-              <span className="text-[#DA291C]">.</span>
+            <Link href="/" className="shrink-0 transition hover:opacity-80">
+              <Image src="/images/emotivx-logo.png" alt="EmotivX" width={360} height={120} className="h-28 w-auto" priority />
             </Link>
 
             {/* Desktop nav links */}
-            <div className="hidden items-center gap-1 lg:flex">
+            <div className="hidden items-center gap-0 lg:flex">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative rounded-md px-3 py-1.5 text-xs font-medium transition ${
+                  className={`relative rounded-md px-3 py-2 text-sm font-medium whitespace-nowrap transition ${
                     isActive(link.href)
-                      ? "text-white"
-                      : "text-[#888888] hover:text-white"
+                      ? "text-[#2196F3]"
+                      : "text-[#6ab82a] hover:text-[#8AE234]"
                   }`}
                 >
                   {link.label}
                   {isActive(link.href) && (
-                    <span className="absolute bottom-0 left-3 right-3 h-[2px] rounded-full bg-[#DA291C]" />
+                    <span className="absolute bottom-0 left-3 right-3 h-[2px] rounded-full bg-[#8AE234]" />
                   )}
                 </Link>
               ))}
@@ -140,14 +124,14 @@ export default function Navbar() {
               {role === "platform_admin" && (
                 <Link
                   href="/staff/dashboard"
-                  className={`relative flex items-center gap-1 rounded-md px-3 py-1.5 text-xs font-medium transition ${
-                    isActive("/staff") ? "text-white" : "text-[#888888] hover:text-white"
+                  className={`relative flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium whitespace-nowrap transition ${
+                    isActive("/staff") ? "text-[#2196F3]" : "text-[#6ab82a] hover:text-[#8AE234]"
                   }`}
                 >
                   <Shield className="h-3 w-3" />
                   Staff
                   {isActive("/staff") && (
-                    <span className="absolute bottom-0 left-3 right-3 h-[2px] rounded-full bg-[#DA291C]" />
+                    <span className="absolute bottom-0 left-3 right-3 h-[2px] rounded-full bg-[#8AE234]" />
                   )}
                 </Link>
               )}
@@ -155,14 +139,14 @@ export default function Navbar() {
               {(role === "club_admin" || role === "platform_admin") && (
                 <Link
                   href="/club/dashboard"
-                  className={`relative flex items-center gap-1 rounded-md px-3 py-1.5 text-xs font-medium transition ${
-                    isActive("/club") ? "text-white" : "text-[#888888] hover:text-white"
+                  className={`relative flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium whitespace-nowrap transition ${
+                    isActive("/club") ? "text-[#2196F3]" : "text-[#6ab82a] hover:text-[#8AE234]"
                   }`}
                 >
                   <Building2 className="h-3 w-3" />
                   Club
                   {isActive("/club") && (
-                    <span className="absolute bottom-0 left-3 right-3 h-[2px] rounded-full bg-[#DA291C]" />
+                    <span className="absolute bottom-0 left-3 right-3 h-[2px] rounded-full bg-[#8AE234]" />
                   )}
                 </Link>
               )}
@@ -182,7 +166,7 @@ export default function Navbar() {
             >
               <ShoppingBag className="h-4 w-4" />
               {itemCount > 0 && (
-                <span className="absolute -right-1.5 -top-1.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-[#DA291C] px-1 text-[9px] font-bold text-white">
+                <span className="absolute -right-1.5 -top-1.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-[#8AE234] px-1 text-[9px] font-bold text-white">
                   {itemCount > 99 ? "99+" : itemCount}
                 </span>
               )}
@@ -241,7 +225,7 @@ export default function Navbar() {
                             setUserMenuOpen(false);
                             signOut();
                           }}
-                          className="flex w-full items-center gap-2.5 px-4 py-2.5 text-xs text-[#DA291C] transition hover:bg-white/5"
+                          className="flex w-full items-center gap-2.5 px-4 py-2.5 text-xs text-[#8AE234] transition hover:bg-white/5"
                         >
                           <LogOut className="h-3.5 w-3.5" />
                           Logout
@@ -253,13 +237,13 @@ export default function Navbar() {
                   <div className="flex items-center gap-2">
                     <Link
                       href="/login"
-                      className="rounded-lg border border-white/10 px-3 py-2 text-xs text-white/70 transition hover:bg-white/5"
+                      className="rounded-lg border border-white/10 px-4 py-2 text-sm text-white/70 transition hover:bg-white/5"
                     >
                       Log In
                     </Link>
                     <Link
                       href="/signup"
-                      className="rounded-lg bg-[#DA291C] px-3 py-2 text-xs font-semibold text-white transition hover:bg-[#DA291C]/90"
+                      className="rounded-full bg-[#8AE234] px-4 py-2 text-sm font-semibold text-[#080810] transition hover:bg-[#8AE234]/90"
                     >
                       Sign Up
                     </Link>
@@ -291,16 +275,13 @@ export default function Navbar() {
 
       {/* Panel */}
       <div
-        className={`fixed right-0 top-0 z-50 flex h-full w-full max-w-xs flex-col bg-[#0A0A0A] transition-transform duration-300 lg:hidden ${
+        className={`fixed right-0 top-0 z-50 flex h-full w-full max-w-xs flex-col bg-[#080810] transition-transform duration-300 lg:hidden ${
           mobileOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         {/* Mobile header */}
         <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
-          <span className="font-display text-sm font-extrabold tracking-[0.2em] text-white uppercase">
-            EMOTIV<span className="text-[#DA291C]">X</span>
-            <span className="text-[#DA291C]">.</span>
-          </span>
+          <Image src="/images/emotivx-logo.png" alt="EmotivX" width={100} height={33} className="h-8 w-auto" />
           <button
             onClick={() => setMobileOpen(false)}
             className="flex h-8 w-8 items-center justify-center rounded-lg text-[#888888] transition hover:bg-white/5 hover:text-white"
@@ -315,7 +296,7 @@ export default function Navbar() {
           <Link
             href="/search"
             onClick={() => setMobileOpen(false)}
-            className="flex items-center gap-2 rounded-lg border border-white/10 bg-[#1F1F1F] px-3 py-2 text-xs text-[#888888] transition hover:border-[#DA291C]/40"
+            className="flex items-center gap-2 rounded-lg border border-white/10 bg-[#1F1F1F] px-3 py-2 text-xs text-[#888888] transition hover:border-[#8AE234]/40"
           >
             <Search className="h-3.5 w-3.5" />
             Search teams, players...
@@ -337,7 +318,7 @@ export default function Navbar() {
                 }`}
               >
                 {isActive(link.href) && (
-                  <span className="mr-2 h-5 w-0.5 rounded-full bg-[#DA291C]" />
+                  <span className="mr-2 h-5 w-0.5 rounded-full bg-[#8AE234]" />
                 )}
                 {link.label}
               </Link>
@@ -411,7 +392,7 @@ export default function Navbar() {
                   setMobileOpen(false);
                   signOut();
                 }}
-                className="w-full rounded-lg border border-[#DA291C]/30 px-3 py-2 text-xs text-[#DA291C] transition hover:bg-[#DA291C]/10"
+                className="w-full rounded-lg border border-[#8AE234]/30 px-3 py-2 text-xs text-[#8AE234] transition hover:bg-[#8AE234]/10"
               >
                 Logout
               </button>
@@ -428,7 +409,7 @@ export default function Navbar() {
               <Link
                 href="/signup"
                 onClick={() => setMobileOpen(false)}
-                className="flex-1 rounded-lg bg-[#DA291C] px-3 py-2.5 text-center text-xs font-semibold text-white transition hover:bg-[#DA291C]/90"
+                className="flex-1 rounded-full bg-[#8AE234] px-3 py-2.5 text-center text-xs font-semibold text-[#080810] transition hover:bg-[#8AE234]/90"
               >
                 Sign Up
               </Link>
@@ -446,7 +427,7 @@ export default function Navbar() {
             <ShoppingBag className="h-3.5 w-3.5" />
             Cart
             {itemCount > 0 && (
-              <span className="flex h-4 min-w-[16px] items-center justify-center rounded-full bg-[#DA291C] px-1 text-[9px] font-bold text-white">
+              <span className="flex h-4 min-w-[16px] items-center justify-center rounded-full bg-[#8AE234] px-1 text-[9px] font-bold text-white">
                 {itemCount}
               </span>
             )}

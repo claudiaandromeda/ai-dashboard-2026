@@ -139,7 +139,7 @@ export default function PlayerMapPage() {
                 setSelectedPlayer(e.target.value);
                 setResult(null);
               }}
-              className="w-full rounded-lg border border-white/10 bg-[#0A0A0A] px-3 py-2.5 text-sm text-white focus:border-[#DA291C] focus:outline-none"
+              className="w-full rounded-lg border border-white/10 bg-[#080810] px-3 py-2.5 text-sm text-white focus:border-[#8AE234] focus:outline-none"
             >
               <option value="" disabled>
                 Select a player…
@@ -155,7 +155,7 @@ export default function PlayerMapPage() {
           )}
           {selectedPlayerInfo && selectedPlayerInfo.shots > 0 && (
             <p className="mt-2 text-xs text-[#888888]">
-              <span className="text-[#DA291C] font-semibold">{selectedPlayerInfo.goals} goals</span>
+              <span className="text-[#8AE234] font-semibold">{selectedPlayerInfo.goals} goals</span>
               {" "}from {selectedPlayerInfo.shots} shots across {matchIds.length} matches
             </p>
           )}
@@ -176,7 +176,7 @@ export default function PlayerMapPage() {
                 }}
                 className={`rounded-lg px-2 py-2 text-[11px] font-medium transition-colors ${
                   selectedStyle === s.id
-                    ? "bg-[#DA291C] text-white"
+                    ? "bg-[#8AE234] text-white"
                     : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
                 }`}
               >
@@ -190,7 +190,7 @@ export default function PlayerMapPage() {
         <button
           onClick={handleGenerate}
           disabled={generating || !selectedPlayer || matchIds.length === 0}
-          className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#DA291C] px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-[#b82318] disabled:opacity-40 disabled:cursor-not-allowed"
+          className="flex w-full items-center justify-center gap-2 rounded-full bg-[#8AE234] px-4 py-3 text-sm font-bold text-[#080810] transition-colors hover:bg-[#b82318] disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {generating ? (
             <>
@@ -220,7 +220,7 @@ export default function PlayerMapPage() {
             <div>
               <h2 className="text-lg font-bold">{result.playerName}</h2>
               <p className="text-xs text-[#888888]">
-                <span className="text-[#DA291C] font-semibold">{result.goals} goals</span>
+                <span className="text-[#8AE234] font-semibold">{result.goals} goals</span>
                 {" "}/ {result.shots} shots — {result.style} style
               </p>
             </div>

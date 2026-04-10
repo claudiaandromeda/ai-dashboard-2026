@@ -63,14 +63,14 @@ function PitchStage({ active }: { active: boolean }) {
           const opacity = lineProgress >= i ? 0.5 : lineProgress >= i - 1 ? (lineProgress - (i - 1)) * 0.5 : 0;
           return (
             <line key={`line-${i}`} x1={prev.x} y1={prev.y} x2={pt.x} y2={pt.y}
-              stroke="#BA0C2F" strokeWidth="1.5" strokeDasharray="4 3" opacity={opacity} />
+              stroke="#8AE234" strokeWidth="1.5" strokeDasharray="4 3" opacity={opacity} />
           );
         })}
 
         {/* Players at pass waypoints */}
         {PASS_SEQUENCE.map((pt, i) => (
           <circle key={`player-${i}`} cx={pt.x} cy={pt.y} r={5}
-            fill={i % 2 === 0 ? "#BA0C2F" : "#3B82F6"} opacity="0.7" />
+            fill={i % 2 === 0 ? "#8AE234" : "#3B82F6"} opacity="0.7" />
         ))}
 
         {/* Ball */}
@@ -109,7 +109,7 @@ function DataLineStage({ active }: { active: boolean }) {
   const drawn = progress * pathLen;
 
   return (
-    <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-[#0A0A0A] border border-white/10 flex items-center justify-center">
+    <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-[#080810] border border-white/10 flex items-center justify-center">
       <svg viewBox="0 0 400 225" className="w-full h-full" fill="none">
         {/* Grid */}
         <defs>
@@ -120,18 +120,18 @@ function DataLineStage({ active }: { active: boolean }) {
         <rect width="400" height="225" fill="url(#grid)" />
 
         {/* Glow */}
-        {active && <path d="M20 190 C70 170, 110 100, 155 115 S215 65, 260 80 S325 42, 385 58" stroke="#BA0C2F" strokeWidth="12" strokeLinecap="round" strokeDasharray={`${drawn} ${pathLen}`} opacity="0.08" />}
+        {active && <path d="M20 190 C70 170, 110 100, 155 115 S215 65, 260 80 S325 42, 385 58" stroke="#8AE234" strokeWidth="12" strokeLinecap="round" strokeDasharray={`${drawn} ${pathLen}`} opacity="0.08" />}
 
         {/* Main line */}
-        {active && <path d="M20 190 C70 170, 110 100, 155 115 S215 65, 260 80 S325 42, 385 58" stroke="#BA0C2F" strokeWidth="2.5" strokeLinecap="round" strokeDasharray={`${drawn} ${pathLen}`} />}
+        {active && <path d="M20 190 C70 170, 110 100, 155 115 S215 65, 260 80 S325 42, 385 58" stroke="#8AE234" strokeWidth="2.5" strokeLinecap="round" strokeDasharray={`${drawn} ${pathLen}`} />}
 
         {/* Waypoints */}
-        {progress > 0.2 && <circle cx="155" cy="115" r="4" fill="#BA0C2F" />}
-        {progress > 0.55 && <circle cx="260" cy="80" r="4" fill="#BA0C2F" />}
+        {progress > 0.2 && <circle cx="155" cy="115" r="4" fill="#8AE234" />}
+        {progress > 0.55 && <circle cx="260" cy="80" r="4" fill="#8AE234" />}
         {progress > 0.9 && <>
           <circle cx="385" cy="58" r="6" fill="white" />
-          <circle cx="385" cy="58" r="14" stroke="#BA0C2F" strokeWidth="1.5" fill="none" opacity="0.5" />
-          <circle cx="385" cy="58" r="24" stroke="#BA0C2F" strokeWidth="1" fill="none" opacity="0.2" />
+          <circle cx="385" cy="58" r="14" stroke="#8AE234" strokeWidth="1.5" fill="none" opacity="0.5" />
+          <circle cx="385" cy="58" r="24" stroke="#8AE234" strokeWidth="1" fill="none" opacity="0.2" />
         </>}
 
         {/* Data labels */}
@@ -160,15 +160,15 @@ function ArtworkStage({ active }: { active: boolean }) {
   }, [active]);
 
   return (
-    <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-[#0A0A0A] border border-white/10">
+    <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-[#080810] border border-white/10">
       {/* Base — data line art representation */}
       <svg viewBox="0 0 400 225" className="absolute inset-0 w-full h-full" fill="none">
-        <rect width="400" height="225" fill="#0A0A0A" />
+        <rect width="400" height="225" fill="#080810" />
 
         {/* Texture layers appearing */}
         {reveal > 0.1 && (
           <path d="M20 190 C70 170, 110 100, 155 115 S215 65, 260 80 S325 42, 385 58"
-            stroke="#BA0C2F" strokeWidth="60" strokeLinecap="round" opacity={Math.min(reveal * 0.15, 0.12)} />
+            stroke="#8AE234" strokeWidth="60" strokeLinecap="round" opacity={Math.min(reveal * 0.15, 0.12)} />
         )}
         {reveal > 0.2 && (
           <path d="M20 190 C70 170, 110 100, 155 115 S215 65, 260 80 S325 42, 385 58"
@@ -176,7 +176,7 @@ function ArtworkStage({ active }: { active: boolean }) {
         )}
         {/* Main line */}
         <path d="M20 190 C70 170, 110 100, 155 115 S215 65, 260 80 S325 42, 385 58"
-          stroke="#BA0C2F" strokeWidth="3" strokeLinecap="round" opacity={reveal} />
+          stroke="#8AE234" strokeWidth="3" strokeLinecap="round" opacity={reveal} />
 
         {/* Data points on the line */}
         {reveal > 0.3 && (
@@ -190,7 +190,7 @@ function ArtworkStage({ active }: { active: boolean }) {
               { cx: 320, cy: 65 },
               { cx: 385, cy: 58 },
             ].map((pt, i) => (
-              <circle key={i} cx={pt.cx} cy={pt.cy} r={2} fill="#BA0C2F" opacity={reveal * 0.7} />
+              <circle key={i} cx={pt.cx} cy={pt.cy} r={2} fill="#8AE234" opacity={reveal * 0.7} />
             ))}
           </>
         )}
@@ -199,7 +199,7 @@ function ArtworkStage({ active }: { active: boolean }) {
         {reveal > 0.7 && (
           <>
             <text x="15" y="30" fill="white" fontSize="22" fontFamily="var(--font-display)" fontWeight="900" opacity={reveal}>MULLIN</text>
-            <text x="15" y="50" fill="#BA0C2F" fontSize="11" fontFamily="monospace" opacity={reveal}>11' · xG 0.88 · WREXHAM AFC · 2024/25</text>
+            <text x="15" y="50" fill="#8AE234" fontSize="11" fontFamily="monospace" opacity={reveal}>11' · xG 0.88 · WREXHAM AFC · 2024/25</text>
           </>
         )}
 
@@ -229,7 +229,7 @@ function MerchStage({ active }: { active: boolean }) {
           <span className="rounded-full bg-white/5 px-3 py-1 text-xs text-[#888888]">£1,580</span>
         </div>
         <div className="mt-3 text-xs text-[#555555]">+ Digital Avatar Twin included</div>
-        <Link href="/merch-preview?team=wrexham" className="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-[#BA0C2F] px-5 py-2.5 text-sm font-bold text-white hover:bg-[#BA0C2F]/90 transition">
+        <Link href="/merch-preview?team=wrexham" className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-[#8AE234] px-5 py-2.5 text-sm font-bold text-[#080810] hover:bg-[#8AE234]/90 transition">
           Preview It <ArrowRight className="h-4 w-4" />
         </Link>
       </div>
@@ -238,7 +238,7 @@ function MerchStage({ active }: { active: boolean }) {
 }
 
 const STAGES: { id: Stage; label: string; icon: typeof Zap; desc: string; color: string }[] = [
-  { id: "pitch", label: "The Goal", icon: Zap, desc: "Paul Mullin scores in the 11th minute. xG 0.88. The moment is captured.", color: "#BA0C2F" },
+  { id: "pitch", label: "The Goal", icon: Zap, desc: "Paul Mullin scores in the 11th minute. xG 0.88. The moment is captured.", color: "#8AE234" },
   { id: "dataline", label: "Data Line", icon: TrendingUp, desc: "Ball trajectory extracted from match data. The signature EmotivX Data Line™ is born.", color: "#3B82F6" },
   { id: "artwork", label: "Artwork", icon: Package, desc: "AI renders the Data Line into unique artwork in Wrexham's colours. Rarity tier assigned.", color: "#8B5CF6" },
   { id: "merch", label: "Merch", icon: Shirt, desc: "Fan orders the Legendary edition. Printed on demand. Ships worldwide. Paired digital twin created.", color: "#10B981" },
@@ -265,12 +265,12 @@ export default function HowItWorksPage() {
   const stage = STAGES.find(s => s.id === currentStage)!;
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] px-4 py-12">
+    <div className="min-h-screen bg-[#080810] px-4 py-12">
       <div className="mx-auto max-w-4xl">
 
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#BA0C2F] mb-3">The Process</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8AE234] mb-3">The Process</p>
           <h1 className="font-display text-5xl sm:text-6xl font-extrabold uppercase text-white mb-4">
             Goal to garment.<br /><span className="text-[#555]">Watch it happen.</span>
           </h1>
@@ -289,7 +289,7 @@ export default function HowItWorksPage() {
               <button
                 key={s.id}
                 onClick={() => { setCurrentStage(s.id); setAuto(false); }}
-                className={`flex-1 flex items-center justify-center gap-1.5 rounded-lg px-3 py-2.5 text-xs font-semibold transition ${active ? "bg-[#0A0A0A] text-white border border-white/10" : "text-[#555555] hover:text-white"}`}
+                className={`flex-1 flex items-center justify-center gap-1.5 rounded-lg px-3 py-2.5 text-xs font-semibold transition ${active ? "bg-[#080810] text-white border border-white/10" : "text-[#555555] hover:text-white"}`}
               >
                 <Icon className="h-3.5 w-3.5 shrink-0" style={{ color: active ? s.color : undefined }} />
                 <span className="hidden sm:inline">{s.label}</span>
@@ -347,7 +347,7 @@ export default function HowItWorksPage() {
               Next →
             </button>
           ) : (
-            <Link href="/merch-preview?team=wrexham" className="flex items-center gap-1.5 rounded-lg bg-[#BA0C2F] px-4 py-2 text-sm font-bold text-white hover:bg-[#BA0C2F]/90 transition">
+            <Link href="/merch-preview?team=wrexham" className="flex items-center gap-1.5 rounded-full bg-[#8AE234] px-4 py-2 text-sm font-bold text-[#080810] hover:bg-[#8AE234]/90 transition">
               Shop Now <ArrowRight className="h-4 w-4" />
             </Link>
           )}

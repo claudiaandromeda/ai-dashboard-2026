@@ -96,10 +96,10 @@ function stagePillClasses(stage: string): string {
 /** Get the winning team's primary colour (for border glow on hover) */
 function winnerColour(match: Match): string {
   if (match.home_score > match.away_score) {
-    return TEAM_COLOURS[match.home_team]?.[0] ?? "#DA291C";
+    return TEAM_COLOURS[match.home_team]?.[0] ?? "#8AE234";
   }
   if (match.away_score > match.home_score) {
-    return TEAM_COLOURS[match.away_team]?.[0] ?? "#DA291C";
+    return TEAM_COLOURS[match.away_team]?.[0] ?? "#8AE234";
   }
   return "#888888"; // draw
 }
@@ -315,7 +315,7 @@ function MatchCard({ match, index }: { match: Match; index: number }) {
 
           {/* Goal count pill */}
           {goalCount > 0 && (
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[#DA291C]/15 px-3 py-1 text-[11px] font-semibold text-[#DA291C] transition group-hover:bg-[#DA291C]/25">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[#8AE234]/15 px-3 py-1 text-[11px] font-semibold text-[#8AE234] transition group-hover:bg-[#8AE234]/25">
               <span>&#9917;</span>
               {goalCount} goal{goalCount !== 1 ? "s" : ""}
               <span className="text-[10px] transition-transform duration-200 group-hover:translate-x-0.5">
@@ -429,7 +429,7 @@ export default function Euro2024CompetitionPage() {
         ].map((s) => (
           <div
             key={s.label}
-            className="rounded-full border border-white/[0.08] bg-white/[0.04] px-5 py-2 shadow-[0_0_15px_rgba(218,41,28,0.06)] backdrop-blur-sm"
+            className="rounded-full border border-white/[0.08] bg-white/[0.04] px-5 py-2 shadow-[0_0_15px_rgba(138,226,52,0.06)] backdrop-blur-sm"
           >
             <span className="text-[10px] font-semibold uppercase tracking-widest text-white/30 mr-2">
               {s.label}
@@ -446,7 +446,7 @@ export default function Euro2024CompetitionPage() {
         <select
           value={stageFilter}
           onChange={(e) => setStageFilter(e.target.value)}
-          className="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white outline-none focus:border-[#DA291C]/40 backdrop-blur-sm"
+          className="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white outline-none focus:border-[#8AE234]/40 backdrop-blur-sm"
         >
           {STAGES.map((s) => (
             <option key={s.value} value={s.value} className="bg-[#111]">
@@ -460,7 +460,7 @@ export default function Euro2024CompetitionPage() {
           placeholder="Search team\u2026"
           value={teamSearch}
           onChange={(e) => setTeamSearch(e.target.value)}
-          className="flex-1 sm:max-w-xs rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder-white/30 outline-none focus:border-[#DA291C]/40 backdrop-blur-sm"
+          className="flex-1 sm:max-w-xs rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder-white/30 outline-none focus:border-[#8AE234]/40 backdrop-blur-sm"
         />
 
         <p className="self-center text-xs text-white/30">

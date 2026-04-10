@@ -4,7 +4,7 @@ export default function ContactPage() {
       <h1 className="text-3xl font-bold text-white">Contact Us</h1>
       <p className="mt-4 text-sm leading-relaxed text-[#9CA3AF]">
         Have questions or feedback? Reach out to us at{" "}
-        <span className="text-[#DA291C]">hello@emotivx.com</span>
+        <span className="text-[#8AE234]">hello@emotivx.com</span>
       </p>
     </div>
   );
